@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WordPress on limistah</title>
+    <link>https://limistah.dev/tags/wordpress/</link>
+    <description>Recent content in WordPress on limistah</description>
+    <image>
+      <title>limistah</title>
+      <url>https://limistah.dev/images/papermod-cover.png</url>
+      <link>https://limistah.dev/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://limistah.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating from WordPress to Gatsby - The Journey</title>
+      <link>https://limistah.dev/posts/migrating-from-wordpress-to-gatsby/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/migrating-from-wordpress-to-gatsby/</guid>
+      <description>Yes, this topic is worth a post and I will walk you through why the migration was inevitable, and how I had done it.
+Formerly, this website used to run on WordPress, the great PHP CMS. The design was made with the aid of Typography theme, I loved it!
+All of the post prior to this date was written using the WordPress admin dashboard. I loved the Gutenberg Editor, it was so fluid and easy to work with.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on limistah</title>
+    <link>https://limistah.dev/tags/book/</link>
+    <description>Recent content in Book on limistah</description>
+    <image>
+      <title>limistah</title>
+      <url>https://limistah.dev/images/papermod-cover.png</url>
+      <link>https://limistah.dev/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://limistah.dev/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Code – Rules For Name Crafting (Series)</title>
+      <link>https://limistah.dev/posts/clean-code-series/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/clean-code-series/</guid>
+      <description>The very first task that we do while starting to program is naming from the creation of directory to files, to classes, to functions. Name is everywhere, we cannot escape it, and we do so much of naming, we should be fulfilled if we can do it better.
+Beginners do marvel at how the seniors snap out great names that fit the context to be applied. How the names are crafted seem like magic, they end up seeing themselves not so close when they see that wack name their brain could best provide.</description>
+    </item>
+    <item>
+      <title>Clean Code – Brief Review</title>
+      <link>https://limistah.dev/posts/clean-code-review/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/clean-code-review/</guid>
+      <description>Currently, I find my self reading Clean Code by Robert Cecil Martin, and just completed the first three chapters. I am taking my time to digest the genius work of Robert, and I see it as a need to share what could be understood in just the first 50 pages of the book.
+To Robert, spending time to write the right code is an investment in the future maintenance time of that code.</description>
+    </item>
+    <item>
+      <title>Rules For Name Crafting – Part One</title>
+      <link>https://limistah.dev/posts/clean-code-name-crafting-one/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/clean-code-name-crafting-one/</guid>
+      <description>This is the first of the series – Clean Code – Rule For Name Crafting Series. In this post, we will be dealing with the first three rules stated by Robert in his Clean Code book and they are: always use intention revealing names, avoid disinformation, and make meaningful distinctions.
+#1: Always Use Intention Revealing Names To some profession, giving names that do not reveal what the item/object is about might be a norm, we have seen astroids named Iris, and a human named Mars.</description>
+    </item>
+  </channel>
+</rss>

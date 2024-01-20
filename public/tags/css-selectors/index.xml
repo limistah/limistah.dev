@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css-selectors on limistah</title>
+    <link>https://limistah.dev/tags/css-selectors/</link>
+    <description>Recent content in css-selectors on limistah</description>
+    <image>
+      <title>limistah</title>
+      <url>https://limistah.dev/images/papermod-cover.png</url>
+      <link>https://limistah.dev/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://limistah.dev/tags/css-selectors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Structural CSS Selectors</title>
+      <link>https://limistah.dev/posts/structural-css-selectors/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/structural-css-selectors/</guid>
+      <description>Yeah, you read that right. Let go straight into it!
+A Test Case Can you interprete this CSS selector query?
+p.title:first-of-type { color: red; } Let me think like you would:
+Select every P element that has the class name of title and apply the color red to the first of its type.
+&amp;lt;body&amp;gt; &amp;lt;p&amp;gt;Lorem Ipsum&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;title&amp;#34;&amp;gt;Paragraph 2 (shows in red color)&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; You think you’re right.
+Another test case What happens with the below:</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distributed-programming on limistah</title>
+    <link>https://limistah.dev/tags/distributed-programming/</link>
+    <description>Recent content in distributed-programming on limistah</description>
+    <image>
+      <title>limistah</title>
+      <url>https://limistah.dev/images/papermod-cover.png</url>
+      <link>https://limistah.dev/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://limistah.dev/tags/distributed-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An introduction to Erlang</title>
+      <link>https://limistah.dev/posts/an-introduction-to-erlang/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/an-introduction-to-erlang/</guid>
+      <description>If you have used WhatsApp or Facebook Chat, then you have one way or the other interacted with an Erlang-backed system.
+Erlang is a language created for the telecommunication industry by Jor Armstrong, Robert Virding, and Mike Williams in 1986. It was recorded that Jor Armstrong claimed he was provided a library and did not know what to do with it, then they taught him to solve the reliability and concurrent problem of the telecommunication industry, and that gave birth to Erlang.</description>
+    </item>
+  </channel>
+</rss>

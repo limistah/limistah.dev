@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generated-content on limistah</title>
+    <link>https://limistah.dev/tags/generated-content/</link>
+    <description>Recent content in generated-content on limistah</description>
+    <image>
+      <title>limistah</title>
+      <url>https://limistah.dev/images/papermod-cover.png</url>
+      <link>https://limistah.dev/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://limistah.dev/tags/generated-content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS counters</title>
+      <link>https://limistah.dev/posts/css-counters/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://limistah.dev/posts/css-counters/</guid>
+      <description>CSS can keep count of numbers without writing any additional JavaScript.
+It does this by taking note the amount of time a CSS block affects a page then incrementing the counter for that block if the counter-increment rule is implemented.
+For example:
+input:invalid { counter-increment: invalid-count; } With no JavaScript at all, CSS understands that whenever there is an invalid element, it should increment the count for the invalid-count identifier.</description>
+    </item>
+  </channel>
+</rss>
