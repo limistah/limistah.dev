@@ -30,7 +30,7 @@ languages:
     menu:
       main:
         - name: Blog
-          url: blog
+          url: posts
           weight: 5
         - name: Search
           url: search/
