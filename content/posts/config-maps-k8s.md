@@ -1,6 +1,6 @@
 ---
 title: ConfigMaps in K8s
-date: 2021-08-21
+date: 2024-02-06
 tags: [Kubernetes, k8s, CloudNative]
 category: Kubernetes
 excerpt: Creating and using config maps in Kubernetes
