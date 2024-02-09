@@ -92,7 +92,7 @@ For some echo messages that can be too long for the status bar, the `echow` or `
 If running as a GUI, the message is output to stdout.
 
 ```vim
-:echom "what are we doing today?"
+:echoc "what are we doing today?"
 ```
 
 ## VIM's echo command and Shell's echo command
