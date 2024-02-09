@@ -59,7 +59,7 @@ And use it like below:
 :echohl MyGreen | echo "Green Message" | echo None
 ```
 
-## Echoing Error Messages
+### Echoing Error Messages
 
 The `:echoe {expr}` or `:echoerr {expr}` command can be used to echo error messages
 
@@ -86,7 +86,7 @@ For some echo messages that can be too long for the status bar, the `echow` or `
 :echow "Lorem Ipsum" 
 ```
 
-## Differences between VIM's echo command and bash echo command
+## VIM's echo command and Shell's echo command
 
 It can be tempting to think the VIM's `:echo` command is the same as the shell's `!echo` command.
 
