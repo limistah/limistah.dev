@@ -102,13 +102,13 @@ params:
       url: "https://github.com/limistah"
     - name: X
       title: Share On on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20This%20Post%20By%20limistah%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/limistah/limistah.xyz"
+      url: "https://x.com/intent/tweet/?text=Checkout%20This%20Post%20By%20limistah%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/limistah/limistah.dev"
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/limistah"
 
   editPost:
-    URL: "https://github.com/limistah/limistah.xyz/tree/main/content"
+    URL: "https://github.com/limistah/limistah.dev/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
