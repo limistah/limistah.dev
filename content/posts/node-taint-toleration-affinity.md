@@ -27,9 +27,9 @@ Kubernetes would schedule the `Pods` on a random node. Which is fine for general
 
 Imagine if we are to deploy an LLM on NODE C, there should be a way to instruct Kubernetes to do just that. Also, there should be a way to tell Kubernetes to not deploy anything to NODE C unless it was specified.
 
-If you inspect the master node with: `kubectl get nodes controlplane | grep -i taints` this would return all the taints set for the master node that prevents the scheduling of Pods on the master node. In Kubernetes, there should be worker nodes that `Pod` can run on and master node(s) that schedule the `Pod`s to run on what `node`.
+If you inspect the master node with: `kubectl get nodes controlplane | grep -i taints` this would return all the taints set for the master node that prevents the scheduling of Pods on the master node. In Kubernetes, there should be worker nodes that `Pod` can run on and master node(s) that schedule the `Pods` to run on what `node`.
 
-That is where node affinity, tainting, and pod toleration come in.
+We can apply [node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity) and [node taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) to control [https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/).
 
 ## Node Taint & Pod Toleration
 
