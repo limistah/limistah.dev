@@ -9,7 +9,9 @@ excerpt: Use node taint, toleration, and node affinity the right way
 
 ## Motivation
 
-In a large Kubernetes deployment with many nodes with different configurations, consider the configuration below:
+Pod scheduling can be a nightmare in a large Kubernetes deployment with many nodes with different configurations.
+
+Consider the configuration below:
 
 - **NODE A:** 16vCPU, 10TB SSD Disk Space, 64GB RAM.
 - **NODE B:** 4 vCPU, 100GB HDD Disk Space, 8GB RAM
@@ -21,7 +23,7 @@ And scheduling a new deployment to the cluster:
 kubectl create deployment --image=nginx --replicas=3
 ```
 
-Kubernetes would schedule the `Pods` on a random node. Which is fine for general use case.
+Kubernetes would schedule the `Pods` on a random node. Which is fine for general use cases.
 
 Imagine if we are to deploy an LLM on NODE C, there should be a way to instruct Kubernetes to do just that. Also, there should be a way to tell Kubernetes to not deploy anything to NODE C unless it was specified.
 
