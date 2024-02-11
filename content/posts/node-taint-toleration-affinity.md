@@ -146,7 +146,7 @@ The In operator ensures that the values in the Pod definition file must match on
 
 This is not the end.
 
-## Tainting Plus Affinity = Effective Pod Scheduling Segregation
+## Tainting+Affinity=Effective Pod Scheduling Segregation
 
 With Pod affinity, we can end up having other pods not requiring GPU running on NODE C, this means having too much compute power than they require.
 
