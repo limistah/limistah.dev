@@ -9,7 +9,7 @@ excerpt: Use node taint, toleration, and node affinity the right way
 
 ## Motivation
 
-Pod scheduling can be a nightmare in a large Kubernetes deployment with many nodes with different configurations.
+Pod scheduling can be a nightmare in a large Kubernetes deployment with many nodes having different configurations.
 
 Consider the configuration below:
 
@@ -150,9 +150,11 @@ This is not the end.
 
 With Pod affinity, we can end up having other pods not requiring GPU running on NODE C, this means having too much compute power than they require.
 
-The problem with node tainting is the fact that nodes not satisfying the taint can also end up at nodes where they are not supposed to run. For example, a GPU-intensive Pod might get scheduled on NODE A, this is not what we want.
+The problem with node tainting is the fact that nodes not satisfying the taint can also end up at nodes where they are not supposed to run. For example, a GPU-intensive Pod might get scheduled on `NODE A`, this is not what we want.
 
-The fact is that both Pod Affinity and Node Tainting solve each other's problems. The final solution: Use both node tain and Pod Affinity to achieve a more effective Pod Scheduling segregation.
+The fact is that both Pod Affinity and Node Tainting solve each other's problems. 
+
+Final solution: **Use both Node Taint and Pod Affinity to achieve a more effective Pod Scheduling segregation.**
 
 First, attach labels to the nodes that require special attention:
 
@@ -160,13 +162,13 @@ First, attach labels to the nodes that require special attention:
 kubectl taint nodes nodeC purpose=gpu-compute:NoSchedule
 ```
 
-Second, attach taints to these nodes so it repels other Pods:
+Second, attach taints to these nodes so they repel other Pods:
 
 ```bash
 kubectl label nodes nodeA purpose=gpu-compute
 ```
 
-Finally, configure your Pod to use both node taint and Pod Affinity to effectively choose what node to run at:
+Finally, configure your Pod to use both Node Taint and Pod Affinity to effectively choose what node to run at:
 
 ```yaml
 apiVersion: v1
