@@ -179,3 +179,5 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+  googleAnalytics:
+    ID: "G-0TT6LT81J0"
