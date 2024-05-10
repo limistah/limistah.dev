@@ -29,4 +29,4 @@ Chapter Three of the book commence the lesson on writing good codes, beginning w
 
 >> We are authors, and one thing about authors is that they have readers. Indeed, authors are responsible for communicating well with their readers, the next time you write a line of code, remember you are an author, writing for readers who will judge your effort. - _Robert Cecil Martin_
 
-**Be an artist, draw beautifully. Be a writer, write understandably. Be a poet, write eloquently. Be a programmer, write good codes.**
+**Be an artist, draw beautifully. Be a writer, write understandably. Be a poet, write eloquently. Be a programmer, write good code.**

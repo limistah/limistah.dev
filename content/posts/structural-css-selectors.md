@@ -99,6 +99,8 @@ Reference the list below to understand structural selectors proper:
 
 Interesting right? Play with it [here](https://codepen.io/ihaleem/pen/BaWxRwE).
 
-Take home: Structural selectors apply themselves to the selected element to help us style an element existing at a specific position in the HTML.
+## Take home
+
+Structural selectors apply themselves to the selected element to help us style an element existing at a specific position in the HTML.
 
 [au revoir!](https://translate.google.com/?sl=auto&tl=en&text=au%20revoir&op=translate)
