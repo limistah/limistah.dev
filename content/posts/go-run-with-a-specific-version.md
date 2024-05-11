@@ -40,7 +40,7 @@ go1.22.3 run main.go
 
 ### Cleanup
 
-Cleaning up the installation is the same as removing and deleting the installation from the filesystem. Firstly, we get the path that the command is installed using `go1.22.3 env GOROOT` to reveal the installation folder.
+Cleaning up the installation is the same as removing and deleting the installation from the filesystem. The command `go1.22.3 env GOROOT` reveals the installation folder for the version of the go executable, and we can use `rm` command to delete it.
 
 ```bash
 rm -rf $(go1.22.3 env GOROOT)
