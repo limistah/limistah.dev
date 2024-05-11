@@ -38,7 +38,7 @@ Once this is done, we can use the named executable(`go1.22.3`) to run our go com
 go1.22.3 run main.go
 ```
 
-#### Cleanup
+### Cleanup
 
 Cleaning up the installation is the same as removing and deleting the installation from the filesystem. Firstly, we get the path that the command is installed using `go1.22.3 env GOROOT` to reveal the installation folder.
 
