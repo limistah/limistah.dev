@@ -14,13 +14,13 @@ Is there a clean way to do this?
 
 ## Recommendation
 
-I would recommend a tool like Go Version Manager that helps to manage a systemwide version of the language. The advantage of this is the ease it comes with. A simple gvm use 1.2, would ensure the 1.2 version of the language is installed system-wide.
+I will recommend a tool like gvm(Go Version Manager) that helps to manage a systemwide version of the language. The advantage of this is the ease it comes with. A simple `gvm use 1.2` command, would ensure the 1.2 version of the language is installed system-wide.
 
 ## Optimal Solution
 
-A better approach is to not compromise the global go installation which maintains the version, but run a specific code with a specific version installation and discard the installation once done. Go supports this easily.
+A better approach is not to compromise the global Go installation but to run a specific code with a specific version of Go installation and discard the installation once done. Go supports this easily.
 
-To do this, firstly, use the go get command to download a specific version of the language as a package:
+To do this, firstly, use the `go get` command to download a specific version of the language as a package:
 
 ```bash
 go get golang.org/dl/go1.22.3
