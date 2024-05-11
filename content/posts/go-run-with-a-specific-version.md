@@ -32,7 +32,7 @@ The above command would download an executable named after the version. We can u
 go1.22.3 download
 ```
 
-Once this is done, we can use the named executable(go1.22.3) to run our go commands, for example:
+Once this is done, we can use the named executable(`go1.22.3`) to run our go commands, for example:
 
 ```bash
 go1.22.3 run main.go
@@ -40,13 +40,13 @@ go1.22.3 run main.go
 
 #### Cleanup
 
-Cleaning up the installation is the same as removing and deleting the installation from the filesystem. Firstly, we get the path that the command is installed using go1.22.3 env GOROOT to reveal the installation folder.
+Cleaning up the installation is the same as removing and deleting the installation from the filesystem. Firstly, we get the path that the command is installed using `go1.22.3 env GOROOT` to reveal the installation folder.
 
 ```bash
 rm -rf $(go1.22.3 env GOROOT)
 ```
 
-Finally, for the system-wide go installation, go1.22.3 is a package that has an executable, we can remove the installed executable with the command:
+Finally, for the system-wide go installation, `go1.22.3` is a package that has an executable, we can remove the installed executable with the command:
 
 ```bash
 rm $(go env GOPATH)/bin/go1.22.3
