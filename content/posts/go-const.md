@@ -21,7 +21,7 @@ In Go, constants mean "storing a literal to a variable", this can be seen as a v
 
 ### An explanation
 
-Initializing a variable as a constant means it holds the value and possibly type of the literal it is assigned to, anywhere the `DISCOUNT` above is used, the compiler assumes that as writing the integer literal `10`.
+Initializing a variable as a constant means the variable holds the value and possibly type of the literal it is assigned to. Anywhere the `DISCOUNT` above is used, the compiler assumes that as writing the integer literal `10`.
 
 At compile time, the compiler swaps all reperesentation of a constant value with the value it was assigned to. Such that
 
