@@ -17,7 +17,7 @@ const DISCOUNT = 10
 
 In Go, constants mean "storing a literal to a variable", this can be seen as a version of pattern matching in Erlang.
 
-Literals in go are constructs that can create an instance of a strings, numbers, booleans, composite structures, functions or expressions. Hence unlike many programming languages, constants in go can be `const FN = fun () { fmt.Println("Hello World") }`.
+[Literals in go](https://www.phind.com/search?cache=n05row4wk42ocrf4520s6vzm) are constructs that can create an instance of a strings, numbers, booleans, composite structures, functions or expressions. Hence unlike many programming languages, constants in go can be `const FN = fun () { fmt.Println("Hello World") }`.
 
 ### An explanation
 
