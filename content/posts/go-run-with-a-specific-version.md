@@ -14,7 +14,7 @@ Is there a clean way to do this?
 
 ## Recommendation
 
-I would recommend a tool like go version manager that helps to manage a systemwide version of the language. The advantage of this is the easy it comes with. A simple gvm use 1.2, would ensure the 1.2 version of the langugage is installed system-wide.
+I would recommend a tool like go version manager that helps to manage a systemwide version of the language. The advantage of this is the easy it comes with. A simple `gvm use 1.22`, would ensure the 1.2` version of the langugage is installed system-wide.
 
 ## Optimal Solution
 
@@ -26,13 +26,13 @@ To do this, firstly, use the go get command to download a specific version of th
 go get golang.org/dl/go1.22.3
 ```
 
-The above command would download an executable named after the version. We can use the executable to issue a final command that would do the setup.
+The above command would download an executable named after the version. Now, use the executable to issue a final command that would do the setup.
 
 ```bash
 go1.22.3 download
 ```
 
-Once this is done, we can use the named executable(go1.22.3) to run our go commands, example:
+Once this is done, use the named executable(go1.22.3) to run go commands, example:
 
 ```bash
 go1.22.3 run main.go
@@ -40,13 +40,13 @@ go1.22.3 run main.go
 
 #### Cleanup
 
-Cleaning up the installation is same as removing deleting the installation from the filesystem. Firstly, we get the path that the command is installed use go1.22.3 env GOROOT to reveal the installation folder.
+Cleaning up the installation is same as removing deleting the installation from the filesystem. Firstly, get the path that the command is installed use `go1.22.3 env GOROOT` to reveal the installation folder.
 
 ```bash
 rm -rf $(go1.22.3 env GOROOT)
 ```
 
-Finally, to the system wide go installation, go1.22.3 is a package that has an executable, we can remove the installed executable with the command:
+Finally, the system wide go installation, go1.22.3 is a package that has an executable, remove the installed executable with the command:
 
 ```bash
 rm $(go env GOPATH)/bin/go1.22.3
