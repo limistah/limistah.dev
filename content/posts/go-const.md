@@ -43,7 +43,7 @@ func main () {
 
 In some prgramming languages, Constants means the value of a variable once declared and initialized can never change
 
-Contrast to what we have understood, constants are used to enforce that a variable is immutable. in Go, it can be used to assign names to a literal exactly once, while at compile time, the name is swapped with the value of the constant - ensuring cleaner code, the idiomatic go.
+Contrast to what we have understood – constants are used to enforce that a variable is immutable, in Go, it can be used to assign names to a literal exactly once, while at compile time, the name is swapped with the value of the constant - ensuring cleaner code, the idiomatic go.
 
 
 
