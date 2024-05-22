@@ -29,6 +29,9 @@ languages:
       series: series
     menu:
       main:
+        - name: About
+          url: about
+          weight: 5
         - name: Blog
           url: posts
           weight: 5
@@ -39,14 +42,14 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: English
-      profileMode:
-        enabled: true
-        title: Aleem Isiaka (AI)
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
-        # imageWidth: 120
-        # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth "
+      # profileMode:
+      #   enabled: true
+      #   title: Aleem Isiaka (AI)
+      #   imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+      #   imageTitle: ProfileMode image
+      #   # imageWidth: 120
+      #   # imageHeight: 120
+      #   subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth "
 
 outputs:
   home:
@@ -88,21 +91,26 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Engineering reImagined"
+    Title: "Aleem Isiaka - AI Crib"
     Content: >
-      👋 Welcome to tech jab's by limistah!
+      - 👋 Welcome to limistah's crib!
 
-      - **engineering reImagined** is a place where people attempts to become the better of their best versions.
+      - Here, I attempt to **reImagine engineering** and share information on how to become the better of our best versions.
 
-      - Feel free to show your support by giving me a star 🌟 on GitHub and sharing with your friends and social media.
+      - Feel free to show your support by giving me a star 🌟 on GitHub and sharing with your friends on social media.
+      
+      - Read more about me [here](/about/)
 
   socialIcons:
-    - name: github
-      title: View Source on Github
-      url: "https://github.com/limistah"
     - name: X
       title: Share On on X/Twitter
       url: "https://x.com/intent/tweet/?text=Checkout%20This%20Post%20By%20limistah%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/limistah/limistah.dev"
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/limistah"
+    - name: linkedin
+      title: Reach me on LinkedIn
+      url: "https://linkedin.com/in/limistah"
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/limistah"
