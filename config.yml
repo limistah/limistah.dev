@@ -114,6 +114,9 @@ params:
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/limistah"
+    - name: email
+      title: email
+      url: aleemisiaka@gmail.com
     - name: cv
       title: CV
       url: /cv.pdf
