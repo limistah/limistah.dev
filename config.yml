@@ -114,6 +114,9 @@ params:
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "https://ko-fi.com/limistah"
+    - name: cv
+      title: CV
+      url: /cv.pdf
 
   editPost:
     URL: "https://github.com/limistah/limistah.dev/tree/main/content"
