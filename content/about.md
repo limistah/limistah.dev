@@ -21,8 +21,6 @@ So, if I have to do it again, it should be automated.
 
 I read books, journals, and research papers, follow them here: https://clio.limistah.dev
 
-I blog at https://limistah.dev/posts
-
 I volunteer to open source projects and lead the maintainers at [ObjectSpread](https://github.com/objectspread)
 
 [View my CV here](/cv.pdf)
