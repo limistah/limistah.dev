@@ -1,4 +1,4 @@
----
+
 title: "Aleem Isiaka"
 layout: "baseof"
 ---
@@ -24,5 +24,7 @@ I read books, journals, and research papers, follow them here: https://clio.limi
 I blog at https://limistah.dev/posts
 
 I volunteer to open source projects and lead the maintainers at [ObjectSpread](https://github.com/objectspread)
+
+[View my CV here](/cv.pdf)
 
 [Asante](https://translate.google.com/?sl=sw&tl=en&text=asante&op=translate)
