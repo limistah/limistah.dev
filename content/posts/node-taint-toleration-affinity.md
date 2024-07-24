@@ -4,7 +4,6 @@ date: 2024-02-11
 tags: [Kubernetes, Node, Affinity]
 category: Kubernetes
 excerpt: Use node taint, toleration, and node affinity the right way
-
 ---
 
 ## Motivation
