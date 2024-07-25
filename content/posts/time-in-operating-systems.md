@@ -11,7 +11,7 @@ Time is a linear monotonically increasing value and to keep track of it, a syste
 
 Since time is always increasing, and a system has to be powered to stay updated, operating systems and manufacturers provide a system called CMOS (complementary metal–oxide–semiconductor) RAM, which is part of the motherboard. The CMOS is powered by a tiny 3v battery usually a  CR2032 3V lithium cell which helps it to constantly stay on.
 
-![CMOS Battery](/static/cmos-battery.jpeg)
+![CMOS Battery](/assets/cmos-battery.jpeg)
 
 CMOS RAM has two jobs:
 - Remember the date and time of your system 
