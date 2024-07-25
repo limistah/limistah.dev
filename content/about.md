@@ -1,9 +1,7 @@
-
+---
 title: "Aleem Isiaka"
 layout: "baseof"
 ---
-
-
 
 I am a software engineer who enjoys solving complex problems with simple solutions by leveraging existing methods and technologies, and innovating when necessary. 
 
