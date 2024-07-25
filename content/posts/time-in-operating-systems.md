@@ -1,9 +1,9 @@
+---
 title: Time in Operating Systems
 date: 2024-07-25
 tags: [CS, Operating Systems]
 excerpt: Implementation of Time in different Operating systems, concept of Wall Time and Monotonic Time
-
-----------------------------------------------------------------------------------------------------------------
+---
 
 Time is a linear monotonically increasing value and to keep track of it, a system has to be powered to take note of every tick. For an microcomputer running an operating system that can go on and off, this means there is a need to constantly update time whenever the computer comes on, but that is not the case because of some intelligent mechanisms that operating systems use to keep track of the current time.
 
