@@ -11,6 +11,8 @@ Time is a linear monotonically increasing value and to keep track of it, a syste
 
 A [Real-Time Clock (RTC)](https://en.wikipedia.org/wiki/Real-time_clock) is an electronic hardware component that helps track the current time and date, even when the system is powered off.
 
+![Getting Started With Real-Time Clocks - Make:](/assets/Dallas_Semiconductor_DS12B887-2377-Medium-620x465.jpg)
+
 ### How it works
 
 RTC uses an oscillator that generates a stable and precise frequency, typically 32.768 kHz. The pulses from the oscillator are sent to counters within the RTC chip where seconds, minutes, hours, days, and so on are measured. These counters increment to keep track of the current time and date. The values for the current date and time are stored in registers contained within the RTC chipset, these registers also help to keep track of configuration values such as alarms, enabling and disabling the clock, and adjusting for leap years.
@@ -77,9 +79,13 @@ print("Monotonic time:", time.monotonic())
 ### Ruby
 
 ```ruby
+current_time = Time.now
+puts "Current time: #{current_time}"
 monotonic_time = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 puts "Monotonic time: #{monotonic_time}"
 ```
+
+![image-20240726123100792](/assets/clock_time_ruby.png)
 
 ### JavaScript
 
@@ -90,23 +96,29 @@ const monotonicTime = performance.now();
 console.log(`Monotonic time ${monotonicTime}`);
 ```
 
-### Go
+![image-20240726122516502](clock_time_node.png)
+
+### Go 
 
 ```go
+package main
+
 import (
-  "time"
-  "fmt"
+	"fmt"
+	"time"
 )
 
 func main() {
-  fmt.Println("Current time: ", time.Now())
-  
-  // Get the current monotonic time
-  monotonicTime := time.Now().UnixNano()
-  // nanoseconds since epoch
-  fmt.Printf("Monotonic time: %d\n", monotonicTime)
+	fmt.Println("Current time: ", time.Now())
+
+	// Get the current monotonic time
+	monotonicTime := time.Now().UnixNano()
+	// nanoseconds since epoch
+	fmt.Printf("Monotonic time: %d\n", monotonicTime)
 }
 ```
+
+https://go.dev/play/p/aPgf5HBzSG6
 
 ## C
 
@@ -127,10 +139,12 @@ int main() {
 
 ```
 
+![image-20240726125536195](clock_time_c.png)
 
+View on [Replt](https://replit.com/@AleemIsiaka/wallmonotonicclock)
 
 ### Conclusion
 
-This post shared the concept of time in computer system architectures and drilled down to discuss more on the different types of time available within an operating system and examples how they can be retrieved from different programming languages.
+This post shared the concept of time in computer system architectures and drilled down to discuss more on the different types of time available within an operating system and examples of how they can be retrieved from different programming languages.
 
 [au revoir!](https://translate.google.com/?sl=auto&tl=en&text=au%20revoir&op=translate)
