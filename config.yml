@@ -60,7 +60,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Reimagining software engineering, trends, best practices and principles"
-  author: AI
+  author: ["Aleem Isiaka"]
   comments: true
   defaultTheme: auto
   # disableThemeToggle: true
