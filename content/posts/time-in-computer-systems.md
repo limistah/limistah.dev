@@ -96,7 +96,7 @@ const monotonicTime = performance.now();
 console.log(`Monotonic time ${monotonicTime}`);
 ```
 
-![image-20240726122516502](clock_time_node.png)
+![image-20240726122516502](/assets/clock_time_node.png)
 
 ### Go 
 
@@ -139,7 +139,7 @@ int main() {
 
 ```
 
-![image-20240726125536195](clock_time_c.png)
+![image-20240726125536195](/assets/clock_time_c.png)
 
 View on [Replt](https://replit.com/@AleemIsiaka/wallmonotonicclock)
 
