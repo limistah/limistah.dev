@@ -4,6 +4,8 @@ date: 2024-07-25
 tags: [CS, Microcomputers]
 excerpt: Learn how time tracking is implemented from the hardware.
 description: Learn how time tracking is implemented from the hardware.
+cover:
+  image: "/assets/Dallas_Semiconductor_DS12B887-2377-Medium-620x465.jpg"
 ---
 
 Time is a linear monotonically increasing value and to keep track of it, a system has to be powered to take note of every tick. For a microcomputer running an operating system that can go on and off, this means there is a need to constantly update time whenever the computer comes on, but that is not the case because of some intelligent mechanisms that computer hardware and operating systems use to keep track of the current time.
@@ -11,8 +13,6 @@ Time is a linear monotonically increasing value and to keep track of it, a syste
 ## Real-Time Clock
 
 A [Real-Time Clock (RTC)](https://en.wikipedia.org/wiki/Real-time_clock) is an electronic hardware component that helps track the current time and date, even when the system is powered off.
-
-![Getting Started With Real-Time Clocks - Make:](/assets/Dallas_Semiconductor_DS12B887-2377-Medium-620x465.jpg)
 
 ### How it works
 
