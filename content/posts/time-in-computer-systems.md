@@ -5,7 +5,7 @@ tags: [CS, Microcomputers]
 excerpt: Learn how time tracking is implemented from the hardware.
 ---
 
-Time is a linear monotonically increasing value and to keep track of it, a system has to be powered to take note of every tick. For an microcomputer running an operating system that can go on and off, this means there is a need to constantly update time whenever the computer comes on, but that is not the case because of some intelligent mechanisms that computer hardwares and operating systems use to keep track of the current time.
+Time is a linear monotonically increasing value and to keep track of it, a system has to be powered to take note of every tick. For a microcomputer running an operating system that can go on and off, this means there is a need to constantly update time whenever the computer comes on, but that is not the case because of some intelligent mechanisms that computer hardware and operating systems use to keep track of the current time.
 
 ## Real-Time Clock
 
@@ -96,7 +96,7 @@ const monotonicTime = performance.now();
 console.log(`Monotonic time ${monotonicTime}`);
 ```
 
-![image-20240726122516502](/assets/clock_time_node.png)
+![image-20240726122516502](/assets/clock_time_nodejs.png)
 
 ### Go 
 
