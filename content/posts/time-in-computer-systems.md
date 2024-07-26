@@ -141,7 +141,7 @@ int main() {
 
 ![image-20240726125536195](/assets/clock_time_c.png)
 
-View on [Replt](https://replit.com/@AleemIsiaka/wallmonotonicclock)
+View on [Replit](https://replit.com/@AleemIsiaka/wallmonotonicclock)
 
 ### Conclusion
 
