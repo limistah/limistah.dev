@@ -17,7 +17,7 @@ A [Real-Time Clock (RTC)](https://en.wikipedia.org/wiki/Real-time_clock) is an e
 
 RTC uses an oscillator that generates a stable and precise frequency, typically 32.768 kHz. The pulses from the oscillator are sent to counters within the RTC chip where seconds, minutes, hours, days, and so on are measured. These counters increment to keep track of the current time and date. The values for the current date and time are stored in registers contained within the RTC chipset, these registers also help to keep track of configuration values such as alarms, enabling and disabling the clock, and adjusting for leap years.
 
-RTC chips can be powered by a CMOS RAM battery but are mostly powered internally by an alternate power source, usually a replaceable lithium battery or modern supercapacitors](https://en.wikipedia.org/wiki/Supercapacitor).
+RTC chips can be powered by a CMOS RAM battery but are mostly powered internally by an alternate power source, usually a replaceable lithium battery or modern [supercapacitors](https://en.wikipedia.org/wiki/Supercapacitor).
 
 ## Network Time Protocol
 
