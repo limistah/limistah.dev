@@ -8,7 +8,9 @@ cover:
   image: "/assets/Dallas_Semiconductor_DS12B887-2377-Medium-620x465.jpg"
 ---
 
-Time is a linear monotonically increasing value and to keep track of it, a system has to be powered to take note of every tick. For a microcomputer running an operating system that can go on and off, this means there is a need to constantly update time whenever the computer comes on, but that is not the case because of some intelligent mechanisms that computer hardware and operating systems use to keep track of the current time.
+Time is a linear monotonically increasing value and to keep track of it, a system has to be powered to take note of every tick.
+
+For a microcomputer running an operating system that can go on and off, this means there is a need to constantly update time whenever the computer comes on. That is not the case because of some intelligent mechanisms that computer hardware and operating systems use to keep track of the current time.
 
 ## Real-Time Clock
 
@@ -16,7 +18,11 @@ A [Real-Time Clock (RTC)](https://en.wikipedia.org/wiki/Real-time_clock) is an e
 
 ### How it works
 
-RTC uses an oscillator that generates a stable and precise frequency, typically 32.768 kHz. The pulses from the oscillator are sent to counters within the RTC chip where seconds, minutes, hours, days, and so on are measured. These counters increment to keep track of the current time and date. The values for the current date and time are stored in registers contained within the RTC chipset, these registers also help to keep track of configuration values such as alarms, enabling and disabling the clock, and adjusting for leap years.
+RTC uses an oscillator that generates a stable and precise frequency, typically 32.768 kHz. 
+
+The pulses from the oscillator are sent to counters within the RTC chip where seconds, minutes, hours, days, and so on are measured. These counters increment to keep track of the current time and date. 
+
+The values for the current date and time are stored in registers contained within the RTC chipset, these registers also help to keep track of configuration values such as alarms, enabling and disabling the clock, and adjusting for leap years.
 
 RTC chips can be powered by a CMOS RAM battery but are mostly powered internally by an alternate power source, usually a replaceable lithium battery or modern [supercapacitors](https://en.wikipedia.org/wiki/Supercapacitor).
 
@@ -24,7 +30,9 @@ RTC chips can be powered by a CMOS RAM battery but are mostly powered internally
 
 Although RTC can keep track of time using oscillators, there is no source of truth for what the current time might be. 
 
-[NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) is a protocol designed to synchronize the clocks of computers over a network. It aims to keep the system time in sync with more accurate time sources, such as atomic clocks or GPS clocks. It implements the intersection algorithm and uses a client-server model to send time stamps which is accurate to 10 milliseconds over the public internet.
+[NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) is a protocol designed to synchronize the clocks of computers over a network. It aims to keep the system time in sync with more accurate time sources, such as atomic clocks or GPS clocks.
+
+It implements the intersection algorithm and uses a client-server model to send time stamps which is accurate to 10 milliseconds over the public internet.
 
 ## RTC and NTP
 
@@ -53,13 +61,19 @@ sudo systemctl start ntp
 
 ## RTC on mobile devices
 
-For devices that do not have any networking support but can send and receive radio signals, there is a **Radio-based RTC** that mobile network providers use to send current time to mobile devices. This can explain why time is always correct on mobile devices even in remote areas without access to the internet.
+For devices that do not have any networking support but can send and receive radio signals, there is a **Radio-based RTC** that mobile network providers use to send current time to mobile devices.
+
+This can explain why time is always correct on mobile devices even in remote areas without access to the internet.
 
 ## Wall Clock and Monotonic Clock
 
-Computers rely on interrupts and signals to function properly like scheduling processes. Interrupts are implemented with timers that send signals at specific intervals.  With the time information provided by RTC, if the time is updated by NTP to an older or future time, this causes problems for the operating system to determine what processes to [interrupt](https://en.wikipedia.org/wiki/Interrupt) or resume.
+Computers rely on interrupts and signals to function properly like scheduling processes. Interrupts are implemented with timers that send signals at specific intervals.
 
-To solve this problem, computers use a monotonically increasing counter called the Monotonic Clock. It provides a continuously increasing value that represents the total elapsed time since an unspecified starting point (often the boot time of the system). This introduces a second clock to the operating system, and brought about the name Monotonic Clock, while RTC is referred to as the Wall Clock.
+With the time information provided by RTC, if the time is updated by NTP to an older or future time, this causes problems for the operating system to determine what processes to [interrupt](https://en.wikipedia.org/wiki/Interrupt) or resume.
+
+To solve this problem, computers use a monotonically increasing counter called the Monotonic Clock. It provides a continuously increasing value that represents the total elapsed time since an unspecified starting point (often the boot time of the system).
+
+This introduces a second clock to the operating system, and brought about the name Monotonic Clock, while RTC is referred to as the Wall Clock.
 
 Monotonic clocks are useful for:
 
@@ -121,7 +135,7 @@ func main() {
 
 https://go.dev/play/p/aPgf5HBzSG6
 
-## C
+### C
 
 ```c
 #include <time.h>
@@ -144,7 +158,7 @@ int main() {
 
 View on [Replit](https://replit.com/@AleemIsiaka/wallmonotonicclock)
 
-### Conclusion
+## Conclusion
 
 This post shared the concept of time in computer system architectures and drilled down to discuss more on the different types of time available within an operating system and examples of how they can be retrieved from different programming languages.
 
