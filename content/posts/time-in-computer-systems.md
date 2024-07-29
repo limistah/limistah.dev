@@ -160,6 +160,6 @@ View on [Replit](https://replit.com/@AleemIsiaka/wallmonotonicclock)
 
 ## Conclusion
 
-This post shared the concept of time in computer system architectures and drilled down to discuss more on the different types of time available within an operating system and examples of how they can be retrieved from different programming languages.
+This post shared the concept of time in computer system architectures and drilled down to discuss more on the different types of time available within an operating system and examples of how they can be retrieved in different programming languages.
 
 [au revoir!](https://translate.google.com/?sl=auto&tl=en&text=au%20revoir&op=translate)
