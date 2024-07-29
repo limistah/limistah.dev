@@ -13,7 +13,7 @@ Pod scheduling can be a nightmare in a large Kubernetes deployment with many nod
 Consider the configuration below:
 
 - **NODE A:** 16vCPU, 10TB SSD Disk Space, 64GB RAM.
-- **NODE B:** 4 vCPU, 100GB HDD Disk Space, 8GB RAM
+- **NODE B:** 4vCPU, 100GB HDD Disk Space, 8GB RAM
 - **NODE C**: 8vCPU, 100GB HDD Disk Space, 8GB RAM, with additional GPU configuration
 
 And scheduling a new deployment to the cluster:
@@ -24,15 +24,21 @@ kubectl create deployment --image=nginx --replicas=3
 
 Kubernetes would schedule the `Pods` on a random node. Which is fine for general use cases.
 
-Imagine if we are to deploy an LLM on NODE C, there should be a way to instruct Kubernetes to do just that. Also, there should be a way to tell Kubernetes to not deploy anything to NODE C unless it was specified.
+Imagine if we are to deploy an LLM on NODE C, there should be a way to instruct Kubernetes to do just that.
 
-If you inspect the master node with: `kubectl get nodes controlplane | grep -i taints` this would return all the taints set for the master node that prevents the scheduling of Pods on the master node. In Kubernetes, there should be worker nodes that `Pod` can run on and master node(s) that schedule the `Pods` to run on what `node`.
+Also, there should be a way to tell Kubernetes to not deploy anything to NODE C unless it was specified.
+
+If you inspect the master node with: `kubectl get nodes controlplane | grep -i taints` this would return all the taints set for the master node that prevents the scheduling of Pods on the master node.
+
+In Kubernetes, there should be worker nodes that `Pod` can run on and master node(s) that schedule the `Pods` to run on what `node`.
 
 We can apply [node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity) and [node taint and toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) to control [pod scheduling in Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/).
 
 ## Node Taint & Pod Toleration
 
-Node Taint is like creating a condition that a Pod must adapt to for them to run on a node, or asking a node if they can accept a Pod. Here. we need to taint NODE A such that no other `Pod` should run on it except they have the right toleration to make the `Pod` adapt to the condition.
+Node Taint is like creating a condition that a Pod must adapt to for them to run on a node, or asking a node if they can accept a Pod. 
+
+Here, we need to taint NODE A such that no other `Pod` should run on it except they have the right toleration to make the `Pod` adapt to the condition.
 
 To taint a node, use the [`kubectl taint` command](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#taint):
 
@@ -68,11 +74,11 @@ spec:
 
 ```
 
-The Pod manifest file has a tolerations section where key value and effect are defined, these must match the specification of the taint. The operator can either be Exists which means the key exists as a taint on a node - the value is not required for this. or Equals meaning the key, value, and effect must match a taint.
+The Pod manifest file has a `tolerations` section where key value and effect are defined, these must match the specification of the taint. The operator can either be `Exists` which means the key exists as a taint on a node - a value is not required for this, or `Equals` meaning the key, value, and effect must match a taint.
 
 Scheduling this Pod would ensure it runs on NodeA.
 
-If we have a similar Pod that should be scheduled on NodeA, but for some reason (not enough resources) there were not, these Pods can end up on NodeB, or NodeC, which is not what was desired.
+If we have a similar Pod that should be scheduled on NodeA, but for some reason (not enough resources) but was not, the Pods can end up on NodeB, or NodeC, which is not what is desired.
 
 ## Affinity Rules
 
@@ -84,7 +90,7 @@ For node affinity to work, a node must have a set of labels that Pods can reques
 kubectl label nodes nodeC purpose=gpu-compute
 ```
 
-With this set, Pods can look for the nodes that have the labels with `nodeSelectors`:
+With this set, Pods can look for the nodes that match a particular set of labels through a `nodeSelectors` field:
 
 ```yaml
 apiVersion: v1
@@ -110,7 +116,7 @@ Using `nodeSelector` is restrictive, what happens if no `node` matches the label
 
 Node Affinity expands on the idea of nodeSelector to have a robust configuration for the selection process.
 
-There are two types of `nodeAffinity`:
+There are three types of `nodeAffinity`:
 
 - `requiredDuringSchedulingIgnoredDuringExecution`: This configuration ensures that the affinity must match before a Pod can be scheduled to run on a node, but don't eject any Pod already running on the node without a matching label.
 - `preferredDuringSchedulingIgnoredDuringExecution`: This configuration checks if there is a node matching the affinity, if none, do random scheduling to any node, but don't eject any Pod already running on the node without a matching label.
