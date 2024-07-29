@@ -78,7 +78,7 @@ The Pod manifest file has a `tolerations` section where key value and effect are
 
 Scheduling this Pod would ensure it runs on NodeA.
 
-If we have a similar Pod that should be scheduled on NodeA, but for some reason (not enough resources) but was not, the Pods can end up on NodeB, or NodeC, which is not what is desired.
+If we have a similar Pod that should be scheduled on NodeA, but for some reason (not enough resources) was not, the Pods can end up on NodeB, or NodeC, which is not what is desired.
 
 ## Affinity Rules
 
