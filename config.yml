@@ -2,8 +2,9 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://limistah.dev"
 title: limistah
-paginate: 10
 theme: [PaperMod]
+pagination:
+  pagerSize: 10
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
