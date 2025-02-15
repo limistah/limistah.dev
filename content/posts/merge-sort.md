@@ -99,7 +99,7 @@ Yes, return it.
 
 No, then,
 
- Adjust the left or right handles and check the midpoint again_. 
+ _Adjust the left or right handles and check the midpoint again_. 
 
 Sweet!
 
