@@ -52,7 +52,7 @@ We can use the above procedure to find out if the item is on the list. What if w
 
 Recall our sorted array of 5 items `[1,2,3,4,5]`. Instead of dividing, we can have two variables: start point and end point. The start point of the array is `0`, the end point is the length of the array `-1` - in our case **4**, and finally, keep a midpoint (floor division of the length of the array). 
 
-Then, we can check if the target is at the midpoint. If *yes*, we return the index of the midpoint; if *no*, we check if the item is greater than the midpoint, if *it is*, then we set the value of the left handle to be the midpoint, if *it is not*, we set the value of the right handle to be the midpoint and this is to discard half of the items in the list, either from the left till the midpoint or from the midpoint to the right. 
+Then, we can check if the target is *equal the value* of the midpoint. If *yes*, we return the index of the midpoint; if *no*, we check if the item is *greater than* the midpoint, if *it is*, then we set the value of the left handle to be the midpoint, if *it is not*, we set the value of the right handle to be the midpoint and this is to discard half of the items in the list, either from the left till the midpoint or from the midpoint to the right. 
 
 We do these steps up until we find a midpoint where the value is the same as the target.
 
