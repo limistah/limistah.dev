@@ -7,12 +7,14 @@ description: As a divide and conquer algorithm, we look deeply into merge sort b
 tags: ["algorithms", "binary search", "sorting", "divide and conquer"]
 cover:
   image: "/assets/image-20250214234040290.png"
+aliases = 
+  - "/posts/merge-sort"
 
 ---
 
 ### Motivation
 
-Experiencing binary search was like a divine revelation to the ingenuity of algorithms. How can a computer code be so clever and so efficient at the same time. We don't thank the inventors enough 😏.
+Experiencing binary search was like a divine revelation to the ingenuity of algorithms. How can a computer code be so clever and so efficient at the same time? We don't thank the inventors enough 😏.
 
 Among the great, simple, and everyday algorithms used is [merge sort](https://en.wikipedia.org/wiki/Merge_sort). It is a divide-and-conquer algorithm that works by taking a big problem, chunking it down into the smallest possible units, solving them, and adding up the results together. Read more about it here.
 
