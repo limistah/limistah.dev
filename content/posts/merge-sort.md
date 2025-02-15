@@ -4,10 +4,9 @@ title: Merge-Sort like a Binary-Search
 date: 2025-02-10
 excerpt: As a divide and conquer algorithm, in this article, we look deeply into merge sort, simplifying its core concepts with a binary search algorithm.
 description: As a divide and conquer algorithm, we look deeply into merge sort by simplifying its core concepts with a binary search algorithm.
+tags: ["algorithms", "binary search", "sorting", "divide and conquer"]
 cover:
   image: "/assets/image-20250214234040290.png"
-  alt: "<alt text>"
-  caption: "<text>"
 
 ---
 
@@ -217,9 +216,10 @@ Notice that I have referenced a problem that uses divide and conquer to solve a 
 ## What you should know
 When these questions arise, it is as a result of an incomplete understanding of fundamental concepts. 
 
-While our jobs might require us to sort a list or search for an item in a sorted list - knowing merge sort will suffice, real-life problems do not present themselves in this fashion, as demonstrated.
+While our jobs might require us to sort a list or search for an item in a sorted list – knowing merge sort will suffice – real-life problems do not present themselves in this fashion, as demonstrated.
 
 When solving a problem, the default is to look for a brute force solution that performs in the worst possible time but satisfies the [definition of an algorithm](https://clio.limistah.dev/chapter-one). When shrinking out the best possible performance out of an algorithm, the saving grace is the understanding of the fundamental concepts and the ability to relate a problem to one of them.
 
 So, choose to understand the fundamentals over example use cases of a fundamental concept, always. After which merge sort, binary search and other _seemingly hard_ algorithms will present themselves, like the sun in the day!
 
+[Shialom](https://translate.google.com/?sl=iw&tl=en&text=%D7%A9%D7%81%D6%B8%D7%9C%D7%95%D6%B9%D7%9D&op=translate)
