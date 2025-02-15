@@ -17,17 +17,17 @@ Experiencing binary search was like a divine revelation to the ingenuity of algo
 
 Among the great, simple, and everyday algorithms used is [merge sort](https://en.wikipedia.org/wiki/Merge_sort). It is a divide-and-conquer algorithm that works by taking a big problem, chunking it down into the smallest possible units, solving them, and adding up the results together. Read more about it here.
 
-While [deeply studying](https://clio.limistah.dev/chapter-two) merge sort, a question I further asked after noticing its patterns is: _does this under the hood was another binary seach algorithm?_ 
+While [deeply studying](https://clio.limistah.dev/chapter-two) merge sort, a question I further asked after noticing its patterns is: _Is this under the hood another binary search algorithm?_ 
 
 ## The beautiful binary search
 
-Searching is [fundamental to human existence](https://www.gse.harvard.edu/ideas/usable-knowledge/20/11/curious-mind), we are always asking the what, why, where, who, when questions. This has relflected in most of our inventions, computers being one of the greatest of them. So, given an array of five items `[4,5,1,2,4]` how can you get an out 4 from the list?
+Searching is [fundamental to human existence](https://www.gse.harvard.edu/ideas/usable-knowledge/20/11/curious-mind), we are always asking the what, why, where, who, and when questions. This has relflected in most of our inventions, computers being one of the greatest of them. So, given an array of five items `[4,5,1,2,4]`, how can you get an item from the list?
 
-An easy approach would be to go through each item compare them to 1 and return the position where it was found. This approach is called _linear search_ which has been [implemented here](https://clio.limistah.dev/exercise-21-4). This raises a question what happens when the list is large enough, for example, your WhatsApp contact list? Searching through these items in linear time can be fast for 10 items list, when the list becomes sufficienty large enough, the time it takes will frustrate any human.
+An easy approach would be to go through each item, compare them to 1, and return the position where it was found. This approach is called _linear search,_ which has been [implemented here](https://clio.limistah.dev/exercise-21-4). This raises a question: what happens when the list is large enough, for example, your WhatsApp contact list? Searching through these items in linear time can be fast for 10 10-item list; when the list becomes sufficiently large, the time it takes will frustrate any human.
 
 What if the list is sorted (`[1,2,3,4,5]`), and we need to get the item at position 4 from the list? We have to change our thinking model. Going through each of these items linearly is lavishing time! Which introduces the binary search algorithm.
 
-We can split the items into two arrays, `[1,2]` and `[3,4,5]` determine where the item we are searching for can be(_left_ or _right_), discard the _left_ array, divide the **right** array into two `[3]`, `[4,5]`. We discard the left array again, and divide the right array into two [4] and [5], the target is the only item in the right array. Notice it took us three divisions, two extra variables to store the separate arrays, and two decision statements - Is the item in the left or the right? Is the item the only item in the array.
+We can split the items into two arrays, `[1,2]` and `[3,4,5]`, determine where the item we are searching for can be(_left_ or _right_), discard the _left_ array, and divide the **right** array into two `[3]`, `[4,5]`. We discard the left array again and divide the right array into two [4] and [5]; the target is the only item in the right array. Notice it took us three divisions, two extra variables to store the separate arrays, and two decision statements - Is the item in the left or the right? Is the item the only item in the array?
 
 ```python
 def hypothetical_search(arr, target):
@@ -46,11 +46,11 @@ def hypothetical_search(arr, target):
 
 
 
-We can use the above procedure to solve for if the item is in the list. What if we need the index where the item is? 
+We can use the above procedure to find out if the item is on the list. What if we need the index where the item is? 
 
 ![https://dolly-desir.medium.com/algorithms-binary-search-2656c7eb5049](/assets/binary%20search.png)
 
-Recall our sorted array of 5 items `[1,2,3,4,5]`, instead of dividing we can have two variables, start point, and end point. The start point of the array is `0`, the end point is the length of the array `-1` - in our case **4**, and finally, keep a midpoint (floor division of the lenght of the array). 
+Recall our sorted array of 5 items `[1,2,3,4,5]`. Instead of dividing, we can have two variables: start point and end point. The start point of the array is `0`, the end point is the length of the array `-1` - in our case **4**, and finally, keep a midpoint (floor division of the length of the array). 
 
 Then, we can check if the target is at the midpoint. If *yes*, we return the index of the midpoint; if *no*, we check if the item is greater than the midpoint, if *it is*, then we set the value of the left handle to be the midpoint, if *it is not*, we set the value of the right handle to be the midpoint and this is to discard half of the items in the list, either from the left till the midpoint or from the midpoint to the right. 
 
