@@ -124,7 +124,7 @@ print(insertion_sort([4,5,3,2,1])) # -> [1, 2, 3, 4, 5]
 
 <center><small>How this works has been discussed <a target="_blank" href="https://clio.limistah.dev/chapter-two">here</a>. </small></center>
 
-Insertion sort runs on O(n^2), but with a divide and conquer algorithm, we can run in `O(nlgn)` time.
+Insertion sort runs on `O(n^2)`, but with a divide and conquer algorithm, we can run in `O(nlgn)` time.
 
 Merge sort is another <a target="_blank" href="https://clio.limistah.dev/chapter-two#fe408b1f7e0847709a694d3d27db1dae">divide and conquer algorithm</a> that works just like any other would. It takes an input array, breaks it into chunks of smaller subarrays, sorts the subarrays, and merges the results, all these in `O(nlgn)` time.
 
