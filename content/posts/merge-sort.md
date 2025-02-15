@@ -217,7 +217,7 @@ Notice that I have referenced a problem that uses divide and conquer to solve a 
 ## What you should know
 When these questions arise, it is as a result of an incomplete understanding of fundamental concepts. 
 
-While at your job, you might need to sort a list or search for an item in a sorted list - knowing merge sort will suffice, real life problems do not present themselves in this fashion as demonstrated.
+While our jobs might require us to sort a list or search for an item in a sorted list - knowing merge sort will suffice, real-life problems do not present themselves in this fashion, as demonstrated.
 
 When solving a problem, the default is to look for a brute force solution that performs in the worst possible time but satisfies the [definition of an algorithm](https://clio.limistah.dev/chapter-one). When shrinking out the best possible performance out of an algorithm, the saving grace is the understanding of the fundamental concepts and the ability to relate a problem to one of them.
 
