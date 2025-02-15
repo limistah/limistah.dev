@@ -73,7 +73,7 @@ def binary_search(A: list, n: int, target: int):
  
 ```
 
-For the most binary search, it could be written with a loop, but it is cleaner to implement it as a recursive algorithm - this is proving the statement that nearly all recursive algorithms can be implemented with a loop.
+For the most binary search, it could be written with a loop, but it is cleaner to implement it as a recursive algorithm - this is proving the statement that *nearly all recursive algorithms can be implemented with a loop*.
 
 ```python
 def binary_search_recursive(A: list, l: int, r: int, target: int):
