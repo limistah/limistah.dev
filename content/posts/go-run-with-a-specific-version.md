@@ -14,7 +14,7 @@ Is there a clean way to do this?
 
 ## Recommendation
 
-I recommend a tool like go version manager that helps to manage a systemwide version of the language. The advantage of this is the easy it comes with. A simple `gvm use 1.22`, would ensure the `1.2` version of the langugage is installed system-wide.
+I recommend a tool like go version manager that helps to manage a systemwide version of the language. The advantage of this is the ease it allows. A simple `gvm use 1.22`, would ensure the `1.2` version of the langugage is installed system-wide.
 
 ## Optimal Solution
 
