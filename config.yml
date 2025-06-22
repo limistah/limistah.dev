@@ -35,6 +35,9 @@ languages:
         - name: Blog
           url: posts/
           weight: 5
+        - name: Links
+          url: links/
+          weight: 8
         - name: Search
           url: search/
           weight: 10
