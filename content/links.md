@@ -1,9 +1,10 @@
 ---
-title: "Aleem Isiaka"
+title: "Links to useful awesome web content!"
 layout: "baseof"
 ---
 
-## Links to useful awesome blog posts!
+### Linux / Home Lab
 
-**David Zmick**: [Home Lab Act Series](https://dpzmick.com/posts/2020-01-09-vpn.html)
+1. **David Zmick**: [Home Lab Act Series](https://dpzmick.com/posts/2020-01-09-vpn.html)
 
+---
