@@ -114,7 +114,7 @@ params:
       url: mailto:aleemisiaka@gmail.com
     - name: cv
       title: CV
-      url: /cv.pdf
+      url: /aleemisiaka.pdf
 
   editPost:
     URL: "https://github.com/limistah/limistah.dev/tree/main/content"
