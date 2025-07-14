@@ -3,24 +3,18 @@ title: "Aleem Isiaka"
 layout: "baseof"
 ---
 
-I am a software engineer who enjoys solving complex problems with simple solutions by leveraging existing methods and technologies, and innovating when necessary. 
+I'm Aleem Isiaka, a backend and cloud engineer, solutions architect with a deep commitment to building resilient, scalable systems that drive measurable impact. With nearly a decade of experience across backend development, infrastructure, and distributed systems, I specialize in architecting solutions that merge reliability, performance, and automation with end user experience.
 
-Technology helps me believe in the strong connection between focused human minds when tackling a problem. The world we have built is evidence of the statement.
+My work sits at the intersection of site reliability engineering, cloud-native tooling, and developer experience, with hands-on contributions spanning Kubernetes, observability platforms, and infrastructure-as-code. From architecting high-throughput systems to reducing latency and improving uptime, I thrive in environments where scale and fault-tolerance are not just nice-to-haves but core requirements.
 
-I love mechanics; my aha moment was the application of boundary layer theory in our daily lives, fans, air conditioners, planes, ships, pots/kettles, and even the immediate atmosphere of the earth. I enjoy looking out into space. I still ask: What existed before the Big Bang? And since the universe is expanding, could the Big Bang be the effect of coming out of the other side of a black hole?
+I’ve led distributed teams, driven critical infrastructure overhauls, and delivered measurable impact, cutting response times by over 50%, increasing, and optimizing user engagement in CI/CD and cloud operations across AWS, Azure, GCP, and Cloudflare ecosystems. I’m also an active contributor to the open-source community through initiatives like [ObjectSpread](https://objectspread.com) and [WitOps](https://witops.cloud), helping engineers build smarter operational practices.
 
-Building smart, distributed programs is my thing. Distributed tasks are the basis of nature and human civilization - and computing is not left out. I love speed, I love accuracy, I love tweaking existing systems—there should be a speed faster than the speed of light, I believe.
+Beyond code, I write extensively about DevOps, backend engineering, and cloud migration strategies, sharing lessons learned to support the next generation of engineers. My personal learning project, [Clio](https://clio.limistah.dev), curates my reading journey across research papers, books, and journals, rooted in a belief that engineering is as much about curiosity as it is about execution.
 
-I like to listen to people's opinions on a topic. As a trained engineer, I accept that different individuals could arrive at unique solutions to the same problems even with the same constraints.
+I’m equally driven by a sense of purpose—whether it’s volunteering for open-source, exploring the beauty of system design, or asking the big questions about our universe. When I’m not building, I’m often journaling, learning history, or thinking deeply about how we can use engineering to solve problems in underserved communities.
 
-I believe that working hard means working smart. And working smart means becoming lazy. And to become lazy, automation should be in place. 
+If it must be done twice, I’ll automate it; if it must serve millions, I design it to scale.
 
-So, if I have to do it again, it should be automated.
-
-I read books, journals, and research papers, follow them here: https://clio.limistah.dev
-
-I volunteer to open source projects and lead the maintainers at [ObjectSpread](https://github.com/objectspread)
-
-[View my CV here](/cv.pdf)
+[View my CV here](/aleemisiaka.pdf)
 
 [Asante](https://translate.google.com/?sl=sw&tl=en&text=asante&op=translate)
