@@ -119,7 +119,7 @@ git submodule update --recursive
 Great!!!
 
 ## Moving to a new Machine
-For sensitive configs like my `ssh` keys, I keep track of them manually in a physical drive. This makes it easier to connect to servers and services without having to reconfigure my SSH keys on those services.
+For sensitive configs like my `ssh` keys, I keep track of them manually in a physical drive. This makes it easier to connect to servers and services without having to reconfigure a new SSH keys on those services, how will I get access to the service in the first - chicken and egg problem.
 
 To set up my new machine, I move my SSH keys to the ~/.ssh folder of the new machine and run `git clone https://github.com/limistah/dotfiles.git` to pull the code directly onto my machine.
 
