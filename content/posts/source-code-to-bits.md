@@ -3,9 +3,8 @@ title: Source Code to Bits - CPU Perspective
 date: 2025-07-17
 tags: [System, OS, CPU]
 excerpt: Something has to come here
+draft: true
 ---
-
-[draft]
 
 ## Motivation:
 
