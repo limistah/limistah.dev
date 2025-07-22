@@ -61,7 +61,7 @@ Verify your installation via:
 stow --help
 ```
 
-```
+```txt
 stow (GNU Stow) version 2.4.1
 
 SYNOPSIS:
@@ -71,7 +71,6 @@ SYNOPSIS:
 ...
 ...
 General help using GNU software: <http://www.gnu.org/gethelp/>
-
 ```
 
 ### Configuring and Running Stow
