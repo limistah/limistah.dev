@@ -140,3 +140,5 @@ And yes, it was worth it!
 My keystrokes, aliases, shell, extensions, and other configurations that I might have forgotten could have been lost during the migration, making my life easier. I can retrieve the applications that use these configurations, but enabling the correct configuration for the apps that match my previous environment may not be possible.
 
 For that, yes, it was worth it!
+
+...Good bye...
