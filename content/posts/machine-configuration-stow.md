@@ -3,7 +3,7 @@ title: Managing Machine Configuration with Stow
 date: 2025-07-22
 tags: [devices, unix, config ]
 category: System, Devices, Configuration
-excerpt: Keeping unix machine configuration synchronized across multiple devices and a faster way to switch devices and still maintainging the same experience.
+excerpt: Keeping unix machine configuration synchronized across multiple devices and a faster way to switch devices while maintainging the same experience.
 ---
 
 ### Motivation
@@ -34,7 +34,7 @@ Considering that the UNIX environment is configurable through files, we can use 
 
 Stow keeps two folders in sync by creating a symbolic link in the destination folder that points to the originating folder. As an example, we can use Stow to manage our host files(`/etc/hosts`) or nameserver file(`/etc/resolv.conf`) or even an entire folder, nginx user-defined server configuration files `/etc/nginx/conf.d` as an example.
 
-In my case, I want to use Stow to manage my user home directory (`~/`) and the' .config' directory (`~/.config`) inside my home directory, which is where my environment configurations will reside.
+In my case, I want to use Stow to manage my user home directory (`~/`) and the '.config' directory (`~/.config`) inside my home directory, which is where my environment configurations will reside.
 
 ## What should be in sync
 
