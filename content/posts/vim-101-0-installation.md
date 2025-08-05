@@ -15,7 +15,7 @@ We can also verify if Vim is installed by running `vim --version`, which should 
 
 In that case, we no longer have to worry about the installation. 
 
-In any case, if you encounter a 'command not found' error for either 'vi' or 'vim', proceed to the next section.
+In any case, if you encounter a `command not found` error for either `vi` or `vim`, proceed to the next section.
 
 ## Installation guides
 
