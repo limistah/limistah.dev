@@ -3,7 +3,7 @@ title: Managing Machine Configuration with Stow
 date: 2025-07-22
 tags: [devices, unix, config ]
 category: System, Devices, Configuration
-excerpt: Keeping unix machine configuration synchronized across multiple devices and a faster way to switch devices while maintainging the same experience.c
+excerpt: Getting Unix machine configuration synchronized across multiple devices and a faster way to switch devices while maintaining the same experience.c
 ---
 
 ### Motivation
@@ -38,7 +38,7 @@ In my case, I want to use Stow to manage my user home directory (`~/`) and the '
 
 ## What should be in sync
 
-In my home directory, I have my bash_profile, .zshrc, and .bashrc files, as well as my vim and nvim configurations managed. And inside the .config directory, I want Stow to manage all the folders and files that will be generated and stored there, as most tools use it to manage their configuration against the home directory.
+In my home directory, I have my bash_profile, .zshrc, and .bashrc files, as well as my vim and `nvim` configurations managed. And inside the `.config` directory, I want Stow to manage all the folders and files that will be generated and stored there, as most tools use the same folder to manage their configuration against the home directory.
 
 ## Setting up Stow
 Download [stow](https://www.gnu.org/software/stow/) using your package manager:
@@ -111,7 +111,7 @@ In this config, I have pointed the zsh repository to `.config/zsh/ohmyzsh`, and 
 git submodule init .config/zsh/ohmyzsh
 ```
 
-When I need to update the zsh repository, I run this
+When I need to update the Zsh repository, I run this command.
 ```bash
 git submodule update --recursive
 ```
@@ -119,18 +119,18 @@ git submodule update --recursive
 Great!!!
 
 ## Moving to a new Machine
-For sensitive configs like my `ssh` keys, I keep track of them manually in a physical drive. This makes it easier to connect to servers and services without having to reconfigure a new SSH keys on those services, how will I get access to the service in the first - chicken and egg problem.
+For sensitive configs like my `ssh` keys, I keep track of them manually in a physical drive. This makes it easier to connect to servers and services without having to reconfigure new SSH keys on those services – how will I get access to the service in the first place? Becoming a chicken-and-egg problem.
 
-To set up my new machine, I move my SSH keys to the ~/.ssh folder of the new machine and run `git clone https://github.com/limistah/dotfiles.git` to pull the code directly onto my machine.
+To set up my new machine, I move my SSH keys to the `~/.ssh` folder of the new machine and run `git clone https://github.com/limistah/dotfiles.git` to pull the code directly onto my machine.
 
 Then I go over the installation for Stow, and finally, I cd into my dotfiles folder, and run `stow .` to sync the dotfiles with my home directory. Easy!
 
 ### What did not go well...
-There are other things that can not be managed with Stow, and these are tools that don't have a known configuration file/directory.
+Not everything can be managed with Stow, and these are tools that don't have a known configuration file/directory.
 
-I also had to reinstall my software, such as VSCode,Cursore, Notion, and other third-party applications. I did not optimize for this, and might be an area I can investigate in my next iteration.
+I also had to reinstall my software, including VS Code, Cursor, Notion, and other third-party applications. I did not optimize for this, and it may be an area I can investigate in my next iteration.
 
-Also, my work folder had to be manually migrated; it was a lot of pain as the .git, cache and package manager had to be migrated - imagine a .git folder for a very busy repository, how large can that be? I am considering putting these on a dedicated local server and sharing the folder over the local network, but the fear of working from a remote location prevents me from exploring this idea.
+Also, my work folder had to be manually migrated; it was a lot of pain as the .git, cache, and package manager had to be migrated - imagine a `.git` folder for a very busy repository, how large can that be? I suggest putting them on a dedicated local server and sharing the folder over the local network. Still, the fear of working from a remote location prevents me from exploring this idea.
 
 ## Was it worth it?
 As easy as this sounds, it is hard, and this is something I've solved before when I switched to M1 as my primary development machine.
