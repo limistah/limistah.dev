@@ -19,7 +19,10 @@ This is a classic problem in distributed systems and has been used outside of Co
 Aside from Raft, there are other consensus algorithms, including notable mentions such as Paxos, Practical Byzantine Fault Tolerance (PBFT), and Zab, among many others. All of them have the same goal in mind as Raft but differ in implementation, hence their differences:
 
 **[Paxos](https://en.wikipedia.org/wiki/Paxos_(computer_science))**: Very reliable but complex; a single bug/mistake can become increasingly difficult to fix.
+
 **[Practical Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)**: Not in the same domain as Raft, solves data consistency, while Raft handles crashes and failures
-**[Viewstamped Replication](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)**: Contains individual sub-protocols, creating more moving parts that can go faulty.
+
+**[View stamped Replication](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)**: Contains individual sub-protocols, creating more moving parts that can go faulty.
+
 **[Zookeeper Atomic Broadcast](https://www.geeksforgeeks.org/system-design/zab-algorithm-in-distributed-systems/)**: It can become a performance bottleneck as the server grows larger, is not as simple as Raft, and is not as self-contained as Raft.
 
