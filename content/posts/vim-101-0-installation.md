@@ -1,6 +1,6 @@
 ---
 title: "VIM 101: Installation"
-excerpt: This episode of the VIM series explore the different ways of setting up vim on UNIX environment.
+excerpt: This episode of the VIM series explores the different ways of setting up Vim on different environments.
 date: 2025-07-23
 tags: [vim, text-editor, unix]
 ---
@@ -31,14 +31,14 @@ brew install Vim
 
 ###### Debian
 
-Use the apt repository to do the installation.
+Use the `apt` repository for installation.
 
 ```bash
 apt-get update && apt-get upgrade -y
 apt-get install vim
 ```
 
-###### RHEL / Centos
+###### RHEL / CentOS
 
 ```bash
 yum update -y
@@ -65,11 +65,11 @@ vim --version
 ```
 
 ## First VIM edit
-To edit any file or create a new one if it doesn't exist. Run `vim filename`, type what you want to put in the file. When you are done, press the `ESC` key on your keyboard, and enter `:wq`. Then, press `ENTER` to save and exit the Vim window.
+To edit any file or create a new one if it doesn't exist. Run `vim filename` and type what you want to put in the file. When you are done, press the `ESC` key on your keyboard and type `:wq` . Then, press `ENTER` to save and exit the Vim window.
 
-The filename file should now have whatever you typed in before pressing the `ESC`  button.
+The filename file should now contain whatever you typed before pressing the ESC button.
 
-Verify this by running `cat filename`
+Verify this by running `cat filename`.
 
 That is it!
 
