@@ -10,7 +10,7 @@ I have used Vault extensively in the past, and at some point, I have also explor
 
 ## What is Raft?
 
-Raft is a consensus algorithm that succeeds Paxos. They both tried to answer a question: how can two different servers run the same program, and at a point in time, both of them, when queried, would return the same data, even if they had received different instructions. For example, suppose server A receives a write operation with value 1 and a later write instruction with value 2 at some point in time. In that case, we should query server B to retrieve the value 2, without the write operation having occurred on server B.
+Raft is a [consensus algorithm](https://en.wikipedia.org/wiki/Consensus_(computer_science)) that succeeds Paxos. They both tried to answer a question: how can two different servers run the same program, and at a point in time, both of them, when queried, would return the same data, even if they had received different instructions. For example, suppose server A receives a write operation with value 1 and a later write instruction with value 2 at some point in time. In that case, we should query server B to retrieve the value 2, without the write operation having occurred on server B.
 
 This is a classic problem in distributed systems and has been used outside of Consul (the KV store used by Vault) in systems like etcd, the KV store used by Kubernetes, Kafka, CockroachDB, and many more.
 
@@ -30,13 +30,13 @@ Aside from Raft, there are other consensus algorithms, including notable mention
 For this to be successful, I will strictly follow through with the raft paper, which outlines the required components and their corresponding responsibilities. 
 
 ## Raft Components
-The primary component of a raft cluster is the servers that comprise the cluster. A raft server can either be a leader or a follower at any point in time. The type of server determines its responsibilities, which we will explore next.
+The primary component of a raft cluster is the servers that comprise the cluster. A raft server can either be a leader or a follower at any point in time. The type of server determines its responsibilities, which we will explore in the next section.
 
 ### Raft Leader
 A raft leader is, as the name says, a leader! Its sole responsibility is to receive requests, handle them, and propagate the requests to the other servers (followers) in the cluster. In contrast to other consensus algorithms, Raft allows any server to become a leader. This ensures the cluster is always available by removing the bottleneck of always having the same request handler across the cluster.
 
 ### Raft Follower
-A raft follower can accept requests from clients, but it has to proxy the request back to the leader for proper handling. The sole purpose of a raft follower is to replicate the leader's data. Once a leader handles a request, it has a second responsibility of sending those requests to all the followers. This process ensures that any follower can become a leader without being behind.
+A raft follower can accept requests from clients, but it has to proxy the request back to the leader for proper handling. The sole purpose of a raft follower is to replicate the data of the leader. Once a leader handles a request, they have a second responsibility of sending those requests to all their followers. This process ensures that any follower can become a leader without being behind.
 
 ### State Machine or Logs
 For each server in a cluster, there is a log component that it uses to track the order of operations. Once a leader receives a request, it tries to replicate the request to the different followers, and only commits it to its log if the majority of the followers have committed the request to their logs.
