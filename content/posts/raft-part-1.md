@@ -26,3 +26,30 @@ Aside from Raft, there are other consensus algorithms, including notable mention
 
 **[Zookeeper Atomic Broadcast](https://www.geeksforgeeks.org/system-design/zab-algorithm-in-distributed-systems/)**: It can become a performance bottleneck as the server grows larger, is not as simple as Raft, and is not as self-contained as Raft.
 
+## The Raft Paper
+For this to be successful, I will strictly follow through with the raft paper, which outlines the required components and their corresponding responsibilities. 
+
+## Raft Components
+The primary component of a raft cluster is the servers that comprise the cluster. A raft server can either be a leader or a follower at any point in time. The type of server determines its responsibilities, which we will explore next.
+
+### Raft Leader
+A raft leader is, as the name says, a leader! Its sole responsibility is to receive requests, handle them, and propagate the requests to the other servers (followers) in the cluster. In contrast to other consensus algorithms, Raft allows any server to become a leader. This ensures the cluster is always available by removing the bottleneck of always having the same request handler across the cluster.
+
+### Raft Follower
+A raft follower can accept requests from clients, but it has to proxy the request back to the leader for proper handling. The sole purpose of a raft follower is to replicate the leader's data. Once a leader handles a request, it has a second responsibility of sending those requests to all the followers. This process ensures that any follower can become a leader without being behind.
+
+### State Machine or Logs
+For each server in a cluster, there is a log component that it uses to track the order of operations. Once a leader receives a request, it tries to replicate the request to the different followers, and only commits it to its log if the majority of the followers have committed the request to their logs.
+
+Due to the delicacy of the log, various operations are supported by a raft log. We will discuss this when we explore the raft log in detail.
+
+## Operations
+
+Raft supports various operations across its different components.
+
+### Handling client requests
+
+
+
+
+
