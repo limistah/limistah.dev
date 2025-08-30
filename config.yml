@@ -32,6 +32,9 @@ languages:
       main:
         - name: About
           url: about/
+          weight: 99
+        - name: Search
+          url: search/
           weight: 1
         - name: Blog
           url: posts/
@@ -41,10 +44,7 @@ languages:
           weight: 3
         - name: Links
           url: links/
-          weight: 4
-        - name: Search
-          url: search/
-          weight: 5 
+          weight: 4 
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
