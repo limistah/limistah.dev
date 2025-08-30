@@ -1,16 +1,16 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://limistah.dev"
-title: Aleem (limistah)'s Crib
+title: Aleem Isiaka
 theme: [PaperMod]
 pagination:
-  pagerSize: 10
+  pagerSize: 15
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
-buildExpired: false
+buildExpired: true
 enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
@@ -27,6 +27,7 @@ languages:
       category: categories
       tag: tags
       series: series
+      papers: papers
     menu:
       main:
         - name: About
@@ -35,12 +36,15 @@ languages:
         - name: Blog
           url: posts/
           weight: 2
+        - name: Reviews and Exercises
+          url: reviews/
+          weight: 3
         - name: Links
           url: links/
-          weight: 3
+          weight: 4
         - name: Search
           url: search/
-          weight: 4
+          weight: 5 
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -54,11 +58,11 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "ReImagining Software Engineering, sharing information around trends, best practices and principles"
+  description: "Aleem Isiaka and his intersection with Software Engineering, DevOps, Cloud and CloudNative Tools, Articifial Intelligence, and the Microprocessors powering them."
   author: ["Aleem Isiaka"]
   comments: true
-  defaultTheme: auto
-  # disableThemeToggle: true
+  defaultTheme: PaperMod
+  disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
   # disableSpecial1stPost: true
@@ -87,13 +91,9 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Aleem Isiaka - AI's Crib"
+    Title: 👋 Welcome to my crib!
     Content: >
-      - 👋 Welcome to my crib!
-
-      ---
-
-      - Here, we _hack_ the internals of **Software Engineering/Architecture**, **Cloud/DevOps**, **Microprocessors**, and **Artificial Intelligence**. I remove the magic from technologies by showing how they work from the inside, reflecting my appreciation of how these technologies have evolved from an idea in a few minds to become part of our everyday lives.
+      - Here, I _hack_ the internals of **Software Engineering/Architecture**, **Cloud/DevOps**, **Microprocessors**, and **Artificial Intelligence**. I remove the magic from technologies by showing how they work from the inside, reflecting my appreciation of how these technologies have evolved from an idea in a few minds to become part of our everyday lives.
       
       ---
 

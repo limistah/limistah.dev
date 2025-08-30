@@ -1,7 +1,7 @@
 ---
 title: Smart React Class function scope binding
 date: 2019-05-15
-tags: []
+tags: [CSS, react]
 ---
 
 Passing down functions as event handlers down to children components is a norm in the react world. It eases the communication flow, as the saying goes _props down, functions up_.
@@ -14,7 +14,7 @@ Yes, this is what happens. You bind function passing the scope of the class they
 
 I am considering a simple `ButtonClickCounter` component:
 
-```javascript
+```react
 import React, { Component } from "react";
 
 class ButtonClickCounter extends Component {
@@ -54,7 +54,7 @@ The above code would provide a lasting solution to my scope problem, easy!
 
 What if I have some other button that uses the same function as an event handler? I would have to do `.bind(this)` on all the references?
 
-```
+```react
 const render = () => {
   return (
     <div>
@@ -81,7 +81,7 @@ That is not supposed to be, let us step up a bit!
 
 Generally, what you will find around is binding a function in the constructor, this helps to reduce the redundancy allowed by binding on the component.
 
-```
+```typescript
 constructor(props) {
   super(props);
   this.handleButtonClick.bind(this);
@@ -90,7 +90,7 @@ constructor(props) {
 
 So, the component after proper binding would look like this:
 
-```
+```react
 import React, { Component } from "react";
 
 class ButtonClickCounter extends Component {
@@ -135,7 +135,7 @@ const arrowFunction = () => {}
 
 By simply converting `handleButtonClick` function to an arrow function instead, I am provided a neatly bounded function that could be used anywhere, and still can interact with my class properties as I might need.
 
-```
+```typescript
 handleButtonClick = () => {
   const clickedCount = this.state.clickedCount;
   console.log("This Button Has Been Clicked: %s times", clickedCount);
