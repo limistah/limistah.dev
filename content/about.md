@@ -8,7 +8,7 @@ I'm **Aleem Isiaka**, a backend and cloud engineer, solutions architect with a d
 
 ![Aleem Isiaka](/assets/aleem-isiaka.png)
 
-My work sits at the intersection of **site reliability engineering**, **cloud-native tooling**, and **developer experience**, with hands-on contributions spanning **Kubernetes**, **observability platforms**, and **infrastructure-as-code**. From architecting *high-throughput systems* to *reducing latency* and *improving uptime*, I thrive in environments where scale and fault-tolerance are not just nice-to-haves but core requirements.
+My work sits at the intersection of **site reliability engineering**, **cloud-native tooling**, and **scalable infrastructures**, with hands-on contributions spanning **Kubernetes**, **observability platforms**, and **infrastructure-as-code**. From architecting *high-throughput systems* to *reducing latency* and *improving uptime*, I thrive in environments where scale and fault-tolerance are not just nice-to-haves but core requirements.
 
 I’ve led distributed teams, driven critical infrastructure overhauls, and delivered measurable impact, cutting response times by over 50%, increasing, and optimizing cloud operations across AWS, Azure, GCP, and Cloudflare ecosystems. I’m also an active contributor to the open-source community through initiatives like [**ObjectSpread**](https://objectspread.com) and [**WitOps**](https://witops.cloud), helping engineers build smarter operational practices.
 
