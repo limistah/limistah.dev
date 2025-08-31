@@ -39,8 +39,8 @@ languages:
         - name: Blog
           url: posts/
           weight: 2
-        - name: Reviews and Exercises
-          url: reviews/
+        - name: Personal Readings
+          url: readings/
           weight: 3
         - name: Links
           url: links/
@@ -65,7 +65,7 @@ params:
   disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
-  # disableSpecial1stPost: true
+  disableSpecial1stPost: false
   displayFullLangName: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
