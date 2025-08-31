@@ -39,7 +39,7 @@ languages:
         - name: Blog
           url: posts/
           weight: 2
-        - name: Personal Readings
+        - name: Readings
           url: readings/
           weight: 3
         - name: Links
@@ -93,15 +93,11 @@ params:
   homeInfoParams:
     Title: 👋 Welcome to my crib!
     Content: >
-      - Here, I _hack_ the internals of **Software Engineering/Architecture**, **Cloud/DevOps**, **Microprocessors**, and **Artificial Intelligence**. I remove the magic from technologies by showing how they work from the inside, reflecting my appreciation of how these technologies have evolved from an idea in a few minds to become part of our everyday lives.
-      
-      ---
+      - Here, I _hack_ the internals of **Software Engineering/Architecture**, **Cloud/DevOps**, **Microprocessors**, and **Artificial Intelligence**. I remove the magic from technologies by showing how they work from the inside, reflecting my appreciation of how these technologies have evolved from an idea in a few minds to become part of our everyday lives. Read more about me [here](/about/).
 
-      - Please support by following me on [GitHub](https://github.com/limistah) and [X/Twitter](https://twitter.com/limistah). You can also share with your friends on social media.
-      
-      ---
+      - <br/>
 
-      - Read more about me [here](/about/)
+      - Please support by following me on [GitHub](https://github.com/limistah) and [X/Twitter](https://twitter.com/limistah). Do so share with your friends on social media.
 
   socialIcons:
     - name: X
