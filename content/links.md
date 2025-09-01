@@ -1,6 +1,8 @@
 ---
 title: "Links to useful awesome web content!"
 layout: "baseof"
+giscus: false
+tocopen: false
 ---
 
 ### Linux / Home Lab
@@ -9,8 +11,17 @@ layout: "baseof"
 
 ---
 
-### Algorithms and DSA
+### Algorithms
+1. [Leetcode Cheatsheet](https://jwl-7.github.io/leetcode-cheatsheet/)
 
-1. https://bhavul.github.io/System-Design-Cheatsheet/
-2. https://jwl-7.github.io/leetcode-cheatsheet/
+---
 
+### System Design
+
+1. [System Cheatsheet](https://bhavul.github.io/System-Design-Cheatsheet/)
+
+---
+
+### Open Source
+
+1. **Aleem Isiaka**: [Open Source Contribution Guide - limistah’s Note](https://relic-match-af2.notion.site/Open-Source-Contribution-Guide-Limistah-s-Note-7301aa389fde4fc6b7dcc22f5c746b45)

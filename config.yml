@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: true
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["posts", "books", "journals"]
 
 minify:
   disableXML: true

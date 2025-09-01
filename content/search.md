@@ -1,6 +1,7 @@
 ---
 title: "Search"
-placeholder: Go
+placeholder: Go!
 layout: "search"
+giscus: false
 ---
 

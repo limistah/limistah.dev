@@ -1,11 +1,14 @@
 ---
 title: In Search of an Understandable Consensus Algorithm
-description: The is termed the Raft Paper!!!
+description: 
+giscus: false
 ---
 
 ## General Information:
 
-**Author**: author: Diego Ongaro, John Ousterhout
+This is commonly referred to as the Raft Paper.
+
+**Author**: Diego Ongaro, John Ousterhout
 
 **Paper**: https://raft.github.io/raft.pdf
 

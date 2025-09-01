@@ -7,11 +7,13 @@ giscus: false
 
 ## Books
 
-### Algorithms
-- [Introduction to Algorithms](/books/introduction-to-algorithms)
+#### Algorithms
+- [Introduction to Algorithms](/books/introduction-to-algorithms){target="_blank"}
 
-### C Programming Language
+#### C
 - [C Programming](/books/introduction-to-algorithms)
 
 ## Journals
-{{< readings-list type=journals >}}
+
+#### Distributed Systems
+- [In Search of an Understandable Consensus Algorithm](/journals/raft)
