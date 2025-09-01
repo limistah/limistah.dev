@@ -4,7 +4,7 @@ baseURL: "https://limistah.dev"
 title: Aleem Isiaka
 theme: [PaperMod]
 pagination:
-  pagerSize: 15
+  pagerSize: 10
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

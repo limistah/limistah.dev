@@ -3,6 +3,7 @@ title: Chapter One
 keywords: ["introduction to algorithms", "cormen", "algorithms"]
 description: Personal note on the CH1 of Introduction to Algorithms
 tags: ["introduction to algorithms", "algorithms"]
+weight: 1
 ---
 
 The first part introduces algorithms as computational solutions that halt and produce a correct value given a set of inputs. An input can be categorized as an instance of the problem or, in some cases, the problem itself. It discusses how algorithms are applied in various real-world situations across different areas.

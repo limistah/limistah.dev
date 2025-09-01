@@ -12,7 +12,7 @@ giscus: false
 
 
 #### C
-- [C Programming](/books/introduction-to-algorithms)
+- [The C Programming Language](/books/c-programming-language)
 
 ## Journals
 

@@ -5,6 +5,7 @@ description: Personal note on the CH2 of Introduction to Algorithms
 tags: ["introduction to algorithms", "algorithms"]
 params:
   math: true
+weight: 2
 ---
 
 This chapter introduces the first algorithm [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort). 
