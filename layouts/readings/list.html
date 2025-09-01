@@ -1,0 +1,17 @@
+{{- define "main" }}
+<header>
+    <h1>{{ .Title }}</h1>
+</header>
+
+<div class="readings-list">
+    <p>This is a list of my readings.</p>
+    <ul>
+        {{- range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <p>{{ .Summary }}</p>
+        </li>
+        {{- end }}
+    </ul>
+</div>
+{{- end }}

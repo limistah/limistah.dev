@@ -1,0 +1,21 @@
+{{ $type := .Get "type" | default "books" }}
+{{ $books := where .Site.RegularPages "Section" $type }}
+{{ $books := where $books "File.TranslationBaseName" "eq" "index" }}
+{{ $topLevelBooks := slice }}
+
+{{ range $books }}
+  {{ $parts := split .File.Dir "/" }}
+  {{ if eq (len $parts) 3 }}
+    {{ $topLevelBooks = $topLevelBooks | append . }}
+  {{ end }}
+{{ end }}
+
+
+
+<ul>
+    {{ range $topLevelBooks }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
