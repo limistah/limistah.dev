@@ -6,6 +6,19 @@ giscus: false
 tocopen: false
 ---
 
+
+### Open Source
+
+1. [Open Source Contribution Guide - limistah’s Note](https://relic-match-af2.notion.site/Open-Source-Contribution-Guide-Limistah-s-Note-7301aa389fde4fc6b7dcc22f5c746b45)
+
+---
+
+### DevOps
+
+1. [LocalhostConf 2023 - limistah’s Note](https://www.notion.so/LocalhostConf-2023-2eb7047631ed4c9b909651d0e63ec3d9?source=copy_link)
+
+---
+
 ### Linux / Home Lab
 
 1. [Home Lab Act Series - David Zmick](https://dpzmick.com/posts/2020-01-09-vpn.html)
@@ -27,10 +40,3 @@ tocopen: false
 ### System Design
 
 1. [System Cheatsheet - bhavul](https://bhavul.github.io/System-Design-Cheatsheet/)
-
----
-
-### Open Source
-
-1. [Open Source Contribution Guide - limistah’s Note](https://relic-match-af2.notion.site/Open-Source-Contribution-Guide-Limistah-s-Note-7301aa389fde4fc6b7dcc22f5c746b45)
-2. [LocalhostConf 2023 - limistah’s Note](https://www.notion.so/LocalhostConf-2023-2eb7047631ed4c9b909651d0e63ec3d9?source=copy_link)

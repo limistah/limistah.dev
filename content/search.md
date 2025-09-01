@@ -1,6 +1,6 @@
 ---
 title: "Search"
-placeholder: Go!
+placeholder: Let's Go! 🚀
 layout: "search"
 giscus: false
 ---
