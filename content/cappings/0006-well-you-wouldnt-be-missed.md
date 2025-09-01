@@ -21,15 +21,15 @@ Moving fast but smoothly could make you think, Hey, I am doing good; I only need
 
 Do not forget that while spending your time, you won’t be missed if the world decides to move on from your current position to another.
 
-This might also get you to a place of complacency, where you start thinking, Hey, I am good here, since you stopped being proactive in situations—after all, you needed more time to solve them.
+This might also get you to a place of complacency, where you start thinking, "Hey, I am good here", since you stopped being proactive in situations—after all, you needed more time to solve them.
 
-People say, “When we stop growing, we start dying.”. When your mind gets stuck and you start feeling extremely comfortable with the current situation, you might be dying silently.
+People say, “When we stop growing, we start dying.” When your mind gets stuck and you start feeling extremely comfortable with the current situation, you might be dying silently.
 
 I do tell people, “Hey, pressure is good!”
 
-The most rewarding year of my career was straight out of NYSC. During the program, I would travel from my PPA state down to Lagos for interviews. I felt nothing. I would work in my remote software engineering position and perform at my PPA.
+The most rewarding year of my career was straight out of [NYSC](https://en.wikipedia.org/wiki/National_Youth_Service_Corps). During the program, I would travel from my PPA state down to Lagos for interviews. I felt nothing. I would work in my remote software engineering position and perform at my PPA.
 
-I also had a school where I was working as a part-time school teacher and still gave some tutorials to the children of my then-landlord.
+I also worked at a school where I was a part-time teacher and still gave tutorials to the children of my then-landlord.
 
 I felt nothing!
 
@@ -47,7 +47,7 @@ But one thing stayed constant: I was doing related things, preparing for the nex
 
 During my final exam at Laspotech, a friend said, “Ah, after these, I have to rest.” I told him, Nope, after these, _I would try to learn something different and take on another challenge_. I think what we failed to realize is that the mind and body, like a machine, have their frictions.
 
-For a body to move from point A to point B, it needs to overcome a force called inertia. Then it needs to keep accelerating, then stop accelerating until its acceleration is back to zero, then it stops.
+For a body to move from point A to point B, it needs to overcome a force called inertia. Then it needs to keep accelerating, then stop accelerating until its acceleration returns to zero, and then it stops.
 
 When we start to feel pressure, we try to overcome inertia, such as waking up at 4 a.m. to prepare for work or not getting enough sleep. The body becomes accustomed to it and starts feeling normal again, and when it decides to stop, the body gradually returns to its old state, for example, waking up past 7 a.m. or 8 a.m.
 
