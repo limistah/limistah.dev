@@ -17,7 +17,7 @@ tocopen: false
 
 ---
 
-### Artificial Intelligence / Machine Learning
+### AI/ML
 1. **Daniel Bourke**: [Machine Learning Roadmap](https://github.com/mrdbourke/machine-learning-roadmap)
 
 ---
