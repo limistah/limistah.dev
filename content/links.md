@@ -16,6 +16,11 @@ tocopen: false
 
 ---
 
+### Artificial Intelligence / Machine Learning
+1. **Daniel Bourke**: [Machine Learning Roadmap](https://github.com/mrdbourke/machine-learning-roadmap)
+
+---
+
 ### System Design
 
 1. [System Cheatsheet](https://bhavul.github.io/System-Design-Cheatsheet/)

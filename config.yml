@@ -124,7 +124,7 @@ params:
 
   editPost:
     URL: "https://github.com/limistah/limistah.dev/tree/main/content"
-    Text: "Suggest Changes" # edit text
+    Text: "Fix and Improve this content" # edit text
     appendFilePath: true # to append file path to Edit link
 
 

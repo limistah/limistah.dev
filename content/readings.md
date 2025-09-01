@@ -1,6 +1,6 @@
 ---
 title: Readings Journal
-description: Public journal on studies of Books, Articles, Journals or any general knowledge. Mostly do this in an active/passive scenario
+description: Public journal on studies of Books, Articles, Journals, or any general knowledge. I mostly do this in an active/passive scenario
 layout: baseof
 giscus: false
 ---
@@ -8,7 +8,8 @@ giscus: false
 ## Books
 
 #### Algorithms
-- [Introduction to Algorithms](/books/introduction-to-algorithms){target="_blank"}
+- [Introduction to Algorithms](/books/introduction-to-algorithms)
+
 
 #### C
 - [C Programming](/books/introduction-to-algorithms)
