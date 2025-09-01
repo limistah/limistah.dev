@@ -1,5 +1,6 @@
 ---
-title: "Links to useful awesome web content!"
+title: "Useful Resources"
+description: Content on the internet that I find interesting and might return to in the future!
 layout: "baseof"
 giscus: false
 tocopen: false
