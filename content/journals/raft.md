@@ -2,9 +2,10 @@
 title: In Search of an Understandable Consensus Algorithm
 description: 
 giscus: false
+showtoc: false
 ---
 
-## General Information:
+### General Information
 
 This is commonly referred to as the Raft Paper.
 
