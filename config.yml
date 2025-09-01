@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: true
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "books", "journals"]
+mainsections: ["posts", "books", "journals", "cappings"]
 
 minify:
   disableXML: true
@@ -41,6 +41,9 @@ languages:
           weight: 2
         - name: Readings
           url: readings/
+          weight: 3
+        - name: Cappings
+          url: cappings/
           weight: 3
         - name: Links
           url: links/
