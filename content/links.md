@@ -8,26 +8,29 @@ tocopen: false
 
 ### Linux / Home Lab
 
-1. **David Zmick**: [Home Lab Act Series](https://dpzmick.com/posts/2020-01-09-vpn.html)
+1. [Home Lab Act Series - David Zmick](https://dpzmick.com/posts/2020-01-09-vpn.html)
 
 ---
 
 ### Algorithms
-1. [Leetcode Cheatsheet](https://jwl-7.github.io/leetcode-cheatsheet/)
+
+1. [Leetcode Cheatsheet - jwl-7](https://jwl-7.github.io/leetcode-cheatsheet/)
 
 ---
 
 ### AI/ML
-1. **Daniel Bourke**: [Machine Learning Roadmap](https://github.com/mrdbourke/machine-learning-roadmap)
+
+1. [Machine Learning Roadmap - Daniel Bourke](https://github.com/mrdbourke/machine-learning-roadmap)
 
 ---
 
 ### System Design
 
-1. [System Cheatsheet](https://bhavul.github.io/System-Design-Cheatsheet/)
+1. [System Cheatsheet - bhavul](https://bhavul.github.io/System-Design-Cheatsheet/)
 
 ---
 
 ### Open Source
 
-1. **Aleem Isiaka**: [Open Source Contribution Guide - limistah’s Note](https://relic-match-af2.notion.site/Open-Source-Contribution-Guide-Limistah-s-Note-7301aa389fde4fc6b7dcc22f5c746b45)
+1. [Open Source Contribution Guide - limistah’s Note](https://relic-match-af2.notion.site/Open-Source-Contribution-Guide-Limistah-s-Note-7301aa389fde4fc6b7dcc22f5c746b45)
+2. [LocalhostConf 2023 - limistah’s Note](https://www.notion.so/LocalhostConf-2023-2eb7047631ed4c9b909651d0e63ec3d9?source=copy_link)
