@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: true
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "books", "journals", "cappings"]
+mainsections: ["posts"]
 
 minify:
   disableXML: true
@@ -36,8 +36,8 @@ languages:
         - name: Search
           url: search/
           weight: 1
-        - name: Blog
-          url: posts/
+        - name: Archive
+          url: archive/
           weight: 2
         - name: Readings
           url: readings/
