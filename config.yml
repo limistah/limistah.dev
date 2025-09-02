@@ -42,8 +42,8 @@ languages:
         - name: Readings
           url: readings/
           weight: 3
-        - name: Cappings
-          url: cappings/
+        - name: Essays
+          url: essays/
           weight: 3
         - name: Links
           url: links/

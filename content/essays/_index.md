@@ -1,5 +1,6 @@
 ---
-title: "Just Capping..."
+title: "Essays..."
+summary: Just Cappings
 ---
 
 Hi there,
