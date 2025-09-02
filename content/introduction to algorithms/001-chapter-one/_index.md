@@ -20,3 +20,5 @@ An algorithm should be seen as a technology compared to our hardware and softwar
 With the advent of AI, we might think we need fewer algorithms, but the reality is that AI and machine learning are algorithms created to create an algorithm for solving a problem.
 
 Every day, there is an increasing need for a better and faster way to do things even as our computation requirement continues to grow and our hardware continues to get better too, there is still a limited amount of storage and RAM we could compute on, and as we might think that it is huge to have an algorithm working on 100million data at a time, this is lesser to the amount of internet traffic, google search, and tweet being processed per minute.
+
+![Generated Data by Social Media](/assets/clrs-ch1-ex-1.webp)
