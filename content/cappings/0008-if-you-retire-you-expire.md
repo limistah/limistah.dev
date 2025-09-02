@@ -103,7 +103,7 @@ There are many lives to be impacted by working at Google or doing something with
 
 As always, be real with yourself; can you create such an impact? If you can, what exactly are you trying to do differently? ChatGPT is a novel solution that gives an interface to decades-long work in AI/ML.
 
-Still, I am not asking you to ditch lowball opportunities. I am simply asking you always to define impact in your work. [Carl Newport](https://calnewport.com) mentioned that when he was choosing the school to join after his PhD at MIT, he decided a small university where there was a lot of work to be done and he could be a pioneer of the department.
+Still, I am not asking you to ditch lowball opportunities. I am simply asking you always to define impact in your work. [Cal Newport](https://calnewport.com) mentioned that when he was choosing the school to join after his PhD at MIT, he decided a small university where there was a lot of work to be done and he could be a pioneer of the department.
 
 He chose Georgetown University over other established universities where there was still work to be done, but his work would become another document in the library, hard to find, and he became another faculty member rather than a pioneer.
 
