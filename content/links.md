@@ -10,6 +10,7 @@ tocopen: false
 ### Open Source
 
 1. [Open Source Contribution Guide - limistah’s Note](https://relic-match-af2.notion.site/Open-Source-Contribution-Guide-Limistah-s-Note-7301aa389fde4fc6b7dcc22f5c746b45)
+2. [Good First Issues dot Dev](https://goodfirstissue.dev)
 
 ---
 
