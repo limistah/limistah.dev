@@ -4,6 +4,7 @@ description: Content on the internet that I find interesting, might return to in
 layout: "baseof"
 giscus: false
 tocopen: false
+showPostNavLinks: false
 ---
 
 

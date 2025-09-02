@@ -3,7 +3,7 @@ title: "About Me..."
 layout: "baseof"
 giscus: false
 disableShare: true
-ShowPostNavLinks: false
+showPostNavLinks: false
 ---
 
 I'm **Aleem Isiaka**, a backend and cloud engineer, solutions architect with a deep commitment to building resilient, scalable systems that drive measurable impact. With nearly a decade of experience across backend development, infrastructure, and distributed systems, I specialize in architecting solutions that merge reliability, performance, and automation with end user experience.
