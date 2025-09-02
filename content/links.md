@@ -1,6 +1,6 @@
 ---
 title: "Useful Resources"
-description: Content on the internet that I find interesting, might return to in the future, or useful for others!
+description: Content on the internet that I find interesting, might return to in the future, or useful for you!
 layout: "baseof"
 giscus: false
 tocopen: false
