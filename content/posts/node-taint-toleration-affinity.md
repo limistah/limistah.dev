@@ -163,7 +163,7 @@ Final solution: **Use both Node Taint and Pod Affinity to achieve a more effecti
 
 First, attach labels to the nodes that require special attention:
 
-```
+```bash
 kubectl taint nodes nodeC purpose=gpu-compute:NoSchedule
 ```
 
