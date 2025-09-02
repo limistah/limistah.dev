@@ -221,13 +221,13 @@ For the divide stage, $D(n)$ and the Combine stage $C(n)$, the recurrence is:
     D(n) + aT(n/b) + C(n) & \text{otherwise}.
   \end{cases}$
 
-**Analysis of merge sort**
+### Analysis of merge sort
 
-Divide: This stage computes the middle of the sub array in a constant time. $D(n) = \Theta (1)$
+**Divide**: This stage computes the middle of the sub array in a constant time. $D(n) = \Theta (1)$
 
-Conquer: Taking $aT(n/b)$, where a is the amount of recursive calls and b is the amount of sub problems. In merge sort, there are 2 recursive call and 2 sub problems, hence $aT(n/b)$ becomes $2T(n/2)$.
+**Conquer**: Taking $aT(n/b)$, where a is the amount of recursive calls and b is the amount of sub problems. In merge sort, there are 2 recursive call and 2 sub problems, hence $aT(n/b)$ becomes $2T(n/2)$.
 
-Combine: The merge procedure takes $\Theta(n)$, therefore $C(n$) = $\Theta(n)$, 
+**Combine**: The merge procedure takes $\Theta(n)$, therefore $C(n$) = $\Theta(n)$, 
 
 Adding both the divide and combine stages such that when n is sufficiently large enough $D(n)$ is insignificant and the equation becomes $\Theta (n)$.
 
