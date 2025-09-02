@@ -1,7 +1,7 @@
 ---
 title: Chapter Two
 keywords: ["introduction to algorithms", "cormen", "algorithms"]
-description: Personal note on the CH2 of Introduction to Algorithms
+summary: Personal note on the CH2 of Introduction to Algorithms
 tags: ["introduction to algorithms", "algorithms"]
 math: true
 canonicalURL: https://clio.limistah.dev/chapter-two

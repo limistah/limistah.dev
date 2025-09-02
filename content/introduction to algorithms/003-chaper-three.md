@@ -4,8 +4,7 @@ keywords: ["introduction to algorithms", "cormen", "algorithms"]
 description: Personal note on the CH3 of Introduction to Algorithms
 tags: ["introduction to algorithms", "algorithms"]
 weight: 3
-params:
-  math: true
+math: true
 ---
 
 To characterize runtimes we discard the low-order terms and the coefficients of the leading term as done with insertion sort in [Chapter Two](https://www.notion.so/Chapter-Two-232dda5cd4664a9db41e2d4566448dc4?pvs=21). The remaining factor is put into the $\Theta$-notation e.g $\Theta(n^2)$. Other asymptotic notations are designed to characterize functions in general. [Asymptotic notation can apply to functions that characterize some other aspect of algorithms e.g. space or other functions not relating to algorithms.](https://www.phind.com/search?cache=sz2cz2q2eol3oyoher221uh9)
