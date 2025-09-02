@@ -23,13 +23,13 @@ return sum
 >
 > Using loop invariant
 >
-> Initialization: 
+> **Initialization**: 
 > By assigning i to 1 the loop is initialized, executing the vode inside of the body of the loop. The code takes the current value of i in this case 1 as an index in the Array A. It then pulls the value at that index and add it to the last value of the sum in this case zero, before reassigning that value to sum itself.
 >
-> Maintenance: 
+> **Maintenance**: 
 > The loop is maintained by incrementing the value of i, which in turn activates the body of the loop, pulling the value from the array at the index i, adding it with the previous sum, then storing it in the sum variable.
 >
-> Termination:
+> **Termination**:
 > The loop terminates when i is equal to n(the length of the array).
 >
 > At the termination of the loop, all the items in the Array (A) must have been processed in the body of the loop. 
