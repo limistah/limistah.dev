@@ -32,22 +32,23 @@ languages:
       main:
         - name: About
           url: about/
-          weight: 4
-        - name: Search
-          url: search/
-          weight: 6
-        - name: Archive
-          url: archive/
-          weight: 5
-        - name: Readings
-          url: readings/
           weight: 1
         - name: Essays
           url: essays/
           weight: 2
+        - name: Readings
+          url: readings/
+          weight: 3
         - name: Links
           url: links/
-          weight: 3 
+          weight: 4
+        - name: Archive
+          url: archive/
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 6
+        
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
