@@ -16,6 +16,6 @@ showtoc: false
 
 ### My Chapter Notes
 
-1. [**Chapter One**](/introduction-to-algorithms-notes/001-chapter-one/)
-2. [**Chapter Two**](/introduction-to-algorithms-notes/002-chapter-two/)
-3. [**Chapter Three**](/introduction-to-algorithms-notes/003-chapter-three/)
+1. [**Chapter One**](/introduction-to-algorithms/001-chapter-one/)
+2. [**Chapter Two**](/introduction-to-algorithms/002-chapter-two/)
+3. [**Chapter Three**](/introduction-to-algorithms/003-chapter-three/)

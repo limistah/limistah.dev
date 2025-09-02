@@ -1,7 +1,7 @@
 ---
 title: Chapter One
 keywords: ["introduction to algorithms", "cormen", "algorithms"]
-description: Personal note on the CH1 of Introduction to Algorithms
+summary: Personal note on the CH1 of Introduction to Algorithms
 tags: ["introduction to algorithms", "algorithms"]
 weight: 1
 canonicalURL: https://clio.limistah.dev/chapter-one
@@ -20,25 +20,3 @@ An algorithm should be seen as a technology compared to our hardware and softwar
 With the advent of AI, we might think we need fewer algorithms, but the reality is that AI and machine learning are algorithms created to create an algorithm for solving a problem.
 
 Every day, there is an increasing need for a better and faster way to do things even as our computation requirement continues to grow and our hardware continues to get better too, there is still a limited amount of storage and RAM we could compute on, and as we might think that it is huge to have an algorithm working on 100million data at a time, this is lesser to the amount of internet traffic, google search, and tweet being processed per minute.
-
-### Exercises
-
-[Exercise 1.1-1](/introduction-to-algorithms-notes/001-chapter-one/ex-1.1-1)
-
-[Exercise 1.1-2](/introduction-to-algorithms-notes/001-chapter-one/ex-1.1-2)
-
-[Exercise 1.1-3](/introduction-to-algorithms-notes/001-chapter-one/ex-1.1-3)
-
-[Exercise 1.1-4](/introduction-to-algorithms-notes/001-chapter-one/ex-1.1-4)
-
-[Exercise 1.1-5](/introduction-to-algorithms-notes/001-chapter-one/ex-1.1-5)
-
-[Exercise 1.1-6](/introduction-to-algorithms-notes/001-chapter-one/ex-1.1-6)
-
-[Exercise 1.2-1](/introduction-to-algorithms-notes/001-chapter-one/ex-1.2-1)
-
-[Exercise 1.2-2](/introduction-to-algorithms-notes/001-chapter-one/ex-1.2-2)
-
-### Problems
-
-[Problem 1.1-1](/introduction-to-algorithms-notes/001-chapter-one/prbm-1.1-1)
