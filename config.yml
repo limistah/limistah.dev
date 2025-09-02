@@ -143,16 +143,10 @@ markup:
       unsafe: true
     extensions:
       passthrough:
-        delimiters:
-          block:
-          - - \[
-            - \]
-          - - $$
-            - $$
-          inline:
-          - - \(
-            - \)
         enable: true
+        delimiters:
+          block: [['$$', '$$']]
+          inline: [['$', '$']]
   highlight:
     noClasses: false
     anchorLineNos: true
