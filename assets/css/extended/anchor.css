@@ -1,0 +1,19 @@
+.post-content a {
+    position: relative;
+    text-decoration: none;
+
+}
+.post-content a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px; 
+    left: 0;
+    bottom: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+  
+.post-content a:hover::after {
+    width: 100%;
+}
