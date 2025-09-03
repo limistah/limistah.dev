@@ -47,7 +47,6 @@ The site will be available at http://localhost:1313
 content/
 ├── posts/        # Blog posts
 ├── about.md      # About page
-└── _index.md     # Homepage
 ```
 
 ## Creating New Posts
@@ -89,4 +88,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - [Hugo](https://gohugo.io/)
 - [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
 ```
----
