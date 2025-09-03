@@ -1,5 +1,11 @@
 body {
+    font-family: "Cactus Classical Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
 }

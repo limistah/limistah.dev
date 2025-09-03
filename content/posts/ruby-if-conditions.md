@@ -3,7 +3,7 @@ title: Ruby - if statement?
 date: 2024-01-15
 tags: [programming, ruby ]
 category: Programming
-excerpt: If statement the ruby way.
+summary: If statement the ruby way.
 ---
 
 In Ruby, the `if` statement looks like this

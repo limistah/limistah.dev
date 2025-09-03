@@ -2,14 +2,12 @@
 
 title: Merge-Sort like a Binary-Search
 date: 2025-02-10
-excerpt: As a divide and conquer algorithm, in this article, we look deeply into merge sort, simplifying its core concepts with a binary search algorithm.
-description: As a divide and conquer algorithm, we look deeply into merge sort by simplifying its core concepts with a binary search algorithm.
+summary: As a divide and conquer algorithm, in this article, we look deeply into merge sort, simplifying its core concepts with a binary search algorithm.
 tags: ["algorithms", "binary search", "sorting", "divide and conquer"]
 cover:
   image: "/assets/image-20250214234040290.png"
 aliases:
   - "/posts/merge-sort"
-
 ---
 
 ### Motivation

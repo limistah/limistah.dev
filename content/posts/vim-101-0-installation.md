@@ -1,6 +1,6 @@
 ---
 title: "VIM 101: Installation"
-excerpt: This episode of the VIM series explores the different ways of setting up Vim on different environments.
+summary: This episode of the VIM series explores the different ways of setting up Vim on different environments.
 date: 2025-07-23
 tags: [vim, text-editor, unix]
 ---

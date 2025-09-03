@@ -1,6 +1,6 @@
 ---
 title: "Raft Protocol: Part 1"
-excerpt: What is Raft, what are the alternatives, and why even build Raft? How are we going to build it?
+summary: What is Raft, what are the alternatives, and why even build Raft? How are we going to build it?
 date: 2025-08-06
 tags: [raft, consensus-algorithm, distributed-systems]
 ---

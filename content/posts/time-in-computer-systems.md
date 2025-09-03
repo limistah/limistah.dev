@@ -2,8 +2,7 @@
 title: Time in Computer Systems
 date: 2024-07-25
 tags: [CS, Microcomputers]
-excerpt: Learn how time tracking is implemented from the hardware.
-description: Learn how time tracking is implemented from the hardware.
+summary: Learn how time tracking is implemented from the hardware.
 cover:
   image: "/assets/Dallas_Semiconductor_DS12B887-2377-Medium-620x465.jpg"
 ---

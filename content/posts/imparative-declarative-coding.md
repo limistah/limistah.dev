@@ -3,7 +3,7 @@ title: Imparative and Declarative coding?
 date: 2024-01-20
 tags: [programming, coding ]
 category: Programming
-excerpt: Choose to be clear than ambiguous
+summary: Choose to be clearity over ambiguity
 ---
 
 As a software engineer, I have written a lot of lines of code, and taking hindsight back to the very first day of my career, I have written a log of bad code. I recently published a new version of my [react-here-maps](https://www.npmjs.com/package/react-here-map) library which saw a sprinkle of my [improved skill set](https://github.com/limistah/react-here-map).

@@ -2,7 +2,7 @@
 title: Running Go programs with a specific version
 date: 2024-05-10
 tags: [go, versioning, backward-compatibility]
-excerpt: This post shares how you can run an old version of Go while still having your machine's default Go - which is newer.
+summary: This post shares how you can run an old version of Go while still having your machine's default Go - which is newer.
 category: Go
 ---
 

@@ -3,7 +3,7 @@ title: Managing Machine Configuration with Stow
 date: 2025-07-22
 tags: [devices, unix, config ]
 category: System, Devices, Configuration
-excerpt: Getting Unix machine configuration synchronized across multiple devices and a faster way to switch devices while maintaining the same experience.c
+summary: Getting Unix machine configuration synchronized across multiple devices and a faster way to switch devices while maintaining the same experience.
 ---
 
 ### Motivation

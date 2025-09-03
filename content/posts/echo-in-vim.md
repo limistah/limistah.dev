@@ -3,7 +3,7 @@ title: The VIM echo command
 date: 2024-02-07
 tags: [vim, text-editor, bash]
 category: vim
-excerpt: Echoing like a PRO in VIM
+summary: Echoing like a PRO in VIM
 ---
 
 As with many other technologies, VIM can echo messages, if you are coming from a contemporary editor, this can hit differently.
