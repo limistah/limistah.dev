@@ -1,8 +1,9 @@
 ---
 title: Chapter Three
 keywords: ["introduction to algorithms", "cormen", "algorithms"]
-description: Personal note on the CH3 of Introduction to Algorithms
+summary: Personal note on the CH3 of Introduction to Algorithms
 tags: ["introduction to algorithms", "algorithms"]
+canonicalURL: https://clio.limistah.dev/chapter-three
 weight: 3
 math: true
 ---
