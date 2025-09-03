@@ -32,7 +32,7 @@ It can also be expressed as the result of showing that a function is both $O(f(n
 
 From the insertion sort procedure in [Chapter 2](/introduction-to-algorithms/002-chapter-two/):
 
-```
+```text
 INSERTION-SORT (A, n)
   for i = 2 to n
     key = A[i]
