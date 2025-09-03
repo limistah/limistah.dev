@@ -1,9 +1,9 @@
 ---
 title: Chapter Two - Exercise 2.1-2
-keywords: ["introduction to algorithms", "cormen", "algorithms", "Exercise 1.1-1"]
+keywords: ["introduction to algorithms", "cormen", "algorithms", "Exercise 2.1-2"]
 summary: Solution to Exercise 2.1-2 Question
 tags: ["introduction to algorithms", "algorithms", "problems"]
-canonicalURL: https://clio.limistah.dev/exercise-21-1
+canonicalURL: https://clio.limistah.dev/exercise-21-2
 ---
 
 ## ❓ Question
