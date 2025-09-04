@@ -29,11 +29,8 @@ showPostNavLinks: false
 ### Public Speaking
 
 1. [CFP Template](https://cfptemplate.com/)
-
 2. [The Ultimate Guide to Memorable Talks](https://nnja.medium.com/the-ultimate-guide-to-memorable-tech-talks-e7c350778d4b)
-
 3. [Speaking IO](https://speaking.io)
-
 4. [On Conference Speaking - Hynek ](https://hynek.me/articles/speaking/?ref=devrelresourc.es)
 
 ---
@@ -47,20 +44,20 @@ showPostNavLinks: false
 ### Compiler Design
 
 1. [Cal State Uni CS 151: Compiler Construction](https://www.youtube.com/playlist?list=PL6KMWPQP_DM97Hh0PYNgJord-sANFTI3i)
+2. [Compiler Explorer - GodBolt](https://godbolt.org)
 
 ---
 
 ### Digital Design & Computer Architecture
 
 1. [Onur Mutlu - Digital Design and Computer Architecture: 2025](https://www.youtube.com/watch?v=ubhxKNlOlRg&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3)
-
 2. [Onur Mutlu - Digital Design and Computer Architecture: 2022](https://www.youtube.com/watch?v=cpXdE3HwvK0&list=PL5Q2soXY2Zi97Ya5DEUpMpO2bbAoaG7c6)
-
 3. [Onur Mutlu - Digital Design and Computer Architecture: 2021](https://www.youtube.com/watch?v=LbC0EZY8yw4&list=PL5Q2soXY2Zi_uej3aY39YB5pfW4SJ7LlN)
 
 ---
 
-### Distributed Sytems
+### Distributed Systems
+
 1. [MIT 6.824: Distributed Systems](https://www.youtube.com/@6.824)
 
 ---
@@ -68,7 +65,6 @@ showPostNavLinks: false
 ### AI/ML
 
 1. [Machine Learning Roadmap - Daniel Bourke](https://github.com/mrdbourke/machine-learning-roadmap)
-
 2. [Programming Intel NPU](https://intel.github.io/intel-npu-acceleration-library/npu.html)
 
 ---
@@ -88,9 +84,7 @@ showPostNavLinks: false
 ### Systems Programming
 
 1. [Berkeley: CS162 - Operating Systems and Systems Programming](https://www.youtube.com/watch?v=pPzVV2kkGHc&list=PLF2K2xZjNEf97A_uBCwEl61sdxWVP7VWC)
-
 2. [PintOS](https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html)
-
 3. [NachOS](https://homes.cs.washington.edu/~tom/nachos/)
 
 ---
