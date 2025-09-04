@@ -30,6 +30,9 @@ giscus: false
 #### System Design
 - [Designing Data Intensive Applications](/books/designing-data-intensive-application)
 
+#### Databases
+- [Database Internals](/books/database-internals)
+
 ## Journals
 
 #### Distributed Systems
