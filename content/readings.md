@@ -1,5 +1,5 @@
 ---
-title: Readings Journal
+title: Public Library
 description: Public journal on studies of Books, Articles, Journals, or any general knowledge. I mostly do this in an active/passive hobby
 layout: baseof
 giscus: false
