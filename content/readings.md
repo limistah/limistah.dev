@@ -9,10 +9,26 @@ giscus: false
 
 #### Algorithms
 - [Introduction to Algorithms](/books/introduction-to-algorithms)
-
+- [Concrete Mathematics](/books/assembly-language)
+- [Cracking The Coding Interview](/books/cracking-the-coding-interview)
 
 #### C
 - [The C Programming Language](/books/c-programming-language)
+
+#### Python
+- [How to Think Like a Computer Scientist](/books/python-think-scientist)
+
+#### Go
+- [Learning Go](/books/learning-go)
+
+#### Assembly
+- [Assembly Language for x86 Processor](/books/assembly-language)
+
+#### System Design
+- [Designing Data Intensive Applications](/books/designing-data-intensive-application)
+
+#### Rust
+- [The Rust Programming Language](/books/the-rust-programming-language)
 
 ## Journals
 
