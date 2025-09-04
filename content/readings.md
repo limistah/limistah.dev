@@ -15,20 +15,20 @@ giscus: false
 #### C
 - [The C Programming Language](/books/c-programming-language)
 
+#### Go
+- [Learning Go](/books/learning-go)
+
 #### Python
 - [How to Think Like a Computer Scientist](/books/python-think-scientist)
 
-#### Go
-- [Learning Go](/books/learning-go)
+#### Rust
+- [The Rust Programming Language](/books/the-rust-programming-language)
 
 #### Assembly
 - [Assembly Language for x86 Processor](/books/assembly-language)
 
 #### System Design
 - [Designing Data Intensive Applications](/books/designing-data-intensive-application)
-
-#### Rust
-- [The Rust Programming Language](/books/the-rust-programming-language)
 
 ## Journals
 
