@@ -81,6 +81,9 @@ showPostNavLinks: false
 
 ---
 
+### Generic
+1. [Challenging Projects Programmers Should Try](https://austinhenley.com/blog/challengingprojects.html)
+
 ### Systems Programming
 
 1. [Berkeley: CS162 - Operating Systems and Systems Programming](https://www.youtube.com/watch?v=pPzVV2kkGHc&list=PLF2K2xZjNEf97A_uBCwEl61sdxWVP7VWC)
