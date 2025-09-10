@@ -1,7 +1,8 @@
 ---
 title: "About Me..."
 layout: "baseof"
-giscus: false
+comments: false
+notbyai: false
 disableShare: true
 showPostNavLinks: false
 ---

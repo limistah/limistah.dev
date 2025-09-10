@@ -1,0 +1,18 @@
+.post-header {
+    position: relative;
+}
+
+.not-by-ai-logo {
+    position: absolute;
+    left: -150px; 
+    top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .not-by-ai-logo {
+        position: relative;
+        left: initial;
+        top: initial;
+        margin-bottom: 15px;
+    }
+}
