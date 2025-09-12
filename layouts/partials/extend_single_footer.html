@@ -1,5 +1,5 @@
 {{ if templates.Exists "partials/openring.html" }}
-    {{ if .IsPage }}
+    {{ if (and (ne (.Param "enableOpenring") false) .IsPage) }}
         {{ partial "openring.html" . }}
     {{ end }}
 {{ end }}
