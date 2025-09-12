@@ -1,8 +1,5 @@
 {{ if templates.Exists "partials/openring.html" }}
     {{ if .IsPage }}
-        {{/* Only display at the bottom of articles */}}
-        <div class="mt-6">
-            {{ partial "openring.html" . }}
-        </div>
+        {{ partial "openring.html" . }}
     {{ end }}
 {{ end }}
