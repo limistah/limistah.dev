@@ -1,0 +1,16 @@
+.post-motivation {
+  border: 1px solid var(--border);
+  padding: .4em;
+  border-radius: var(--radius);
+  font-size: 15px;
+  line-height: 1.4;
+  background: var(--code-bg);
+}
+
+.post-motivation h4 {
+  margin-top: unset;
+}
+
+.post-motivation p {
+  margin-bottom: unset;
+}

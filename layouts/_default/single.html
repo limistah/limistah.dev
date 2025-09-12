@@ -28,11 +28,7 @@
     </div>
     {{- end }}
   </header>
-  {{- if (ne (.Param "notbyai") false) }}
-  <div class="not-by-ai-logo">
-    <a href="https://notbyai.fyi" target="_blank"><img id="not-by-ai-logo" width="131" height="42" src="https://notbyai.fyi/img/written-by-human-not-by-ai-black.svg" loading="lazy" alt="Written by Human, Not by AI"></a>
-  </div>
-  {{- end }}
+  {{- partial "notbyai.html" }}
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
@@ -41,6 +37,7 @@
 
   {{- if .Content }}
   <div class="post-content">
+    {{- if (.Param "motivation") }}{{- partial "motivation.html" . }}{{- end }}
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
@@ -61,6 +58,8 @@
     {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
+
+  {{- partial "extend_single_footer.html" . }}
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}

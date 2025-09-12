@@ -1,12 +1,11 @@
 ---
 title: "Raft Protocol: Part 1"
 summary: What is Raft, what are the alternatives, and why even build Raft? How are we going to build it?
+motivation: I have used Vault extensively in the past, and at some point, I have also explored their codebase – kudos to all the contributors. A strategy for setting up Vault is to enable high availability (HA) mode, which ensures that different servers in a Vault cluster share the same data. So, how does it work?
 date: 2025-08-06
 tags: [raft, consensus-algorithm, distributed-systems]
 ---
 
-### Motivation
-I have used Vault extensively in the past, and at some point, I have also explored their codebase – kudos to all the contributors. A strategy for setting up Vault is to enable high availability (HA) mode, which ensures that different servers in a Vault cluster share the same data. So, how does it work?
 
 ## What is Raft?
 

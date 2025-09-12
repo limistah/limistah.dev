@@ -1,0 +1,14 @@
+https://drewdevault.com/blog/index.xml
+https://xeiaso.net/blog.rss
+https://xn--gckvb8fzb.com/index.xml
+https://theevilskeleton.gitlab.io/feed.xml
+https://rosszurowski.com/index.xml
+https://bananamafia.dev/index.xml
+https://billhunt.dev/feed.xml
+https://jvns.ca/atom.xml
+https://awesomekling.github.io/feed.xml
+https://pluralistic.net/feed/
+https://computer.rip/rss.xml
+https://ines.io/feed/
+https://www.jvt.me/feed.xml
+https://joegold.in/blog/index.xml
