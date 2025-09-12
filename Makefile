@@ -1,5 +1,5 @@
 openring:
-    
+    go install git.sr.ht/~sircmpwn/openring@latest
 	./openring.sh
 
 serve: openring
