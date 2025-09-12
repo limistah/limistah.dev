@@ -68,9 +68,9 @@ I am working towards my CKA and CKS this year, to create enough room for AWS and
 
 ### Learning
 
-- Programming Languages: C/C++, Rust
+**Programming Languages**: C/C++, Rust
 
-- CS Concepts: Algorithms, Distributed Systems, DeFi, and Internet Computing 
+**CS Concepts**: Algorithms, Distributed Systems, DeFi, and Internet Computing 
 
 ### Currently Reading
 
@@ -91,7 +91,6 @@ Introduction to Algorithms
 - Blogging and Journaling
 - DeFi & Blockchain
 - GNU/Linux and OSS
-- Self-hosting services
 - Automation & Infrastructure-as-code
 - DevOps
 - Attending and Organizing Events
@@ -109,4 +108,5 @@ I am currently obsessed with my website. I think that I have ignored it for a ve
 ### Volunteering
 
 - I help organize GopherCon - The largest Go event in Africa.
+
 - Part of the CNCF community - I focus on Kubernetes, Prometheus, and Jaeger.
