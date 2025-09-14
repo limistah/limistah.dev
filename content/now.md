@@ -105,6 +105,8 @@ I have a private foundation that I passively operated, just in my mind, I was th
 
 I am currently obsessed with my website. I think that I have ignored it for a very long time.
 
+This weekend(14/09/2005), I had an idea to start planning a project for a quarter of each year. How it can materialize, I am not sure, but it is sure interesting
+
 ### Volunteering
 
 - I help organize GopherCon - The largest Go event in Africa.
