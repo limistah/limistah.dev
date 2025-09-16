@@ -56,13 +56,13 @@ There is a recent thoughts on emigration, where and how, not clear yet!
 
 ### Education
 
-ND Mechanical Engineering
-
-HND Mechanical Engineering
+BSc. Computer Science
 
 BEng. Mechanical Engineering
 
-BSc. Computer Science
+HND Mechanical Engineering
+
+ND Mechanical Engineering
 
 I am working towards my CKA and CKS this year, to create enough room for AWS and GCP certifications in the first half of 2026.
 
