@@ -1,6 +1,6 @@
 openring:
-	# @go install git.sr.ht/~sircmpwn/openring@latest
-	# ./openring.sh
+	@go install git.sr.ht/~sircmpwn/openring@latest
+	./openring.sh
 
 serve: openring
 	hugo serve -p 1313
