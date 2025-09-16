@@ -91,8 +91,7 @@ Introduction to Algorithms
 - Blogging and Journaling
 - DeFi & Blockchain
 - GNU/Linux and OSS
-- Automation & Infrastructure-as-code
-- DevOps
+- DevOps, Automation & IAC
 - Attending and Organizing Events
 
 ### Projects
