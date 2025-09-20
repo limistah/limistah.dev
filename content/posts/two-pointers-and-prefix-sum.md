@@ -4,6 +4,7 @@ date: 2025-09-19
 tags: [algorithms, two-pointers, prefix-sum]
 category: Algorithms
 description: Two pointers and Prefix sum are two algorithm solving techniques. In this post, I dissect their differences from their similarities.
+summary: Two pointers and Prefix sum are two algorithm solving techniques. In this post, I dissect their differences from their similarities.
 math: true
 ---
 
