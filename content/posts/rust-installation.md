@@ -3,7 +3,7 @@ title: Rust Installation
 date: 2025-09-16
 tags: [rust, installation]
 category: Rust
-summary: Install Rust and Cargo package manager on a system
+description: Install Rust and Cargo package manager on a system
 ---
 
 The [rustup](https://rustup.rs/#) website has robust installation methods, especially when you are on a Windows OS – this is what worked for me.

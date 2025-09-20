@@ -3,7 +3,7 @@ title: Two Pointers & Prefix Sum
 date: 2025-09-19
 tags: [algorithms, two-pointers, prefix-sum]
 category: Algorithms
-summary: Two pointers and Prefix sum are two algorithm solving techniques. In this post, I dissect their differences from their similarities.
+description: Two pointers and Prefix sum are two algorithm solving techniques. In this post, I dissect their differences from their similarities.
 math: true
 ---
 
@@ -351,21 +351,16 @@ The time complexity of this algorithm is $O(n)$, even though there is a while lo
 
 #### Note on Two Pointers
 
-The idea of two pointers is to have a reference to two indices, get the items within these indices and determine if we have a solution. But this is limited!
+The idea of two pointers is to have a reference to two indices, get the items within these indices and determine if there is a solution. Similar to divide and conquer? Maybe.
 
 Two pointers can only be used for a handful of problems:
 
 - The longest substring with unique characters
-- The largest sum of a subarray of with lenght k 
+- The largest sum of a subarray of with lenght $k$
 - the length of the shortest subarray whose sum is less than a target
 
-All these are still following the templates of our naive solution:
+All these are still following the templates of [the naive solution](#a-naive-solution)
 
-1. The moving start pointer
-2. The moving end pointer
-3. The working data (which is the subset start from start and ending at end)
-4. The solution determination
-
-How about Previous Sums?
+How about Prefix Sums?
 
 ## Prefix Sum
