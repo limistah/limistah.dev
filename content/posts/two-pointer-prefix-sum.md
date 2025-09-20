@@ -225,9 +225,9 @@ But the longest unique substring is $3$, could be one of `ap`, `ple`.
 
 There has to be an improvement to the solution determination part of the code
 
-The only point when a char exists twice is when the occurrence value for the `char` becomes $2$, which is when to reduce the char by 1, then move the left pointer forward by one.
+The only point when a char exists twice is when the occurrence value for the `char` becomes $2$. And that is the perfect time reset the value back to $1$ and move the left pointer forward by $1$ as well.
 
-This accurately tracks the visited values, and assume the substring s[left:right] is unique as all the characters in the counter have 1 as their values
+This accurately tracks the visited values, and assume the substring $s[left:right]$ is unique as all the characters in the counter have 1 as their value.
 
 Something like this:
 
@@ -260,10 +260,10 @@ def optimal_sol(s: str):
 idx  i   j   char    dict
 -----------------------------------------------
 0    0   0    a     { a: 1 }
-1    1   0    p     { a: 1, p: 1 }
+1    1   1    p     { a: 1, p: 1 }
 2    2   2    p     { a: 0, p: 1 }
-3    3   2    l     { a: 0, p: 1, l: 1 }
-4    4   2    e     { a: 0, p: 1, l: 1, e: 1 }
+3    2   3    l     { a: 0, p: 1, l: 1 }
+4    2   4    e     { a: 0, p: 1, l: 1, e: 1 }
 ```
 
 This works, but will fail if we model it against `abbcab`, with unique substrings `ab`, `bca`, `cab`.
@@ -279,9 +279,9 @@ idx  i   j   char    dict
 4    3   4    b     { a: 1, b: 1, c: 1 }
 ```
 
-Notice the solution at this point only ensure that char exists in the dictionary, but what is required is only uniqu consecutive characters should exist in the dictionay.
+Notice the solution at this point only ensure that `char` exists in the dictionary, but what is required is that only unique consecutive characters should have values in the dictionay.
 
-A good solution will move the left pointer forward consecutively until there is no double occurrence - meeting the criteria for a correct solution.
+A good improvement will be to move the left pointer forward consecutively until there is no double occurrence - meeting the criteria for a correct solution.
 
 So, instead of an `if`, a `while` is used. This way, the left keeps moving forward, until all keys in the occurence have a value of $0$ for every character that the left has visited:
 
@@ -316,11 +316,11 @@ idx  i   j   char    dict
 
 Perfect!
 
-And the solution is alwayus the far right `index` minus the left `index` plus $1$ - zero index array
+And the solution is always the far right `index` minus the left `index` plus $1$ - zero index array
 ```python
 res = j - i + 1
 ```
-Not forgetting the question asked for the longest substring, the correct answer should always be a max of the current range and a previously known maximum range.
+Not forgetting the question asked for the longest substring, the correct answer should always be between a `max` of the current range and a previously known maximum range.
 
 ```python
 res = max(res, j - i + 1)
@@ -328,7 +328,7 @@ res = max(res, j - i + 1)
 
 And plugging it together
 
-```python lines="2-4 7"
+```python
 from collections import defaultdict
 
 def optimal_sol(s: str):
@@ -347,7 +347,6 @@ def optimal_sol(s: str):
 #### Analysis
 
 The time complexity of this algorithm is $O(n)$, even though there is a while loop for each iteration – which is $O(26)$ and can be ignored.
-
 
 The idea of two pointers is to have a reference to two indices, get the items within these indices and determine if we have a solution. But this is limited!
 
