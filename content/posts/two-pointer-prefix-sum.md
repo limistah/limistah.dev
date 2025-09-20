@@ -13,9 +13,15 @@ Aside [binary search](/posts/merge-sort-binary-search/), two pointer is an algor
 
 ## Two Pointers
 
-If I give you a string of characters "apple" to return the longest unique substring, how would you go about that?
+### A problem
 
-A brute force solution can return in $O(n^2)$, where we use an outer array to keep track of the start string and inner array to move a needle across the string, while checking for unique characters within the bound of the index of the outer array and the inner array.
+> Given a string of characters "apple" return the longest unique substring, 
+
+How would you solve this?
+
+### A naive solution
+
+A naive solution can be achieved in $O(n^2)$, where an outer array keeps track of the start string and inner array to move a needle across the string, while checking for unique characters within the bound of the index of the outer array and the inner array.
 
 ```python
 def find_longest_sub_str(s: str):
@@ -35,18 +41,20 @@ def find_longest_sub_str(s: str):
 # longest = maximum(0,        1  + (1 -  0) )
 ```
 
-If I would pieces down the naive solution, there are four useful parts.
+Breaking down the naive solution, there are four useful parts.
 
-1. The moving start pointer
-2. The moving end pointer
-3. The working data (which is the subset start from start and ending at end)
+1. The moving `start` pointer
+2. The moving `end` pointer
+3. The working data (which is the sub array from `start` to `end` $s[ start : end + 1]$)
 4. The solution determination
 
-With all these information, is there a way to make this algorithm run faster say in $O(n)$ against the $O(n^2)$?
+With all this information, is there a way to make this algorithm run faster say in $O(n)$ against the $O(n^2)$?
+
+### An optimal solution
 
 Of course there is, and it should be obvious, we want to have a single loop that can control the two indices.
 
-Recall the template of binary seacrh:
+Recall the template of [binary search](/posts/merge-sort-binary-search/):
 
 ```python
 def binary_search(arr, target):
@@ -63,11 +71,14 @@ def binary_search(arr, target):
     return -1
 ```
 
-We can take inspiration from here to build up an O(n) solution for our problem.
+An $O(n)$ solution can be derived using it as an inspiration.
 
-First, we start with how to create a loop that keep track of the indices, in our case, the indices both start from position 0 of the string. Also, our array loops through the lenght of the array, in the case of binary search, it only checks if the left has not crossed over to the right.
+#### The first pointer
 
-To implement ours, we will start with a loop that goes over the entire array
+Firstly having a loop that keeps track of the indices starting from $0$, as in the naive solution case. Also, the loop goes through the length of the array – for binary search it only checks if the left has not crossed over to the right.
+
+Something like this can be derived
+
 ```python
 def optimal_sol(s: str):
     for i in range(len(str)):
@@ -75,7 +86,9 @@ def optimal_sol(s: str):
     return 0
 ```
 
-Then, we want to move have a second index, that will behave differently. because we want to determine our result over a range, we will let the second index only move when a condition is met. Therefore, the index is initialized outside of the loop having the same starting point 0, and maintained by the loop body itself.
+#### The right pointer
+
+The second `index` will behave differently, it should only move when a condition is met and that is when there is a controllable range that creates a sub array. The `index` has to be initialized outside of the loop having also starting at $0$, and maintained by the loop body itself.
 
 ```python
 def optimal_sol(s: str):
@@ -87,7 +100,7 @@ def optimal_sol(s: str):
     return 0
 ```
 
-Rather than returning zero, we need a variable to hold the result, we will call it res, and this is also updated only when the condition is met.
+Rather than returning $0$, a variable is used to hold the result, `res`, and this is also updated only when the condition is met.
 
 ```python
 def optimal_sol(s: str):
@@ -101,9 +114,11 @@ def optimal_sol(s: str):
     return res
 ```
 
-At this point, we can check the termination property of a good algorithm. Yes, it will terminate as the for loop will go through the length of the string.
+At this point, the termination property of an algorithm is met – the for loop will go through the length of the string.
 
-With this algorith, we have implemented a two pointer solution.
+#### The two pointers
+
+And that is a two pointer solution!
 
 ```text
             a    p    p     l    e
@@ -113,19 +128,21 @@ With this algorith, we have implemented a two pointer solution.
 
 2           l         r
 
-3           l              r
+3           l               r
 
 4           l                    r
 ```
 
-In the illustration above, notice how we have all the criterias for the naive solution
+In the illustration above, notice how all the criterias for the naive solution have been met
 
 1. A moving start pointer (the left in our case)
 2. A moving end pointer (the right in our case)
-3. The working data (s[l:r])
+3. The working data ($s[l:r]$)
 4. Solution determination (yet to be implemented)
 
-To determine the solution, it is when there exists no chars in the string s[l:r], we could store all the character occurence in a dictionary.
+#### Moving the left pointer
+
+There is a solution only when there exists no character in the string $s[l:r]$, a dictionary can be useful in this case.
 
 ```python
 from collections import defaultdict
@@ -135,7 +152,7 @@ occurrence = defaultdict()
 occurrence[char] += 1
 ```
 
-With the above code, once we have access to a new char in the loop, we want to increment its key in our occurrence dictionary
+In the above code, once a `char` exists in the dictionary its value is incremented by $1$ to track its `occurrence`.
 
 ```python
 from collections import defaultdict
@@ -153,7 +170,7 @@ def optimal_sol(s: str):
     return 0
 ```
 
-Now, we have a mechanism to know immediately a character exists twice in the string, and once we do, we want to move the left pointer forward.
+With a mechanism to know immediately if a character exists twice in the string, the left pointer can advance forward.
 
 ```python
 from collections import defaultdict
@@ -173,7 +190,7 @@ def optimal_sol(s: str):
 And this is what will happen:
 
 ```text
-idx  i   j   char    dict
+idx  i   j   char   dict
 -----------------------------------------------
 0    0   0    a     { a: 1 }
 1    1   0    p     { a: 1, p: 1 }
@@ -197,15 +214,22 @@ More textually
 4                l               r
 ```
 
-If we take the difference of the right and left and add 1, we will get something close to the correct answer:
+#### Determining a solution
 
-4 - 1 + 1 = 4
+Taking the difference of the `right` and `left` and add $1$ - due to zero start point, produce a value close to the correct answer:
 
-But the longest unique substring is 2, could be ap, pl, le.
+```
+(4 - 1) + 1 = 4
+```
+But the longest unique substring is $3$, could be one of `ap`, `ple`.
 
-We will introduce an improvement to the anser dtermination section of our code.
+There has to be an improvement to the solution determination part of the code
 
-Notice that the only point when we will have a substring is when our occurrence for a char becomes 2, what we want to do at that point is to reduce the counter, then move the left forward by one instead make the occurrence for that character become 1. Something like this:
+The only point when a char exists twice is when the occurrence value for the `char` becomes $2$, which is when to reduce the char by 1, then move the left pointer forward by one.
+
+This accurately tracks the visited values, and assume the substring s[left:right] is unique as all the characters in the counter have 1 as their values
+
+Something like this:
 
 ```python
 if occurrence[char] > 1:
@@ -242,16 +266,24 @@ idx  i   j   char    dict
 4    4   2    e     { a: 0, p: 1, l: 1, e: 1 }
 ```
 
-While this works, what we should have done is move the left pointer forward consecutively until the anser dtermination condition is not true
+This works, but will fail if we model it against `abbcab`, with unique substrings `ab`, `bca`, `cab`.
 
-So, instead of if, we will use while. This way, we keep moving the left forward, until all keys in the occurence is 1
-
-```python
-while occurrence[char] > 1:
-    occurrence[s[l]] -= 1
-    l += 1
+```text
+idx  i   j   char    dict
+-----------------------------------------------
+0    0   0    a     { a: 1 }
+1    0   1    b     { a: 1, b: 1 }
+2    1   2    b     { a: 1, b: 1 }
+3    1   3    c     { a: 1, b: 1, c: 1 }
+4    2   4    a     { a: 1, b: 1, c: 1 }
+4    3   4    b     { a: 1, b: 1, c: 1 }
 ```
 
+Notice the solution at this point only ensure that char exists in the dictionary, but what is required is only uniqu consecutive characters should exist in the dictionay.
+
+A good solution will move the left pointer forward consecutively until there is no double occurrence - meeting the criteria for a correct solution.
+
+So, instead of an `if`, a `while` is used. This way, the left keeps moving forward, until all keys in the occurence have a value of $0$ for every character that the left has visited:
 
 ```python
 from collections import defaultdict
@@ -268,18 +300,33 @@ def optimal_sol(s: str):
     return res
 ```
 
-And our solution is just the far right index minus the left index plus 1
+And remodelling `abbcab` using the improvement:
+
+```text
+idx  i   j   char    dict
+-----------------------------------------------
+0    0   0    a     { a: 1 } # a
+1    0   1    b     { a: 1, b: 1 } # ab
+2    2   2    b     { a: 0, b: 0 } # resets the counters for s[0:2]
+2    2   3    b     { a: 0, b: 1 } # b
+3    2   4    c     { a: 0, b: 1, c: 1 } # bc
+4    2   4    a     { a: 1, b: 1, c: 1 } # bca
+4    4   4    b     { a: 1, b: 1, c: 1 } # resets the counter for s[2:3], cab
+```
+
+Perfect!
+
+And the solution is alwayus the far right `index` minus the left `index` plus $1$ - zero index array
 ```python
 res = j - i + 1
 ```
-
-And since our last result might be the longer than the newer one we find like in the case of cabab whose longest sub strings is cab, ab, ab.
+Not forgetting the question asked for the longest substring, the correct answer should always be a max of the current range and a previously known maximum range.
 
 ```python
 res = max(res, j - i + 1)
 ```
 
-And plugging it into our code
+And plugging it together
 
 ```python lines="2-4 7"
 from collections import defaultdict
@@ -297,3 +344,26 @@ def optimal_sol(s: str):
     return res
 ```
 
+#### Analysis
+
+The time complexity of this algorithm is $O(n)$, even though there is a while loop for each iteration – which is $O(26)$ and can be ignored.
+
+
+The idea of two pointers is to have a reference to two indices, get the items within these indices and determine if we have a solution. But this is limited!
+
+Two pointers can only be used for a handful of problems:
+
+- The longest substring with unique characters
+- The largest sum of a subarray of with lenght k 
+- the length of the shortest subarray whose sum is less than a target
+
+All these are still following the templates of our naive solution:
+
+1. The moving start pointer
+2. The moving end pointer
+3. The working data (which is the subset start from start and ending at end)
+4. The solution determination
+
+How about Previous Sums?
+
+## Prefix Sum
