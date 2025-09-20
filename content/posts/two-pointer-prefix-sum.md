@@ -346,7 +346,7 @@ def optimal_sol(s: str):
 
 #### Analysis
 
-The time complexity of this algorithm is $O(n)$, even though there is a while loop for each iteration – which is $O(26)$ and can be ignored.
+The time complexity of this algorithm is $O(n)$, even though there is a while loop for each iteration – which is $O(k)$ for $k$ being the maximum occurrence of a char and can be ignored.
 
 The idea of two pointers is to have a reference to two indices, get the items within these indices and determine if we have a solution. But this is limited!
 
