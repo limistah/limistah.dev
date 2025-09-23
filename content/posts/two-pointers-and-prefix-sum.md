@@ -365,3 +365,7 @@ All these are still following the templates of [the naive solution](#a-naive-sol
 How about Prefix Sums?
 
 ## Prefix Sum
+
+Just as we did with two pointers. Given a problem statement, how easily can we solve it?
+
+> 

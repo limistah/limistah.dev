@@ -7,7 +7,7 @@ description: Install Rust and Cargo package manager on a system
 summary: Install Rust and Cargo package manager on a system
 ---
 
-The [rustup](https://rustup.rs/#) website has robust installation methods, especially when you are on a Windows OS – this is what worked for me.
+The rustup website has robust installation methods, especially when you are on a Windows OS – this is what worked for me.
 
 Run the command below in your terminal:
 
