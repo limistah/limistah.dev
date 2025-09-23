@@ -368,4 +368,26 @@ How about Prefix Sums?
 
 Just as we did with two pointers. Given a problem statement, how easily can we solve it?
 
-> 
+> Given an array of integers and an integer `target`, find a subarray that sums to `target` and return the start and end indices of the subarray
+>
+> Input: `arr: 1 -20 -3 30 5 4` `target: 7`
+>
+> Output: `1 4`
+
+Solving this with a naive algorithm:
+
+```python
+def findSubarray(arr, target):
+    n = length(arr)
+    for i in range(len(arr)):
+        sum = 0 # always restart sum for a new index
+        for j range(len(arr)):
+            sum = sum + arr[j]
+            if sum == target:
+                return [i, j]
+    return [-1, -1]
+```
+
+This almost looks like the naive two pointer solution earlier.
+
+It has two indices, a tracker for the solution which restarts, and a way to determine the solution. This is a solution in $O(n^2)$, we could achieve $O(n)$ runtime by following the similar approach done for the two pointer optimal solution. 
