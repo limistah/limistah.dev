@@ -6,7 +6,7 @@ excerpt: Something has to come here
 draft: true
 ---
 
-## Motivation:
+### Motivation:
 
 Computer programs these days are written in a form that is very similar to the language we speak. To software engineers, we accept that computers do more than the for loop we write. In this post, I explore how a computer program written in HLLs [^1] is converted into electrical signals [^2] that we interpret as bits, operate on them, and convert them back into a form that we can understand.
 
