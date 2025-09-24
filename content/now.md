@@ -52,7 +52,7 @@ Married to an amazing woman
 
 Lagos, Nigeria
 
-There is a recent thoughts on emigration, where and how, not clear yet!
+UK and Germany tops the list. And will explore the skilled worker route.
 
 ### Education
 
