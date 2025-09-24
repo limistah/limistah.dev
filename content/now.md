@@ -42,8 +42,6 @@ showPostNavLinks: false
 
 Currently in between jobs
 
-I currently work on open-source projects at CNCF, primarily focusing on Kubernetes, Prometheus, and the Jaeger ecosystem.
-
 ### Relationship
 
 Married to an amazing woman
@@ -52,7 +50,7 @@ Married to an amazing woman
 
 Lagos, Nigeria
 
-UK and Germany tops the list. And will explore the skilled worker route.
+Emigration now crosses my mind with The UK and Germany tops the list. And will explore the skilled worker route.
 
 ### Education
 
