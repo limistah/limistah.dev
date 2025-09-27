@@ -1,7 +1,7 @@
 ---
 title: "Now..."
 layout: "baseof"
-description: This page outlines where my current efforts are targeted, and my current interests
+description: This page outlines where my current efforts are targeted, and my recent interests
 comments: false
 enableOpenring: false
 disableOpenring: true
@@ -50,7 +50,7 @@ Married to an amazing woman
 
 Lagos, Nigeria
 
-Emigration now crosses my mind with The UK and Germany tops the list. And will explore the skilled worker route.
+Emigration now crosses my mind with The UK and Germany topping the list, the skilled worker path should be a good fit here.
 
 ### Education
 
