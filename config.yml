@@ -119,6 +119,9 @@ params:
     - name: stackoverflow
       title: Stackoverflow Profile
       url: https://stackoverflow.com/users/7368018/limistah
+    - name: sessionize
+      title: Sessionize Profile
+      url: https://sessionize.com/limistah/
     - name: email
       title: Let's Talk!
       url: mailto:aleemisiaka@gmail.com
