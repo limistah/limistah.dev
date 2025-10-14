@@ -51,7 +51,6 @@ languages:
         - name: Search
           url: search/
           weight: 7
-        
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -137,11 +136,9 @@ params:
     Text: "Fix and Improve this content" # edit text
     appendFilePath: true # to append file path to Edit link
 
-
   assets:
     disableHLJS: true
     favicon: "/assets/avatar.png"
-
 
 markup:
   goldmark:
@@ -151,8 +148,8 @@ markup:
       passthrough:
         enable: true
         delimiters:
-          block: [['$$', '$$']]
-          inline: [['$', '$']]
+          block: [["$$", "$$"]]
+          inline: [["$", "$"]]
   highlight:
     noClasses: false
     anchorLineNos: true
