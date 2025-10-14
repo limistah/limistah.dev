@@ -1,7 +1,7 @@
 ---
 title: "Now..."
 layout: "baseof"
-description: This page outlines where my current efforts are targeted, and my current interests
+description: This page outlines where my current efforts are targeted, and my recent interests
 comments: false
 enableOpenring: false
 disableOpenring: true
@@ -42,8 +42,6 @@ showPostNavLinks: false
 
 Currently in between jobs
 
-I currently work on open-source projects at CNCF, primarily focusing on Kubernetes, Prometheus, and the Jaeger ecosystem.
-
 ### Relationship
 
 Married to an amazing woman
@@ -52,17 +50,17 @@ Married to an amazing woman
 
 Lagos, Nigeria
 
-There is a recent thoughts on emigration, where and how, not clear yet!
+Emigration now crosses my mind with The UK and Germany topping the list, the skilled worker path should be a good fit here.
 
 ### Education
 
-ND Mechanical Engineering
-
-HND Mechanical Engineering
+BSc. Computer Science
 
 BEng. Mechanical Engineering
 
-BSc. Computer Science
+HND Mechanical Engineering
+
+ND Mechanical Engineering
 
 I am working towards my CKA and CKS this year, to create enough room for AWS and GCP certifications in the first half of 2026.
 
