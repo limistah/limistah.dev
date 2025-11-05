@@ -73,7 +73,7 @@ showPostNavLinks: false
 
 1. [Machine Learning Roadmap - Daniel Bourke](https://github.com/mrdbourke/machine-learning-roadmap)
 2. [Programming Intel NPU](https://intel.github.io/intel-npu-acceleration-library/npu.html)
-3. [Made With Machine Learning Cource](https://madewithml.com/#course)
+3. [Made With Machine Learning Course](https://madewithml.com/#course)
 
 ---
 
