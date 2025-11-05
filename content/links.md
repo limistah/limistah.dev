@@ -48,6 +48,13 @@ showPostNavLinks: false
 
 ---
 
+### Blockchain
+
+1. [The EVM Handbook](https://gh05ec.notion.site/The-EVM-Handbook-a4c11d0addec477fb91192561e8d91b9)
+2. [Nader’s web3 Resources for Developers](https://naderdabit.notion.site/Nader-s-web3-Resources-for-Developers-a200ed2ef21c4d578dc158df2b882c63)
+
+---
+
 ### Digital Design & Computer Architecture
 
 1. [Onur Mutlu - Digital Design and Computer Architecture: 2025](https://www.youtube.com/watch?v=ubhxKNlOlRg&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3)
