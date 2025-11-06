@@ -45,6 +45,8 @@ showPostNavLinks: false
 
 1. [Cal State Uni CS 151: Compiler Construction](https://www.youtube.com/playlist?list=PL6KMWPQP_DM97Hh0PYNgJord-sANFTI3i)
 2. [Compiler Explorer - GodBolt](https://godbolt.org)
+3. [Havard Uni CS 153 2019 Fall](https://groups.seas.harvard.edu/courses/cs153/2019fa/schedule.html)
+4. [Programming Well - Abstraction and Design In Computation](https://book.cs51.io/pdfs/abstraction.pdf)
 
 ---
 
