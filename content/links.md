@@ -89,7 +89,7 @@ showPostNavLinks: false
 
 1. [Coping with the Stress of Layoff and Unemployment](https://uhs.berkeley.edu/sites/default/files/coping_with_the_stress_of_layoff_and_unemployment.pdf)
 2. [Is Getting a Masters in CS Worth it](https://sumnerevans.com/posts/school/is-getting-a-masters-in-cs-worth-it/)
-3. [Warren Buffett's Thanksgiving Message, 2025](https://www.berkshirehathaway.com/news/nov1025.pdf)
+3. [Warren Buffett's Final Letter, 2025](https://www.berkshirehathaway.com/news/nov1025.pdf)
 
 ---
 
