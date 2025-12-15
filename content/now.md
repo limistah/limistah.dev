@@ -40,7 +40,7 @@ showPostNavLinks: false
 
 ### Employment Status
 
-Currently in between jobs
+I work as a backend engineer at [Kredete](https://kredete.com), where I am contribute to the development of a payment infrastructure that will power the next billion users.
 
 ### Relationship
 
@@ -50,7 +50,7 @@ Married to an amazing woman
 
 Lagos, Nigeria
 
-Emigration now crosses my mind with The UK and Germany topping the list, the skilled worker path should be a good fit here.
+Emigration now crosses my mind with Germany and France topping the list, the skilled worker path should be a good fit here.
 
 ### Education
 
@@ -62,7 +62,7 @@ HND Mechanical Engineering
 
 ND Mechanical Engineering
 
-I am working towards my CKA and CKS this year, to create enough room for AWS and GCP certifications in the first half of 2026.
+I did not get to do my CKA/CKS exams in the last quarter of 2025, pushing that forward to another time in the future, but, digging deeper into AWS and GCP still in 2026!
 
 ### Learning
 
@@ -94,16 +94,16 @@ Introduction to Algorithms
 
 ### Projects
 
-Along with some amazing guys, we are building the sole documentation hub for DevOps/SysOps at [WitOps Cloud](https://witops.cloud).
+Got the design for [WitOps](https://witops.cloud), I don't feel great about it, so we are going through a second phase of the redesign.
 
-Migrating ObjectSpread from the home of open source packages to independent researchers platform, where collaboration in inherently fostered for growth.
+Got the design for [ObjectSpread](https://objectspread.com), and I would be hosting a newsletter on Substack, seems like a wise choice as it handles subscriptions automatically.
+
+Since my website is more usable, I think it can serve me for the next 5yrs(yaaay...). Next focus is on redesigning ObjectSpread and WitOps.
+
+I still think hard on the project-per-quarter thingy, it still interests me to do! I might start with very useful libraries in the second quarter of 2026.
+
 
 I have a private foundation that I passively operated, just in my mind, I was thinking of formalizing it, we shall see if this is still possible.
-
-I am currently obsessed with my website. I think that I have ignored it for a very long time.
-
-This weekend(14/09/2005), I had an idea to start planning a project for a quarter of each year. How it can materialize, I am not sure, but it is sure interesting
-
 ### Volunteering
 
 - I help organize GopherCon - The largest Go event in Africa.
