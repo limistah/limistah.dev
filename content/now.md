@@ -34,13 +34,13 @@ showPostNavLinks: false
 
 **Languages**: Golang, Python, TypeScript
 
-**Operating System**: MacOS
+**Operating System**: MacOS, Linux
 
 **Preferred Cloud**: GCP, AWS, Cloudflare
 
 ### Employment Status
 
-I work as a backend engineer at [Kredete](https://kredete.com), where I am contribute to the development of a payment infrastructure that will power the next billion users.
+I work as a backend engineer at [Kredete](https://kredete.com), where I contribute to the development of payment infrastructures that power millions of users.
 
 ### Relationship
 
