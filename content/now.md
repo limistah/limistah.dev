@@ -8,6 +8,7 @@ disableOpenring: true
 showToc: false
 disableShare: true
 showPostNavLinks: false
+showLastModified: true
 ---
 
 ### Current Workspace

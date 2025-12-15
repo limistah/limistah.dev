@@ -12,6 +12,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: true
 enableEmoji: true
+enableGitInfo: true
 pygmentsUseClasses: true
 mainsections: ["posts"]
 
@@ -77,6 +78,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
+  DateFormat: Jan 2, 2006
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
