@@ -97,7 +97,7 @@ Introduction to Algorithms
 
 Got the design for [WitOps](https://witops.cloud), I don't feel great about it, so we are going through a second phase of the redesign.
 
-Got the design for [ObjectSpread](https://objectspread.com), and I would be hosting a newsletter on Substack, seems like a wise choice as it handles subscriptions automatically.
+Design for [ObjectSpread](https://objectspread.com) is underway, and the blog is now live on [https://blog.objectspread.com](https://blog.objectspread.com). You could [Join Us!](https://blog.objectspread.com/p/join-us)!
 
 Since my website is more usable, I think it can serve me for the next 5yrs(yaaay...). Next focus is on redesigning ObjectSpread and WitOps.
 
@@ -107,6 +107,6 @@ I still think hard on the project-per-quarter thingy, it still interests me to d
 I have a private foundation that I passively operated, just in my mind, I was thinking of formalizing it, we shall see if this is still possible.
 ### Volunteering
 
-- I help organize GopherCon - The largest Go event in Africa.
+- I help organize [GopherCon Africa](https://gophers.africa) - The largest Go event in Africa.
 
-- Part of the CNCF community - I focus on Kubernetes, Prometheus, and Jaeger.
+- Part of the [CNCF community](https://openprofile.dev/profile/limistah) - I focus on Kubernetes, Prometheus, and Jaeger.
