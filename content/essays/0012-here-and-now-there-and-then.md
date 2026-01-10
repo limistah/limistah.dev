@@ -2,7 +2,7 @@
 title: "Here and Now, There and Then"
 canonicalURL: https://limistah.substack.com/p/here-and-now-there-and-then
 summary: Thinking about the future consumes our motivation in the present and keeps us stuck in the past.
-date: 2025-09-27
+date: 2025-12-20
 ---
 
 When I was in JSS2, at the back of one of my notebooks, I wrote my name, with three branching lines, each for **CEO**, **President**, and a **Petroleum Engineer**, maybe I was ambitious! At the moment, I am not close to being the kind of CEO I envisioned, and I don’t even have any political affiliation that could probably lead me to becoming a president. But still an [engineer](https://limistah.dev/), regardless of what I engineer.
