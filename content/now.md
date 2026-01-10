@@ -41,7 +41,7 @@ showLastModified: true
 
 ### Employment Status
 
-I work as a backend engineer at [Kredete](https://kredete.com), where I contribute to the development of payment infrastructures that power millions of users.
+I work as a backend engineer at [Kredete](https://www.linkedin.com/company/kredete/), where I contribute to the development of payment infrastructures that power millions of users.
 
 ### Relationship
 
