@@ -99,7 +99,9 @@ showPostNavLinks: false
 ---
 
 ### Databases
+
 1. [CMU - Intro to Database Systems](https://15445.courses.cs.cmu.edu/)
+2. [Postgres Is Enough](https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb)
 
 ---
 
@@ -120,3 +122,4 @@ showPostNavLinks: false
 ### System Design
 
 1. [System Cheatsheet - bhavul](https://bhavul.github.io/System-Design-Cheatsheet/)
+2. [Kafka is fast -- I'll use Postgres](https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks)
