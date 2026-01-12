@@ -5,7 +5,8 @@
 {{- end }}
 
 {{- if ne .Lastmod .Date -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>Last Modified: %s</span>" (.Lastmod) (.Lastmod | time.Format (default ":date_short" site.Params.DateFormat)))) }}
+{{- $githubHistoryUrl := printf "https://github.com/limistah/limistah.dev/commits/main/content/%s" .File.Path -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>Last Modified: <a href='%s' target='_blank' rel='noopener noreferrer'>%s</a></span>" (.Lastmod) $githubHistoryUrl (.Lastmod | time.Format (default ":date_short" site.Params.DateFormat)))) }}
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
