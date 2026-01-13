@@ -85,6 +85,12 @@ showPostNavLinks: false
 
 ---
 
+### Computer Networking
+
+1. [Computer Networking: A Top-Down Approach](https://www.youtube.com/watch?v=74sEFYBBRAY&list=PLByK_3hwzY3Tysh-SY9MKZhMm9wIfNOas)
+
+---
+
 ### Life
 
 1. [Coping with the Stress of Layoff and Unemployment](https://uhs.berkeley.edu/sites/default/files/coping_with_the_stress_of_layoff_and_unemployment.pdf)
