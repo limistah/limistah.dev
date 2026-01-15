@@ -10,6 +10,7 @@ showPostNavLinks: false
 ### Algorithms
 
 1. [Leetcode Cheatsheet - jwl-7](https://jwl-7.github.io/leetcode-cheatsheet/)
+2. [COS 423, SPRING 2018: Theory Of Algorithms - Kevin Wayne (Princeton University)](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/)
 
 ---
 
