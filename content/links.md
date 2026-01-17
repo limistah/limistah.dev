@@ -101,7 +101,9 @@ showPostNavLinks: false
 ---
 
 ### Generic
+
 1. [Challenging Projects Programmers Should Try](https://austinhenley.com/blog/challengingprojects.html)
+2. [A Paradigm Shift in Computer Science? - Tu Wien Informatics](https://www.youtube.com/playlist?list=PLgT6-EN5L0ZX2OeF2m_6AaZvcujQG92_E)
 
 ---
 
