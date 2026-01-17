@@ -10,6 +10,7 @@ showPostNavLinks: false
 ### Algorithms
 
 1. [Leetcode Cheatsheet - jwl-7](https://jwl-7.github.io/leetcode-cheatsheet/)
+2. [COS 423, SPRING 2018: Theory Of Algorithms - Kevin Wayne (Princeton University)](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/)
 
 ---
 
@@ -45,6 +46,15 @@ showPostNavLinks: false
 
 1. [Cal State Uni CS 151: Compiler Construction](https://www.youtube.com/playlist?list=PL6KMWPQP_DM97Hh0PYNgJord-sANFTI3i)
 2. [Compiler Explorer - GodBolt](https://godbolt.org)
+3. [Havard Uni CS 153 2019 Fall](https://groups.seas.harvard.edu/courses/cs153/2019fa/schedule.html)
+4. [Programming Well - Abstraction and Design In Computation](https://book.cs51.io/pdfs/abstraction.pdf)
+
+---
+
+### Blockchain
+
+1. [The EVM Handbook](https://gh05ec.notion.site/The-EVM-Handbook-a4c11d0addec477fb91192561e8d91b9)
+2. [Nader’s web3 Resources for Developers](https://naderdabit.notion.site/Nader-s-web3-Resources-for-Developers-a200ed2ef21c4d578dc158df2b882c63)
 
 ---
 
@@ -66,6 +76,7 @@ showPostNavLinks: false
 
 1. [Machine Learning Roadmap - Daniel Bourke](https://github.com/mrdbourke/machine-learning-roadmap)
 2. [Programming Intel NPU](https://intel.github.io/intel-npu-acceleration-library/npu.html)
+3. [Made With Machine Learning Course](https://madewithml.com/#course)
 
 ---
 
@@ -75,15 +86,33 @@ showPostNavLinks: false
 
 ---
 
+### Computer Networking
+
+1. [Computer Networking: A Top-Down Approach](https://www.youtube.com/watch?v=74sEFYBBRAY&list=PLByK_3hwzY3Tysh-SY9MKZhMm9wIfNOas)
+
+---
+
 ### Life
 
 1. [Coping with the Stress of Layoff and Unemployment](https://uhs.berkeley.edu/sites/default/files/coping_with_the_stress_of_layoff_and_unemployment.pdf)
 2. [Is Getting a Masters in CS Worth it](https://sumnerevans.com/posts/school/is-getting-a-masters-in-cs-worth-it/)
+3. [Warren Buffett's Final Letter, 2025](https://www.berkshirehathaway.com/news/nov1025.pdf)
 
 ---
 
 ### Generic
+
 1. [Challenging Projects Programmers Should Try](https://austinhenley.com/blog/challengingprojects.html)
+2. [A Paradigm Shift in Computer Science? - Tu Wien Informatics](https://www.youtube.com/playlist?list=PLgT6-EN5L0ZX2OeF2m_6AaZvcujQG92_E)
+
+---
+
+### Databases
+
+1. [CMU - Intro to Database Systems](https://15445.courses.cs.cmu.edu/)
+2. [Postgres Is Enough](https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb)
+
+---
 
 ### Systems Programming
 
@@ -102,3 +131,4 @@ showPostNavLinks: false
 ### System Design
 
 1. [System Cheatsheet - bhavul](https://bhavul.github.io/System-Design-Cheatsheet/)
+2. [Kafka is fast -- I'll use Postgres](https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks)
