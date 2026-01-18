@@ -1,6 +1,9 @@
 name: Update Openring
 
 on:
+  push:
+    branches:
+      - dev
   schedule:
     # Run at midnight (00:00) UTC every day
     - cron: '0 0 * * *'
@@ -9,12 +12,16 @@ on:
 jobs:
   update-openring:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: dev
+          token: ${{ secrets.GH_TOKEN }}
       
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -38,7 +45,7 @@ jobs:
         id: create_pr
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           commit-message: 'chore: update openring feeds'
           branch: openring-update-${{ github.run_number }}
           base: dev
@@ -55,4 +62,41 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
         run: gh pr merge ${{ steps.create_pr.outputs.pull-request-number }} --auto --squash
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Wait for PR to merge
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
+        run: |
+          echo "Waiting for PR to be merged..."
+          for i in {1..30}; do
+            STATUS=$(gh pr view ${{ steps.create_pr.outputs.pull-request-number }} --json state --jq '.state')
+            if [ "$STATUS" = "MERGED" ]; then
+              echo "PR has been merged!"
+              break
+            fi
+            echo "PR status: $STATUS, waiting..."
+            sleep 10
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Create PR from dev to main
+        if: steps.check_changes.outputs.has_changes == 'true'
+        id: create_main_pr
+        run: |
+          gh pr create \
+            --base main \
+            --head dev \
+            --title "chore: Sync dev to main (openring update)" \
+            --body "Auto-sync from dev to main after openring update" \
+            --label "automated"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Enable auto-merge for main PR
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          PR_NUMBER=$(gh pr list --head dev --base main --json number --jq '.[0].number')
+          gh pr merge $PR_NUMBER --auto --merge
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
