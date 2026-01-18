@@ -14,7 +14,7 @@ Part of the operators we get introduced to when learning to program is Bitwise O
 
 Each of these has its usage, a refresher can be demonstrated considering these two variables `foo=1` and `bar=0`
 
-### For the bitwise OR(|) operator
+### For The Bitwise OR(|) Operator
 
 ```js
 const foo = 1, bar = 0
