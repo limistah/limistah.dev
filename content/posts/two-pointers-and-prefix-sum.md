@@ -378,12 +378,12 @@ Solving this with a naive algorithm:
 
 ```python
 def findSubarray(arr, target):
-    n = length(arr)
-    for i in range(len(arr)):
-        sum = 0 # always restart sum for a new index
-        for j range(len(arr)):
-            sum = sum + arr[j]
-            if sum == target:
+    n = len(arr)
+    for i in range(n):
+        total = 0
+        for j in range(i, n):
+            total += arr[j]
+            if total == target:
                 return [i, j]
     return [-1, -1]
 ```
