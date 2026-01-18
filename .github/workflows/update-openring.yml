@@ -41,6 +41,7 @@ jobs:
           fi
       
       - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
         id: create_pr
         uses: peter-evans/create-pull-request@v6
         with:
@@ -58,7 +59,33 @@ jobs:
           assignees: ${{ github.repository_owner }}
       
       - name: Enable auto-merge
-        if: steps.create_pr.outputs.pull-request-number
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
         run: gh pr merge ${{ steps.create_pr.outputs.pull-request-number }} --auto --squash
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Wait for PR to merge
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
+        run: |
+          echo "Waiting for PR to be merged..."
+          for i in {1..30}; do
+            STATUS=$(gh pr view ${{ steps.create_pr.outputs.pull-request-number }} --json state --jq '.state')
+            if [ "$STATUS" = "MERGED" ]; then
+              echo "PR has been merged!"
+              break
+            fi
+            echo "PR status: $STATUS, waiting..."
+            sleep 10
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Merge dev to main
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git fetch origin
+          git checkout main
+          git merge origin/dev --no-edit
+          git push origin main
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
