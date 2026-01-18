@@ -10,7 +10,7 @@ math: true
 
 ### Motivation
 
-Aside [binary search](/posts/merge-sort-binary-search/), two pointer is an algorithm solving technique that can come in handy for some easy to medium problems. While they both look similar from a distance, which infact prefix sum is – it derives its implementation from two pointers, I am curious to know when to use either of these techniques to solve an algorithm problem.
+Aside [binary search](/posts/merge-sort-binary-search/), two pointer is an algorithm solving technique that can come in handy for some easy to medium problems. While they both look similar from a distance, which in fact prefix sum is – it derives its implementation from two pointers, I am curious to know when to use either of these techniques to solve an algorithm problem.
 
 ## Two Pointers
 
@@ -46,7 +46,7 @@ Breaking down the naive solution, there are four useful parts.
 
 1. The moving `start` pointer
 2. The moving `end` pointer
-3. The working data (which is the sub array from `start` to `end` $s[ start : end + 1]$)
+3. The working data (which is the subarray from `start` to `end` $s[ start : end + 1]$)
 4. The solution determination
 
 With all this information, is there a way to make this algorithm run faster say in $O(n)$ against the $O(n^2)$?
@@ -89,7 +89,7 @@ def optimal_sol(s: str):
 
 #### The right pointer
 
-The second `index` will behave differently, it should only move when a condition is met and that is when there is a controllable range that creates a sub array. The `index` has to be initialized outside of the loop having also starting at $0$, and maintained by the loop body itself.
+The second `index` will behave differently, it should only move when a condition is met and that is when there is a controllable range that creates a subarray. The `index` has to be initialized outside of the loop having also starting at $0$, and maintained by the loop body itself.
 
 ```python
 def optimal_sol(s: str):
@@ -134,7 +134,7 @@ And that is a two pointer solution!
 4           l                    r
 ```
 
-In the illustration above, notice how all the criterias for the naive solution have been met
+In the illustration above, notice how all the criteria for the naive solution have been met
 
 1. A moving start pointer (the left in our case)
 2. A moving end pointer (the right in our case)
@@ -226,7 +226,7 @@ But the longest unique substring is $3$, could be one of `ap`, `ple`.
 
 There has to be an improvement to the solution determination part of the code
 
-The only point when a char exists twice is when the occurrence value for the `char` becomes $2$. And that is the perfect time reset the value back to $1$ and move the left pointer forward by $1$ as well.
+The only point when a `char` exists twice is when the occurrence value for the `char` becomes $2$. And that is the perfect time reset the value back to $1$ and move the left pointer forward by $1$ as well.
 
 This accurately tracks the visited values, and assume the substring $s[left:right]$ is unique as all the characters in the counter have 1 as their value.
 
@@ -280,11 +280,11 @@ idx  i   j   char    dict
 4    3   4    b     { a: 1, b: 1, c: 1 }
 ```
 
-Notice the solution at this point only ensure that `char` exists in the dictionary, but what is required is that only unique consecutive characters should have values in the dictionay.
+Notice the solution at this point only ensure that `char` exists in the dictionary, but what is required is that only unique consecutive characters should have values in the dictionary.
 
 A good improvement will be to move the left pointer forward consecutively until there is no double occurrence - meeting the criteria for a correct solution.
 
-So, instead of an `if`, a `while` is used. This way, the left keeps moving forward, until all keys in the occurence have a value of $0$ for every character that the left has visited:
+So, instead of an `if`, a `while` is used. This way, the left keeps moving forward, until all keys in the occurrence have a value of $0$ for every character that the left has visited:
 
 ```python
 from collections import defaultdict
@@ -301,7 +301,7 @@ def optimal_sol(s: str):
     return res
 ```
 
-And remodelling `abbcab` using the improvement:
+And remodeling `abbcab` using the improvement:
 
 ```text
 idx  i   j   char    dict
