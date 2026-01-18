@@ -80,12 +80,23 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       
-      - name: Merge dev to main
+      - name: Create PR from dev to main
+        if: steps.check_changes.outputs.has_changes == 'true'
+        id: create_main_pr
+        run: |
+          gh pr create \
+            --base main \
+            --head dev \
+            --title "chore: Sync dev to main (openring update)" \
+            --body "Auto-sync from dev to main after openring update" \
+            --label "automated"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Enable auto-merge for main PR
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
-          git fetch origin
-          git checkout main
-          git merge origin/dev --no-edit
-          git push origin main
+          PR_NUMBER=$(gh pr list --head dev --base main --json number --jq '.[0].number')
+          gh pr merge $PR_NUMBER --auto --merge
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
