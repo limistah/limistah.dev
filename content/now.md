@@ -33,7 +33,7 @@ showLastModified: true
 
 ### Tech Stack
 
-**Languages**: Golang, Python, TypeScript
+**Languages**: Rust, Golang, Python, TypeScript, C/C++
 
 **Operating System**: MacOS, Linux
 
@@ -55,13 +55,13 @@ Emigration now crosses my mind with Germany and France topping the list, the ski
 
 ### Education
 
-BSc. Computer Science
+BSc. Computer Science - <small><em>Kwara State University</em></small>
 
-BEng. Mechanical Engineering
+BEng. Mechanical Engineering - <small><em>Kwara State University</em></small>
 
-HND Mechanical Engineering
+HND Mechanical Engineering - <small><em>Lagos State Polytechnic</em></small>
 
-ND Mechanical Engineering
+ND Mechanical Engineering - <small><em>Kwara State Polytechnic</em></small>
 
 I did not get to do my CKA/CKS exams in the last quarter of 2025, pushing that forward to another time in the future, but, digging deeper into AWS and GCP still in 2026!
 

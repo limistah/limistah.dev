@@ -10,5 +10,4 @@ https://awesomekling.github.io/feed.xml
 https://pluralistic.net/feed/
 https://computer.rip/rss.xml
 https://ines.io/feed/
-https://www.jvt.me/feed.xml
 https://joegold.in/blog/index.xml
