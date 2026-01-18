@@ -1,10 +1,13 @@
-#!/bin/zsh
+#!/bin/bash
 FEEDLIST=config/openring/feeds.txt
 INPUT_TEMPLATE=config/openring/openring_template.html
 OUTPUT=layouts/partials/openring.html
 
 # Read the file into an array, one line per element
-FEEDS=( ${(f)"$(<$FEEDLIST)"} )
+FEEDS=()
+while IFS= read -r line; do
+  FEEDS+=("$line")
+done < "$FEEDLIST"
 
 # Build an array of arguments for openring
 OPENRING_ARGS=()
