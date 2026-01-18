@@ -1,9 +1,6 @@
 name: Update Openring
 
 on:
-  push:
-    branches:
-      - dev
   schedule:
     # Run at midnight (00:00) UTC every day
     - cron: '0 0 * * *'
@@ -68,21 +65,36 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
         run: |
           echo "Waiting for PR to be merged..."
+          MERGED=false
           for i in {1..30}; do
             STATUS=$(gh pr view ${{ steps.create_pr.outputs.pull-request-number }} --json state --jq '.state')
             if [ "$STATUS" = "MERGED" ]; then
               echo "PR has been merged!"
+              MERGED=true
               break
             fi
-            echo "PR status: $STATUS, waiting..."
+            echo "Attempt $i/30: PR status is $STATUS, waiting..."
             sleep 10
           done
+          
+          if [ "$MERGED" = "false" ]; then
+            echo "Error: PR failed to merge within timeout period (5 minutes)"
+            exit 1
+          fi
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Update local dev branch
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git fetch origin dev
+          git checkout dev
+          git pull origin dev
       
       - name: Create PR from dev to main
         if: steps.check_changes.outputs.has_changes == 'true'
         id: create_main_pr
+        continue-on-error: true
         run: |
           gh pr create \
             --base main \
@@ -94,9 +106,15 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       
       - name: Enable auto-merge for main PR
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.create_main_pr.outcome == 'success'
         run: |
           PR_NUMBER=$(gh pr list --head dev --base main --json number --jq '.[0].number')
-          gh pr merge $PR_NUMBER --auto --merge
+          if [ -n "$PR_NUMBER" ]; then
+            echo "Enabling auto-merge for PR #$PR_NUMBER"
+            gh pr merge $PR_NUMBER --auto --merge
+          else
+            echo "Error: Could not find PR number"
+            exit 1
+          fi
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
