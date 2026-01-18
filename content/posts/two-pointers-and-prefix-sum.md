@@ -217,7 +217,7 @@ More textually
 
 #### Determining a solution
 
-Taking the difference of the `right` and `left` and add $1$ - due to zero start point, produce a value close to the correct answer:
+Taking the difference of the `right` and `left` and add $1$ - due to $zero$ start point, produce a value close to the correct answer:
 
 ```
 (4 - 1) + 1 = 4
@@ -228,7 +228,7 @@ There has to be an improvement to the solution determination part of the code
 
 The only point when a `char` exists twice is when the occurrence value for the `char` becomes $2$. And that is the perfect time reset the value back to $1$ and move the left pointer forward by $1$ as well.
 
-This accurately tracks the visited values, and assume the substring $s[left:right]$ is unique as all the characters in the counter have 1 as their value.
+This accurately tracks the visited values, and assume the substring $s[left:right]$ is unique as all the characters in the counter have $1$ as their value.
 
 Something like this:
 
@@ -347,7 +347,7 @@ def optimal_sol(s: str):
 
 #### Analysis
 
-The time complexity of this algorithm is $O(n)$, even though there is a while loop for each iteration – which is $O(k)$ for $k$ being the maximum occurrence of a char and can be ignored.
+The time complexity of this algorithm is $O(n)$, even though there is a `while` loop for each iteration – which is $O(k)$ for $k$ being the maximum occurrence of a char and can be ignored.
 
 
 #### Note on Two Pointers
