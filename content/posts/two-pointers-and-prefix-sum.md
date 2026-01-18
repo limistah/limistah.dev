@@ -390,4 +390,4 @@ def findSubarray(arr, target):
 
 This almost looks like the naive two pointer solution earlier.
 
-It has two indices, a tracker for the solution which restarts, and a way to determine the solution. This is a solution in $O(n^2)$, we could achieve $O(n)$ runtime by following the similar approach done for the two pointer optimal solution. 
+It has two indices, a tracker for the solution which restarts, and a way to determine the solution. This is a solution in $O(n^2)$, we could achieve $O(n)$ runtime by following the similar approach done for the [two pointer optimal solution](#determining-a-solution).
