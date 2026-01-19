@@ -18,7 +18,6 @@ https://100r.co/links/rss.xml
 https://blog.brixit.nl/rss/
 https://bitfehler.srht.site/index.xml
 https://www.willowbarraco.fr:443/atom.xml
-https://torresjrjr.com/archive/index.xml
 https://cadence.moe/blog/rss.xml?limit=30
 https://harelang.org/blog/index.xml
 https://vladh.net/index.xml
