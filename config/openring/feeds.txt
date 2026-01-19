@@ -11,3 +11,13 @@ https://pluralistic.net/feed/
 https://computer.rip/rss.xml
 https://ines.io/feed/
 https://joegold.in/blog/index.xml
+https://os.phil-opp.com/rss.xml
+https://aphyr.com/posts.atom
+https://sourcehut.org/blog/index.xml
+https://100r.co/links/rss.xml
+https://blog.brixit.nl/rss/
+https://bitfehler.srht.site/index.xml
+https://www.willowbarraco.fr:443/atom.xml
+https://cadence.moe/blog/rss.xml?limit=30
+https://harelang.org/blog/index.xml
+https://vladh.net/index.xml

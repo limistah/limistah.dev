@@ -14,7 +14,7 @@ Part of the operators we get introduced to when learning to program is Bitwise O
 
 Each of these has its usage, a refresher can be demonstrated considering these two variables `foo=1` and `bar=0`
 
-### For the bitwise OR(|) operator
+### For The Bitwise OR(|) Operator
 
 ```js
 const foo = 1, bar = 0
@@ -56,17 +56,17 @@ After the advancement of transistors, the next phase is on how to make them usef
 
  A byte is a representation of a group of bits. Eight(8) bits would produce One(1) byte. Storing this on transistors means that transistors have to be grouped, and each group would have an identity. For example, if we have 32 transistors, that is 32 bits, and can be further converted to 32 / 8 = 4bytes, another example is if we have 32000 bits we would have 4000bytes. _The 4000bytes can be simplified by dividing by 1000 to create a kilo version, hence 4000byes/1000=4Kbytes_
 
-#### Bytes to ASCII code
+#### Bytes to ASCII Code
 
 With computers stuck at 1s and 0s, it makes more sense to stick to just the base 2 numbering system for computer arithmetic operations. For example, 1 + 1 in base 2 equals 0 (add both numbers, divide by 2 then take note of the remainder after the division), and 1+0 in base 2 equals 1 (subtract both numbers, then divide by 2, then take note of the remainder after the division).
 
 With these genius concepts, invention went further by assigning numbers to every number, character, and symbol ever known to man. This assignment is called ASCII character code. A(capital alphabet) is a different character from a(smaller alphabet) and both have unique ASCII numbers. For `A` the ASCII code is `065` and `a`is `097`.
 
-#### Representing characters
+#### Representing Characters
 
 Representing a character on a transistor(in bits) becomes easier, _convert the code from base 10 to 2_. For `A` the base 10 value is `065`, while the base 2 value is `01000001` and for the small `a` with a base 10 value of `097` the base 2 value is `01100001`. Numbers written in base 10 are called Decimal Numbers, while numbers written in base 2 are called Binary numbers. 
 
-#### Representing words
+#### Representing Words
 
 Since we can store numbers, characters, and symbols, we should be able to store words. Words are a group of letters and somehow letters, and alphabets, it is safe to use string, so a string of numbers, alphabets, and symbols. 
 
@@ -76,7 +76,7 @@ Grouping this together it forms a string of 0s and 1s like this
 
 `0110100001100101011011000110110001101111`. 
 
-### What is byte masking?
+### What Is Byte Masking?
 
 Byte masking is data manipulation at the bit level. What is happening is based on the kind of byte masking operation, we are instructing the transistor to switch to another state or maintain their state. For example, the binary code for the number 1 is  1, and for 2 is 10, and a bitwise OR operator on both numbers would give 3.
 
@@ -113,7 +113,7 @@ Be aware that 1 is not stored as 1 in computers but as `00000001` same for 2, it
 
 To better understand byte masking operations, take a look at what each masking operator would do for you.
 
-#### The Bitwise OR operator
+#### The Bitwise OR Operator
 
 As shown earlier, this operator returns the result of adding two bytes together. In the case of 1 and 2, we added 00000001 and 00000010 together to result into this 00000011.
 
@@ -230,7 +230,7 @@ Also,
 =   101
 ```
 
-#### Other operators
+#### Other Operators
 
 There are still two more operators, the Left Shift Operator and the Right Shift Operator. Both try to inverse(change to the other value)
 
