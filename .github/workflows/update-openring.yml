@@ -1,6 +1,9 @@
 name: Update Openring
 
 on:
+  push:
+    branches:
+      - dev
   schedule:
     # Run at midnight (00:00) UTC every day
     - cron: '0 0 * * *'
@@ -55,32 +58,12 @@ jobs:
           labels: automated, openring
           assignees: ${{ github.repository_owner }}
       
-      - name: Enable auto-merge
-        if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
-        run: gh pr merge ${{ steps.create_pr.outputs.pull-request-number }} --auto --squash
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      
-      - name: Wait for PR to merge
+      - name: Force merge PR to dev
         if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
         run: |
-          echo "Waiting for PR to be merged..."
-          MERGED=false
-          for i in {1..30}; do
-            STATUS=$(gh pr view ${{ steps.create_pr.outputs.pull-request-number }} --json state --jq '.state')
-            if [ "$STATUS" = "MERGED" ]; then
-              echo "PR has been merged!"
-              MERGED=true
-              break
-            fi
-            echo "Attempt $i/30: PR status is $STATUS, waiting..."
-            sleep 10
-          done
-          
-          if [ "$MERGED" = "false" ]; then
-            echo "Error: PR failed to merge within timeout period (5 minutes)"
-            exit 1
-          fi
+          echo "Force merging PR #${{ steps.create_pr.outputs.pull-request-number }} to dev..."
+          gh pr merge ${{ steps.create_pr.outputs.pull-request-number }} --squash --admin
+          echo "PR has been merged!"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       
@@ -105,13 +88,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       
-      - name: Enable auto-merge for main PR
+      - name: Force merge PR to main
         if: steps.check_changes.outputs.has_changes == 'true' && steps.create_main_pr.outcome == 'success'
         run: |
           PR_NUMBER=$(gh pr list --head dev --base main --json number --jq '.[0].number')
           if [ -n "$PR_NUMBER" ]; then
-            echo "Enabling auto-merge for PR #$PR_NUMBER"
-            gh pr merge $PR_NUMBER --auto --merge
+            echo "Force merging PR #$PR_NUMBER to main..."
+            gh pr merge $PR_NUMBER --merge --admin
+            echo "PR has been merged!"
           else
             echo "Error: Could not find PR number"
             exit 1
