@@ -1,9 +1,6 @@
 name: Update Openring
 
 on:
-  push:
-    branches:
-      - dev
   schedule:
     # Run at midnight (00:00) UTC every day
     - cron: '0 0 * * *'
