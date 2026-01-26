@@ -18,5 +18,5 @@ for FEED in "${FEEDS[@]}"; do
 done
 
 # Execute the command with the assembled arguments
-openring -n 5 "${OPENRING_ARGS[@]}" <$INPUT_TEMPLATE >$OUTPUT
+openring -n 5 "${OPENRING_ARGS[@]}" <"$INPUT_TEMPLATE" >"$OUTPUT"
 
