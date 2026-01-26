@@ -23,7 +23,6 @@ https://harelang.org/blog/index.xml
 https://vladh.net/index.xml
 https://developers.cloudflare.com/changelog/rss/index.xml
 https://blog.cloudflare.com/rss
-https://aws.amazon.com/blogs/aws/feed/
 https://cloudblog.withgoogle.com/rss/
 https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/rss/
 https://cloudblog.withgoogle.com/rss/
@@ -31,5 +30,5 @@ https://cloud.google.com/feeds/gcp-release-notes.xml
 https://web.dev/static/blog/feed.xml
 https://aws.amazon.com/blogs/machine-learning/feed/
 https://aws.amazon.com/new/feed/
-http://www.awsarchitectureblog.com/atom.xml
 https://azure.microsoft.com/en-us/blog/feed/
+https://openai.com/news/rss.xml
