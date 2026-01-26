@@ -120,6 +120,7 @@ showPostNavLinks: false
 2. [PintOS](https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html)
 3. [NachOS](https://homes.cs.washington.edu/~tom/nachos/)
 4. [C & C++ programming notes - Ben Langmead](https://github.com/BenLangmead/c-cpp-notes)
+5. [Programming in C and C++ (2024/2025) - University of Cambridge](https://www.cl.cam.ac.uk/teaching/2425/ProgC/materials.html)
 
 ---
 
