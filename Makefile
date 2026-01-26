@@ -2,10 +2,10 @@ openring:
 	@go install git.sr.ht/~sircmpwn/openring@latest
 	./openring.sh
 
-serve: openring
+serve:
 	hugo serve -p 1313
 
-build: openring
+build:
 	hugo
 
 build-prod: openring
