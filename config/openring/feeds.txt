@@ -21,3 +21,5 @@ https://www.willowbarraco.fr:443/atom.xml
 https://cadence.moe/blog/rss.xml?limit=30
 https://harelang.org/blog/index.xml
 https://vladh.net/index.xml
+https://developers.cloudflare.com/changelog/rss/index.xml
+https://aws.amazon.com/about-aws/whats-new/recent/feed/
