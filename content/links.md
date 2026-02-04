@@ -141,3 +141,9 @@ showPostNavLinks: false
 
 1. [System Cheatsheet - bhavul](https://bhavul.github.io/System-Design-Cheatsheet/)
 2. [Kafka is fast -- I'll use Postgres](https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks)
+
+--- 
+
+### Go
+
+1. [GopherCon '25 Testing Workshop - Alex Rios](https://github.com/alexrios/testing-workshop)
