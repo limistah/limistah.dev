@@ -13,7 +13,7 @@ cover:
 ### Motivation
 The growth of ChatGPT and other transformer based Artificial Intelligence has been fascinating, mostly applied to knowledge work – and that should be the case. In a space of X years, we transitioned from ChatGPT being able to answer arbitrary questions to Tab completions in Cursor, now agents doing most of the coding work. With these growth, some professions have been threatened, mine(software engineering) has witnessed frozen hirings for junior developers and low hiring for senior engineers. At work we have discussed the job market disruption by AI and developer efficiencies countless of times. Also, some close friends requested my stand on the AI era for software engineers. In all these, my conclusion has remained the same.
 
-I will draw most of my points from [traditional engineering](https://en.wikipedia.org/wiki/List_of_engineering_branches) disciplines, first they lay the foundation for general engineering, second, due to my extensive training as a Mechanical Engineer, so bear with me if liquid and metals infuriates you.
+I will draw most of my points from [traditional engineering](https://en.wikipedia.org/wiki/List_of_engineering_branches) disciplines, first they lay the foundation for general engineering, second, due to my extensive training as a Mechanical Engineer, so bear with me if liquids and metals infuriate you.
 
 ---
 
