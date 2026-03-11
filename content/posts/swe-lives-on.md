@@ -3,7 +3,7 @@ title: Software Engineering Lives On!
 date: 2026-03-03
 tags: [swe, ai, career]
 category: vim
-summary: Since the release of GPT 3 to the public, we have seen integration of LLMs into knowledge work, Software Engineering inclusive. With the rate of innovation, will knowledge work become obsolete?
+summary: Since the public release of GPT-3, LLMs have been integrated into many kinds of knowledge work, including software engineering. With the current pace of innovation, will knowledge work become obsolete?
 cover:
   image: "/assets/don-knuth-claude-cycles.jpeg"
   caption: "[Don Knuth - Claude's Cycles](https://cs.stanford.edu/~knuth/papers/claude-cycles.pdf)"
@@ -13,7 +13,7 @@ cover:
 ### Motivation
 The growth of ChatGPT and other transformer-based artificial intelligence tools has been fascinating, especially as they are applied to knowledge work — as they should be. In just a few years, we transitioned from ChatGPT being able to answer arbitrary questions to tab completions in tools like Cursor, and now to agents doing most of the coding work. With this growth, some professions have been threatened; my own field (software engineering) has witnessed hiring freezes for junior developers and reduced hiring for senior engineers. At work we have discussed the job market disruption caused by AI and the resulting developer efficiencies countless times. Some close friends have also requested my stance on the AI era for software engineers. Through all of this, my conclusion has remained the same.
 
-I will draw most of my points from [traditional engineering](https://en.wikipedia.org/wiki/List_of_engineering_branches) disciplines. First, they lay the foundation for general engineering. Second, I have extensive training as a mechanical engineer, so bear with me if liquids and metals infuriate you.
+I will draw most of my points from [traditional engineering](https://en.wikipedia.org/wiki/List_of_engineering_branches) disciplines, first they lay the foundation for general engineering, second, due to my extensive training as a Mechanical Engineer, so bear with me if liquids and metals infuriate you.
 
 ---
 
