@@ -3,7 +3,7 @@ title: Software Engineering Lives On!
 date: 2026-03-03
 tags: [swe, ai, career]
 category: vim
-summary: Since the release of GPT 3 to the public, we have seen integration of LLMs into knowledge work, Software Engineering inclusive. With the rate of innovation, will knowledge work become obsolete?
+summary: Since the public release of GPT-3, LLMs have been integrated into many kinds of knowledge work, including software engineering. With the current pace of innovation, will knowledge work become obsolete?
 cover:
   image: "/assets/don-knuth-claude-cycles.jpeg"
   caption: "[Don Knuth - Claude's Cycles](https://cs.stanford.edu/~knuth/papers/claude-cycles.pdf)"
