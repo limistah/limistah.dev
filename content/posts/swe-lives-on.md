@@ -33,12 +33,12 @@ This earlier form of programming proved that large-scale construction and comple
 {{< figure src="/assets/roman-road.jpg" title="" caption="[By AlMare - Own work, Public Domain](https://commons.wikimedia.org/w/index.php?curid=651155)" align="center" >}}
 
 
-The Romans were able to build [400,000 km of roads](https://en.wikipedia.org/wiki/Roman_roads) through better craftsmen — replacing craftsmen with process. Each [Roman legion](https://en.wikipedia.org/wiki/Roman_legion) of 5,000–6,000 soldiers carried surveying tools and construction equipment as standard kit. A legion, anywhere in the empire, can build a road segment that  will connect cleanly to any other. And this system worked because they were able to ecode knowledge  into repeatable steps that did not depend on any person
+The Romans were able to build [400,000 km of roads](https://en.wikipedia.org/wiki/Roman_roads) through better craftsmen — replacing craftsmen with process. Each [Roman legion](https://en.wikipedia.org/wiki/Roman_legion) of 5,000–6,000 soldiers carried surveying tools and construction equipment as standard kit. A legion, anywhere in the empire, can build a road segment that will connect cleanly to any other. And this system worked because they were able to encode knowledge into repeatable steps that did not depend on any person.
 
 
 The human brain requirement did not shrink — it shifted. It required fewer master craftsmen, but much more organized laborers that follow a documented procedure. Expertise moved from *doing* in the case of the pyramids at Giza to *standardizing the doing* through knowledge encoding.
 
-Software was on the same path in the late 1960s. The [1968 NATO Software Engineering Conference](https://en.wikipedia.org/wiki/NATO_Software_Engineering_Conferences) was to address the "[software crisis](https://en.wikipedia.org/wiki/Software_crisis)" — late projects, blown budgets, systems collapsing under their own weight. Here. the term "software engineering" was coined to eliminate their provocation of *let's treat this like a real discipline.* And after the name, structured programming, specification documents, team hierarchies were introduced. 
+Software was on the same path in the late 1960s. The [1968 NATO Software Engineering Conference](https://en.wikipedia.org/wiki/NATO_Software_Engineering_Conferences) was to address the "[software crisis](https://en.wikipedia.org/wiki/Software_crisis)" — late projects, blown budgets, systems collapsing under their own weight. Here, the term "software engineering" was coined as a provocation — *let's treat this like a real discipline.* And after the name, structured programming, specification documents, team hierarchies were introduced. 
 
 And by 1980 in the US alone, programmers went from the roughly [10,000 to over 300,000](https://www.aol.com/employment-computer-programmers-u-plummeted-180040565.html). Also, not because more geniuses appeared, but because process made programming learnable by ordinary trained professionals.
 
@@ -72,9 +72,9 @@ At this stage, formal theory enables mass production through standardization of 
 
 Henry Ford did not invent the automobile. He invented a way to build it at a cost ordinary people could afford. On October 7, 1913, the first [moving assembly line](https://en.wikipedia.org/wiki/Assembly_line) at [Highland Park](https://en.wikipedia.org/wiki/Highland_Park_Ford_Plant) began with 140 assemblers on a 150-foot chassis line. Assembly time fell from 728 minutes per car to 93. 
 
-By 1925, the plant employed nearly 70,000 workers who were trained specialists — not master craftsmen, with mastery of one operation and trusted the system to handle the rest. This single change dropped the proice of a [Model T](https://en.wikipedia.org/wiki/Ford_Model_T) from $850 to $260.
+By 1925, the plant employed nearly 70,000 workers who were trained specialists — not master craftsmen, with mastery of one operation and trusted the system to handle the rest. This single change dropped the price of a [Model T](https://en.wikipedia.org/wiki/Ford_Model_T) from $850 to $260.
 
-The insight was organizational, not mechanical. A thin layer of process engineers at the top who designed and maintained the system, a fewer _all-knowing_ craftsmen, but many special skilled operators at the bottom. Total brains required *increased*, but differently organized — horizontally across many workers rather than vertically inside a few.
+The insight was organizational, not mechanical. A thin layer of process engineers at the top who designed and maintained the system, a small number of all‑knowing master craftsmen, and a much larger group of narrowly skilled operators at the bottom. Total brains required *increased*, but differently organized — horizontally across many workers rather than vertically inside a few.
 
 The 1990s and 2000s were software's assembly line era. [Git](https://en.wikipedia.org/wiki/Git), object-oriented component architectures, open-source package ecosystems, Agile sprints. The [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel), built by tens of thousands of contributors across every continent, would have been impossible without this organizational stack. By 2010, the global developer population had grown to an estimated 11 million — not because 11 million people understood computation theory, but because the tools and processes had been standardized enough for trained generalists to contribute reliably.
 
@@ -99,7 +99,7 @@ Things I used to do by hand — provisioning environments, running test suites, 
 
 By 2022, roughly [27 million software developers](https://en.wikipedia.org/wiki/Software_engineering_demographics) existed worldwide — but the fastest-growing roles were not "write the code" but "design the systems, own the architecture, manage the reliability." The execution layer automated; the design layer expanded to absorb the talent.
 
-This stage was possible only because mudane tasks has been automated which frees human cognition from routine execution and concentrates it at the level of system design and optimization — which is precisely the level where AI assistance now operates.
+This stage was possible only because mundane tasks have been automated, which frees human cognition from routine execution and concentrates it at the level of system design and optimization — which is precisely the level where AI assistance now operates.
 
 
 ## Intelligent Engineering
@@ -108,7 +108,7 @@ This stage was possible only because mudane tasks has been automated which frees
 
 And here we are ... 
 
-AI coding agent has automated the translation of well-specified intent into working code — faster than any human team. Continuing the unbroken pattern: 
+AI coding agents have automated the translation of well-specified intent into working code — faster than any human team. Continuing the unbroken pattern: 
 
 > Once the current execution layer is automated, and human judgment moves one level up.
  
@@ -122,7 +122,7 @@ Maybe, some OGs of the industry can make you understand where we are in the hist
 
 Torvalds is famously skeptical about AI in the Linux kernel, and calls AI-generated contributions "slop." 
 
-In late 2025, his personal [AudioNoise project](https://github.com/torvalds/AudioNoise) surfaced on GitHub. He had written the core signal processing in C himself, and for the Python visualization layer — outside his primary domain — he used an LLM. I am not amused becuase he used AI assisted coding, I am because of his comment:
+In late 2025, his personal [AudioNoise project](https://github.com/torvalds/AudioNoise) surfaced on GitHub. He had written the core signal processing in C himself, and for the Python visualization layer — outside his primary domain — he used an LLM. I am not amused because he used AI assisted coding, I am because of his comment:
 
 > *"Is this much better than I could do by hand? Sure is."*[^1]
 
@@ -144,9 +144,9 @@ A colleague fed an unsolved graph theory [conjecture](https://en.wikipedia.org/w
 
 > *Hats off to Claude!*[^2]
 
-I am not surprised that AI solved a hard math problem, but suprised at whose problem, and his conclusions. Knuth did not say the discipline was over. He said he needed to revise his opinions. 
+I am not surprised that AI solved a hard math problem, but surprised at whose problem, and his conclusions. Knuth did not say the discipline was over. He said he needed to revise his opinions. 
 
-It also woth noting that Knuth wrote the proof, and published the paper. Emphasizing that the human expert remained essential — for verification, context, and judgment about what mattered. 
+It also worth noting that Knuth wrote the proof, and published the paper. Emphasizing that the human expert remained essential — for verification, context, and judgment about what mattered. 
 
 What changed was where the frontier lay.
 
