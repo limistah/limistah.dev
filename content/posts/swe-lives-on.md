@@ -33,6 +33,7 @@ This earlier form of programming proved that large-scale construction and comple
 
 {{< figure src="/assets/roman-road.jpg" title="" caption="[By AlMare - Own work, Public Domain](https://commons.wikimedia.org/w/index.php?curid=651155)" align="center" >}}
 
+
 The Romans were able to build [400,000 km of roads](https://en.wikipedia.org/wiki/Roman_roads) through better craftsmen — replacing craftsmen with process. Each [Roman legion](https://en.wikipedia.org/wiki/Roman_legion) of 5,000–6,000 soldiers carried surveying tools and construction equipment as standard kit. A legion, anywhere in the empire, can build a road segment that  will connect cleanly to any other. And this system worked because they were able to ecode knowledge  into repeatable steps that did not depend on any person
 
 
@@ -43,8 +44,6 @@ Software was on the same path in the late 1960s. The [1968 NATO Software Enginee
 And by 1980 in the US alone, programmers went from the roughly [10,000 to over 300,000](https://www.aol.com/employment-computer-programmers-u-plummeted-180040565.html). Also, not because more geniuses appeared, but because process made programming learnable by ordinary trained professionals.
 
 These replicable knowledge would lead to theorization of the processes in a future iteration.
-
----
 
 ## Knowledge Accumulation
 
@@ -67,8 +66,6 @@ The question shifted again, from "does this run on my machine?" to "is this algo
 By the 1970s–80s, computer science departments were [producing graduates](https://medium.com/@ahmedelhadi_16675/when-computers-entered-the-classroom-the-untold-story-of-how-computer-science-became-a-discipline-45ad270e1c5d) who understood not just *how* to program but *why* programs behaved as they did — at a scale no apprenticeship system could match.
 
 At this stage, formal theory enables mass production through standardization of manufacturing process and being able to specify, predict, and verify its outputs. Again, this would make the assembly line become possible once a person can calculate material tolerances, failure loads, and production rates in advance.
-
----
 
 ## Mass Production
 
@@ -122,7 +119,7 @@ The answer to "where do humans go?" has been the same across every prior transit
 
 Maybe, some OGs of the industry can make you understand where we are in the history of computer science, software engineering, and human race in general.
 
-## Linus Torvalds Uses AI
+### Linus Torvalds Leveraged LLM
 
 Torvalds is famously skeptical about AI in the Linux kernel, and calls AI-generated contributions "slop." 
 
@@ -134,7 +131,7 @@ This is the man who in 2000 wrote *"Talk is cheap. Show me the code"* — a stat
 
 That is exactly what happened to the master craftsman when precision machine tools arrived — they did not abandon their expertise, they redirected them upward.
 
-## Don Knuth in "Shock! Shock!"
+### Don Knuth in "Shock! Shock!"
 
 [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) is _the_ computer science theorist — has spent sixty-plus years writing *[The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)*, the mathematical bedrock of the entire industry. 
 
