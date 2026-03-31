@@ -79,6 +79,7 @@ showPostNavLinks: false
 2. [Programming Intel NPU](https://intel.github.io/intel-npu-acceleration-library/npu.html)
 3. [6.034 Artificial Intelligence, Fall 2010 - MIT](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi)
 4. [Made With Machine Learning Course](https://madewithml.com/#course)
+5. [Stanford CS221 - Autumn 2025 Lectures](https://github.com/stanford-cs221/autumn2025-lectures)
 
 ---
 
@@ -155,3 +156,8 @@ showPostNavLinks: false
 ### Writing
 
 1. [Community Writer Programs](https://github.com/malgamves/CommunityWriterPrograms)
+
+### Logic
+
+1. [Logic Tools](https://logictools.org/prop.html)
+2. [Proof Generator](https://logictools.org/prop.html)
