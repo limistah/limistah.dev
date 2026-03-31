@@ -157,6 +157,8 @@ showPostNavLinks: false
 
 1. [Community Writer Programs](https://github.com/malgamves/CommunityWriterPrograms)
 
+---
+
 ### Logic
 
 1. [Logic Tools](https://logictools.org/prop.html)
