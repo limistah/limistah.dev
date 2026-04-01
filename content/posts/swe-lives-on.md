@@ -17,7 +17,6 @@ In just a few years, we transitioned from ChatGPT being able to answer arbitrary
 
 At work we have discussed the job market disruption caused by AI and the resulting developer efficiencies countless times. Some close friends have also requested my stance on the AI era for software engineers. Through all of this, my conclusion has remained the same.
 
-
 I will draw most of my points from [traditional engineering](https://en.wikipedia.org/wiki/List_of_engineering_branches) disciplines. First, they lay the foundation for general engineering. Second, I have extensive training as a mechanical engineer, so bear with me if liquids and metals infuriate you.
 
 ---
