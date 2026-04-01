@@ -1,0 +1,20 @@
+name: Vouch Check Issue
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mitchellh/vouch/action/check-issue@3c04872f3d1aab94e1e2b26aa9a7aba7af9a2fda
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          auto-close: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
