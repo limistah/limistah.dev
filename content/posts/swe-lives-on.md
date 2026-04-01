@@ -20,6 +20,8 @@ At work we have discussed the job market disruption caused by AI and the resulti
 
 I will draw most of my points from [traditional engineering](https://en.wikipedia.org/wiki/List_of_engineering_branches) disciplines. First, they lay the foundation for general engineering. Second, I have extensive training as a mechanical engineer, so bear with me if liquids and metals infuriate you.
 
+---
+
 ## The Great Pyramids of Egypt
 
 {{< figure src="/assets/egyptian-tools.webp" title="" caption="[Martin Odler's book cover, *Old Kingdom Copper Tools and Model Tools*](https://www.amazon.com/Kingdom-Copper-Tools-Archaeopress-Egyptology/dp/1784914428)" align="center" >}}
