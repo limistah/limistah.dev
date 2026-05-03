@@ -24,10 +24,11 @@ Software Engineering has witnessed immense integration of AI into its workflows,
 
 ### Researching
 
-I mostly use ChatGPT, the free version, for this purpose, but Gemini can be somewhat great for access to the information Google has to have trained it, so I pair both. I pull as much information as I can from Gemini, export it to a doc or text file, then import it into ChatGPT for a refined result.
+I mostly use ChatGPT, the free version, for this purpose, but Gemini is great as well, so I pair both. 
+
+I pull as much information as I can from Gemini, export it to a markdown/text file, then import into ChatGPT for a refined result.
 
 I also learnt Grok can be so great for things like this, but I have not tried it yet.
-
 ### Deciding
 
 Anthropic’s models are the best here. Sometimes, I merge both research and decision into a single session on Claude Code. I have also found accessing Claude models via GitHub to be more economical; more on this in the implementation phase.
