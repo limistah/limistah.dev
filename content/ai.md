@@ -35,7 +35,7 @@ Anthropic’s models are the best here. Sometimes, I merge both research and dec
 
 This largely involves coding.
 
-I use [OpenCode](https://opencode.ai/) as my coding agent and connect to Anthropic’s models via GitHub[ Copilot Subscription](https://github.com/features/copilot/plans). I mostly run out of premium requests, but Copilot’s pricing model is still reasonable for me – we have access to Copilot Pro through our organization at work.
+I use [OpenCode](https://opencode.ai/) as my coding agent and connect to Anthropic’s models via [GitHub Copilot Subscription](https://github.com/features/copilot/plans). I mostly run out of premium requests, but Copilot’s pricing model is still reasonable for me – we have access to Copilot Pro through our organization at work.
 
 I pair Copilot with a Claude Code Pro subscription, but I mostly use this when I have to one-shot a task.
 
