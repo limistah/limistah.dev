@@ -28,7 +28,8 @@ I mostly use ChatGPT, the free version, for this purpose, but Gemini is great as
 
 I pull as much information as I can from Gemini, export it to a markdown/text file, then import into ChatGPT for a refined result.
 
-I also learnt Grok can be so great for things like this, but I have not tried it yet.
+I also learnt Grok can be great for things like this, but I have not tried it yet.
+
 ### Deciding
 
 Anthropic’s models are the best here. Sometimes, I merge both research and decision into a single session on Claude Code. I have also found accessing Claude models via GitHub to be more economical; more on this in the implementation phase.
@@ -41,7 +42,7 @@ I use [OpenCode](https://opencode.ai/) as my coding agent and connect to Anthrop
 
 I pair Copilot with a Claude Code Pro subscription, but I mostly use this when I have to one-shot a task.
 
-I take the output of the LLMs as my initial draft, then revise it manually and review it to ensure it meets my requirements and coding style. This process still requires me to code and increases my awareness of the outputs, rather than teaching an LLM how I write code. Whenever there is an abnormal output, I query the model for its reasoning – a 2-Factor verification to avoid slops.
+I take the output of the LLMs as my initial draft, then revise it manually and review it to ensure it meets my requirements and coding style. This process still requires me to code and increases my awareness of the outputs, rather than teaching an LLM how I write code. Whenever there is an abnormal output, I query the model for its reasoning – a kind of two-factor verification to avoid slops.
 
 I also take extra time going over the PRs personally before requesting external reviews.
 
@@ -55,7 +56,7 @@ When I have to move with speed, I employ Claude Code; when I have to be more cau
 
 A continuous process, and not so different from work.
 
-The AI Mode of Google, in my opinion, is underrated. I post my questions directly to Google, and I have the option to either decide for myself by going deeper into the links, or I just click the AI Mode tab, get the summary but, with the AI Mode I have the option of asking a follow-up question which has always been a natural step after an initial Google Search, instead of making a new Google Search query and losing the initial search context.
+The AI Mode of Google, in my opinion, is underrated. I post my questions directly to Google, and I can either decide for myself by going deeper into the links or click the AI Mode tab to get the summary. With AI Mode, I also have the option of asking a follow-up question, which has always been a natural step after an initial Google Search, instead of making a new Google Search query and losing the initial search context.
 
 For research work, I use [NotebookLM](https://notebooklm.google.com/) – also work-related research, sometimes. I love the fact that it uses my own curated sources, and a little bit of its internal knowledge for its output, which makes referencing easier and a deep dive into a piece of work more thorough.
 
@@ -77,4 +78,4 @@ The power still lies in having a concise idea of what is expected. LLMs can help
 
 Of course!
 
-Using hosted models for everyday inference is risky; it is surprising how much ChatGPT knows already about us in all of its existence compared to Google. It makes sense to locally host some open source models if the speed is not significant.
+Using hosted models for everyday inference is risky; it is surprising how much ChatGPT knows already about us in all of its existence compared to Google. It makes sense to locally host some open source models if latency requirements are not strict.
