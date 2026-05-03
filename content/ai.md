@@ -51,7 +51,7 @@ When I have to move with speed, I employ Claude Code; when I have to be more cau
 
 ## Learning
 
-A continuum process, and not so different from work.
+A continuous process, and not so different from work.
 
 The AI Mode of Google, in my opinion, is underrated. I post my questions directly to Google, and I have the option to either decide for myself by going deeper into the links, or I just click the AI Mode tab, get the summary but, with the AI Mode I have the option of asking a follow-up question which has always been a natural step after an initial Google Search, instead of making a new Google Search query and losing the initial search context.
 
