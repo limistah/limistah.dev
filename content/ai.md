@@ -6,9 +6,15 @@ comments: false
 tocopen: false
 showPostNavLinks: false
 ---
-I have witnessed a lot of evolution in technology but Artificial Intelligence (AI), it is just amazing. As we share the same initials (Aleem Isiaka), it makes good sense that I am very intentional about this technology.
+I have witnessed a lot of evolution in technology but Artificial Intelligence (AI), is just great. As we share the same initials (Aleem Isiaka), I have decided to be hands-on with it.
 
-On this page, I will continue to share how I use and explore the technology for *work*, *learning*, and *normal life*.
+On this page, I will continue to share how I use and explore the technology for *work*, *learning*, and *normal life*. Things I like and how I believe it can be improved.
+
+### Summary
+- **I know what I want and there is an AI agent that does it well enough**: I structure the implementation, and use an AI to generate it faster than I could, revise and review and even do manual intervention when necessary.
+- **I know what I want, but no AI agent good enough for it**: I gather resources, refine the idea with an LLM and continue with manual implementation.
+- **I don't know what I want**: I just prompt an AI to get a general idea of what to expect, then transition to one of the two approaches above.
+- **Everyday Random Search**: I just prompt an AI
 
 ## At Work
 Software Engineering has witnessed immense integration of AI into its workflows And for the things I do **research**, **decide** and **implement**, I have my personal approach for them.
@@ -45,11 +51,11 @@ I mostly use ChatGPT for everything else, I believe their GPT-5 models are great
 
 I tried [OpenClaw](https://openclaw.ai/) and its varients - [PicoClaw](https://picoclaw.io/), as a Golang engineer. I don't like the idea of having such agents. I believe AI should be what I prompt not what should decide what I can/should prompt.
 
-I believe on-device models would be the best route to go with these LLMs, some projects have started doing that like [Handy](https://handy.computer/). We will see more of these kind of AI integrations in the future.
+I believe on-device models would be the best route to go with these LLMs, some projects have started doing that like [Handy](https://handy.computer/). We will see more of these kind of AI integrations in the future. I use [Grammarly](https://www.grammarly.com/) and [Harper](https://writewithharper.com/), not sure if they use AI internally, but this is a good way to use AI – as a tool not as a replacement.
 ## What I don't like
-Because LLMs are large prediction engines, I don't enjoy their output for creative writing. A good example is asking Claude to help me generate a roadmap for a private software engineering mentorship programme - the output was not great, still some would blame my Prompting skills which I believe is not bad, at all.
+Because LLMs are large prediction engines, I don't enjoy their output for creative writing - I manually do this. A good example is asking Claude to help me generate a roadmap for a private software engineering mentorship programme - the output was not great, still some would blame my Prompting skills which I believe is not bad, at all. Same reason why I don't use them to write.
 
-The power still lies in having a concise idea of what is expected, LLMs can help to bootstrap them out but, they are not the best, always - no tangible replacement for our brains yet!
+The power still lies in having a concise idea of what is expected, LLMs can help to bootstrap them out – still, they are not always the best, and no tangible replacement for our brains, not yet!
 ## Improvements?
 Of course!
 
