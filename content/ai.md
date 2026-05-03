@@ -39,7 +39,7 @@ I use [OpenCode](https://opencode.ai/) as my coding agent and connect to Anthrop
 
 I pair Copilot with a Claude Code Pro subscription, but I mostly use this when I have to one-shot a task.
 
-I take the output of the LLMs as my initial draft, always, then ensuring they meet my requirements and coding style, through revision manual edits and manual reviews. The process enforce me to still code, increase my awareness of the outputs, rather than teaching an LLM how I write code. Whenever there is an abnormal output, I query the model for its reasoning – a 2-Factor verification to avoid slops.
+I take the output of the LLMs as my initial draft, then revise it manually and review it to ensure it meets my requirements and coding style. This process still requires me to code and increases my awareness of the outputs, rather than teaching an LLM how I write code. Whenever there is an abnormal output, I query the model for its reasoning – a 2-Factor verification to avoid slops.
 
 I also take extra time going over the PRs personally before requesting external reviews.
 
