@@ -55,7 +55,7 @@ A continuum process, and not so different from work.
 
 The AI Mode of Google, in my opinion, is underrated. I post my questions directly to Google, and I have the option to either decide for myself by going deeper into the links, or I just click the AI Mode tab, get the summary but, with the AI Mode I have the option of asking a followup question which has always been a natural step after an initial Google Search, instead of making a new Google Search query and losing the initial search context.
 
-For research work, I use [NotebookLM](https://notebooklm.google.com/) – also work-related research, sometimes. I love the fact that it uses my own curated sources, and a little bit of its internal knowledge for its output, which makes referencing easier and a deep dive into a piece of work thorough.
+For research work, I use [NotebookLM](https://notebooklm.google.com/) – also work-related research, sometimes. I love the fact that it uses my own curated sources, and a little bit of its internal knowledge for its output, which makes referencing easier and a deep dive into a piece of work more thorough.
 
 ## Normal Life
 
