@@ -46,12 +46,15 @@ languages:
         - name: Links
           url: links/
           weight: 5
+        - name: AI
+          url: ai/
+          weight: 6
         - name: Archive
           url: archive/
-          weight: 6
+          weight: 7
         - name: Search
           url: search/
-          weight: 7
+          weight: 8
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
