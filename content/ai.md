@@ -6,6 +6,7 @@ comments: false
 tocopen: false
 showPostNavLinks: false
 ---
+
 I have witnessed a lot of evolution in technology, but Artificial Intelligence (AI) is just great. As we share the same initials (Aleem Isiaka), I have decided to be hands-on with it.
 
 On this page, I will continue to share how I use and explore the technology for *work*, *learning*, and *normal life*. Things I like and how I believe they can be improved.
@@ -29,7 +30,7 @@ I also learnt Grok can be so great for things like this, but I have not tried it
 
 ### Deciding
 
-Anthropic’s models are the best here. Sometimes, I merge both research and decision into a single session on Claude Code. I have also found access to Claude models via GitHub more economical, more on this at the implementation phase.
+Anthropic’s models are the best here. Sometimes, I merge both research and decision into a single session on Claude Code. I have also found accessing Claude models via GitHub to be more economical; more on this in the implementation phase.
 
 ### Implementation
 
