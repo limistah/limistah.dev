@@ -29,7 +29,7 @@ I also learnt Grok can be so great for things like this, but I have not tried it
 
 ### Deciding
 
-Anthropic’s models are the best here. Sometimes, I merge both research and decision into a single session on Claude Code. I have also find access to Claude models via Github more economical, more on this at the implementation phase.
+Anthropic’s models are the best here. Sometimes, I merge both research and decision into a single session on Claude Code. I have also found access to Claude models via GitHub more economical, more on this at the implementation phase.
 
 ### Implementation
 
