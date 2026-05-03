@@ -45,7 +45,7 @@ I also take extra time going over the PRs personally before requesting external 
 
 I know extreme AI usage results in brain rot, and even LLMs themselves generate slops, which is not really my fear. I care more about my reputation as an engineer. I believe that once a name is tagged to a piece of work, the means stops justifying the end – responsibility has never been more important.
 
-Vibe Coding
+### Vibe Coding
 
 When I have to move with speed, I employ Claude Code; when I have to be more cautious, which is most of the time, I plan the task on [OpenCode](https://opencode.ai/), review and revise till an acceptable implementation plan is reached before proceeding with an implementation.
 
