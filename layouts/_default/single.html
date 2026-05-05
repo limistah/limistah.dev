@@ -59,11 +59,11 @@
     {{- end }}
   </footer>
 
-  {{- partial "extend_single_footer.html" . }}
-
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}
+
+  {{- partial "extend_single_footer.html" . }}
 </article>
 
 {{- end }}{{/* end main */}}

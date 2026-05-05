@@ -59,7 +59,7 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true' && steps.create_pr.outputs.pull-request-number
         run: |
           echo "Force merging PR #${{ steps.create_pr.outputs.pull-request-number }} to dev..."
-          gh pr merge ${{ steps.create_pr.outputs.pull-request-number }} --squash --admin
+          gh pr merge ${{ steps.create_pr.outputs.pull-request-number }} --squash
           echo "PR has been merged!"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -91,7 +91,7 @@ jobs:
           PR_NUMBER=$(gh pr list --head dev --base main --json number --jq '.[0].number')
           if [ -n "$PR_NUMBER" ]; then
             echo "Force merging PR #$PR_NUMBER to main..."
-            gh pr merge $PR_NUMBER --merge --admin
+            gh pr merge $PR_NUMBER --merge
             echo "PR has been merged!"
           else
             echo "Error: Could not find PR number"

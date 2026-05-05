@@ -17,6 +17,7 @@ showPostNavLinks: false
 ### Self Help/Learning
 
 1. [Teach Yourself CS](https://teachyourselfcs.com/)
+2. [Open Source Society University - Computer Science](https://github.com/ossu/computer-science)
 
 ---
 
@@ -76,7 +77,9 @@ showPostNavLinks: false
 
 1. [Machine Learning Roadmap - Daniel Bourke](https://github.com/mrdbourke/machine-learning-roadmap)
 2. [Programming Intel NPU](https://intel.github.io/intel-npu-acceleration-library/npu.html)
-3. [Made With Machine Learning Course](https://madewithml.com/#course)
+3. [6.034 Artificial Intelligence, Fall 2010 - MIT](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi)
+4. [Made With Machine Learning Course](https://madewithml.com/#course)
+5. [Stanford CS221 - Autumn 2025 Lectures](https://github.com/stanford-cs221/autumn2025-lectures)
 
 ---
 
@@ -141,3 +144,22 @@ showPostNavLinks: false
 
 1. [System Cheatsheet - bhavul](https://bhavul.github.io/System-Design-Cheatsheet/)
 2. [Kafka is fast -- I'll use Postgres](https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks)
+
+--- 
+
+### Go
+
+1. [GopherCon '25 Testing Workshop - Alex Rios](https://github.com/alexrios/testing-workshop)
+
+--- 
+
+### Writing
+
+1. [Community Writer Programs](https://github.com/malgamves/CommunityWriterPrograms)
+
+---
+
+### Logic
+
+1. [Logic Tools](https://logictools.org/prop.html)
+2. [Proof Generator](https://logictools.org/prop.html)
