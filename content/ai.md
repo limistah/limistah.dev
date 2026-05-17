@@ -38,7 +38,18 @@ Anthropic’s models are the best here. Sometimes, I merge both research and dec
 
 This largely involves coding.
 
-I use [OpenCode](https://opencode.ai/)  as my coding agent and connect to Anthropic’s models via [GitHub Copilot Subscription](https://github.com/features/copilot/plans). I mostly run out of premium requests, but Copilot’s pricing model is still reasonable for me – we have access to Copilot Pro through our organization at work. I installed [superpowers](https://github.com/obra/superpowers/blob/main/docs/README.opencode.md), [wakatime](https://github.com/angristan/opencode-wakatime) and [websearch](https://github.com/ghoulr/opencode-websearch-cited) plugins, to further improve the base harness.
+I use [OpenCode](https://opencode.ai/)  as my coding agent and connect to Anthropic's models via [GitHub Copilot Subscription](https://github.com/features/copilot/plans). I mostly run out of premium requests, but Copilot's pricing model is still reasonable for me – we have access to Copilot Pro through our organization at work. I installed [superpowers](https://github.com/obra/superpowers/blob/main/docs/README.opencode.md), [wakatime](https://github.com/angristan/opencode-wakatime) and [websearch](https://github.com/ghoulr/opencode-websearch-cited) plugins, to further improve the base harness.
+
+#### My OpenCode Setup
+
+I run OpenCode with two distinct agents for different workflows:
+
+- **Plan mode** (`github-copilot/claude-opus-4.5`): For research, exploration, and creating implementation plans without making file changes
+- **Build mode** (`github-copilot/claude-sonnet-4.5`): For executing implementations, writing code, and making actual changes
+
+This dual-agent setup allows me to separate thinking from doing – I can thoroughly plan in read-only mode, then execute with confidence in build mode.
+
+For web search capabilities, I use Gemini 2.5 Flash via the `opencode-websearch-cited` plugin, which provides grounded search results with citations.
 
 I pair Copilot with a Claude Code Pro subscription, but I mostly use this when I have to one-shot a task.
 
