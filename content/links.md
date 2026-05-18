@@ -228,8 +228,3 @@ lastmod: 2026-05-18
 
 1. [Community Writer Programs](https://github.com/malgamves/CommunityWriterPrograms)
 
----
-
-### generic
-
-1. [Test Link](https://example.com/test) - Testing the save-link function
