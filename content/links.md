@@ -5,7 +5,7 @@ layout: "baseof"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-05-18
+lastmod: 2026-05-22
 ---
 
 ### AI/ML
@@ -228,3 +228,8 @@ lastmod: 2026-05-18
 
 1. [Community Writer Programs](https://github.com/malgamves/CommunityWriterPrograms)
 
+---
+
+### generic
+
+1. [Test Link](https://example.com/test) - Testing the save-link function
