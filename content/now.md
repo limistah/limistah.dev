@@ -51,7 +51,7 @@ Married to an amazing woman
 
 Lagos, Nigeria
 
-Emigration now crosses my mind with Germany and France topping the list, the skilled worker path should be a good fit here.
+Emigration now crosses my mind, with Germany and France topping the list; the skilled worker path should be a good fit here.
 
 ### Education
 
@@ -77,11 +77,11 @@ To Sell Is Human
 
 How to Win Friends and Influence People
 
-Site Reliability Enginerring
+Site Reliability Engineering
 
 Modern Operating System
 
-The C Progamming Language
+The C Programming Language
 
 Introduction to Algorithms
 
@@ -99,10 +99,12 @@ Got the design for [WitOps](https://witops.cloud), I don't feel great about it, 
 
 Design for [ObjectSpread](https://objectspread.com) is underway, and the blog is now live on [https://blog.objectspread.com](https://blog.objectspread.com). You could [Join Us!](https://blog.objectspread.com/p/join-us)!
 
-Since my website is more usable, I think it can serve me for the next 5yrs(yaaay...). Next focus is on redesigning ObjectSpread and WitOps.
+Since my website is more usable, I think it can serve me for the next 5 years (yaaay...). The next focus is on redesigning ObjectSpread and WitOps.
 
-I still think hard on the project-per-quarter thingy, it still interests me to do! I might start with very useful libraries in the second quarter of 2026.
+I still think hard on the project-per-quarter thingy, it still interests me to do! I started this already, and so far we have two projects:
 
+- [Heimdal](https://github.com/limistah/heimdal): This is my solution to an effortless dev environment switch.
+- [Mustache-zig](https://github.com/limistah/mustache-zig): A Mustache Spec implementations in Zig
 
 I have a private foundation that I passively operated, just in my mind, I was thinking of formalizing it, we shall see if this is still possible.
 ### Volunteering
