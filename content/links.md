@@ -5,7 +5,7 @@ layout: "baseof"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-05-18
+lastmod: 2026-05-23
 ---
 
 ### AI/ML
@@ -227,4 +227,3 @@ lastmod: 2026-05-18
 ### Writing
 
 1. [Community Writer Programs](https://github.com/malgamves/CommunityWriterPrograms)
-
