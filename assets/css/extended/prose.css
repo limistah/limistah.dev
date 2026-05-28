@@ -1,0 +1,594 @@
+/* ─────────────────────────────────────────────────────────────────
+   Prose content styles — applies to .post-content (article pages)
+   Covers every element from the Article Template design.
+   ───────────────────────────────────────────────────────────────── */
+
+/* ─── Base typography ─── */
+
+.post-content {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.85;
+    color: var(--text-secondary);
+}
+
+.post-content p {
+    margin-bottom: var(--space-lg);
+}
+
+.post-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.post-content em {
+    color: var(--text-primary);
+}
+
+.post-content del {
+    color: var(--text-tertiary);
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: var(--space-2xl) 0 var(--space-lg) 0;
+}
+
+/* ─── Headings ─── */
+
+.post-content h2 {
+    font-family: var(--font-sans);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    line-height: 1.25;
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+.post-content h3 {
+    font-family: var(--font-sans);
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-sm);
+    line-height: 1.3;
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+.post-content h4 {
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+/* ─── Links ─── */
+
+.post-content a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: color 0.15s ease;
+}
+
+.post-content a:hover {
+    color: var(--accent-green);
+}
+
+/* ─── Lists ─── */
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-lg);
+}
+
+.post-content li {
+    margin-bottom: var(--space-xs);
+}
+
+/* GFM task lists */
+.post-content .task-list-item,
+.post-content li.task-list-item {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding-left: 0;
+    margin-left: calc(-1 * var(--space-lg));
+}
+
+.post-content .task-list-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    cursor: default;
+    background: transparent;
+    position: relative;
+}
+
+.post-content .task-list-item input[type="checkbox"]:checked {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    box-shadow: inset 0 0 0 2px var(--bg-primary);
+}
+
+/* ─── Blockquote ─── */
+
+.post-content blockquote {
+    border-left: 3px solid var(--accent-amber);
+    padding: var(--space-sm) var(--space-lg);
+    margin: var(--space-lg) 0;
+    font-style: italic;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 1.0625rem;
+}
+
+.post-content blockquote p {
+    margin-bottom: 0;
+}
+
+.post-content blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-top: var(--space-sm);
+    font-family: var(--font-mono);
+}
+
+/* ─── Pull quote ─── */
+
+.post-content .pull-quote {
+    font-family: var(--font-serif);
+    font-size: 1.625rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin: var(--space-2xl) 0;
+    padding: var(--space-lg) 0;
+    border-top: 2px solid var(--accent-cyan);
+    border-bottom: 2px solid var(--accent-cyan);
+    font-style: italic;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.post-content .pull-quote::before {
+    content: '\201C';
+    color: var(--accent-cyan);
+    margin-right: 4px;
+    font-size: 1.3em;
+    vertical-align: -0.1em;
+}
+
+.post-content .pull-quote::after {
+    content: '\201D';
+    color: var(--accent-cyan);
+    margin-left: 4px;
+    font-size: 1.3em;
+    vertical-align: -0.1em;
+}
+
+/* ─── Inline code ─── */
+
+.post-content code:not(pre code) {
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+    background: var(--bg-tertiary);
+    padding: 2px 6px;
+    color: var(--accent-amber);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+/* ─── Code blocks ─── */
+
+.post-content pre {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    margin: var(--space-lg) 0;
+    overflow-x: auto;
+}
+
+.post-content pre code {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background: transparent;
+    padding: var(--space-md);
+    display: block;
+    border: none;
+    border-radius: 0;
+}
+
+/* Chroma / Highlight.js code block wrapper */
+.post-content .highlight {
+    margin: var(--space-lg) 0;
+    border: 1px solid var(--border-color);
+    background: var(--bg-tertiary);
+    overflow: hidden;
+}
+
+.post-content .highlight pre {
+    margin: 0;
+    border: none;
+    padding: 12px 14px;
+    overflow-x: auto;
+    background: transparent;
+}
+
+/* Reset general table rules inside Chroma blocks */
+.post-content .highlight table,
+.post-content .highlight .lntable {
+    display: table;
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    overflow-x: visible;
+}
+
+.post-content .highlight tr,
+.post-content .highlight td,
+.post-content .highlight th {
+    padding: 0;
+    border: none;
+    background: transparent;
+    text-align: left;
+}
+
+.post-content .highlight tbody tr:hover {
+    background: transparent;
+}
+
+/* Line numbers column */
+.post-content .highlight .lntd:first-child {
+    width: 1%;
+    white-space: nowrap;
+    padding-right: 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.post-content .highlight .lntd:first-child pre {
+    padding: 12px 10px 12px 14px;
+    background: rgba(0, 0, 0, 0.15);
+    border-right: 1px solid var(--border-color);
+}
+
+/* Code column */
+.post-content .highlight .lntd:last-child pre {
+    padding: 12px 14px;
+}
+
+/* Line number spans and their anchor links */
+.post-content .highlight .lnt,
+.post-content .highlight .ln {
+    color: var(--text-tertiary);
+    display: block;
+    line-height: 1.7;
+}
+
+.post-content .highlight .lnlinks {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.post-content .highlight .lnlinks:hover {
+    color: var(--text-secondary);
+}
+
+/* Chroma without line numbers: plain pre inside .highlight */
+.post-content .chroma {
+    background: transparent;
+}
+
+/* ─── Tables ─── */
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-lg) 0;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    overflow-x: auto;
+    display: block;
+}
+
+.post-content th,
+.post-content td {
+    text-align: left;
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-content th {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-tertiary);
+    font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.post-content td {
+    color: var(--text-secondary);
+}
+
+.post-content tbody tr:hover {
+    background: rgba(255, 255, 255, 0.015);
+}
+
+/* ─── Images ─── */
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--space-lg) auto;
+    border: 1px solid var(--border-color);
+}
+
+/* ─── Videos ─── */
+
+.post-content video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--space-lg) auto;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.post-content iframe {
+    max-width: 100%;
+    display: block;
+    margin: var(--space-lg) auto;
+    border: 1px solid var(--border-color);
+}
+
+/* ─── Figures and captions ─── */
+
+.post-content figure {
+    margin: var(--space-xl) 0;
+}
+
+.post-content figure img,
+.post-content figure video {
+    width: 100%;
+    margin: 0;
+}
+
+/* Placeholder for figures without real media */
+.post-content figure .figure-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+}
+
+.post-content figcaption {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    text-align: center;
+    margin-top: var(--space-sm);
+    font-style: normal;
+    line-height: 1.5;
+}
+
+/* ─── Definition lists ─── */
+
+.post-content dl {
+    margin: var(--space-lg) 0;
+}
+
+.post-content dt {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    margin-top: var(--space-md);
+}
+
+.post-content dt:first-child {
+    margin-top: 0;
+}
+
+.post-content dd {
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-sm);
+    border-left: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* ─── Callouts ─── */
+
+.post-content .callout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    margin: var(--space-lg) 0;
+    border: 1px solid var(--border-color);
+    border-left-width: 3px;
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 1rem;
+    line-height: 1.65;
+    font-family: var(--font-sans);
+}
+
+.post-content .callout p:last-child {
+    margin-bottom: 0;
+}
+
+.post-content .callout-icon {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-top: 2px;
+    white-space: nowrap;
+}
+
+.post-content .callout-note  { border-left-color: var(--accent-cyan); }
+.post-content .callout-note  .callout-icon { color: var(--accent-cyan); }
+.post-content .callout-tip   { border-left-color: var(--accent-green); }
+.post-content .callout-tip   .callout-icon { color: var(--accent-green); }
+.post-content .callout-warn  { border-left-color: var(--accent-amber); }
+.post-content .callout-warn  .callout-icon { color: var(--accent-amber); }
+.post-content .callout-error { border-left-color: var(--accent-red); }
+.post-content .callout-error .callout-icon { color: var(--accent-red); }
+
+/* ─── Footnote references ─── */
+
+.post-content .fn-ref,
+.post-content sup a {
+    font-family: var(--font-mono);
+    font-size: 0.7em;
+    color: var(--accent-cyan);
+    vertical-align: super;
+    line-height: 0;
+    text-decoration: none;
+    border-bottom: none;
+    padding: 0 2px;
+}
+
+.post-content .fn-ref:hover,
+.post-content sup a:hover {
+    color: var(--accent-amber);
+    border-bottom: none;
+}
+
+/* ─── Footnotes section ─── */
+
+.post-content .footnotes {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.875rem;
+    font-family: var(--font-sans);
+}
+
+.post-content .footnotes h2,
+.post-content .footnotes h3 {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--space-md);
+    margin-top: 0;
+}
+
+.post-content .footnotes ol {
+    padding-left: var(--space-md);
+    color: var(--text-secondary);
+}
+
+.post-content .footnotes li {
+    margin-bottom: var(--space-sm);
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+.post-content .footnotes li:target {
+    background: rgba(125, 211, 252, 0.08);
+    padding: 4px 8px;
+    margin-left: -8px;
+}
+
+.post-content .fn-back,
+.post-content .footnotes a[href^="#fnref"] {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: none;
+    margin-left: 4px;
+}
+
+/* ─── KaTeX math ─── */
+
+.post-content .katex {
+    font-size: 1.05em;
+    color: var(--text-primary);
+}
+
+.post-content .katex-display {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border-left: 3px solid var(--accent-cyan);
+    overflow-x: auto;
+}
+
+.post-content .katex-display > .katex {
+    color: var(--text-primary);
+}
+
+/* ─── Inline reference ─── */
+
+.post-content .ref {
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+}
+
+/* ─── Mobile ─── */
+
+@media (max-width: 640px) {
+    .post-content {
+        font-size: 1rem;
+    }
+
+    .post-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .post-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .post-content .pull-quote {
+        font-size: 1.25rem;
+    }
+
+    .post-content table {
+        font-size: 0.875rem;
+    }
+
+    .post-content .callout {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+    }
+
+    .post-content pre code {
+        font-size: 0.8125rem;
+    }
+}

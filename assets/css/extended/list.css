@@ -1,0 +1,223 @@
+/* ─── Page header (shared across list pages) ─── */
+
+.lm-page-header {
+    margin-bottom: var(--space-2xl);
+}
+
+.lm-page-title {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-bottom: var(--space-md);
+}
+
+.lm-page-lede {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: var(--space-md);
+    max-width: 60ch;
+}
+
+.lm-page-lede a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
+.lm-page-meta {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lm-page-meta a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
+/* ─── Filter bar ─── */
+
+.lm-filter-bar {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lm-filter-input-wrap {
+    flex: 1 1 280px;
+    position: relative;
+}
+
+.lm-filter-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+    pointer-events: none;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.lm-filter-input {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    padding-left: 36px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.15s ease;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.lm-filter-input:focus {
+    border-color: var(--accent-cyan);
+}
+
+.lm-filter-input::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* ─── Tag chips ─── */
+
+.lm-tag-chips {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lm-tag-chip {
+    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.6;
+}
+
+.lm-tag-chip:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.lm-tag-chip--active {
+    background: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    color: var(--bg-primary);
+}
+
+.lm-tag-chip--active:hover {
+    opacity: 0.9;
+    color: var(--bg-primary);
+}
+
+/* ─── Post card ─── */
+
+.lm-post-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-md);
+    min-height: 1em;
+}
+
+.lm-post-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-lg) 0;
+    border-bottom: 1px solid var(--border-color);
+    text-decoration: none;
+    color: inherit;
+    align-items: baseline;
+    transition: background 0.15s ease;
+}
+
+.lm-post-card:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.lm-post-card:hover {
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.lm-post-date {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    padding-top: 4px;
+}
+
+.lm-post-title {
+    font-family: var(--font-sans);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.lm-post-excerpt {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+    line-height: 1.65;
+    font-size: 0.9375rem;
+}
+
+.lm-post-foot {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+.lm-post-read-time {
+    color: var(--accent-cyan);
+}
+
+.lm-post-tags-inline {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.lm-post-tag-inline {
+    color: var(--text-tertiary);
+}
+
+.lm-empty-state {
+    padding: var(--space-3xl) 0;
+    text-align: center;
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+    .lm-post-card {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+    }
+}

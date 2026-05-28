@@ -1,0 +1,566 @@
+/* ─── AI page components ─── */
+
+/* ── Decision Tree ── */
+
+.ai-decision-tree {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.ai-dt-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.ai-dt-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    padding: 2px 8px;
+    letter-spacing: 0.12em;
+}
+
+.ai-dt-caption {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+}
+
+.ai-dt-branches {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.ai-dt-row {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: var(--space-md);
+    align-items: start;
+}
+
+.ai-dt-connector {
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ai-dt-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.ai-dt-line {
+    width: 1px;
+    flex: 1;
+    background: var(--border-color);
+    margin-top: 4px;
+    margin-bottom: -16px;
+}
+
+.ai-dt-card {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-left-width: 3px;
+}
+
+.ai-dt-card-top {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.ai-dt-weight {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+}
+
+.ai-dt-condition {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    font-family: var(--font-mono);
+}
+
+.ai-dt-sub {
+    color: var(--text-tertiary);
+    font-weight: 400;
+}
+
+.ai-dt-action {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    padding-left: var(--space-sm);
+    border-left: 2px solid var(--border-color);
+}
+
+/* ── Workflow Stages ── */
+
+.ai-workflow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-xl);
+}
+
+.ai-stage {
+    padding: var(--space-lg);
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    position: relative;
+}
+
+.ai-stage--last {
+    border-right: none;
+}
+
+.ai-stage-arrow {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    z-index: 2;
+}
+
+.ai-stage-n {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    margin-bottom: var(--space-xs);
+}
+
+.ai-stage-title {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.ai-stage-primary {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    border: 1px solid;
+    padding: 6px 10px;
+    display: inline-block;
+    margin-bottom: var(--space-xs);
+}
+
+.ai-stage-secondary {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-md);
+}
+
+.ai-stage-method {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+}
+
+.ai-stage-note {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── OpenCode terminal card ── */
+
+.ai-terminal {
+    background: #0d1117;
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-xl);
+    font-family: var(--font-mono);
+}
+
+.ai-terminal-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ai-terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.ai-terminal-dot--red    { background: #ff5f57; }
+.ai-terminal-dot--yellow { background: #febc2e; }
+.ai-terminal-dot--green  { background: #28c840; }
+
+.ai-terminal-filename {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.ai-terminal-body {
+    padding: var(--space-lg);
+}
+
+.ai-agents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.ai-agent {
+    padding: var(--space-md);
+    border: 1px solid;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.ai-agent--plan  { border-color: var(--accent-cyan); }
+.ai-agent--build { border-color: var(--accent-green); }
+
+.ai-agent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+}
+
+.ai-agent-id {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+}
+
+.ai-agent-badge {
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    border: 1px solid var(--border-color);
+    padding: 1px 6px;
+}
+
+.ai-agent-name {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.ai-agent-model {
+    font-size: 0.75rem;
+    color: var(--accent-amber);
+    margin-bottom: var(--space-sm);
+}
+
+.ai-agent-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.ai-terminal-plugins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    padding-top: var(--space-sm);
+    border-top: 1px dashed var(--border-color);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.ai-terminal-plugins-label {
+    color: var(--text-tertiary);
+}
+
+.ai-terminal-plugins a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: none;
+    transition: opacity 0.15s;
+}
+
+.ai-terminal-plugins a:hover {
+    opacity: 0.8;
+}
+
+/* ── Hermes pipeline ── */
+
+.ai-hermes {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: var(--space-lg);
+    margin: var(--space-lg) 0 var(--space-xl);
+}
+
+.ai-hermes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.ai-hermes-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    padding: 2px 8px;
+    letter-spacing: 0.12em;
+}
+
+.ai-hermes-caption {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+}
+
+.ai-hermes-flow {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-md);
+}
+
+.ai-hermes-node {
+    flex: 1 1 120px;
+    padding: var(--space-md);
+    background: var(--bg-primary);
+    border: 1px solid;
+}
+
+.ai-hermes-node-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+}
+
+.ai-hermes-node-name {
+    font-family: var(--font-mono);
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.ai-hermes-node-badge {
+    font-size: 0.6rem;
+    color: var(--text-tertiary);
+    border: 1px solid var(--border-color);
+    padding: 1px 5px;
+    font-weight: 400;
+}
+
+.ai-hermes-node-sub {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+}
+
+.ai-hermes-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    min-width: 36px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.08em;
+    gap: 2px;
+}
+
+.ai-hermes-arrow-glyph {
+    font-size: 1rem;
+    color: var(--accent-amber);
+}
+
+.ai-hermes-backends {
+    background: var(--bg-primary);
+    border: 1px dashed var(--border-color);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.ai-hermes-backends-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.12em;
+}
+
+.ai-hermes-backends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-sm);
+}
+
+.ai-hermes-backend {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-secondary);
+    border-left: 3px solid;
+}
+
+.ai-hermes-backend-name {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.ai-hermes-backend-desc {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+}
+
+.ai-hermes-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-sm);
+    padding-top: var(--space-sm);
+    border-top: 1px dashed var(--border-color);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.ai-hermes-meta-key {
+    color: var(--accent-amber);
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 768px) {
+    .ai-workflow {
+        grid-template-columns: 1fr;
+    }
+    .ai-stage {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .ai-stage--last {
+        border-bottom: none;
+    }
+    .ai-stage-arrow {
+        display: none;
+    }
+    .ai-agents {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Decision tree: shrink connector column, ensure card doesn't overflow */
+    .ai-dt-row {
+        grid-template-columns: 28px 1fr;
+        gap: var(--space-sm);
+        min-width: 0;
+    }
+
+    .ai-dt-card {
+        min-width: 0;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .ai-dt-condition {
+        font-size: 0.875rem;
+    }
+
+    .ai-dt-header {
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+
+    /* Decision tree: stack weight + condition vertically */
+    .ai-dt-card-top {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* Terminal: single column agents */
+    .ai-agents {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-terminal-filename {
+        display: none;
+    }
+
+    /* Hermes: vertical flow */
+    .ai-hermes-flow {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .ai-hermes-arrow {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+        min-width: auto;
+        gap: var(--space-xs);
+    }
+
+    .ai-hermes-node {
+        flex: none;
+        min-width: 0;
+    }
+
+    .ai-hermes-backends-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-hermes-meta {
+        grid-template-columns: 1fr;
+    }
+}

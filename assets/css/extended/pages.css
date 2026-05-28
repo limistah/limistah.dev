@@ -1,0 +1,733 @@
+/* ─── Generic content pages (about, now, etc.) ─── */
+
+.lm-page-outer {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+
+.lm-page-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Page header for simple pages — mono green title */
+.lm-simple-title {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-bottom: var(--space-md);
+    line-height: 1.15;
+}
+
+.lm-simple-meta {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-md);
+}
+
+/* Prose body for page content */
+.lm-prose {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.lm-prose p {
+    margin-bottom: var(--space-lg);
+}
+
+.lm-prose strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.lm-prose em {
+    color: var(--text-primary);
+}
+
+.lm-prose a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+}
+
+.lm-prose a:hover {
+    border-color: var(--accent-cyan);
+}
+
+.lm-prose h2,
+.lm-prose h3 {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+}
+
+.lm-prose img {
+    max-width: 300px;
+    width: 100%;
+    border: 3px solid var(--accent-green);
+    background: var(--bg-secondary);
+    padding: var(--space-sm);
+    display: block;
+    margin: var(--space-2xl) auto;
+}
+
+/* CTA box */
+.lm-cta-box {
+    margin-top: var(--space-2xl);
+    padding: var(--space-lg);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.lm-cta-text {
+    margin-bottom: var(--space-md);
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.lm-btn-primary {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-xl);
+    background: var(--accent-green);
+    color: var(--bg-primary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.lm-btn-primary:hover {
+    opacity: 0.9;
+    color: var(--bg-primary);
+}
+
+/* ─── Now page ─── */
+
+.lm-now-outer {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+    padding-bottom: var(--space-3xl);
+}
+
+.lm-now-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lm-now-header {
+    margin-bottom: var(--space-3xl);
+}
+
+.lm-now-title {
+    font-family: var(--font-mono);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-bottom: var(--space-md);
+    line-height: 1.1;
+}
+
+.lm-now-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+    line-height: 1.7;
+}
+
+.lm-now-updated {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-md);
+}
+
+/* Section headings — h3 from markdown */
+.lm-now-content h3 {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: inline-block;
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 2px solid var(--accent-cyan);
+    line-height: 1.3;
+}
+
+/* Key-value items: **Label**: value from markdown → p > strong:first-child */
+.lm-now-content p:has(> strong:first-child) {
+    display: flex;
+    align-items: baseline;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-xs);
+    transition: border-color 0.2s ease;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-wrap: wrap;
+}
+
+.lm-now-content p:has(> strong:first-child):hover {
+    border-color: var(--accent-green);
+}
+
+/* Label takes a fixed min-width so values align across rows */
+.lm-now-content p:has(> strong:first-child) > strong:first-child {
+    min-width: 180px;
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    font-weight: 600;
+}
+
+.lm-now-content p:has(> strong:first-child) > strong:first-child::after {
+    content: ':';
+    margin-right: var(--space-xs);
+}
+
+.lm-now-content p:has(> strong:first-child) a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
+/* Regular prose paragraphs */
+.lm-now-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.lm-now-content p a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: color 0.15s ease;
+}
+
+.lm-now-content p a:hover {
+    color: var(--accent-green);
+}
+
+.lm-now-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.lm-now-content em {
+    color: var(--text-primary);
+}
+
+/* Bullet lists — no list-style, → bullets in green */
+.lm-now-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-lg) 0;
+}
+
+.lm-now-content ul li {
+    position: relative;
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-xs);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.lm-now-content ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+}
+
+.lm-now-content ul li a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: color 0.15s ease;
+}
+
+.lm-now-content ul li a:hover {
+    color: var(--accent-green);
+}
+
+/* Small text inside headings (used for university names) */
+.lm-now-content small {
+    font-size: 0.8em;
+    color: var(--text-tertiary);
+}
+
+/* Kill the margin-top on the very first section heading */
+.lm-now-content > h3:first-child,
+.lm-now-content > *:first-child h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 640px) {
+    .lm-page-outer {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+
+    .lm-now-outer {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+
+    .lm-now-header {
+        margin-bottom: var(--space-xl);
+    }
+
+    /* On mobile: block layout, label and value on same line, no flex wrapping issues */
+    .lm-now-content p:has(> strong:first-child) {
+        display: block;
+        overflow-wrap: break-word;
+    }
+
+    .lm-now-content p:has(> strong:first-child) > strong:first-child {
+        min-width: auto;
+        display: inline;
+    }
+
+    .lm-now-content h3 {
+        font-size: 1.125rem;
+        margin-top: var(--space-xl);
+    }
+}
+
+/* ─── Tags index ─── */
+
+.lm-tag-cloud {
+    padding: var(--space-2xl);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-2xl);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: baseline;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+.lm-cloud-item {
+    font-family: var(--font-mono);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.lm-cloud-item:hover {
+    color: var(--accent-cyan);
+    transform: translateY(-2px);
+}
+
+.lm-tags-section-heading {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.lm-tag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-xs);
+}
+
+.lm-tag-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.lm-tag-row:hover {
+    border-color: var(--accent-cyan);
+    background: var(--bg-secondary);
+}
+
+.lm-tag-row-name {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+}
+
+.lm-tag-row-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+/* ─── Tag detail (term) ─── */
+
+.lm-breadcrumb {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-md);
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+}
+
+.lm-breadcrumb a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+
+.lm-related-tags {
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-2xl);
+}
+
+.lm-related-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-sm);
+}
+
+.lm-related-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+/* ─── Essays list page ─── */
+
+.lm-essays-subscribe {
+    padding: var(--space-lg);
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    margin-bottom: var(--space-2xl);
+    max-width: 480px;
+}
+
+.lm-essays-subscribe-label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    margin-bottom: var(--space-xs);
+}
+
+.lm-essays-subscribe-desc {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+/* ─── Links / Resources page ─── */
+
+.lm-links-header {
+    margin-bottom: var(--space-xl);
+}
+
+.lm-links-filter-wrap {
+    position: relative;
+    max-width: 480px;
+    margin-top: var(--space-lg);
+}
+
+.lm-links-filter-wrap .lm-filter-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+    pointer-events: none;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.lm-links-filter-wrap .lm-filter-input {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    padding-left: 36px;
+}
+
+.lm-links-count {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-top: var(--space-xs);
+    min-height: 1.4em;
+}
+
+/* Category headings — h3 from markdown */
+.lm-links-content h3 {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 0.02em;
+}
+
+.lm-links-content h3:first-child {
+    margin-top: 0;
+}
+
+/* Horizontal rules between categories */
+.lm-links-content hr {
+    display: none;
+}
+
+/* Numbered link lists */
+.lm-links-content ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-sm) 0;
+    counter-reset: link-count;
+}
+
+.lm-links-content ol li {
+    counter-increment: link-count;
+    position: relative;
+    padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+.lm-links-content ol li:last-child {
+    border-bottom: none;
+}
+
+.lm-links-content ol li::before {
+    content: counter(link-count, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: var(--space-xs);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    line-height: 1.8;
+}
+
+/* Link titles */
+.lm-links-content ol li a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.lm-links-content ol li a:hover {
+    color: var(--text-primary);
+}
+
+/* Inline description after " - " in link text */
+.lm-links-content ol li a + * {
+    color: var(--text-tertiary);
+}
+
+@media (max-width: 640px) {
+    .lm-links-filter-wrap {
+        max-width: 100%;
+    }
+}
+
+/* ─── Search page ─── */
+
+.lm-search-box {
+    position: relative;
+    max-width: 680px;
+    margin-bottom: var(--space-md);
+}
+
+.lm-search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: var(--text-tertiary);
+    pointer-events: none;
+    line-height: 1;
+}
+
+.lm-search-input {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    padding-left: 40px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    transition: border-color 0.15s ease;
+}
+
+.lm-search-input:focus {
+    border-color: var(--accent-cyan);
+}
+
+.lm-search-input::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* Hide browser default "x" cancel button */
+.lm-search-input::-webkit-search-cancel-button { display: none; }
+
+.lm-search-hint {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-xl);
+}
+
+/* Result list — PaperMod generates .post-entry > .entry-header + <a> */
+.lm-search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--border-color);
+    max-width: 680px;
+}
+
+.lm-search-results .post-entry {
+    position: relative;
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--border-color);
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.lm-search-results .post-entry:hover,
+.lm-search-results .post-entry:focus-within {
+    background: rgba(255,255,255,0.02);
+}
+
+.lm-search-results .post-entry .entry-header {
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* The invisible full-row anchor that PaperMod generates */
+.lm-search-results .post-entry > a {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* ─── Readings / Public Library page ─── */
+
+.lm-readings-content {
+    max-width: 760px;
+}
+
+/* Top-level sections: Books, Journals */
+.lm-readings-content h2 {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-xs);
+    border-bottom: 2px solid var(--accent-green);
+    letter-spacing: -0.01em;
+}
+
+.lm-readings-content h2:first-child {
+    margin-top: 0;
+}
+
+/* Sub-categories: Algorithms, Rust, etc. */
+.lm-readings-content h4 {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-xs);
+}
+
+/* Reading entries */
+.lm-readings-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-md) 0;
+}
+
+.lm-readings-content ul li {
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.lm-readings-content ul li:last-child {
+    border-bottom: none;
+}
+
+.lm-readings-content ul li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9375rem;
+    transition: color 0.15s ease;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.lm-readings-content ul li a::before {
+    content: '→';
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    flex-shrink: 0;
+}
+
+.lm-readings-content ul li a:hover {
+    color: var(--text-primary);
+}
+
+@media (max-width: 640px) {
+    .lm-search-box,
+    .lm-search-results {
+        max-width: 100%;
+    }
+}

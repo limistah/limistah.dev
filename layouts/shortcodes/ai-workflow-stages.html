@@ -1,0 +1,32 @@
+<div class="ai-workflow">
+
+    <div class="ai-stage">
+        <div class="ai-stage-arrow">→</div>
+        <div class="ai-stage-n" style="color:var(--accent-cyan)">STAGE 01</div>
+        <h3 class="ai-stage-title">Research</h3>
+        <div class="ai-stage-primary" style="border-color:var(--accent-cyan)">ChatGPT (free)</div>
+        <div class="ai-stage-secondary">+ Gemini</div>
+        <p class="ai-stage-method">Pull as much as possible from Gemini → export to markdown → import to ChatGPT for refinement.</p>
+        <p class="ai-stage-note">Heard Grok is good for this. Not tried yet.</p>
+    </div>
+
+    <div class="ai-stage">
+        <div class="ai-stage-arrow">→</div>
+        <div class="ai-stage-n" style="color:var(--accent-green)">STAGE 02</div>
+        <h3 class="ai-stage-title">Decide</h3>
+        <div class="ai-stage-primary" style="border-color:var(--accent-green)">Anthropic (Claude)</div>
+        <div class="ai-stage-secondary">+ Claude web app for design work</div>
+        <p class="ai-stage-method">Access Claude via GitHub Copilot — more economical than direct API. Use the web app when I need to think visually.</p>
+        <p class="ai-stage-note">Anthropic's models are the best here.</p>
+    </div>
+
+    <div class="ai-stage ai-stage--last">
+        <div class="ai-stage-n" style="color:var(--accent-amber)">STAGE 03</div>
+        <h3 class="ai-stage-title">Implement</h3>
+        <div class="ai-stage-primary" style="border-color:var(--accent-amber)">OpenCode + Copilot</div>
+        <div class="ai-stage-secondary">+ Claude Code (skills) for one-shots</div>
+        <p class="ai-stage-method">Dual-agent setup: Plan mode (Opus 4.5, read-only) → Build mode (Sonnet 4.5, write). Claude Code skills when I need to move fast.</p>
+        <p class="ai-stage-note">Output is a draft. I revise, review, query for reasoning on anything odd.</p>
+    </div>
+
+</div>

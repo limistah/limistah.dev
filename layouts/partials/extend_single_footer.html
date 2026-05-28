@@ -3,3 +3,19 @@
         {{ partial "openring.html" . }}
     {{ end }}
 {{ end }}
+
+<div class="lm-progress-bar" id="lm-progress-bar" aria-hidden="true"></div>
+<script>
+(function () {
+    var bar = document.getElementById('lm-progress-bar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>

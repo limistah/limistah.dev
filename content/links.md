@@ -1,7 +1,7 @@
 ---
 title: "Useful Resources"
 description: Content on the internet that I find interesting, might return to in the future, or useful for you!
-layout: "baseof"
+layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false

@@ -1,0 +1,64 @@
+<div class="ai-decision-tree">
+    <div class="ai-dt-header">
+        <span class="ai-dt-label">DECISION TREE</span>
+        <span class="ai-dt-caption">how I decide when to reach for it</span>
+    </div>
+    <div class="ai-dt-branches">
+
+        <div class="ai-dt-row">
+            <div class="ai-dt-connector">
+                <div class="ai-dt-dot" style="background:var(--accent-green)"></div>
+                <div class="ai-dt-line"></div>
+            </div>
+            <div class="ai-dt-card" style="border-left-color:var(--accent-green)">
+                <div class="ai-dt-card-top">
+                    <span class="ai-dt-weight" style="color:var(--accent-green)">PRIMARY PATH</span>
+                    <span class="ai-dt-condition">if (I know what I want <span class="ai-dt-sub">and an AI agent can do it</span>)</span>
+                </div>
+                <div class="ai-dt-action">→ Structure the implementation. Let the model generate. Revise, review, intervene manually.</div>
+            </div>
+        </div>
+
+        <div class="ai-dt-row">
+            <div class="ai-dt-connector">
+                <div class="ai-dt-dot" style="background:var(--accent-cyan)"></div>
+                <div class="ai-dt-line"></div>
+            </div>
+            <div class="ai-dt-card" style="border-left-color:var(--accent-cyan)">
+                <div class="ai-dt-card-top">
+                    <span class="ai-dt-weight" style="color:var(--accent-cyan)">COMMON</span>
+                    <span class="ai-dt-condition">if (I know what I want <span class="ai-dt-sub">but no AI agent is good enough</span>)</span>
+                </div>
+                <div class="ai-dt-action">→ Gather resources. Refine the idea with an LLM. Implement manually.</div>
+            </div>
+        </div>
+
+        <div class="ai-dt-row">
+            <div class="ai-dt-connector">
+                <div class="ai-dt-dot" style="background:var(--accent-amber)"></div>
+                <div class="ai-dt-line"></div>
+            </div>
+            <div class="ai-dt-card" style="border-left-color:var(--accent-amber)">
+                <div class="ai-dt-card-top">
+                    <span class="ai-dt-weight" style="color:var(--accent-amber)">EXPLORATORY</span>
+                    <span class="ai-dt-condition">if (I don't know what I want)</span>
+                </div>
+                <div class="ai-dt-action">→ Prompt the AI for a general direction. Transition into one of the paths above.</div>
+            </div>
+        </div>
+
+        <div class="ai-dt-row">
+            <div class="ai-dt-connector">
+                <div class="ai-dt-dot" style="background:var(--text-tertiary)"></div>
+            </div>
+            <div class="ai-dt-card" style="border-left-color:var(--text-tertiary)">
+                <div class="ai-dt-card-top">
+                    <span class="ai-dt-weight" style="color:var(--text-tertiary)">TRIVIAL</span>
+                    <span class="ai-dt-condition">if (everyday random search)</span>
+                </div>
+                <div class="ai-dt-action">→ Just prompt the AI.</div>
+            </div>
+        </div>
+
+    </div>
+</div>

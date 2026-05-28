@@ -1,0 +1,66 @@
+<header class="lm-header" id="top">
+    <nav class="lm-nav">
+        <div class="lm-nav-inner">
+            <a href="{{ "" | absLangURL }}" class="lm-logo">limistah.dev</a>
+
+            <button class="lm-nav-toggle" id="lm-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="lm-nav-links">
+                <span class="lm-nav-toggle-bar"></span>
+                <span class="lm-nav-toggle-bar"></span>
+                <span class="lm-nav-toggle-bar"></span>
+            </button>
+
+            <div class="lm-nav-links nav-links" id="lm-nav-links">
+                {{- $currentPage := . }}
+                {{- range site.Menus.main }}
+                    {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absLangURL }}
+                    {{- $page_url := $currentPage.Permalink | absLangURL }}
+                    {{- $is_search := eq (site.GetPage .KeyName).Layout "search" }}
+                    {{- if $is_search }}
+                    <a href="{{ .URL | absLangURL }}"
+                       class="lm-nav-search nav-search"
+                       title="{{ .Name }} (Alt + /)"
+                       accesskey="/">/ Search</a>
+                    {{- else }}
+                    <a href="{{ .URL | absLangURL }}"
+                       class="lm-nav-link{{ if eq $menu_item_url $page_url }} lm-nav-link--active{{ end }}"
+                       title="{{ .Title | default .Name }}">
+                        {{- .Name -}}
+                    </a>
+                    {{- end }}
+                {{- end }}
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+(function () {
+    var btn = document.getElementById('lm-nav-toggle');
+    var links = document.getElementById('lm-nav-links');
+    if (!btn || !links) return;
+
+    btn.addEventListener('click', function () {
+        var open = links.classList.toggle('lm-nav-links--open');
+        btn.setAttribute('aria-expanded', open);
+        btn.classList.toggle('lm-nav-toggle--open', open);
+    });
+
+    // Close on outside click
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.lm-nav-inner')) {
+            links.classList.remove('lm-nav-links--open');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.classList.remove('lm-nav-toggle--open');
+        }
+    });
+
+    // Close when a link is tapped
+    links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+            links.classList.remove('lm-nav-links--open');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.classList.remove('lm-nav-toggle--open');
+        });
+    });
+})();
+</script>

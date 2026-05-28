@@ -1,0 +1,22 @@
+{{- define "main" }}
+
+<div class="lm-now-outer">
+    <div class="lm-now-inner">
+
+        <header class="lm-now-header">
+            <h1 class="lm-now-title">{{ .Title }}</h1>
+            {{- with .Description }}
+            <p class="lm-now-subtitle">{{ . }}</p>
+            {{- end }}
+            <p class="lm-now-updated">Last Updated: {{ .Lastmod.Format "Jan 2, 2006" }}</p>
+            {{- partial "notbyai.html" . }}
+        </header>
+
+        <div class="lm-now-content">
+            {{ .Content }}
+        </div>
+
+    </div>
+</div>
+
+{{- end }}

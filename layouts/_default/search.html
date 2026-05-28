@@ -1,0 +1,25 @@
+{{- define "main" }}
+
+<div class="lm-page-outer lm-search-page">
+
+    <div class="lm-page-header">
+        <h1 class="lm-page-title">Search</h1>
+        <p class="lm-page-lede">Search across all posts, essays, and pages.</p>
+    </div>
+
+    <div class="lm-search-box">
+        <span class="lm-search-icon" aria-hidden="true">/</span>
+        <input id="searchInput" autofocus
+               placeholder="{{ .Params.placeholder | default "Search..." }}"
+               aria-label="Search"
+               type="search" autocomplete="off" maxlength="64"
+               class="lm-search-input">
+    </div>
+
+    <p class="lm-search-hint" id="lm-search-hint">Type to search posts, essays, and more.</p>
+
+    <ul id="searchResults" class="lm-search-results" aria-label="search results"></ul>
+
+</div>
+
+{{- end }}
