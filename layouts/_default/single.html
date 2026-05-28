@@ -1,69 +1,133 @@
 {{- define "main" }}
 
-<article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-    <h1 class="post-title entry-hint-parent">
-      {{ .Title }}
-      {{- if .Draft }}
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-      {{- end }}
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-      {{ .Description }}
+<div class="lm-article-outer">
+
+    {{- /* ── Article header — full width ── */ -}}
+    <header class="lm-article-header" id="article-header">
+
+        {{- /* Breadcrumb: ~ / section / slug */ -}}
+        <div class="lm-article-bc">
+            <a href="/">~</a>
+            <span>/</span>
+            {{- with .Section }}
+            <a href="{{ printf "/%s/" . | absLangURL }}">{{ . }}</a>
+            <span>/</span>
+            {{- end }}
+            <span class="lm-article-bc-current">{{ .File.BaseFileName }}</span>
+        </div>
+
+        <h1 class="lm-article-title">{{ .Title }}</h1>
+
+        {{- with .Description }}
+        <p class="lm-article-subtitle">{{ . }}</p>
+        {{- end }}
+
+        {{- /* Tags row */ -}}
+        {{- $taxKey := .Language.Params.Taxonomies.tag | default "tags" }}
+        {{- $terms := $.GetTerms $taxKey }}
+        {{- with $terms }}
+        <div class="lm-article-header-tags">
+            {{- range . }}
+            <a href="{{ .Permalink }}" class="lm-article-tag">{{ .LinkTitle }}</a>
+            {{- end }}
+        </div>
+        {{- end }}
+
+        {{- /* Meta line: published · updated · read · author */ -}}
+        <div class="lm-article-meta">
+            <span>published: <span class="lm-meta-val">{{ .Date.Format "Jan 2, 2006" }}</span></span>
+            {{- if and .Lastmod (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }}
+            <span>updated: <span class="lm-meta-val">{{ .Lastmod.Format "Jan 2006" }}</span></span>
+            {{- end }}
+            <span>read: <span class="lm-meta-val">{{ .ReadingTime }} min</span></span>
+            <span>author: <span class="lm-meta-val">{{ .Params.author | default "Aleem Isiaka" }}</span></span>
+            <a href="https://github.com/limistah/limistah.dev/tree/main/content/{{ .File.Path }}"
+               target="_blank" rel="noopener noreferrer"
+               class="lm-article-edit-link">&#9998; Fix &amp; improve this page</a>
+        </div>
+
+        {{- partial "notbyai.html" . }}
+    </header>
+
+    {{- /* ── Article body — 2-col grid ── */ -}}
+    <div class="lm-article-grid">
+        <div style="min-width:0">
+
+            {{- /* Inline TOC */ -}}
+            {{- if and (.Param "ShowToc") .TableOfContents }}
+            <details class="lm-inline-toc" id="toc-inline" open>
+                <summary>
+                    <span>Table of contents &middot; sections</span>
+                    <span class="lm-inline-toc-arrow">&#9660;</span>
+                </summary>
+                <div class="lm-inline-toc-body">{{ .TableOfContents }}</div>
+            </details>
+            {{- end }}
+
+            {{- /* Article prose */ -}}
+            <div id="article-body" class="post-content">
+                {{- if not (.Param "disableAnchoredHeadings") }}
+                {{- partial "anchored_headings.html" .Content -}}
+                {{- else }}{{ .Content }}{{ end }}
+            </div>
+            <div id="article-end" aria-hidden="true"></div>
+
+            {{- /* Post footer: prev/next */ -}}
+            {{- if (.Param "ShowPostNavLinks") }}
+            <div class="lm-post-footer-zone">
+                <nav class="lm-post-nav">
+                    {{- with .PrevInSection }}
+                    <a href="{{ .Permalink }}" class="lm-post-nav-link lm-post-nav-link--prev">
+                        <span class="lm-post-nav-label">&#8592; previous</span>
+                        <span class="lm-post-nav-title">{{ .Title }}</span>
+                    </a>
+                    {{- else }}<div></div>{{- end }}
+                    {{- with .NextInSection }}
+                    <a href="{{ .Permalink }}" class="lm-post-nav-link lm-post-nav-link--next">
+                        <span class="lm-post-nav-label">next &#8594;</span>
+                        <span class="lm-post-nav-title">{{ .Title }}</span>
+                    </a>
+                    {{- end }}
+                </nav>
+            </div>
+            {{- end }}
+
+            {{- if (.Param "comments") }}
+            {{- partial "comments.html" . }}
+            {{- end }}
+
+        </div>
+
+        {{- /* ── Sidebar TOC ── */ -}}
+        {{- if and (.Param "ShowToc") .TableOfContents }}
+        <aside class="lm-sidebar-toc">
+            <div class="lm-toc-nav-heading">On this page</div>
+            <div id="lm-toc">{{ .TableOfContents }}</div>
+        </aside>
+        {{- end }}
     </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
-    </div>
-    {{- end }}
-  </header>
-  {{- partial "notbyai.html" }}
-  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
 
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if (.Param "motivation") }}{{- partial "motivation.html" . }}{{- end }}
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
+</div>
 
-  <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-    <ul class="post-tags">
-      {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
-    {{- end }}
-  </footer>
+{{- partial "extend_single_footer.html" . }}
 
-  {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
-  {{- end }}
+{{- if and (.Param "ShowToc") .TableOfContents }}
+<script>
+(function () {
+    var headings = document.querySelectorAll('#article-body h2[id], #article-body h3[id]');
+    var tocLinks = document.querySelectorAll('#lm-toc a');
+    if (!headings.length || !tocLinks.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            tocLinks.forEach(function (a) {
+                a.classList.toggle('toc-active', a.getAttribute('href') === '#' + entry.target.id);
+            });
+        });
+    }, { rootMargin: '-10% 0px -75% 0px' });
+    headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>
+{{- end }}
 
-  {{- partial "extend_single_footer.html" . }}
-</article>
-
-{{- end }}{{/* end main */}}
+{{- end }}

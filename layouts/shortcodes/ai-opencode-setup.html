@@ -1,0 +1,36 @@
+<div class="ai-terminal">
+    <div class="ai-terminal-bar">
+        <span class="ai-terminal-dot ai-terminal-dot--red"></span>
+        <span class="ai-terminal-dot ai-terminal-dot--yellow"></span>
+        <span class="ai-terminal-dot ai-terminal-dot--green"></span>
+        <span class="ai-terminal-filename">~/.config/opencode/config.json</span>
+    </div>
+    <div class="ai-terminal-body">
+        <div class="ai-agents">
+            <div class="ai-agent ai-agent--plan">
+                <div class="ai-agent-header">
+                    <span class="ai-agent-id" style="color:var(--accent-cyan)">AGENT_01</span>
+                    <span class="ai-agent-badge">READ-ONLY</span>
+                </div>
+                <div class="ai-agent-name">plan</div>
+                <div class="ai-agent-model">github-copilot/claude-opus-4.5</div>
+                <div class="ai-agent-desc">Research, exploration, implementation planning. No file changes.</div>
+            </div>
+            <div class="ai-agent ai-agent--build">
+                <div class="ai-agent-header">
+                    <span class="ai-agent-id" style="color:var(--accent-green)">AGENT_02</span>
+                    <span class="ai-agent-badge">WRITE</span>
+                </div>
+                <div class="ai-agent-name">build</div>
+                <div class="ai-agent-model">github-copilot/claude-sonnet-4.5</div>
+                <div class="ai-agent-desc">Executes plans, writes code, makes changes.</div>
+            </div>
+        </div>
+        <div class="ai-terminal-plugins">
+            <span class="ai-terminal-plugins-label">plugins:</span>
+            <a href="https://github.com/obra/superpowers/blob/main/docs/README.opencode.md" target="_blank" rel="noopener">superpowers</a>
+            <a href="https://github.com/angristan/opencode-wakatime" target="_blank" rel="noopener">wakatime</a>
+            <a href="https://github.com/ghoulr/opencode-websearch-cited" target="_blank" rel="noopener">websearch-cited (Gemini 2.5 Flash)</a>
+        </div>
+    </div>
+</div>
