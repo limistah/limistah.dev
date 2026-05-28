@@ -1,0 +1,79 @@
+{{- define "main" }}
+
+{{- $tag := .Title }}
+{{- $pages := .Pages }}
+
+<div class="lm-page-outer">
+
+<div class="lm-breadcrumb">
+    <a href="/tags/">Tags</a>
+    <span>/</span>
+    <span>#{{ $tag | urlize }}</span>
+</div>
+
+<div class="lm-page-header">
+    <h1 class="lm-page-title">
+        <span style="color: var(--text-tertiary)">#</span>{{ $tag | urlize }}
+    </h1>
+    <p class="lm-page-lede">
+        {{ len $pages }} {{ if eq (len $pages) 1 }}post{{ else }}posts{{ end }} tagged
+        <strong style="color: var(--text-primary)">{{ $tag }}</strong>
+    </p>
+</div>
+
+{{- /* Related tags — co-appearing tags */ -}}
+{{- $relatedCounts := dict }}
+{{- range $pages }}
+    {{- range .Params.tags }}
+        {{- if ne . $tag }}
+            {{- $existing := index $relatedCounts . | default 0 }}
+            {{- $relatedCounts = merge $relatedCounts (dict . (add $existing 1)) }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+
+{{- $relatedList := slice }}
+{{- range $name, $count := $relatedCounts }}
+    {{- $relatedList = $relatedList | append (dict "name" $name "count" $count) }}
+{{- end }}
+{{- $topRelated := first 6 (sort $relatedList "count" "desc") }}
+
+{{- with $topRelated }}
+<div class="lm-related-tags">
+    <div class="lm-related-label">Often appears with</div>
+    <div class="lm-related-chips">
+        {{- range . }}
+        {{- with site.GetPage (printf "/tags/%s" (.name | urlize)) }}
+        <a href="{{ .Permalink }}" class="lm-tag-chip">
+            #{{ .Title | urlize }}
+        </a>
+        {{- end }}
+        {{- end }}
+    </div>
+</div>
+{{- end }}
+
+<div id="lm-post-list">
+    {{- range $pages }}
+    <a href="{{ .Permalink }}" class="lm-post-card">
+        <div class="lm-post-date">{{ .Date.Format "Jan 2006" }}</div>
+        <div>
+            <div class="lm-post-title">{{ .Title }}</div>
+            {{- with .Description }}<p class="lm-post-excerpt">{{ . }}</p>{{- end }}
+            <div class="lm-post-foot">
+                {{- with .ReadingTime }}<span class="lm-post-read-time">{{ . }} min read</span>{{- end }}
+                {{- if and .ReadingTime .Params.tags }}<span style="color:var(--text-tertiary)">·</span>{{- end }}
+                <div class="lm-post-tags-inline">
+                    {{- range .Params.tags }}
+                    <span class="lm-post-tag-inline">#{{ . | urlize }}</span>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </a>
+    {{- end }}
+</div>
+
+</div>{{- /* end lm-page-outer */ -}}
+
+{{- end }}

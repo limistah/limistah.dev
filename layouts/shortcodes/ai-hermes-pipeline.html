@@ -1,0 +1,55 @@
+<div class="ai-hermes">
+    <div class="ai-hermes-header">
+        <span class="ai-hermes-label">LANGUAGE LOOP</span>
+        <span class="ai-hermes-caption">hermes + ddts · self-hosted</span>
+    </div>
+
+    <div class="ai-hermes-flow">
+        <div class="ai-hermes-node" style="border-color:var(--text-tertiary)">
+            <div class="ai-hermes-node-tag" style="color:var(--text-tertiary)">INPUT</div>
+            <div class="ai-hermes-node-name">me</div>
+            <div class="ai-hermes-node-sub">a word, phrase, or question</div>
+        </div>
+        <div class="ai-hermes-arrow"><span>prompt</span><span class="ai-hermes-arrow-glyph">→</span></div>
+        <div class="ai-hermes-node" style="border-color:var(--accent-green)">
+            <div class="ai-hermes-node-tag" style="color:var(--accent-green)">AGENT</div>
+            <div class="ai-hermes-node-name">hermes <span class="ai-hermes-node-badge">self-hosted</span></div>
+            <div class="ai-hermes-node-sub">local → cloud (planned)</div>
+        </div>
+        <div class="ai-hermes-arrow"><span>text</span><span class="ai-hermes-arrow-glyph">→</span></div>
+        <div class="ai-hermes-node" style="border-color:var(--accent-cyan)">
+            <div class="ai-hermes-node-tag" style="color:var(--accent-cyan)">TTS</div>
+            <div class="ai-hermes-node-name">ddts</div>
+            <div class="ai-hermes-node-sub">pronunciation, fr / en / ar</div>
+        </div>
+        <div class="ai-hermes-arrow"><span>audio</span><span class="ai-hermes-arrow-glyph">→</span></div>
+        <div class="ai-hermes-node" style="border-color:var(--text-tertiary)">
+            <div class="ai-hermes-node-tag" style="color:var(--text-tertiary)">OUTPUT</div>
+            <div class="ai-hermes-node-name">me</div>
+            <div class="ai-hermes-node-sub">listen, repeat, drill</div>
+        </div>
+    </div>
+
+    <div class="ai-hermes-backends">
+        <div class="ai-hermes-backends-header">
+            <span>HERMES → MODEL BACKENDS</span>
+            <span>routed by task</span>
+        </div>
+        <div class="ai-hermes-backends-grid">
+            <div class="ai-hermes-backend" style="border-left-color:var(--accent-amber)">
+                <div class="ai-hermes-backend-name">GitHub Copilot</div>
+                <div class="ai-hermes-backend-desc">hosted · Claude / GPT class · for the heavy lifts</div>
+            </div>
+            <div class="ai-hermes-backend" style="border-left-color:var(--accent-cyan)">
+                <div class="ai-hermes-backend-name">Ollama <span style="color:var(--text-tertiary)">via</span> Grok</div>
+                <div class="ai-hermes-backend-desc">local · open weights · drills, private prompts</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ai-hermes-meta">
+        <div><span class="ai-hermes-meta-key">scope:</span> research, languages</div>
+        <div><span class="ai-hermes-meta-key">languages:</span> french · english · arabic</div>
+        <div><span class="ai-hermes-meta-key">data:</span> private prompts stay local</div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 ---
 title: "About Me..."
-layout: "baseof"
+layout: "simple"
+showCV: true
 comments: false
 notbyai: false
 disableShare: true

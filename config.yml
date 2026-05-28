@@ -65,8 +65,8 @@ params:
   description: "Aleem Isiaka and his intersection with Software Engineering, DevOps, Cloud and CloudNative Tools, Articifial Intelligence, and the Microprocessors powering them."
   author: ["Aleem Isiaka"]
   comments: true
-  defaultTheme: auto
-  disableThemeToggle: false
+  defaultTheme: dark
+  disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
   disableSpecial1stPost: false

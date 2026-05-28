@@ -1,6 +1,6 @@
 ---
 title: "Now..."
-layout: "baseof"
+layout: "now"
 description: This page outlines where my current efforts are targeted, and my recent interests
 comments: false
 enableOpenring: false
@@ -13,31 +13,31 @@ showLastModified: true
 
 ### Current Workspace
 
-**Monitor**: [Samsung 32" S3](https://www.samsung.com/us/monitors/curved/32-inch-s3-s39gd-fhd-100hz-curved-monitor-with-speakers-sku-ls32d396ganxza/)
+**Monitor** [Samsung 32" S3](https://www.samsung.com/us/monitors/curved/32-inch-s3-s39gd-fhd-100hz-curved-monitor-with-speakers-sku-ls32d396ganxza/)
 
-**Mobile**: [iPhone 14 Pro](https://www.gsmarena.com/apple_iphone_14_pro-11860.php)
+**Mobile** [iPhone 14 Pro](https://www.gsmarena.com/apple_iphone_14_pro-11860.php)
 
-**Keyboard**: [Keychron K9](https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard?srsltid=AfmBOor2iJ6KGCbT8oenZvnVCK5bVKYyTaBOAI2QyyGMBmwcVHfUJpRP)
+**Keyboard** [Keychron K9](https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard?srsltid=AfmBOor2iJ6KGCbT8oenZvnVCK5bVKYyTaBOAI2QyyGMBmwcVHfUJpRP)
 
-**Microphone**: [Shure M7](https://www.shure.com/en-US/products/microphones/mv7)
+**Microphone** [Shure M7](https://www.shure.com/en-US/products/microphones/mv7)
 
-**Mouse**: [Logitech MX Master](https://www.logitech.com/en-ca/mx/master-series.html)
+**Mouse** [Logitech MX Master](https://www.logitech.com/en-ca/mx/master-series.html)
 
-**Webcam**: [Logitech C922](https://www.logitech.com/en-us/shop/p/c922-pro-stream-webcam) 
+**Webcam** [Logitech C922](https://www.logitech.com/en-us/shop/p/c922-pro-stream-webcam) 
 
-**Laptop**: [Apple M4 Pro](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-m4-pro)
+**Laptop** [Apple M4 Pro](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-m4-pro)
 
-**Homelab**: Dell 16GBRAM Corei7 ES470
+**Homelab** Dell 16GBRAM Corei7 ES470
 
-**Printer**: HP
+**Printer** HP
 
 ### Tech Stack
 
-**Languages**: Rust, Golang, Python, TypeScript, C/C++
+**Languages** Rust, Golang, Python, TypeScript, C/C++
 
-**Operating System**: MacOS, Linux
+**Operating System** MacOS, Linux
 
-**Preferred Cloud**: GCP, AWS, Cloudflare
+**Preferred Cloud** GCP, AWS, Cloudflare
 
 ### Employment Status
 
@@ -67,9 +67,9 @@ I did not get to do my CKA/CKS exams in the last quarter of 2025, pushing that f
 
 ### Learning
 
-**Programming Languages**: C/C++, Rust
+**Programming Languages** C/C++, Rust
 
-**CS Concepts**: Algorithms, Distributed Systems, DeFi, and Internet Computing 
+**CS Concepts** Algorithms, Distributed Systems, DeFi, and Internet Computing 
 
 ### Currently Reading
 

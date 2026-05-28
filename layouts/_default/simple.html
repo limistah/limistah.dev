@@ -1,0 +1,28 @@
+{{- define "main" }}
+
+<div class="lm-page-outer">
+    <div class="lm-page-inner">
+        <header style="margin-bottom: var(--space-3xl)">
+            <h1 class="lm-simple-title">{{ .Title }}</h1>
+            <p class="lm-simple-meta">
+                Last Modified: {{ .Lastmod.Format "Jan 2, 2006" }}
+                &middot; {{ .ReadingTime }} min
+                &middot; {{ .Params.author | default "Aleem Isiaka" }}
+            </p>
+            {{- partial "notbyai.html" . }}
+        </header>
+
+        <div class="lm-prose">
+            {{ .Content }}
+        </div>
+
+        {{- if .Params.showCV }}
+        <div class="lm-cta-box">
+            <p class="lm-cta-text">Interested in working together?</p>
+            <a href="/aleemisiaka.pdf" class="lm-btn-primary">View my CV</a>
+        </div>
+        {{- end }}
+    </div>
+</div>
+
+{{- end }}

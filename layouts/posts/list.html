@@ -1,0 +1,126 @@
+{{- define "main" }}
+
+{{- $pages := .Pages | default .RegularPages }}
+
+<div class="lm-page-outer">
+<div class="lm-page-header">
+    <h1 class="lm-page-title">Posts</h1>
+    <p class="lm-page-lede">Everything I write — notes, deep-dives, opinions, and the occasional rabbit hole. For longer, more carefully edited pieces, see <a href="/essays/">essays</a>.</p>
+    <div class="lm-page-meta">
+        <span>{{ len $pages }} posts</span>
+        <span>·</span>
+        <a href="/archive/">view archive →</a>
+        <span>·</span>
+        <a href="/tags/">browse tags →</a>
+    </div>
+</div>
+
+{{- /* Build tag frequency map */ -}}
+{{- $tagCounts := dict }}
+{{- range $pages }}
+    {{- range .Params.tags }}
+        {{- $existing := index $tagCounts . | default 0 }}
+        {{- $tagCounts = merge $tagCounts (dict . (add $existing 1)) }}
+    {{- end }}
+{{- end }}
+
+{{- /* Top 8 tags by count */ -}}
+{{- $tagList := slice }}
+{{- range $name, $count := $tagCounts }}
+    {{- $tagList = $tagList | append (dict "name" $name "count" $count) }}
+{{- end }}
+{{- $topTags := first 8 (sort $tagList "count" "desc") }}
+
+<div class="lm-filter-bar">
+    <div class="lm-filter-input-wrap">
+        <span class="lm-filter-icon" aria-hidden="true">/</span>
+        <input type="text" id="lm-filter" class="lm-filter-input"
+               placeholder="Filter posts..." autocomplete="off" spellcheck="false">
+    </div>
+</div>
+
+<div class="lm-tag-chips" id="lm-tag-chips">
+    <button class="lm-tag-chip lm-tag-chip--active" data-tag="">all</button>
+    {{- range $topTags }}
+    <button class="lm-tag-chip" data-tag="{{ .name | lower }}">
+        #{{ .name | urlize }}<span style="opacity:0.6"> ({{ .count }})</span>
+    </button>
+    {{- end }}
+</div>
+
+<div class="lm-post-count" id="lm-post-count" aria-live="polite"></div>
+
+<div id="lm-post-list">
+    {{- range $pages }}
+    <a href="{{ .Permalink }}"
+       class="lm-post-card"
+       data-title="{{ .Title | lower }}"
+       data-excerpt="{{ .Description | lower }}"
+       data-tags="{{ range .Params.tags }}{{ . | lower }} {{ end }}">
+        <div class="lm-post-date">{{ .Date.Format "Jan 2006" }}</div>
+        <div>
+            <div class="lm-post-title">{{ .Title }}</div>
+            {{- with .Description }}<p class="lm-post-excerpt">{{ . }}</p>{{- end }}
+            <div class="lm-post-foot">
+                {{- with .ReadingTime }}<span class="lm-post-read-time">{{ . }} min read</span>{{- end }}
+                {{- if and .ReadingTime .Params.tags }}<span style="color:var(--text-tertiary)">·</span>{{- end }}
+                <div class="lm-post-tags-inline">
+                    {{- range .Params.tags }}
+                    <span class="lm-post-tag-inline">#{{ . | urlize }}</span>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </a>
+    {{- end }}
+</div>
+
+<div class="lm-empty-state" id="lm-empty" style="display:none">No posts match your filter.</div>
+
+</div>{{- /* end lm-page-outer */ -}}
+
+<script>
+(function () {
+    var filterEl = document.getElementById('lm-filter');
+    var chips    = document.querySelectorAll('.lm-tag-chip');
+    var cards    = document.querySelectorAll('.lm-post-card');
+    var empty    = document.getElementById('lm-empty');
+    var countEl  = document.getElementById('lm-post-count');
+    var total    = cards.length;
+    var activeTag = '';
+
+    function update() {
+        var q = filterEl.value.trim().toLowerCase();
+        var visible = 0;
+
+        cards.forEach(function (card) {
+            var textMatch = !q
+                || card.dataset.title.includes(q)
+                || card.dataset.excerpt.includes(q)
+                || card.dataset.tags.includes(q);
+            var tagMatch = !activeTag || card.dataset.tags.includes(activeTag);
+            var show = textMatch && tagMatch;
+            card.style.display = show ? '' : 'none';
+            if (show) visible++;
+        });
+
+        empty.style.display  = visible === 0 ? '' : 'none';
+        countEl.textContent  = visible + ' of ' + total + ' posts';
+    }
+
+    filterEl.addEventListener('input', update);
+
+    chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+            activeTag = this.dataset.tag;
+            chips.forEach(function (c) { c.classList.remove('lm-tag-chip--active'); });
+            this.classList.add('lm-tag-chip--active');
+            update();
+        });
+    });
+
+    update();
+})();
+</script>
+
+{{- end }}
