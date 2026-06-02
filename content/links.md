@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-05-28
+lastmod: 2026-06-02
 ---
 
 ### AI/ML
@@ -15,6 +15,7 @@ lastmod: 2026-05-28
 3. [6.034 Artificial Intelligence, Fall 2010 - MIT](https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi)
 4. [Made With Machine Learning Course](https://madewithml.com/#course)
 5. [Stanford CS221 - Autumn 2025 Lectures](https://github.com/stanford-cs221/autumn2025-lectures)
+6. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180#page=1.22)
 
 ---
 
