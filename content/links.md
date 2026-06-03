@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-06-02
+lastmod: 2026-06-03
 ---
 
 ### AI/ML
@@ -16,6 +16,7 @@ lastmod: 2026-06-02
 4. [Made With Machine Learning Course](https://madewithml.com/#course)
 5. [Stanford CS221 - Autumn 2025 Lectures](https://github.com/stanford-cs221/autumn2025-lectures)
 6. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180#page=1.22)
+7. [Gaudi Architecture — Gaudi Documentation 1.23.0 documentation](https://docs.habana.ai/en/latest/Gaudi_Overview/Gaudi_Architecture.html)
 
 ---
 
