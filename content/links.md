@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-06-03
+lastmod: 2026-06-06
 ---
 
 ### AI/ML
@@ -53,6 +53,7 @@ lastmod: 2026-06-03
 
 1. [CMU - Intro to Database Systems](https://15445.courses.cs.cmu.edu/)
 2. [Postgres Is Enough](https://gist.github.com/cpursley/c8fb81fe8a7e5df038158bdfe0f06dbb)
+3. [Redis is fast - I'll cache in Postgres](https://dizzy.zone/2025/09/24/Redis-is-fast-Ill-cache-in-Postgres/)
 
 ---
 
