@@ -8,10 +8,10 @@
                 {{- $timestamps := partial "page_timestamps.html" . }}
                 {{- with $timestamps }}
                 {{ . | safeHTML }}
-                <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+                <span aria-hidden="true"> &middot; </span>
                 {{- end }}
                 <span>read: {{ .ReadingTime }} min</span>
-                <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+                <span aria-hidden="true"> &middot; </span>
                 <span>author: {{ .Params.author | default "Aleem Isiaka" }}</span>
             </p>
             {{- partial "notbyai.html" . }}
