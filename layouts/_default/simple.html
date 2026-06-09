@@ -7,7 +7,7 @@
             <p class="lm-simple-meta">
                 {{- $timestamps := partial "page_timestamps.html" . }}
                 {{- with $timestamps }}
-                {{ . | safeHTML }}
+                <span class="lm-meta-group" role="group" aria-label="Page timestamps">{{ . | safeHTML }}</span>
                 <span aria-hidden="true"> &middot; </span>
                 {{- end }}
                 <span>read: {{ .ReadingTime }} min</span>

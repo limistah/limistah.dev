@@ -134,6 +134,7 @@ params:
     URL: "https://github.com/limistah/limistah.dev/tree/main/content"
     Text: "Fix and Improve this content" # edit text
     appendFilePath: true # to append file path to Edit link
+  historyPostURL: "https://github.com/limistah/limistah.dev/commits/main/content"
 
   assets:
     disableHLJS: true
