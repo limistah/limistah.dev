@@ -7,7 +7,7 @@
         {{- with .Description }}
         <p class="lm-page-lede">{{ . }}</p>
         {{- end }}
-        {{- $timestamps := partial "page_timestamps.html" . }}
+        {{- $timestamps := partial "page_timestamps" . }}
         <p class="lm-simple-meta">{{- with $timestamps }}<span class="lm-meta-group" role="group" aria-label="Page timestamps">{{ . | safeHTML }}</span>{{- end }}</p>
     </div>
 

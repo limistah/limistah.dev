@@ -8,7 +8,7 @@
             {{- with .Description }}
             <p class="lm-now-subtitle">{{ . }}</p>
             {{- end }}
-            {{- $timestamps := partial "page_timestamps.html" . }}
+            {{- $timestamps := partial "page_timestamps" . }}
             <p class="lm-now-updated">{{- with $timestamps }}<span class="lm-meta-group" role="group" aria-label="Page timestamps">{{ . | safeHTML }}</span>{{- end }}</p>
             {{- partial "notbyai.html" . }}
         </header>
