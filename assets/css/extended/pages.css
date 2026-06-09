@@ -46,6 +46,11 @@
     outline-offset: 2px;
 }
 
+.lm-simple-meta .lm-meta-item + .lm-meta-item::before,
+.lm-now-updated .lm-meta-item + .lm-meta-item::before {
+    content: " · ";
+}
+
 /* Prose body for page content */
 .lm-prose {
     font-size: 1.125rem;

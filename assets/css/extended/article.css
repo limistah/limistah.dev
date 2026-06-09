@@ -125,6 +125,10 @@
     outline-offset: 2px;
 }
 
+.lm-meta-item + .lm-meta-item::before {
+    content: " · ";
+}
+
 .lm-article-edit-link {
     color: var(--accent-cyan);
     text-decoration: none;
