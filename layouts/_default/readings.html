@@ -7,7 +7,7 @@
         {{- with .Description }}
         <p class="lm-page-lede">{{ . }}</p>
         {{- end }}
-        <p class="lm-simple-meta">Last Updated: {{ .Lastmod.Format "Jan 2, 2006" }}</p>
+        <p class="lm-simple-meta">{{ partial "page_timestamps.html" . }}</p>
     </div>
 
     <div class="lm-readings-content">

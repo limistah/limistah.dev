@@ -5,9 +5,14 @@
         <header style="margin-bottom: var(--space-3xl)">
             <h1 class="lm-simple-title">{{ .Title }}</h1>
             <p class="lm-simple-meta">
-                Last Modified: {{ .Lastmod.Format "Jan 2, 2006" }}
-                &middot; {{ .ReadingTime }} min
-                &middot; {{ .Params.author | default "Aleem Isiaka" }}
+                {{- $timestamps := partial "page_timestamps.html" . }}
+                {{- with $timestamps }}
+                {{ . | safeHTML }}
+                <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+                {{- end }}
+                <span>read: {{ .ReadingTime }} min</span>
+                <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
+                <span>author: {{ .Params.author | default "Aleem Isiaka" }}</span>
             </p>
             {{- partial "notbyai.html" . }}
         </header>

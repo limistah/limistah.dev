@@ -27,6 +27,25 @@
     margin-bottom: var(--space-md);
 }
 
+.lm-simple-meta .lm-meta-link,
+.lm-now-updated .lm-meta-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--border-color);
+    text-underline-offset: 0.15em;
+}
+
+.lm-simple-meta .lm-meta-link:hover,
+.lm-now-updated .lm-meta-link:hover {
+    text-decoration-color: var(--accent-cyan);
+}
+
+.lm-simple-meta .lm-meta-link:focus-visible,
+.lm-now-updated .lm-meta-link:focus-visible {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 2px;
+}
+
 /* Prose body for page content */
 .lm-prose {
     font-size: 1.125rem;

@@ -35,9 +35,10 @@
 
         {{- /* Meta line: published · updated · read · author */ -}}
         <div class="lm-article-meta">
-            <span>published: <span class="lm-meta-val">{{ .Date.Format "Jan 2, 2006" }}</span></span>
-            {{- if and .Lastmod (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }}
-            <span>updated: <span class="lm-meta-val">{{ .Lastmod.Format "Jan 2006" }}</span></span>
+            {{- $timestamps := partial "page_timestamps.html" . }}
+            {{- with $timestamps }}
+            {{ . | safeHTML }}
+            <span aria-hidden="true">&nbsp;&middot;&nbsp;</span>
             {{- end }}
             <span>read: <span class="lm-meta-val">{{ .ReadingTime }} min</span></span>
             <span>author: <span class="lm-meta-val">{{ .Params.author | default "Aleem Isiaka" }}</span></span>

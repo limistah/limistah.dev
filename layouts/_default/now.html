@@ -8,7 +8,7 @@
             {{- with .Description }}
             <p class="lm-now-subtitle">{{ . }}</p>
             {{- end }}
-            <p class="lm-now-updated">Last Updated: {{ .Lastmod.Format "Jan 2, 2006" }}</p>
+            <p class="lm-now-updated">{{ partial "page_timestamps.html" . }}</p>
             {{- partial "notbyai.html" . }}
         </header>
 
