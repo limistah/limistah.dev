@@ -118,6 +118,26 @@ body,
     transition: color 0.15s ease;
 }
 
+.lm-meta-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--border-color);
+    text-underline-offset: 0.15em;
+}
+
+.lm-meta-link:hover {
+    text-decoration-color: var(--accent-cyan);
+}
+
+.lm-meta-link:focus-visible {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 2px;
+}
+
+.lm-meta-item + .lm-meta-item::before {
+    content: " · ";
+}
+
 .toc ul a:hover {
     color: var(--accent-cyan);
 }

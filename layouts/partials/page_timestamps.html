@@ -2,9 +2,13 @@
 {{- $displayFormat := default ":date_short" site.Params.DateFormat -}}
 {{- $datetimeFormat := "2006-01-02T15:04:05Z07:00" -}}
 {{- $scratch := newScratch -}}
+{{- $updatedDisplay := $page.Lastmod | time.Format $displayFormat -}}
+{{- $updatedDatetime := $page.Lastmod.Format $datetimeFormat -}}
 
 {{- if not $page.Date.IsZero -}}
-{{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>created: <time datetime='%s'>%s</time></span>" ($page.Date.Format $datetimeFormat) ($page.Date | time.Format $displayFormat))) -}}
+  {{- $createdDisplay := $page.Date | time.Format $displayFormat -}}
+  {{- $createdDatetime := $page.Date.Format $datetimeFormat -}}
+  {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>created: <time datetime='%s'>%s</time></span>" $createdDatetime $createdDisplay)) -}}
 {{- end -}}
 
 {{- $showUpdated := false -}}
@@ -19,13 +23,13 @@
 {{- if $showUpdated -}}
   {{- with $page.File -}}
     {{- with site.Params.historyPostURL -}}
-        {{- $historyURL := printf "%s/%s" . $page.File.Path -}}
-        {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>updated: <a class='lm-meta-link' href='%s' target='_blank' rel='noopener noreferrer' aria-label='View revision history for this page'><time datetime='%s'>%s</time></a></span>" $historyURL ($page.Lastmod.Format $datetimeFormat) ($page.Lastmod | time.Format $displayFormat))) -}}
+      {{- $historyURL := printf "%s/%s" . $page.File.Path -}}
+      {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>updated: <a class='lm-meta-link' href='%s' target='_blank' rel='noopener noreferrer' aria-label='View revision history for this page'><time datetime='%s'>%s</time></a></span>" $historyURL $updatedDatetime $updatedDisplay)) -}}
     {{- else -}}
-      {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>updated: <time datetime='%s'>%s</time></span>" ($page.Lastmod.Format $datetimeFormat) ($page.Lastmod | time.Format $displayFormat))) -}}
+      {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>updated: <time datetime='%s'>%s</time></span>" $updatedDatetime $updatedDisplay)) -}}
     {{- end -}}
   {{- else -}}
-    {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>updated: <time datetime='%s'>%s</time></span>" ($page.Lastmod.Format $datetimeFormat) ($page.Lastmod | time.Format $displayFormat))) -}}
+    {{- $scratch.Add "items" (slice (printf "<span class='lm-meta-item'>updated: <time datetime='%s'>%s</time></span>" $updatedDatetime $updatedDisplay)) -}}
   {{- end -}}
 {{- end -}}
 
