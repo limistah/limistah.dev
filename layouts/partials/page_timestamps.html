@@ -18,7 +18,7 @@
 {{- if $showUpdated -}}
   {{- with $page.File -}}
     {{- with site.Params.editPost.URL -}}
-      {{- $historyURL := printf "%s/%s" (replace . "/tree/" "/commits/") $.File.Path -}}
+      {{- $historyURL := printf "%s/%s" (replace . "/tree/" "/commits/") $page.File.Path -}}
       {{- $scratch.Add "items" (slice (printf "<span>updated: <a class='lm-meta-link' href='%s' target='_blank' rel='noopener noreferrer' aria-label='View revision history for this page'><time datetime='%s'>%s</time></a></span>" $historyURL ($page.Lastmod.Format "2006-01-02T15:04:05Z07:00") ($page.Lastmod | time.Format $displayFormat))) -}}
     {{- else -}}
       {{- $scratch.Add "items" (slice (printf "<span>updated: <time datetime='%s'>%s</time></span>" ($page.Lastmod.Format "2006-01-02T15:04:05Z07:00") ($page.Lastmod | time.Format $displayFormat))) -}}
@@ -29,5 +29,5 @@
 {{- end -}}
 
 {{- with ($scratch.Get "items") -}}
-{{- delimit . " <span aria-hidden='true'>&middot;</span> " | safeHTML -}}
+{{- delimit . "<span aria-hidden='true'> &middot; </span>" | safeHTML -}}
 {{- end -}}
