@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-06-06
+lastmod: 2026-06-18
 ---
 
 ### AI/ML
@@ -145,6 +145,7 @@ lastmod: 2026-06-06
 1. [Coping with the Stress of Layoff and Unemployment](https://uhs.berkeley.edu/sites/default/files/coping_with_the_stress_of_layoff_and_unemployment.pdf)
 2. [Is Getting a Masters in CS Worth it](https://sumnerevans.com/posts/school/is-getting-a-masters-in-cs-worth-it/)
 3. [Warren Buffett's Final Letter, 2025](https://www.berkshirehathaway.com/news/nov1025.pdf)
+4. [The Science of Well-Being](https://www.youtube.com/playlist?list=PLWHJHzhtiAuS30X_NfVz37vXfZ-T3XyFK) - In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these t...
 
 ---
 
