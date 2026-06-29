@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 ---
 
 ### AI/ML
@@ -146,6 +146,7 @@ lastmod: 2026-06-22
 2. [Is Getting a Masters in CS Worth it](https://sumnerevans.com/posts/school/is-getting-a-masters-in-cs-worth-it/)
 3. [Warren Buffett's Final Letter, 2025](https://www.berkshirehathaway.com/news/nov1025.pdf)
 4. [The Science of Well-Being](https://www.youtube.com/playlist?list=PLWHJHzhtiAuS30X_NfVz37vXfZ-T3XyFK) - In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these t...
+5. [Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search/) - Notes on the Industry Job Search
 
 ---
 
