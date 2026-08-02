@@ -178,6 +178,14 @@ lastmod: 2026-08-02
 
 ---
 
+### Quantum Computing
+
+1. [Ph219/CS219 Quantum Computation](https://preskill.caltech.edu/ph219/ph219_2026.html)
+2. [Quantum Computing: Lecture Notes - QuSoft, CWI and University of Amsterdam](https://homepages.cwi.nl/~rdewolf/qcnotes.pdf)
+3. [Quantum Computing Day: Introduction to Quantum Computing](https://www.youtube.com/watch?v=7ecKIAKP2Ck) - Will Oliver, the Henry Ellis Warren (1894) Professor of Electrical Engineering and Computer Science and Professor of Physics at MIT, gives an introduction to...
+
+---
+
 ### Ruby
 
 1. [Ruby Documentation - Official](https://ruby-doc.org/) - Official Ruby language documentation
