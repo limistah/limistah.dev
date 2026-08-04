@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-08-02
+lastmod: 2026-08-04
 ---
 
 ### AI/ML
@@ -183,6 +183,8 @@ lastmod: 2026-08-02
 1. [Ph219/CS219 Quantum Computation](https://preskill.caltech.edu/ph219/ph219_2026.html)
 2. [Quantum Computing: Lecture Notes - QuSoft, CWI and University of Amsterdam](https://homepages.cwi.nl/~rdewolf/qcnotes.pdf)
 3. [Quantum Computing Day: Introduction to Quantum Computing](https://www.youtube.com/watch?v=7ecKIAKP2Ck) - Will Oliver, the Henry Ellis Warren (1894) Professor of Electrical Engineering and Computer Science and Professor of Physics at MIT, gives an introduction to...
+4. [Lecture Notes on Quantum Algorithms](https://www.cs.umd.edu/~amchilds/qa/qa.pdf#page=9.40)
+5. [Ph CS 219A Lecture 1 Introduction](https://www.youtube.com/watch?v=w08pSFsAZvE&list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu&index=3) - Physics / Computer Science 219A at Caltech: Quantum ComputationLecture 1: IntroductionLecturer: John PreskillSlides for this lecture: http://preskill.caltech...
 
 ---
 
