@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-08-16
+lastmod: 2026-08-18
 ---
 
 ### AI/ML
