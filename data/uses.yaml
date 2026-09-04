@@ -23,7 +23,7 @@ groups:
       - { label: Orchestration, name: Kubernetes,                     url: "", note: "Plus Istio or Linkerd when the mesh is worth the tax." }
       - { label: IaC,           name: Terraform,                      url: "", note: "Ansible and Puppet where the fleet predates it." }
       - { label: Observability, name: "Prometheus, Grafana, Datadog", url: "", note: "Jaeger for traces. Alerts tuned to be worth waking up for." }
-      - { label: Editor,        name: Neovim,                         url: "", note: "Config kept reproducible with Stow." }
+      - { label: Editor,        name: Vim,                            url: "", note: "Config kept reproducible with Stow." }
 
 homelab: >-
   A Dell ES470 (Core i7, 16GB) doing the unglamorous work: Kubernetes experiments, Prometheus

@@ -15,7 +15,7 @@ Follows `limistah-redesign-review.md`. This resolves the open questions from tha
 
 Aleem's call: **pixel-faithful to the handoff, in dark, Inter + JetBrains Mono, single blue accent.** The earlier decisions #1–#3 (keep the old "Drenched dark" language, three accents, Space Grotesk) are **superseded**. Everything now lives in `assets/css/extended/zz-redesign.css` (`rd-*` classes, handoff tokens inverted for dark); the older `lm-*` CSS/templates are legacy and get removed once nothing references them.
 
-Migrated to the handoff: global shell (header/footer/fonts), Home, Writing, Now, Uses, About, AI (shortcodes restyled via overrides), Library (Readings + Links merged; tabs; `content/links.md` stays the data source so the LinkSync bot keeps working; `/readings` `/links` `/resources` redirect), long-form article template for posts/essays, Tags, Archive, Search. Remaining: Log (Phase 6), review of handoff copy in `data/*.yaml`. Legacy CSS/templates removed; `site.css` + `ai.css` are the only stylesheets.
+Migrated to the handoff: global shell (header/footer/fonts), Home, Writing, Now, Uses, About, AI (shortcodes restyled via overrides), Library (Readings + Links merged; tabs; `content/links.md` stays the data source so the LinkSync bot keeps working; `/readings` `/links` `/resources` redirect), long-form article template for posts/essays, Tags, Archive, Search. Remaining: publish real Log entries. Copy in `data/*.yaml` cross-checked against the CV (employers, results, certifications, publications, stack) — the remaining editorial lines are the one-line notes in `data/uses.yaml`, which are voice, not fact. Legacy CSS/templates removed; `site.css` + `ai.css` are the only stylesheets.
 
 ## Phases
 
@@ -56,7 +56,8 @@ Shipped: `content/writing/_index.md` + `layouts/writing/list.html` (union of `po
 - Resource counts derived from the structured data, not hand-maintained.
 - Redirect `/readings` and `/links` → `/library`; `/ai` keeps its URL (already top-level, unaffected).
 
-### Phase 6 — Log (new)
+### Phase 6 — Log (new) — BUILT, awaiting real entries
+`content/log/` section (one file per day; each paragraph is an entry; `tags` per day), `layouts/log/list.html` (month groups, day rows, tag filter synced to `?tag=`, count, clear-filter, RSS). The Log nav item and the Home "Log" section render only once at least one non-draft day exists; `content/log/2026-09-04.md` is a draft showing the format.
 The long pole, per the original review — needs a template *and* a content habit, not just a build.
 - New `content/log/` section, one file per day (or a `data/log.yaml` for terse entries — your call once you've tried writing a few), `date` + `tags` front matter.
 - Month-grouping + client-side tag filter (instant, no reload, per the handoff's explicit requirement).

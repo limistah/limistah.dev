@@ -702,3 +702,18 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 .rd-side-toc nav ul ul a { font-size: 12.5px; color: var(--rd-ink-faint); }
 .rd-side-toc nav a:hover { color: var(--rd-ink); text-decoration: none; }
 .rd-side-toc nav a.is-active { color: var(--rd-accent); }
+
+
+/* ═══ Log ═══ */
+.rd-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.rd-tag { font-family: var(--rd-mono); font-size: 12px; padding: 5px 10px; border-radius: 5px; border: 1px solid var(--rd-border-input); background: var(--rd-bg-raised); color: var(--rd-ink-muted); cursor: pointer; }
+.rd-tag:hover, .rd-tag[aria-pressed="true"] { border-color: var(--rd-accent); color: var(--rd-accent); }
+.rd-month { padding-top: 28px; }
+.rd-month-label { font-family: var(--rd-mono); font-size: 12px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rd-ink-faint); margin: 0 0 4px; }
+.rd-day--log { padding: 14px 0; }
+.rd-day--log .rd-day-date { padding-top: 3px; }
+.rd-day--log .rd-day-entries { gap: 12px; }
+.rd-day--log .rd-day-entries > p { font-size: 15px; line-height: 1.62; }
+.rd-day-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: -6px 0 0 !important; font-family: var(--rd-mono); font-size: 11.5px !important; color: var(--rd-ink-faint) !important; }
+.rd-log-clear { text-align: center; padding: 32px 0 0; margin: 0; }
+.rd-day-entries code { font-family: var(--rd-mono); font-size: 0.85em; background: var(--rd-surface-alt); padding: 1px 5px; border-radius: 4px; }

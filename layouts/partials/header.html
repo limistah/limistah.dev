@@ -5,6 +5,9 @@
         <a href="{{ "" | absLangURL }}" class="rd-wordmark">limistah.dev</a>
         <nav class="rd-nav" aria-label="Main">
             {{- $current := . }}
+            {{- with where site.RegularPages "Section" "log" }}
+                <a href="/log/"{{ if eq $current.Section "log" }} class="rd-nav-active" aria-current="page"{{ end }}>Log</a>
+            {{- end }}
             {{- range site.Menus.main }}
                 {{- $itemURL := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absLangURL }}
                 {{- $isActive := or (eq $itemURL $current.Permalink) (and $current.Section (eq (printf "%s/" $current.Section | absLangURL) $itemURL)) }}
