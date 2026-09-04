@@ -1,27 +1,16 @@
 ---
-title: "About Me..."
-layout: "simple"
-showCV: true
+title: "About"
+layout: "about"
+portrait: /assets/aleem-isiaka.png
+pullquote: If it must be done twice, I'll automate it. If it must serve millions, I design it to scale.
 comments: false
 notbyai: false
 disableShare: true
 showPostNavLinks: false
 ---
 
-I'm **Aleem Isiaka**, a backend and cloud engineer, solutions architect with a deep commitment to building resilient, scalable systems that drive measurable impact. With nearly a decade of experience across backend development, infrastructure, and distributed systems, I specialize in architecting solutions that merge reliability, performance, and automation with end user experience.
+I'm Aleem Isiaka, a backend and cloud engineer with nearly a decade spent making systems hold up under load. My work sits at the intersection of site reliability engineering, cloud-native tooling, and distributed infrastructure — architecting high-throughput systems, cutting latency, and keeping uptime boring.
 
-![Aleem Isiaka](/assets/aleem-isiaka.png)
+I've led distributed teams through infrastructure overhauls and delivered measurable results: response times cut by more than half, SDK adoption up 60%, API latency taken from ten seconds to under one. Today I build payment infrastructure at [Kredete](https://www.linkedin.com/company/kredete/) serving millions of users, across AWS, GCP, and Cloudflare.
 
-My work sits at the intersection of **site reliability engineering**, **cloud-native tooling**, and **scalable infrastructures**, with hands-on contributions spanning **Kubernetes**, **observability platforms**, and **infrastructure-as-code**. From architecting *high-throughput systems* to *reducing latency* and *improving uptime*, I thrive in environments where scale and fault-tolerance are not just nice-to-haves but core requirements.
-
-I have led distributed teams, driven critical infrastructure overhauls, and delivered measurable impact, cutting response times by over 50%, increasing, and optimizing cloud operations across AWS, Azure, GCP, and Cloudflare ecosystems. I’m also an active contributor to the open-source community through [**Linux Foundation**](https://openprofile.dev/profile/limistah) and personal initiatives like [**ObjectSpread**](https://objectspread.com) and [**WitOps**](https://witops.cloud), helping engineers build smarter operational practices.
-
-Beyond code, I blog/vlog extensively about **software engineering**, and **cloud migration strategies**, sharing lessons learned to support the next generation of engineers. I also share [**my reading journey**](/readings) across research papers, journals, and books, rooted in a belief that engineering is as much about curiosity as it is about execution.
-
-I’m equally driven by a sense of purpose—whether it’s volunteering for open-source, exploring the beauty of system design, or asking the big questions about our universe. When I’m not building, I’m often journaling, learning history, or thinking deeply about how we can use engineering to solve problems in underserved communities.
-
-If it must be done twice, I’ll automate it; if it must serve millions, I design it to scale.
-
-[View my CV here](/aleemisiaka.pdf)
-
-[Asante](https://translate.google.com/?sl=sw&tl=en&text=asante&op=translate)
+Outside the day job I co-organize [GopherCon Africa](https://gophers.africa), contribute to Kubernetes, Prometheus, and Jaeger through the [CNCF](https://openprofile.dev/profile/limistah), and run [ObjectSpread](https://objectspread.com) and [WitOps](https://witops.cloud). I write to remove the magic from technologies by showing how they work from the inside — and I keep a [public reading log](/readings/), because engineering is as much curiosity as execution.

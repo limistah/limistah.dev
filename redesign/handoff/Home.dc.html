@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <!-- NAV -->
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 660px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="#" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 660px; margin: 0 auto; padding: 64px 24px 100px; box-sizing: border-box;">
+
+    <!-- IDENTITY + THESIS -->
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 22px;">
+      <div style="width: 60px; height: 60px; border-radius: 50%; background: repeating-linear-gradient(45deg, oklch(90% 0.004 90), oklch(90% 0.004 90) 4px, oklch(94% 0.004 90) 4px, oklch(94% 0.004 90) 8px); flex-shrink: 0;"></div>
+      <div>
+        <h1 style="font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em;">Aleem Isiaka</h1>
+        <p style="font-size: 14.5px; color: oklch(50% 0.006 90); margin: 3px 0 0;">Senior Engineer, Cloud &amp; Distributed Systems &middot; Lagos, Nigeria</p>
+      </div>
+    </div>
+
+    <p style="font-size: 17px; line-height: 1.65; color: oklch(28% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+      I remove the magic from systems &mdash; showing how cloud infrastructure, distributed systems, and AI tooling actually work from the inside.
+    </p>
+    <p style="font-size: 15.5px; line-height: 1.7; color: oklch(42% 0.006 90); margin: 0 0 24px; text-wrap: pretty;">
+      Nearly ten years across backend, infrastructure, and SRE. Currently building payment infrastructure at <a href="#">Kredete</a>, co-organizing <a href="#">GopherCon Africa</a>, and contributing to Kubernetes, Prometheus, and Jaeger through the CNCF.
+    </p>
+
+    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 44px; font-size: 14.5px;">
+      <a href="#">X / Twitter</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="mailto:aleemisiaka@gmail.com">Email</a>
+      <a href="#">RSS</a>
+    </div>
+
+    <!-- LOG -->
+    <section style="margin-bottom: 48px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0;">Log</h2>
+        <a href="Log.dc.html" style="font-size: 13.5px;">Full log &rarr;</a>
+      </div>
+      <p style="font-size: 13.5px; color: oklch(54% 0.006 90); margin: 0 0 16px;">What I'm building and learning, newest first.</p>
+      <sc-for list="{{ log }}" as="day" hint-placeholder-count="5">
+        <div style="display: grid; grid-template-columns: 76px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(58% 0.006 90); white-space: nowrap; padding-top: 2px;">{{ day.date }}</span>
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <sc-for list="{{ day.entries }}" as="entry" hint-placeholder-count="1">
+              <p style="font-size: 14.5px; line-height: 1.6; color: oklch(30% 0.006 90); margin: 0; text-wrap: pretty;">{{ entry }}</p>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- COMMUNITY & SPEAKING -->
+    <section style="margin-bottom: 48px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 16px;">Community &amp; speaking</h2>
+      <div style="display: grid; gap: 12px;">
+        <sc-for list="{{ community }}" as="item" hint-placeholder-count="3">
+          <div style="padding: 14px 16px; background: oklch(96% 0.004 90); border-radius: 8px;">
+            <div style="display: flex; justify-content: space-between; gap: 12px; align-items: baseline;">
+              <a href="#" style="font-size: 15px; font-weight: 600; color: oklch(22% 0.006 90);">{{ item.name }}</a>
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(56% 0.006 90); white-space: nowrap;">{{ item.role }}</span>
+            </div>
+            <p style="font-size: 13.5px; line-height: 1.55; color: oklch(46% 0.006 90); margin: 5px 0 0; text-wrap: pretty;">{{ item.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section style="margin-bottom: 48px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 12px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0;">Writing</h2>
+        <a href="Writing.dc.html" style="font-size: 13.5px;">All 69 pieces &rarr;</a>
+      </div>
+      <sc-for list="{{ posts }}" as="post" hint-placeholder-count="4">
+        <div style="display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-bottom: 1px solid oklch(93% 0.004 90);">
+          <div style="min-width: 0;">
+            <a href="#" style="font-size: 15px; color: oklch(22% 0.006 90);">{{ post.title }}</a>
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: oklch(58% 0.006 90); margin: 4px 0 0;">{{ post.meta }}</p>
+          </div>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(58% 0.006 90); white-space: nowrap; padding-top: 2px;">{{ post.date }}</span>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- NOW AT A GLANCE -->
+    <section style="margin-bottom: 48px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0;">Now</h2>
+        <a href="Now.dc.html" style="font-size: 13.5px;">More &rarr;</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px;">
+        <sc-for list="{{ nowItems }}" as="n" hint-placeholder-count="4">
+          <div>
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; color: oklch(58% 0.006 90); margin: 0 0 5px;">{{ n.label }}</p>
+            <p style="font-size: 14px; line-height: 1.55; color: oklch(30% 0.006 90); margin: 0; text-wrap: pretty;">{{ n.value }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section style="padding: 22px; background: oklch(95% 0.004 90); border-radius: 10px;">
+      <h2 style="font-size: 16px; font-weight: 600; margin: 0 0 6px;">Get new writing by email</h2>
+      <p style="font-size: 14px; line-height: 1.6; color: oklch(42% 0.006 90); margin: 0 0 14px; text-wrap: pretty;">
+        Deep-dives on distributed systems, cloud-native tooling, and the machines underneath &mdash; plus occasional essays. No spam.
+      </p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <input type="email" placeholder="you@company.com" style="flex: 1; min-width: 190px; padding: 10px 12px; font-size: 14px; border: 1px solid oklch(86% 0.004 90); border-radius: 6px; background: oklch(99% 0.003 90); font-family: inherit; color: oklch(22% 0.006 90);" />
+        <button style="padding: 10px 18px; font-size: 14px; font-weight: 500; border-radius: 6px; border: none; background: oklch(22% 0.006 90); color: oklch(98% 0.003 90); cursor: pointer;" style-hover="background: oklch(32% 0.006 90)">Subscribe</button>
+      </div>
+    </section>
+
+    <footer style="margin-top: 56px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: oklch(56% 0.006 90);">
+      <span>&copy; 2026 Aleem Isiaka</span>
+      <div style="display: flex; gap: 14px;">
+        <a href="#" style="color: oklch(56% 0.006 90);">Archive</a>
+        <a href="#" style="color: oklch(56% 0.006 90);">Tags</a>
+        <a href="#" style="color: oklch(56% 0.006 90);">Search</a>
+        <a href="Uses.dc.html" style="color: oklch(56% 0.006 90);">Uses</a>
+      </div>
+    </footer>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 820, &quot;height&quot;: 1200}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      log: [
+        { date: "Sep 4", entries: ["Shipped a sliding-window rate limiter in Go for the onramp API \u2014 smoothed out p99 spikes during burst traffic."] },
+        { date: "Sep 2", entries: [
+          "Wrote a Terraform module for multi-region Postgres failover, plus the runbook so on-call doesn't need me awake.",
+          "TIL: Prometheus remote-write handles backpressure better than I assumed under sustained load.",
+        ]},
+        { date: "Aug 30", entries: ["Reviewed the last batch of GopherCon Africa talk proposals with the committee."] },
+        { date: "Aug 28", entries: ["Deduped noisy Kubernetes events before they hit Slack \u2014 alert volume down by roughly half."] },
+        { date: "Aug 26", entries: ["Started chapter 3 of Database Internals. B-trees on disk are a different animal from the textbook version."] },
+      ],
+      community: [
+        { name: "GopherCon Africa", role: "Co-organizer", desc: "The largest Go event in Africa \u2014 programming, CFP review, and community building across the continent." },
+        { name: "CNCF", role: "Contributor", desc: "Kubernetes, Prometheus, and Jaeger. Focused on making observability tooling easier to run in production." },
+        { name: "ObjectSpread", role: "Founder", desc: "Open platform and blog helping engineers adopt smarter operational practices." },
+      ],
+      posts: [
+        { title: "Software Engineering Lives On!", meta: "#swe #ai #career \u00b7 11 min", date: "Mar 2026" },
+        { title: "Here and Now, There and Then", meta: "essay \u00b7 6 min", date: "Dec 2025" },
+        { title: "Two Pointers & Prefix Sum", meta: "#algorithms \u00b7 10 min", date: "Sep 2025" },
+        { title: "Raft Protocol: Part 1", meta: "#distributed-systems #consensus \u00b7 3 min", date: "Aug 2025" },
+      ],
+      nowItems: [
+        { label: "Working on", value: "Payment infrastructure at Kredete \u2014 onramps across gateways and stablecoins." },
+        { label: "Learning", value: "C/C++ and Rust; deeper into AWS and GCP internals this year." },
+        { label: "Reading", value: "Site Reliability Engineering, Database Internals, The C Programming Language." },
+        { label: "Building", value: "Heimdal, Mustache-zig, and Markview \u2014 one project a quarter." },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

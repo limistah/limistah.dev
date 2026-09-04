@@ -1,0 +1,33 @@
+{{- define "main" }}
+{{- $d := site.Data.uses }}
+<div class="rd-page">
+    <p class="rd-meta" style="margin:0 0 10px"><a href="/now/" class="rd-backlink">&larr; Now</a></p>
+    <h1 class="rd-title">{{ .Title }}</h1>
+    <p class="rd-intro" style="margin-bottom:8px;max-width:56ch">{{ .Description }}</p>
+    <p class="rd-meta" style="margin:0 0 36px">Last updated {{ .Lastmod.Format "Jan 2006" }}</p>
+
+    {{- range $d.groups }}
+    <section class="rd-block" style="margin-bottom:34px">
+        <h2 class="rd-label">{{ .title }}</h2>
+        {{- range .items }}
+        <div class="rd-fact">
+            <span class="rd-fact-label">{{ .label }}</span>
+            <div>
+                {{- if .url }}<a href="{{ .url }}" class="rd-fact-name">{{ .name }}</a>{{ else }}<span class="rd-fact-name">{{ .name }}</span>{{ end }}
+                {{- with .note }}<p class="rd-fact-note">{{ . }}</p>{{ end }}
+            </div>
+        </div>
+        {{- end }}
+    </section>
+    {{- end }}
+
+    <section class="rd-callout">
+        <p>{{ $d.homelab }}</p>
+    </section>
+
+    <div class="rd-utilities" style="margin-top:32px">
+        <a href="/now/">What I'm doing now &rarr;</a>
+        <a href="/aleemisiaka.pdf">CV &rarr;</a>
+    </div>
+</div>
+{{- end }}

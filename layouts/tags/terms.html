@@ -1,64 +1,12 @@
 {{- define "main" }}
-
-{{- $type := .Type }}
-
-{{- /* Build slice of {name, count} for sorting */ -}}
-{{- $termList := slice }}
-{{- range $key, $value := .Data.Terms.Alphabetical }}
-{{- $termList = $termList | append (dict "name" .Name "count" .Count) }}
-{{- end }}
-{{- $sorted := sort $termList "count" "desc" }}
-{{- $maxCount := 1 }}
-{{- with index $sorted 0 }}{{- $maxCount = .count }}{{- end }}
-
-<div class="lm-page-outer">
-<div class="lm-page-header">
-    <h1 class="lm-page-title">Tags</h1>
-    <p class="lm-page-lede">Browse {{ len $termList }} tags across all posts.</p>
-    <div class="lm-page-meta">
-        <a href="/archive/">view archive →</a>
+<div class="rd-page">
+    <h1 class="rd-title">Tags</h1>
+    <p class="rd-intro">{{ len .Pages }} topics across the technical writing.</p>
+    <div class="rd-tiles">
+        {{- range .Pages.ByTitle }}
+        <a href="{{ .Permalink }}" class="rd-tile"><span>#{{ .Title | lower }}</span><span class="rd-tile-count">{{ len .Pages }}</span></a>
+        {{- end }}
     </div>
+    <div class="rd-utilities"><a href="/writing/">All writing &rarr;</a><a href="/archive/">Archive &rarr;</a><a href="/search/">Search &rarr;</a></div>
 </div>
-</div>
-
-{{- /* Tag cloud */ -}}
-<div class="lm-tag-cloud">
-    {{- range $sorted }}
-    {{- $item := . }}
-    {{- $c10 := mul .count 10 }}
-    {{- $m7  := mul $maxCount 7 }}
-    {{- $m4  := mul $maxCount 4 }}
-    {{- $m2  := mul $maxCount 2 }}
-    {{- $size    := "0.9375rem" }}
-    {{- $opacity := "0.55" }}
-    {{- if gt $c10 $m7 }}{{- $size = "2rem" }}{{- $opacity = "1" }}
-    {{- else if gt $c10 $m4 }}{{- $size = "1.5rem" }}{{- $opacity = "0.85" }}
-    {{- else if gt $c10 $m2 }}{{- $size = "1.125rem" }}{{- $opacity = "0.7" }}
-    {{- end }}
-    {{- with site.GetPage (printf "/%s/%s" $type $item.name) }}
-    <a href="{{ .Permalink }}"
-       class="lm-cloud-item"
-       style="font-size: {{ $size }}; opacity: {{ $opacity }}">
-        #{{ .Title | urlize }}
-    </a>
-    {{- end }}
-    {{- end }}
-</div>
-
-{{- /* All tags grid */ -}}
-<div class="lm-page-outer">
-<h2 class="lm-tags-section-heading">All Tags</h2>
-<div class="lm-tag-grid">
-    {{- range $sorted }}
-    {{- $item := . }}
-    {{- with site.GetPage (printf "/%s/%s" $type $item.name) }}
-    <a href="{{ .Permalink }}" class="lm-tag-row">
-        <span class="lm-tag-row-name">#{{ .Title | urlize }}</span>
-        <span class="lm-tag-row-count">{{ $item.count }}</span>
-    </a>
-    {{- end }}
-    {{- end }}
-</div>
-</div>
-
 {{- end }}

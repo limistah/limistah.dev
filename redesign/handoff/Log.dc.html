@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 660px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 660px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+    <h1 style="font-size: 32px; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.015em;">Log</h1>
+    <p style="font-size: 16px; line-height: 1.65; color: oklch(45% 0.006 90); margin: 0 0 24px; max-width: 56ch; text-wrap: pretty;">
+      A running record of what I build, break, and learn &mdash; newest first. Not a commit history; just the parts worth remembering.
+    </p>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid oklch(91% 0.004 90);">
+      <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+        <sc-for list="{{ tagList }}" as="tag" hint-placeholder-count="5">
+          <button onClick="{{ () => toggleTag(tag) }}" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 5px 10px; border-radius: 5px; border: 1px solid oklch(89% 0.004 90); background: oklch(99% 0.003 90); color: oklch(42% 0.006 90); cursor: pointer;" style-hover="border-color: oklch(45% 0.14 260); color: oklch(45% 0.14 260)">#{{ tag }}</button>
+        </sc-for>
+      </div>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.006 90);">{{ countLabel }}</span>
+    </div>
+
+    <sc-for list="{{ visibleMonths }}" as="month" hint-placeholder-count="2">
+      <section style="padding-top: 28px;">
+        <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: oklch(58% 0.006 90); margin: 0 0 4px;">{{ month.label }}</h2>
+        <sc-for list="{{ month.days }}" as="day" hint-placeholder-count="4">
+          <div style="display: grid; grid-template-columns: 76px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(58% 0.006 90); white-space: nowrap; padding-top: 3px;">{{ day.date }}</span>
+            <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0;">
+              <sc-for list="{{ day.entries }}" as="entry" hint-placeholder-count="2">
+                <div>
+                  <p style="font-size: 15px; line-height: 1.62; color: oklch(28% 0.006 90); margin: 0; text-wrap: pretty;">{{ entry.text }}</p>
+                  <div style="display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap;">
+                    <sc-for list="{{ entry.tags }}" as="t" hint-placeholder-count="2">
+                      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: oklch(60% 0.006 90);">#{{ t }}</span>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+    </sc-for>
+
+    <sc-if value="{{ activeTag }}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 32px 0 0; text-align: center;">
+        <button onClick="{{ clearTag }}" style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(42% 0.006 90); background: oklch(99% 0.003 90); border: 1px solid oklch(89% 0.004 90); border-radius: 6px; padding: 8px 16px; cursor: pointer;">Clear filter</button>
+      </div>
+    </sc-if>
+
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: oklch(56% 0.006 90);">
+      <span>Updated most weekdays</span>
+      <a href="#" style="color: oklch(45% 0.14 260);">Subscribe via RSS</a>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 820, &quot;height&quot;: 1100}}">
+const MONTHS = [
+  { label: "September 2026", days: [
+    { date: "Sep 4", entries: [
+      { text: "Shipped a sliding-window rate limiter in Go for the onramp API \u2014 smoothed out p99 spikes during burst traffic.", tags: ["golang", "kredete"] },
+    ]},
+    { date: "Sep 2", entries: [
+      { text: "Wrote a Terraform module for multi-region Postgres failover, plus the runbook so on-call doesn't need me awake for it.", tags: ["terraform", "postgres"] },
+      { text: "TIL: Prometheus remote-write handles backpressure better than I assumed under sustained load.", tags: ["prometheus", "til"] },
+    ]},
+  ]},
+  { label: "August 2026", days: [
+    { date: "Aug 30", entries: [
+      { text: "Reviewed the last batch of GopherCon Africa talk proposals with the committee. Strong year for infrastructure submissions.", tags: ["gophercon"] },
+    ]},
+    { date: "Aug 28", entries: [
+      { text: "Deduped noisy Kubernetes events before they hit Slack \u2014 alert volume down by roughly half.", tags: ["kubernetes", "objectspread"] },
+    ]},
+    { date: "Aug 26", entries: [
+      { text: "Started chapter 3 of Database Internals. B-trees on disk are a different animal from the textbook version.", tags: ["reading", "databases"] },
+      { text: "Pushed a small fix to Heimdal so dev environment switching survives a shell restart.", tags: ["rust", "heimdal"] },
+    ]},
+    { date: "Aug 21", entries: [
+      { text: "Spent the evening reading the Raft paper again before drafting part 2 of the series. The membership-change section still earns its reputation.", tags: ["distributed-systems", "raft"] },
+    ]},
+  ]},
+];
+
+class Component extends DCLogic {
+  state = { activeTag: null };
+
+  renderVals() {
+    const activeTag = this.state.activeTag;
+    const allTags = [...new Set(MONTHS.flatMap(m => m.days.flatMap(d => d.entries.flatMap(e => e.tags))))].sort();
+
+    const visibleMonths = activeTag
+      ? MONTHS.map(m => ({
+          ...m,
+          days: m.days
+            .map(d => ({ ...d, entries: d.entries.filter(e => e.tags.includes(activeTag)) }))
+            .filter(d => d.entries.length),
+        })).filter(m => m.days.length)
+      : MONTHS;
+
+    const count = visibleMonths.reduce((n, m) => n + m.days.reduce((k, d) => k + d.entries.length, 0), 0);
+
+    return {
+      tagList: allTags,
+      visibleMonths,
+      activeTag,
+      countLabel: activeTag ? count + " entries \u00b7 #" + activeTag : count + " entries",
+      toggleTag: (tag) => this.setState(s => ({ activeTag: s.activeTag === tag ? null : tag })),
+      clearTag: () => this.setState({ activeTag: null }),
+    };
+  }
+}
+</script>
+</body>
+</html>

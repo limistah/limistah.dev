@@ -1,0 +1,37 @@
+{{- define "main" }}
+<div class="rd-page">
+    {{- with .Parent }}{{ if not .IsHome }}<p class="rd-meta" style="margin:0 0 10px"><a href="{{ .Permalink }}" class="rd-backlink">&larr; {{ .Title }}</a></p>{{ end }}{{ end }}
+    <h1 class="rd-title">{{ .Title }}</h1>
+    {{- with .Description }}<p class="rd-intro">{{ . }}</p>{{ end }}
+    {{- with .Content }}<div class="rd-prose" style="margin-bottom:28px">{{ . }}</div>{{ end }}
+
+    {{- with .Sections }}
+    <section class="rd-block">
+        {{- range . }}
+        <div class="rd-row">
+            <div>
+                <a href="{{ .Permalink }}" class="rd-row-title">{{ .Title }}</a>
+                {{- with .Description }}<p class="rd-row-blurb">{{ . }}</p>{{ end }}
+                <p class="rd-row-meta">{{ len .RegularPagesRecursive }} pages</p>
+            </div>
+        </div>
+        {{- end }}
+    </section>
+    {{- end }}
+
+    {{- $pages := .RegularPages }}
+    {{- if eq .Section "posts" "essays" }}{{ $pages = $pages.ByDate.Reverse }}{{ else }}{{ $pages = $pages.ByTitle }}{{ end }}
+    {{- range $pages }}
+    <div class="rd-row">
+        <div>
+            <a href="{{ .Permalink }}" class="rd-row-title">{{ .Title }}</a>
+            {{- with .Description }}<p class="rd-row-blurb">{{ . }}</p>{{ end }}
+            {{- with .ReadingTime }}<p class="rd-row-meta">{{ . }} min</p>{{ end }}
+        </div>
+        <span class="rd-row-date">{{ .Date.Format "Jan 2006" }}</span>
+    </div>
+    {{- end }}
+
+    <div class="rd-utilities"><a href="/library/">Library &rarr;</a><a href="/writing/">Writing &rarr;</a></div>
+</div>
+{{- end }}

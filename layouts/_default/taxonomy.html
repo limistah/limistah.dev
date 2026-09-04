@@ -1,7 +1,7 @@
 {{- define "main" }}
 <div class="rd-page">
-    <p class="rd-meta" style="margin:0 0 10px"><a href="/tags/" class="rd-backlink">&larr; Tags</a></p>
-    <h1 class="rd-title">#{{ .Title | lower }}</h1>
+    <p class="rd-meta" style="margin:0 0 10px"><a href="{{ .Parent.Permalink }}" class="rd-backlink">&larr; {{ .Parent.Title }}</a></p>
+    <h1 class="rd-title">{{ .Title }}</h1>
     <p class="rd-intro">{{ len .Pages }} {{ if eq (len .Pages) 1 }}piece{{ else }}pieces{{ end }}, newest first.</p>
     <div class="rd-filter-row" style="padding-bottom:0"></div>
     {{- range .Pages.ByDate.Reverse }}

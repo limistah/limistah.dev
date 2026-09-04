@@ -1,169 +1,99 @@
 {{- define "main" }}
-<div class="lm-homepage">
+{{- $d := site.Data.home }}
+{{- $posts  := where site.RegularPages "Section" "posts" }}
+{{- $essays := where site.RegularPages "Section" "essays" }}
+{{- $writing := ($posts | union $essays).ByDate.Reverse }}
+{{- $log := where site.RegularPages "Section" "log" }}
 
-    {{/* ── Hero ── */}}
-    <section class="lm-hero">
-        <div class="lm-hero-inner">
-            <h1 class="lm-hero-name">{{ site.Title }}</h1>
-            <p class="lm-hero-role">Backend &amp; Cloud Architect</p>
-            <p class="lm-hero-tagline">
-                Building resilient, scalable systems at the intersection of SRE,
-                cloud-native tooling, and distributed infrastructures.
-                <span class="lm-hero-accent">~10 years</span> architecting
-                high-throughput systems that serve millions.
-            </p>
+<div class="rd-page rd-page--home">
 
-            <div class="lm-hero-stats">
-                <div class="lm-hero-stat lm-hero-stat--green">
-                    <span class="lm-hero-stat-num">50%+</span>
-                    <span class="lm-hero-stat-label">Response Time Reduction</span>
+    <div class="rd-identity">
+        <img class="rd-avatar" src="{{ $d.avatar }}" alt="" width="60" height="60">
+        <div>
+            <h1 class="rd-name">{{ $d.name }}</h1>
+            <p class="rd-role">{{ $d.role }}</p>
+        </div>
+    </div>
+
+    <p class="rd-thesis">{{ $d.thesis }}</p>
+    <p class="rd-bio">{{ $d.bio | safeHTML }}</p>
+
+    <div class="rd-socials">
+        {{- range $d.socials }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}
+    </div>
+
+    {{- with $log }}
+    <section class="rd-section">
+        <div class="rd-section-head">
+            <h2 class="rd-label">Log</h2>
+            <a href="/log/" class="rd-more">Full log &rarr;</a>
+        </div>
+        <p class="rd-section-sub">What I'm building and learning, newest first.</p>
+        {{- range first 5 (.ByDate.Reverse) }}
+        <div class="rd-day">
+            <span class="rd-day-date">{{ .Date.Format "Jan 2" }}</span>
+            <div class="rd-day-entries">{{ .Content }}</div>
+        </div>
+        {{- end }}
+    </section>
+    {{- end }}
+
+    <section class="rd-section">
+        <h2 class="rd-label" style="margin-bottom:16px">Community &amp; speaking</h2>
+        <div class="rd-cards">
+            {{- range $d.community }}
+            <div class="rd-card">
+                <div class="rd-card-head">
+                    <a href="{{ .url }}" class="rd-card-title">{{ .name }}</a>
+                    <span class="rd-card-role">{{ .role }}</span>
                 </div>
-                <div class="lm-hero-stat lm-hero-stat--cyan">
-                    <span class="lm-hero-stat-num lm-hero-stat-num--cyan">Millions</span>
-                    <span class="lm-hero-stat-label">Users Served</span>
-                </div>
-                <div class="lm-hero-stat lm-hero-stat--amber">
-                    <span class="lm-hero-stat-num lm-hero-stat-num--amber">10 Years</span>
-                    <span class="lm-hero-stat-label">Experience</span>
-                </div>
+                <p class="rd-card-desc">{{ .desc }}</p>
             </div>
-
-            <div class="lm-hero-cta hero-cta">
-                <a href="#work" class="lm-btn lm-btn--primary">View Work</a>
-                <a href="mailto:aleemisiaka@gmail.com" class="lm-btn">Get In Touch</a>
-                <a href="/aleemisiaka.pdf" class="lm-btn">Download CV</a>
-            </div>
+            {{- end }}
         </div>
     </section>
 
-    {{/* ── Featured Work ── */}}
-    <section class="lm-section lm-section--primary" id="work">
-        <div class="lm-section-inner">
-            <div class="lm-section-header">
-                <h2 class="lm-section-title">Featured Work</h2>
-                <p class="lm-section-sub">
-                    Selected projects showcasing systems architecture, cloud infrastructure,
-                    and open-source contributions.
+    <section class="rd-section">
+        <div class="rd-section-head" style="margin-bottom:12px">
+            <h2 class="rd-label">Writing</h2>
+            <a href="/writing/" class="rd-more">All {{ len $writing }} pieces &rarr;</a>
+        </div>
+        {{- range first 4 $writing }}
+        <div class="rd-row rd-row--compact">
+            <div>
+                <a href="{{ .Permalink }}" class="rd-row-title rd-row-title--compact">{{ .Title }}</a>
+                <p class="rd-row-meta" style="margin-top:4px">
+                    {{- if eq .Section "essays" }}essay{{ else }}{{ range first 3 .Params.tags }}#{{ . | urlize }} {{ end }}{{ end }}
+                    {{- with .ReadingTime }} &middot; {{ . }} min{{ end -}}
                 </p>
             </div>
-            <div class="lm-project-grid">
-                <div class="lm-project-card">
-                    <h3 class="lm-project-title">Payment Infrastructure at Scale</h3>
-                    <p class="lm-project-desc">Architected and built payment processing systems serving millions of users at Kredete. Designed for high-throughput, low-latency transactions with comprehensive observability.</p>
-                    <div class="lm-project-tags">
-                        <span class="lm-tag">Golang</span><span class="lm-tag">Kubernetes</span><span class="lm-tag">PostgreSQL</span><span class="lm-tag">Redis</span><span class="lm-tag">GCP</span>
-                    </div>
-                    <div class="lm-project-impact"><span class="lm-project-impact-label">Impact:</span> Processing millions in daily transactions with 99.9% uptime</div>
-                </div>
-                <div class="lm-project-card">
-                    <h3 class="lm-project-title">Distributed Systems Optimization</h3>
-                    <p class="lm-project-desc">Led infrastructure overhaul reducing system response times by 50%+. Implemented comprehensive monitoring, tracing, and automated scaling across multi-cloud environments.</p>
-                    <div class="lm-project-tags">
-                        <span class="lm-tag">Kubernetes</span><span class="lm-tag">Prometheus</span><span class="lm-tag">Jaeger</span><span class="lm-tag">Terraform</span><span class="lm-tag">AWS</span>
-                    </div>
-                    <div class="lm-project-impact"><span class="lm-project-impact-label">Impact:</span> 50%+ reduction in response times, improved fault tolerance</div>
-                </div>
-                <div class="lm-project-card">
-                    <h3 class="lm-project-title">ObjectSpread</h3>
-                    <p class="lm-project-desc">Building an open-source platform for engineers to adopt smarter operational practices. Focus on observability, automation, and developer experience.</p>
-                    <div class="lm-project-tags">
-                        <span class="lm-tag">TypeScript</span><span class="lm-tag">Rust</span><span class="lm-tag">Docker</span><span class="lm-tag">Kubernetes</span>
-                    </div>
-                    <div class="lm-project-impact"><span class="lm-project-impact-label">Impact:</span> Active OSS project with growing community adoption</div>
-                </div>
-                <div class="lm-project-card">
-                    <h3 class="lm-project-title">WitOps</h3>
-                    <p class="lm-project-desc">Cloud operations platform helping teams optimize their cloud infrastructure costs and performance.</p>
-                    <div class="lm-project-tags">
-                        <span class="lm-tag">Golang</span><span class="lm-tag">React</span><span class="lm-tag">PostgreSQL</span><span class="lm-tag">Cloudflare</span>
-                    </div>
-                    <div class="lm-project-impact"><span class="lm-project-impact-label">Impact:</span> Helping teams reduce cloud costs by 30%+</div>
-                </div>
-                <div class="lm-project-card">
-                    <h3 class="lm-project-title">GopherCon Africa</h3>
-                    <p class="lm-project-desc">Co-organizing the largest Go programming conference in Africa. Building community, sharing knowledge, and connecting engineers across the continent.</p>
-                    <div class="lm-project-tags">
-                        <span class="lm-tag">Community</span><span class="lm-tag">Go Ecosystem</span>
-                    </div>
-                    <div class="lm-project-impact"><span class="lm-project-impact-label">Impact:</span> Largest Go conference in Africa, hundreds of attendees</div>
-                </div>
-                <div class="lm-project-card">
-                    <h3 class="lm-project-title">CNCF Contributions</h3>
-                    <p class="lm-project-desc">Active contributor to Cloud Native Computing Foundation projects including Kubernetes, Prometheus, and Jaeger. Focus on improving observability and reliability.</p>
-                    <div class="lm-project-tags">
-                        <span class="lm-tag">Kubernetes</span><span class="lm-tag">Prometheus</span><span class="lm-tag">Jaeger</span><span class="lm-tag">Go</span>
-                    </div>
-                    <div class="lm-project-impact"><span class="lm-project-impact-label">Impact:</span> Linux Foundation contributor, improving cloud-native tools</div>
-                </div>
+            <span class="rd-row-date" style="padding-top:2px">{{ .Date.Format "Jan 2006" }}</span>
+        </div>
+        {{- end }}
+    </section>
+
+    <section class="rd-section">
+        <div class="rd-section-head" style="margin-bottom:14px">
+            <h2 class="rd-label">Now</h2>
+            <a href="/now/" class="rd-more">More &rarr;</a>
+        </div>
+        <div class="rd-glance">
+            {{- range $d.now }}
+            <div>
+                <p class="rd-glance-label">{{ .label }}</p>
+                <p class="rd-glance-value">{{ .value }}</p>
             </div>
+            {{- end }}
         </div>
     </section>
 
-    {{/* ── Technical Writing (live Hugo posts) ── */}}
-    <section class="lm-section lm-section--secondary">
-        <div class="lm-section-inner">
-            <div class="lm-section-header">
-                <h2 class="lm-section-title">Technical Writing</h2>
-                <p class="lm-section-sub">
-                    "I hack the internals of Software Engineering, Cloud/DevOps, Microprocessors,
-                    and Artificial Intelligence. I remove the magic from technologies by showing
-                    how they work from the inside."
-                </p>
-            </div>
-
-            <div class="lm-post-list">
-                {{- $posts := (where site.RegularPages "Type" "in" site.Params.mainSections) | first 4 }}
-                {{- range $posts }}
-                <a href="{{ .Permalink }}" class="lm-post-card post-card">
-                    <div class="lm-post-date post-card-date">
-                        {{- .Date.Format "Jan 2, 2006" }}
-                    </div>
-                    <div class="lm-post-body">
-                        <h3 class="lm-post-title post-card-title">{{ .Title }}</h3>
-                        {{- with .Description }}
-                        <p class="lm-post-excerpt">{{ . }}</p>
-                        {{- else }}
-                        <p class="lm-post-excerpt">{{ .Summary | plainify | truncate 160 }}</p>
-                        {{- end }}
-                        <div class="lm-post-meta">
-                            {{- with .ReadingTime }}<span class="lm-post-readtime">{{ . }} min read</span>{{- end }}
-                            {{- $tags := .GetTerms "tags" }}
-                            {{- if and .ReadingTime $tags }}<span class="lm-post-sep">·</span>{{- end }}
-                            <div class="lm-post-tags">
-                                {{- range first 3 $tags }}
-                                <span class="lm-post-tag">#{{ .LinkTitle | lower }}</span>
-                                {{- end }}
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                {{- end }}
-            </div>
-
-            <div class="lm-writing-cta">
-                <a href="/posts/" class="lm-btn lm-btn--primary">View all posts →</a>
-                <a href="/essays/" class="lm-btn">Read curated essays</a>
-                <a href="/tags/" class="lm-btn lm-btn--muted">Browse by tag</a>
-            </div>
-        </div>
-    </section>
-
-    {{/* ── Connect ── */}}
-    <section class="lm-section lm-section--primary lm-connect">
-        <div class="lm-section-inner lm-connect-inner">
-            <h2 class="lm-section-title">Let's Build Something</h2>
-            <p class="lm-connect-desc">
-                Open to international opportunities, consulting, speaking engagements,
-                and interesting technical collaborations. Currently based in Lagos, Nigeria.
-            </p>
-            <div class="lm-connect-links">
-                <a href="mailto:aleemisiaka@gmail.com" class="lm-connect-link">Email</a>
-                <a href="https://github.com/limistah" target="_blank" rel="noopener noreferrer" class="lm-connect-link">GitHub</a>
-                <a href="https://linkedin.com/in/limistah" target="_blank" rel="noopener noreferrer" class="lm-connect-link">LinkedIn</a>
-                <a href="https://x.com/limistah" target="_blank" rel="noopener noreferrer" class="lm-connect-link">X / Twitter</a>
-                <a href="/aleemisiaka.pdf" class="lm-connect-link">Download CV</a>
-            </div>
-        </div>
+    <section class="rd-subscribe">
+        <h2 class="rd-subscribe-title">{{ $d.subscribe.heading }}</h2>
+        <p class="rd-subscribe-body">{{ $d.subscribe.body }}</p>
+        <form class="rd-subscribe-form" action="{{ $d.subscribe.action }}" method="post" target="_blank">
+            <input class="rd-input" type="email" name="email" placeholder="you@company.com" required autocomplete="email">
+            <button class="rd-btn rd-btn--primary" type="submit">Subscribe</button>
+        </form>
     </section>
 
 </div>

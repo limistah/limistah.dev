@@ -4,6 +4,9 @@ description: My everyday use of Artificial Intelligence — as an engineer, as a
 date: 2026-05-17
 comments: false
 ShowToc: true
+tocFlat: true
+enableOpenring: false
+containerWidth: 700px
 showPostNavLinks: false
 disableShare: true
 ---

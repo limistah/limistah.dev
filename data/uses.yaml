@@ -1,0 +1,30 @@
+# /uses — desk, machines, stack. The one-line notes are editorial; edit freely.
+groups:
+  - title: Desk
+    items:
+      - { label: Laptop,     name: 'MacBook Pro 14" (M4 Pro)', url: "https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-m4-pro", note: "Daily driver for everything from Rust builds to Kubernetes clusters." }
+      - { label: Monitor,    name: 'Samsung 32" S3 curved',    url: "https://www.samsung.com/us/monitors/curved/32-inch-s3-s39gd-fhd-100hz-curved-monitor-with-speakers-sku-ls32d396ganxza/", note: "1080p at 100Hz. Wide enough for a terminal grid and a browser." }
+      - { label: Keyboard,   name: Keychron K9,                url: "https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard", note: "Compact mechanical, wireless when the desk needs to be clear." }
+      - { label: Mouse,      name: Logitech MX Master,         url: "https://www.logitech.com/en-ca/mx/master-series.html", note: "Horizontal scroll earns its keep in long log files." }
+      - { label: Microphone, name: Shure MV7,                  url: "https://www.shure.com/en-US/products/microphones/mv7", note: "For conference calls, CFP reviews, and the occasional recording." }
+      - { label: Webcam,     name: Logitech C922,              url: "https://www.logitech.com/en-us/shop/p/c922-pro-stream-webcam", note: "Good enough that nobody comments on it." }
+      - { label: Phone,      name: iPhone 14 Pro,              url: "https://www.gsmarena.com/apple_iphone_14_pro-11860.php", note: "On-call companion." }
+      - { label: Printer,    name: HP,                         url: "", note: "It prints. That is the whole review." }
+  - title: Languages
+    items:
+      - { label: Daily,        name: "Go, TypeScript", url: "", note: "Services, tooling, and most of what ships." }
+      - { label: Reaching for, name: Rust,             url: "", note: "Systems work and anything where I want the compiler arguing with me." }
+      - { label: Learning,     name: "C / C++",        url: "", note: "Going down a level to understand what the rest sits on." }
+      - { label: Scripting,    name: "Python, Bash",   url: "", note: "Glue, automation, one-off analysis." }
+  - title: Platform
+    items:
+      - { label: OS,            name: "macOS, Linux",                 url: "", note: "macOS on the laptop, Linux everywhere that matters." }
+      - { label: Cloud,         name: "GCP, AWS, Cloudflare",         url: "", note: "Cloudflare for edge and queues; the other two for everything heavier." }
+      - { label: Orchestration, name: Kubernetes,                     url: "", note: "Plus Istio or Linkerd when the mesh is worth the tax." }
+      - { label: IaC,           name: Terraform,                      url: "", note: "Ansible and Puppet where the fleet predates it." }
+      - { label: Observability, name: "Prometheus, Grafana, Datadog", url: "", note: "Jaeger for traces. Alerts tuned to be worth waking up for." }
+      - { label: Editor,        name: Neovim,                         url: "", note: "Config kept reproducible with Stow." }
+
+homelab: >-
+  A Dell ES470 (Core i7, 16GB) doing the unglamorous work: Kubernetes experiments, Prometheus
+  scrapes I don't want in the cloud, and anything I'd rather break locally first.

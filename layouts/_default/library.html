@@ -1,0 +1,101 @@
+{{- define "main" }}
+{{- $readings := site.GetPage "/readings" }}
+{{- $links    := site.GetPage "/links" }}
+{{- $now      := site.Data.now }}
+<div class="rd-page rd-page--wide">
+    <h1 class="rd-title">{{ .Title }}</h1>
+    <p class="rd-intro" style="max-width:60ch">{{ .Description }}</p>
+
+    <div class="rd-segmented" id="rd-library-tabs" role="group" aria-label="Library sections" style="margin-bottom:8px">
+        <button type="button" data-tab="all" aria-pressed="true">All</button>
+        <button type="button" data-tab="books" aria-pressed="false">Books &amp; papers</button>
+        <button type="button" data-tab="resources" aria-pressed="false">Resources</button>
+    </div>
+
+    <section class="rd-lib-section" data-section="books" style="padding-top:28px">
+        <h2 class="rd-label" style="margin-bottom:14px">Reading now</h2>
+        <div class="rd-lib-cards">
+            {{- range $now.reading }}
+            <div class="rd-lib-card"><span class="rd-lib-card-title">{{ . }}</span></div>
+            {{- end }}
+        </div>
+    </section>
+
+    <section class="rd-lib-section" data-section="books" style="padding-top:34px">
+        <h2 class="rd-label" style="margin-bottom:4px">Books &amp; papers</h2>
+        <p class="rd-section-sub">Notes published as I work through them.</p>
+        <div class="rd-lib-books" id="rd-lib-books">{{ with $readings }}{{ .Content }}{{ end }}</div>
+    </section>
+
+    <section class="rd-lib-section" data-section="resources" style="padding-top:34px">
+        <h2 class="rd-label" style="margin-bottom:4px">Resources</h2>
+        <p class="rd-section-sub" id="rd-lib-resources-sub">Courses, lectures, and references worth your time.{{ with $links }} <span class="rd-lib-updated">Updated {{ .Lastmod.Format "Jan 2, 2006" }}.</span>{{ end }}</p>
+        <div class="rd-tiles" id="rd-lib-topics"></div>
+        <div class="rd-lib-links" id="rd-lib-links">{{ with $links }}{{ .Content }}{{ end }}</div>
+    </section>
+
+    <div class="rd-utilities">
+        <a href="/now/">What I'm reading now &rarr;</a>
+        <a href="/writing/">Writing &rarr;</a>
+        <a href="/search/">Search &rarr;</a>
+    </div>
+</div>
+
+<script>
+(function () {
+    // Tabs
+    var tabs = document.querySelectorAll('#rd-library-tabs button');
+    var sections = document.querySelectorAll('.rd-lib-section');
+    function setTab(t) {
+        tabs.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.tab === t ? 'true' : 'false'); });
+        sections.forEach(function (s) { s.hidden = !(t === 'all' || s.dataset.section === t); });
+        var url = new URL(location); if (t === 'all') url.searchParams.delete('tab'); else url.searchParams.set('tab', t);
+        history.replaceState(null, '', url);
+    }
+    tabs.forEach(function (b) { b.addEventListener('click', function () { setTab(this.dataset.tab); }); });
+
+    // Books & papers: markdown (h2 kind → h4 topic → ul) → topic/items rows
+    var books = document.getElementById('rd-lib-books');
+    if (books) {
+        var out = document.createDocumentFragment(), kind = null;
+        Array.prototype.slice.call(books.children).forEach(function (el) {
+            if (el.tagName === 'H2') { kind = el.textContent.trim(); return; }
+            if (el.tagName === 'H4') {
+                var ul = el.nextElementSibling;
+                var row = document.createElement('div'); row.className = 'rd-lib-row';
+                var topic = document.createElement('span'); topic.className = 'rd-lib-topic';
+                topic.textContent = el.textContent.trim() + (kind && kind !== 'Books' ? ' · ' + kind.toLowerCase() : '');
+                var items = document.createElement('div'); items.className = 'rd-lib-items';
+                if (ul && ul.tagName === 'UL') { Array.prototype.slice.call(ul.querySelectorAll('a')).forEach(function (a) { items.appendChild(a); }); ul.remove(); }
+                row.appendChild(topic); row.appendChild(items); out.appendChild(row);
+            }
+        });
+        books.innerHTML = ''; books.appendChild(out);
+    }
+
+    // Resources: h3 category → anchored group with count; tiles grid on top
+    var links = document.getElementById('rd-lib-links');
+    var tiles = document.getElementById('rd-lib-topics');
+    if (links && tiles) {
+        var total = 0, topics = 0, frag = document.createDocumentFragment();
+        Array.prototype.slice.call(links.querySelectorAll('h3')).forEach(function (h) {
+            var list = h.nextElementSibling; while (list && !/^(OL|UL)$/.test(list.tagName)) list = list.nextElementSibling;
+            var n = list ? list.querySelectorAll('li').length : 0;
+            total += n; topics++;
+            var id = 'topic-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+            h.id = id; h.className = 'rd-lib-group-title';
+            var tile = document.createElement('a'); tile.className = 'rd-tile'; tile.href = '#' + id;
+            tile.innerHTML = '<span>' + h.textContent.trim() + '</span><span class="rd-tile-count">' + n + '</span>';
+            frag.appendChild(tile);
+        });
+        Array.prototype.slice.call(links.querySelectorAll('hr')).forEach(function (hr) { hr.remove(); });
+        tiles.appendChild(frag);
+        var sub = document.getElementById('rd-lib-resources-sub');
+        if (sub) { var upd = sub.querySelector('.rd-lib-updated'); sub.textContent = 'Courses, lectures, and references worth your time — ' + total + ' links across ' + topics + ' topics. '; if (upd) sub.appendChild(upd); }
+    }
+
+    var initial = new URLSearchParams(location.search).get('tab');
+    setTab(initial === 'books' || initial === 'resources' ? initial : 'all');
+})();
+</script>
+{{- end }}

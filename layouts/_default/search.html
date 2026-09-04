@@ -1,25 +1,11 @@
 {{- define "main" }}
-
-<div class="lm-page-outer lm-search-page">
-
-    <div class="lm-page-header">
-        <h1 class="lm-page-title">Search</h1>
-        <p class="lm-page-lede">Search across all posts, essays, and pages.</p>
+<div class="rd-page">
+    <h1 class="rd-title">Search</h1>
+    <p class="rd-intro">Everything on the site, as you type.</p>
+    <div id="searchbox">
+        <input id="searchInput" class="rd-input rd-input--wide" autofocus placeholder="{{ .Params.placeholder | default "Search…" }}" aria-label="search" type="search" autocomplete="off" maxlength="64">
     </div>
-
-    <div class="lm-search-box">
-        <span class="lm-search-icon" aria-hidden="true">/</span>
-        <input id="searchInput" autofocus
-               placeholder="{{ .Params.placeholder | default "Search..." }}"
-               aria-label="Search"
-               type="search" autocomplete="off" maxlength="64"
-               class="lm-search-input">
-    </div>
-
-    <p class="lm-search-hint" id="lm-search-hint">Type to search posts, essays, and more.</p>
-
-    <ul id="searchResults" class="lm-search-results" aria-label="search results"></ul>
-
+    <ul id="searchResults" class="rd-search-results" aria-label="search results"></ul>
+    <div class="rd-utilities"><a href="/writing/">All writing &rarr;</a><a href="/tags/">Browse tags &rarr;</a><a href="/archive/">Archive &rarr;</a></div>
 </div>
-
 {{- end }}

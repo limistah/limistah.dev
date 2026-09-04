@@ -1,0 +1,79 @@
+{{- define "main" }}
+
+{{- $posts  := where site.RegularPages "Section" "posts" }}
+{{- $essays := where site.RegularPages "Section" "essays" }}
+{{- $pages  := ($posts | union $essays).ByDate.Reverse }}
+{{- $total  := len $pages }}
+
+<div class="rd-page">
+    <h1 class="rd-title">{{ .Title }}</h1>
+    <p class="rd-intro">{{ .Description }}</p>
+
+    <div class="rd-filter-row">
+        <div class="rd-segmented" id="rd-writing-filter" role="group" aria-label="Filter writing">
+            <button type="button" data-type="" aria-pressed="true">All</button>
+            <button type="button" data-type="technical" aria-pressed="false">Technical</button>
+            <button type="button" data-type="essay" aria-pressed="false">Essays</button>
+        </div>
+        <span class="rd-meta" id="rd-writing-count" aria-live="polite">{{ $total }} of {{ $total }} pieces</span>
+    </div>
+
+    <div id="rd-writing-list">
+    {{- range $pages }}
+        {{- $type := cond (eq .Section "essays") "essay" "technical" }}
+        <div class="rd-row" data-type="{{ $type }}">
+            <div>
+                <a href="{{ .Permalink }}" class="rd-row-title">{{ .Title }}</a>
+                {{- $blurb := .Description | default (.Summary | plainify | truncate 140) }}
+                {{- with $blurb }}<p class="rd-row-blurb">{{ . }}</p>{{ end }}
+                <p class="rd-row-meta">
+                    {{- if eq $type "essay" }}essay{{ else }}{{ range .Params.tags }}#{{ . | urlize }} {{ end }}{{ end }}
+                    {{- with .ReadingTime }} &middot; {{ . }} min{{ end -}}
+                </p>
+            </div>
+            <span class="rd-row-date">{{ .Date.Format "Jan 2006" }}</span>
+        </div>
+    {{- end }}
+    </div>
+
+    <div class="rd-utilities">
+        <a href="/archive/">Full archive &rarr;</a>
+        <a href="/tags/">Browse tags &rarr;</a>
+        <a href="/search/">Search &rarr;</a>
+        <a href="{{ with .OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}">RSS &rarr;</a>
+    </div>
+</div>
+
+<script>
+(function () {
+    var buttons = document.querySelectorAll('#rd-writing-filter button');
+    var rows    = document.querySelectorAll('#rd-writing-list .rd-row');
+    var count   = document.getElementById('rd-writing-count');
+    var total   = rows.length;
+    var active  = '';
+
+    var initial = (new URLSearchParams(location.search).get('type') || '').replace(/s$/, '');
+    if (initial === 'essay' || initial === 'technical') active = initial;
+
+    function render() {
+        var visible = 0;
+        rows.forEach(function (r) {
+            var show = !active || r.dataset.type === active;
+            r.hidden = !show;
+            if (show) visible++;
+        });
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.type === active ? 'true' : 'false'); });
+        count.textContent = visible + ' of ' + total + ' pieces';
+        var url = new URL(location);
+        if (active) url.searchParams.set('type', active); else url.searchParams.delete('type');
+        history.replaceState(null, '', url);
+    }
+
+    buttons.forEach(function (b) {
+        b.addEventListener('click', function () { active = this.dataset.type; render(); });
+    });
+    render();
+})();
+</script>
+
+{{- end }}
