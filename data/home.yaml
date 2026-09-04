@@ -1,0 +1,42 @@
+# Homepage content. Edit freely — template in layouts/index.html.
+name: Aleem Isiaka
+role: Senior Engineer, Cloud & Distributed Systems · Lagos, Nigeria
+avatar: /assets/aleem-isiaka.png
+thesis: I remove the magic from systems — showing how cloud infrastructure, distributed systems, and AI tooling actually work from the inside.
+bio: >-
+  Nearly ten years across backend, infrastructure, and SRE. Currently building payment
+  infrastructure at <a href="https://www.linkedin.com/company/kredete/">Kredete</a>,
+  co-organizing <a href="https://gophers.africa">GopherCon Africa</a>, and contributing to
+  Kubernetes, Prometheus, and Jaeger through the CNCF.
+
+socials:
+  - { label: "X / Twitter", url: "https://x.com/limistah" }
+  - { label: "GitHub",      url: "https://github.com/limistah" }
+  - { label: "LinkedIn",    url: "https://linkedin.com/in/limistah" }
+  - { label: "Email",       url: "mailto:aleemisiaka@gmail.com" }
+  - { label: "RSS",         url: "/index.xml" }
+
+community:
+  - name: GopherCon Africa
+    url: https://gophers.africa
+    role: Co-organizer
+    desc: The largest Go event in Africa — programming, CFP review, and community building across the continent.
+  - name: CNCF
+    url: https://openprofile.dev/profile/limistah
+    role: Contributor
+    desc: Kubernetes, Prometheus, and Jaeger. Focused on making observability tooling easier to run in production.
+  - name: ObjectSpread
+    url: https://objectspread.com
+    role: Founder
+    desc: Open platform and blog helping engineers adopt smarter operational practices.
+
+now:
+  - { label: "Working on", value: "Payment infrastructure at Kredete — onramps across gateways and stablecoins." }
+  - { label: "Learning",   value: "C/C++ and Rust; deeper into AWS and GCP internals this year." }
+  - { label: "Reading",    value: "Site Reliability Engineering, Modern Operating Systems, The C Programming Language." }
+  - { label: "Building",   value: "Heimdal, Mustache-zig, and Markview — one project a quarter." }
+
+subscribe:
+  heading: Get new writing by email
+  body: Deep-dives on distributed systems, cloud-native tooling, and the machines underneath — plus occasional essays. No spam.
+  action: https://limistah.substack.com/api/v1/free?nojs=true

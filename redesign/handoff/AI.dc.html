@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 700px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(45% 0.006 90);">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 700px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+
+    <h1 style="font-size: 34px; font-weight: 700; margin: 0 0 12px; letter-spacing: -0.018em; line-height: 1.15;">How I Use AI</h1>
+    <p style="font-size: 17px; line-height: 1.65; color: oklch(40% 0.006 90); margin: 0 0 14px; max-width: 58ch; text-wrap: pretty;">
+      My everyday use of artificial intelligence &mdash; as an engineer, as a writer, and in normal life. What I reach for. What I don't.
+    </p>
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.006 90); margin: 0 0 32px;">
+      Updated Sep 2026 &middot; 7 min read &middot; <a href="#" style="color: oklch(58% 0.006 90);">&#9998; improve this page</a>
+    </p>
+
+    <!-- TOC -->
+    <nav style="padding: 16px 18px; background: oklch(96% 0.004 90); border-radius: 9px; margin-bottom: 40px;">
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(56% 0.006 90); margin: 0 0 10px;">On this page</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px 20px;">
+        <sc-for list="{{ toc }}" as="t" hint-placeholder-count="5">
+          <a href="#" style="font-size: 14px;">{{ t }}</a>
+        </sc-for>
+      </div>
+    </nav>
+
+    <!-- DECISION TREE -->
+    <section style="margin-bottom: 44px;">
+      <h2 style="font-size: 22px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em;">The decision tree</h2>
+      <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+        Four branches. Almost everything I do with AI fits into one of them, and which branch I'm on decides how much of the work stays mine.
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <sc-for list="{{ branches }}" as="b" hint-placeholder-count="4">
+          <div style="padding: 15px 17px; background: oklch(96% 0.004 90); border-radius: 8px; border-left: 3px solid {{ b.tone }};">
+            <div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 7px;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: oklch(50% 0.006 90);">{{ b.tier }}</span>
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: oklch(30% 0.006 90);">{{ b.cond }}</span>
+            </div>
+            <p style="font-size: 14.5px; line-height: 1.6; color: oklch(34% 0.006 90); margin: 0; text-wrap: pretty;">{{ b.action }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section style="margin-bottom: 44px;">
+      <h2 style="font-size: 22px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em;">At work</h2>
+      <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 0 0 20px; text-wrap: pretty;">
+        Software engineering has absorbed AI into its workflows fast. For the things I research, decide, and implement, the pipeline looks like this &mdash; different models for different jobs, because they are genuinely not interchangeable.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(196px, 1fr)); gap: 12px;">
+        <sc-for list="{{ stages }}" as="s" hint-placeholder-count="3">
+          <div style="padding: 16px; background: oklch(99% 0.003 90); border: 1px solid oklch(91% 0.004 90); border-radius: 9px;">
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; color: oklch(60% 0.006 90); margin: 0 0 8px;">{{ s.num }}</p>
+            <h3 style="font-size: 16px; font-weight: 600; margin: 0 0 4px;">{{ s.title }}</h3>
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(45% 0.14 260); margin: 0 0 10px;">{{ s.tools }}</p>
+            <p style="font-size: 13.5px; line-height: 1.6; color: oklch(42% 0.006 90); margin: 0; text-wrap: pretty;">{{ s.note }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- OPENCODE SETUP -->
+    <section style="margin-bottom: 44px;">
+      <h2 style="font-size: 22px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em;">My OpenCode setup</h2>
+      <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+        Two distinct agents, so thinking stays separate from doing: plan thoroughly in read-only mode, then execute in build mode.
+      </p>
+      <div style="border: 1px solid oklch(91% 0.004 90); border-radius: 9px; overflow: hidden;">
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: oklch(56% 0.006 90); margin: 0; padding: 10px 16px; background: oklch(96% 0.004 90); border-bottom: 1px solid oklch(91% 0.004 90);">~/.config/opencode/config.json</p>
+        <sc-for list="{{ agents }}" as="a" hint-placeholder-count="2">
+          <div style="padding: 15px 16px; border-bottom: 1px solid oklch(93% 0.004 90); background: oklch(99% 0.003 90);">
+            <div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; color: oklch(22% 0.006 90);">{{ a.name }}</span>
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em; padding: 2px 7px; border-radius: 4px; background: oklch(93% 0.004 90); color: oklch(45% 0.006 90);">{{ a.mode }}</span>
+            </div>
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(45% 0.14 260); margin: 6px 0 0;">{{ a.model }}</p>
+            <p style="font-size: 13.5px; line-height: 1.6; color: oklch(42% 0.006 90); margin: 6px 0 0; text-wrap: pretty;">{{ a.note }}</p>
+          </div>
+        </sc-for>
+        <div style="padding: 13px 16px; background: oklch(97% 0.003 90); display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: oklch(56% 0.006 90);">plugins</span>
+          <sc-for list="{{ plugins }}" as="p" hint-placeholder-count="3">
+            <a href="#" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">{{ p }}</a>
+          </sc-for>
+        </div>
+      </div>
+      <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 18px 0 0; text-wrap: pretty;">
+        I take model output as an initial draft, then revise and review until it meets my requirements and coding style. When something looks off, I query the model for its reasoning &mdash; a kind of two-factor verification against slop. I also read my own PRs properly before asking anyone else to.
+      </p>
+    </section>
+
+    <!-- QUOTE -->
+    <blockquote style="margin: 0 0 44px; padding: 20px 22px; background: oklch(96% 0.004 90); border-radius: 9px;">
+      <p style="font-size: 17px; line-height: 1.65; color: oklch(28% 0.006 90); margin: 0; text-wrap: pretty;">
+        I care more about my reputation as an engineer than about brain rot. Once a name is tagged to a piece of work, the means stops justifying the end. Responsibility has never been more important.
+      </p>
+    </blockquote>
+
+    <!-- HERMES -->
+    <section style="margin-bottom: 44px;">
+      <h2 style="font-size: 22px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em;">Hermes &mdash; my private tutor</h2>
+      <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+        I run Hermes locally, for now. The job is narrow and personal: research for me, teach me French, sharpen my English, keep my Arabic from going rusty. Paired with <span style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px;">ddts</span> for voice transcription, so pronunciation drilling never leaves the terminal.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 16px;">
+        <sc-for list="{{ loop }}" as="l" hint-placeholder-count="4">
+          <div style="padding: 13px 14px; background: oklch(96% 0.004 90); border-radius: 8px;">
+            <p style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em; color: oklch(58% 0.006 90); margin: 0 0 5px;">{{ l.step }}</p>
+            <p style="font-size: 14.5px; font-weight: 500; color: oklch(26% 0.006 90); margin: 0 0 3px;">{{ l.name }}</p>
+            <p style="font-size: 13px; line-height: 1.5; color: oklch(48% 0.006 90); margin: 0;">{{ l.note }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 0; text-wrap: pretty;">
+        Hermes routes between two backends: GitHub Copilot for hosted Claude and GPT-class lifts, Ollama for anything I'd rather keep on my own metal. My language practice doesn't leak into a hosted model's memory, and the model stays mine. Moving it to a small cloud box is purely about availability &mdash; same weights, same scope.
+      </p>
+    </section>
+
+    <!-- WHAT I DON'T -->
+    <section style="margin-bottom: 44px;">
+      <h2 style="font-size: 22px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em;">What I don't use it for</h2>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <sc-for list="{{ nots }}" as="n" hint-placeholder-count="3">
+          <div style="display: flex; gap: 11px;">
+            <span style="color: oklch(58% 0.006 90); line-height: 1.7; flex-shrink: 0; font-family: 'JetBrains Mono', monospace;">&times;</span>
+            <p style="font-size: 15.5px; line-height: 1.68; color: oklch(32% 0.006 90); margin: 0; text-wrap: pretty;">{{ n }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- IMPROVEMENTS -->
+    <section style="padding: 20px 22px; background: oklch(96% 0.004 90); border-radius: 10px;">
+      <h2 style="font-size: 16px; font-weight: 600; margin: 0 0 8px;">Where this is heading</h2>
+      <p style="font-size: 14.5px; line-height: 1.68; color: oklch(36% 0.006 90); margin: 0; text-wrap: pretty;">
+        Using hosted models for everyday inference is a risk worth naming &mdash; it's surprising how much these systems already know about us. Where latency allows, self-hosting open-weight models makes sense. On-device is likely the better long-run route, and a few projects are already there.
+      </p>
+    </section>
+
+    <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; gap: 16px; flex-wrap: wrap; font-size: 13.5px;">
+      <a href="Writing.dc.html">More writing &rarr;</a>
+      <a href="Uses.dc.html">Tools &amp; gear &rarr;</a>
+      <a href="Log.dc.html">Daily log &rarr;</a>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 860, &quot;height&quot;: 1200}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      toc: ["The decision tree", "At work", "My OpenCode setup", "Hermes", "What I don't use it for", "Where this is heading"],
+      branches: [
+        { tier: "Primary path", cond: "if (I know what I want && an agent can do it)", action: "Structure the implementation. Let the model generate. Revise, review, intervene manually.", tone: "oklch(45% 0.14 260)" },
+        { tier: "Common", cond: "if (I know what I want && no agent is good enough)", action: "Gather resources. Refine the idea with an LLM. Implement manually.", tone: "oklch(65% 0.09 260)" },
+        { tier: "Exploratory", cond: "if (I don't know what I want)", action: "Prompt for a general direction, then transition into one of the paths above.", tone: "oklch(78% 0.05 260)" },
+        { tier: "Trivial", cond: "if (everyday random search)", action: "Just prompt.", tone: "oklch(88% 0.02 260)" },
+      ],
+      stages: [
+        { num: "STAGE 01", title: "Research", tools: "ChatGPT + Gemini", note: "Pull as much as possible from Gemini, export to markdown, import to ChatGPT for refinement." },
+        { num: "STAGE 02", title: "Decide", tools: "Claude", note: "Anthropic's models are the best here. Copilot access is more economical; the web app when I need to think visually." },
+        { num: "STAGE 03", title: "Implement", tools: "OpenCode + Copilot", note: "Dual-agent setup. Claude Code when I need to one-shot something fast." },
+      ],
+      agents: [
+        { name: "plan", mode: "read-only", model: "github-copilot/claude-opus-4.5", note: "Research, exploration, implementation planning. No file changes." },
+        { name: "build", mode: "write", model: "github-copilot/claude-sonnet-4.5", note: "Executes plans, writes code, makes changes." },
+      ],
+      plugins: ["superpowers", "wakatime", "websearch-cited"],
+      loop: [
+        { step: "Input", name: "me", note: "A word, phrase, or question." },
+        { step: "Agent", name: "hermes", note: "Self-hosted; cloud move planned." },
+        { step: "TTS", name: "ddts", note: "Pronunciation in fr / en / ar." },
+        { step: "Output", name: "me", note: "Listen, repeat, drill." },
+      ],
+      nots: [
+        "Creative writing. LLMs are prediction engines, and it shows. I write manually.",
+        "Anything where the idea itself is the work \u2014 a mentorship roadmap I asked for came back weak, and not because of the prompt.",
+        "Agents that decide what I can or should prompt. AI should be what I ask of it, not a gatekeeper in front of my own thinking.",
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

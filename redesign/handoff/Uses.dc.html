@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 660px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(45% 0.006 90);">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 660px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.006 90); margin: 0 0 10px;"><a href="Now.dc.html" style="color: oklch(58% 0.006 90);">&larr; Now</a></p>
+    <h1 style="font-size: 32px; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.015em;">Uses</h1>
+    <p style="font-size: 16px; line-height: 1.65; color: oklch(45% 0.006 90); margin: 0 0 8px; max-width: 56ch; text-wrap: pretty;">
+      The desk, the machines, and the stack I reach for. Nothing here is sponsored &mdash; it's just what survived.
+    </p>
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.006 90); margin: 0 0 36px;">Last updated Sep 2026</p>
+
+    <sc-for list="{{ groups }}" as="g" hint-placeholder-count="4">
+      <section style="margin-bottom: 34px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">{{ g.title }}</h2>
+        <sc-for list="{{ g.items }}" as="item" hint-placeholder-count="5">
+          <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 11px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(56% 0.006 90); padding-top: 2px;">{{ item.label }}</span>
+            <div style="min-width: 0;">
+              <a href="#" style="font-size: 14.5px; color: oklch(26% 0.006 90); line-height: 1.5;">{{ item.name }}</a>
+              <p style="font-size: 13.5px; line-height: 1.55; color: oklch(50% 0.006 90); margin: 3px 0 0; text-wrap: pretty;">{{ item.note }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+    </sc-for>
+
+    <section style="padding: 18px 20px; background: oklch(96% 0.004 90); border-radius: 9px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 10px;">Homelab</h2>
+      <p style="font-size: 14.5px; line-height: 1.65; color: oklch(32% 0.006 90); margin: 0; text-wrap: pretty;">
+        A Dell ES470 (Core i7, 16GB) doing the unglamorous work: Kubernetes experiments, Prometheus scrapes I don't want in the cloud, and anything I'd rather break locally first.
+      </p>
+    </section>
+
+    <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; gap: 16px; flex-wrap: wrap; font-size: 13.5px;">
+      <a href="Now.dc.html">What I'm doing now &rarr;</a>
+      <a href="Log.dc.html">Daily log &rarr;</a>
+      <a href="#">CV &rarr;</a>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 820, &quot;height&quot;: 1100}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      groups: [
+        { title: "Desk", items: [
+          { label: "Laptop", name: "MacBook Pro 14\" (M4 Pro)", note: "Daily driver for everything from Rust builds to Kubernetes clusters." },
+          { label: "Monitor", name: "Samsung 32\" S3 curved", note: "1080p at 100Hz. Wide enough for a terminal grid and a browser." },
+          { label: "Keyboard", name: "Keychron K9", note: "Compact mechanical, wireless when the desk needs to be clear." },
+          { label: "Mouse", name: "Logitech MX Master", note: "Horizontal scroll earns its keep in long log files." },
+          { label: "Microphone", name: "Shure MV7", note: "For conference calls, CFP reviews, and the occasional recording." },
+          { label: "Webcam", name: "Logitech C922", note: "Good enough that nobody comments on it." },
+          { label: "Phone", name: "iPhone 14 Pro", note: "On-call companion." },
+          { label: "Printer", name: "HP", note: "It prints. That is the whole review." },
+        ]},
+        { title: "Languages", items: [
+          { label: "Daily", name: "Go, TypeScript", note: "Services, tooling, and most of what ships." },
+          { label: "Reaching for", name: "Rust", note: "Systems work and anything where I want the compiler arguing with me." },
+          { label: "Learning", name: "C / C++", note: "Going down a level to understand what the rest sits on." },
+          { label: "Scripting", name: "Python, Bash", note: "Glue, automation, one-off analysis." },
+        ]},
+        { title: "Platform", items: [
+          { label: "OS", name: "macOS, Linux", note: "macOS on the laptop, Linux everywhere that matters." },
+          { label: "Cloud", name: "GCP, AWS, Cloudflare", note: "Cloudflare for edge and queues; the other two for everything heavier." },
+          { label: "Orchestration", name: "Kubernetes", note: "Plus Istio or Linkerd when the mesh is worth the tax." },
+          { label: "IaC", name: "Terraform", note: "Ansible and Puppet where the fleet predates it." },
+          { label: "Observability", name: "Prometheus, Grafana, Datadog", note: "Jaeger for traces. Alerts tuned to be worth waking up for." },
+          { label: "Editor", name: "Neovim", note: "Config kept reproducible with Stow." },
+        ]},
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,6 +1,12 @@
 ---
 title: "Essays..."
 summary: Just Cappings
+# HTML list retired in favour of /writing/ (which aliases /essays/ → redirect).
+# RSS kept so existing /essays/index.xml subscribers are not broken.
+cascade:
+  containerWidth: 700px
+outputs:
+  - rss
 ---
 
 <center>

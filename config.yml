@@ -13,8 +13,30 @@ buildFuture: false
 buildExpired: true
 enableEmoji: true
 enableGitInfo: true
+# An explicit `lastmod` in front matter wins over the git date (the LinkSync bot maintains it on links.md).
+frontmatter:
+  lastmod: ["lastmod", ":git", "date", "publishDate"]
 pygmentsUseClasses: true
 mainsections: ["posts"]
+
+# /links and /readings are data sources for /library — kept as-is (the LinkSync bot
+# rewrites content/links.md) but no longer rendered as pages of their own.
+cascade:
+  - _target:
+      path: "{/links,/readings}"
+    build:
+      render: never
+      list: never
+
+related:
+  threshold: 40
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: series
+      weight: 60
 
 minify:
   disableXML: true
@@ -31,24 +53,21 @@ languages:
       papers: papers
     menu:
       main:
-        - name: Now
-          url: now/
+        - name: Writing
+          url: writing/
           weight: 1
-        - name: Essays
-          url: essays/
-          weight: 4
-        - name: Readings
-          url: readings/
-          weight: 4
-        - name: Links
-          url: links/
-          weight: 3
         - name: AI
           url: ai/
           weight: 2
-        - name: Search
-          url: search/
-          weight: 8
+        - name: Library
+          url: library/
+          weight: 3
+        - name: Now
+          url: now/
+          weight: 5
+        - name: About
+          url: about/
+          weight: 6
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -151,10 +170,10 @@ markup:
           inline: [["$", "$"]]
   highlight:
     noClasses: false
-    anchorLineNos: true
+    anchorLineNos: false
     codeFences: true
     guessSyntax: true
-    lineNos: true
+    lineNos: false
     # style: monokai
 
 # privacy:

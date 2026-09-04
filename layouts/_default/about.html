@@ -1,0 +1,54 @@
+{{- define "main" }}
+{{- $d := site.Data.about }}
+<div class="rd-page">
+    <h1 class="rd-title" style="margin-bottom:22px">{{ .Title }}</h1>
+
+    {{- with .Params.portrait }}
+    <img class="rd-portrait" src="{{ . }}" alt="Aleem Isiaka">
+    {{- end }}
+
+    <div class="rd-about-prose">{{ .Content }}</div>
+
+    {{- with .Params.pullquote }}
+    <p class="rd-pullquote">{{ . }}</p>
+    {{- end }}
+
+    <section class="rd-block">
+        <h2 class="rd-label" style="margin-bottom:14px">The short version</h2>
+        {{- range $d.facts }}
+        <div class="rd-fact">
+            <span class="rd-fact-label">{{ .label }}</span>
+            <p class="rd-fact-value">{{ .value }}</p>
+        </div>
+        {{- end }}
+    </section>
+
+    <section class="rd-block rd-two-col">
+        <div>
+            <h2 class="rd-label">Certifications</h2>
+            <div class="rd-lines rd-lines--links">
+                {{- range $d.certifications }}{{ if .url }}<a href="{{ .url }}">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}{{ end }}
+            </div>
+        </div>
+        <div>
+            <h2 class="rd-label">Published at</h2>
+            <div class="rd-lines rd-lines--links">
+                {{- range $d.published }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}
+            </div>
+        </div>
+    </section>
+
+    <section class="rd-contact">
+        <h2 class="rd-contact-title">{{ $d.contact.heading }}</h2>
+        <p class="rd-contact-body">{{ $d.contact.body }}</p>
+        <div class="rd-btn-row">
+            <a href="mailto:{{ $d.contact.email }}" class="rd-btn rd-btn--primary">Email me</a>
+            <a href="{{ $d.contact.cv }}" class="rd-btn rd-btn--outline">View CV</a>
+        </div>
+    </section>
+
+    <div class="rd-utilities" style="margin-top:40px;gap:14px">
+        {{- range $d.links }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}
+    </div>
+</div>
+{{- end }}

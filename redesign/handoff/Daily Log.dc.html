@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(19% 0.004 90); }
+  a { color: oklch(78% 0.13 190); text-decoration: none; }
+  a:hover { color: oklch(85% 0.13 190); text-decoration: underline; }
+  ::selection { background: oklch(78% 0.13 190 / 0.3); }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(19% 0.004 90); color: oklch(88% 0.004 90); min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- NAV -->
+  <header style="max-width: 780px; width: 100%; margin: 0 auto; padding: 28px 24px 0; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+    <a href="#" style="font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 500; color: oklch(88% 0.004 90);">limistah.dev</a>
+    <nav style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <a href="#" style="font-size: 14px; color: oklch(70% 0.004 90);">Now</a>
+      <a href="#" style="font-size: 14px; color: oklch(70% 0.004 90);">AI</a>
+      <a href="#" style="font-size: 14px; color: oklch(70% 0.004 90);">Links</a>
+      <a href="#" style="font-size: 14px; color: oklch(70% 0.004 90);">Essays</a>
+      <a href="#" style="font-size: 14px; color: oklch(88% 0.004 90); font-weight: 600;">Log</a>
+      <a href="#" style="font-size: 14px; color: oklch(70% 0.004 90);">/ Search</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <main style="max-width: 780px; width: 100%; margin: 0 auto; padding: 48px 24px 0; box-sizing: border-box; flex: 1;">
+    <h1 style="font-size: 34px; font-weight: 700; margin: 0 0 10px; color: oklch(96% 0.004 90); letter-spacing: -0.01em;">Log</h1>
+    <p style="font-size: 16px; line-height: 1.6; color: oklch(68% 0.004 90); margin: 0 0 20px; max-width: 58ch;">
+      A running record of what I'm building, learning, and shipping &mdash; newest first. Not a commit history; just the parts worth remembering.
+    </p>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-bottom: 24px; margin-bottom: 8px; border-bottom: 1px solid oklch(30% 0.006 90);">
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <sc-for list="{{ tagList }}" as="tag" hint-placeholder-count="4">
+          <button style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; padding: 5px 10px; border-radius: 5px; border: 1px solid oklch(32% 0.006 90); background: transparent; cursor: pointer" style-hover="border-color: oklch(78% 0.13 190)" onClick="{{ () => toggleTag(tag) }}">{{ tag }}</button>
+        </sc-for>
+      </div>
+      <a href="#" style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(68% 0.004 90); display: flex; align-items: center; gap: 6px;">
+        <span style="width: 7px; height: 7px; border-radius: 50%; background: oklch(78% 0.13 190); display: inline-block;"></span>
+        RSS
+      </a>
+    </div>
+
+    <!-- DAY GROUPS -->
+    <sc-for list="{{ visibleDays }}" as="day" hint-placeholder-count="5">
+      <section style="padding: 28px 0; border-bottom: 1px solid oklch(26% 0.006 90); display: grid; grid-template-columns: 108px 1fr; gap: 20px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: oklch(60% 0.004 90); padding-top: 2px; white-space: nowrap;">{{ day.date }}</div>
+        <div style="display: flex; flex-direction: column; gap: 16px; min-width: 0;">
+          <sc-for list="{{ day.entries }}" as="entry" hint-placeholder-count="2">
+            <div style="display: flex; gap: 10px;">
+              <span style="color: oklch(78% 0.13 190); flex-shrink: 0; line-height: 1.6;">&rsaquo;</span>
+              <div style="min-width: 0;">
+                <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: oklch(90% 0.004 90);">{{ entry.text }}</p>
+                <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
+                  <sc-for list="{{ entry.tags }}" as="t" hint-placeholder-count="2">
+                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.004 90);">#{{ t }}</span>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+    </sc-for>
+
+    <sc-if value="{{ activeTag }}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 40px 0; text-align: center;">
+        <button onClick="{{ () => toggleTag(activeTag) }}" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: oklch(68% 0.004 90); background: none; border: 1px solid oklch(32% 0.006 90); border-radius: 6px; padding: 8px 16px; cursor: pointer;">Clear filter &middot; #{{ activeTag }}</button>
+      </div>
+    </sc-if>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="max-width: 780px; width: 100%; margin: 60px auto 0; padding: 28px 24px; box-sizing: border-box; border-top: 1px solid oklch(26% 0.006 90); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+    <span style="font-size: 13px; color: oklch(55% 0.004 90);">&copy; 2026 Aleem Isiaka</span>
+    <div style="display: flex; gap: 16px;">
+      <a href="#" style="font-size: 13px; color: oklch(55% 0.004 90);">GitHub</a>
+      <a href="#" style="font-size: 13px; color: oklch(55% 0.004 90);">X</a>
+      <a href="#" style="font-size: 13px; color: oklch(55% 0.004 90);">RSS</a>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 900, &quot;height&quot;: 1000}}">
+const DAYS = [
+  { date: "Sep 4, 2026", entries: [
+    { text: "Shipped rate-limit middleware for the payments API using a sliding-window Redis counter. Cut p99 latency spikes during traffic bursts.", tags: ["golang", "redis"] },
+  ]},
+  { date: "Sep 2, 2026", entries: [
+    { text: "Wrote a Terraform module for multi-region Postgres failover. Documented the runbook so the on-call rotation doesn't need me awake for it.", tags: ["terraform", "postgres"] },
+    { text: "TIL: Jaeger's tail-based sampling only kicks in once a trace fully completes \u2014 explains the gaps we saw on long-running jobs.", tags: ["jaeger", "til"] },
+  ]},
+  { date: "Aug 30, 2026", entries: [
+    { text: "GopherCon Africa CFP closes this week. Reviewed the last batch of talk proposals with the committee.", tags: ["gophercon"] },
+  ]},
+  { date: "Aug 28, 2026", entries: [
+    { text: "Reworked ObjectSpread's alerting pipeline to dedupe noisy Kubernetes events before they hit Slack.", tags: ["kubernetes", "objectspread"] },
+    { text: "Read through the Prometheus remote-write spec end to end. Cleaner than I expected.", tags: ["prometheus"] },
+  ]},
+  { date: "Aug 25, 2026", entries: [
+    { text: "Cut WitOps's cold-start cost report generation from 40s to under 6s by batching the Cloudflare API calls instead of looping per-account.", tags: ["golang", "cloudflare"] },
+  ]},
+];
+
+class Component extends DCLogic {
+  state = { activeTag: null };
+
+  renderVals() {
+    const allTags = [...new Set(DAYS.flatMap(d => d.entries.flatMap(e => e.tags)))].sort();
+    const activeTag = this.state.activeTag;
+    const visibleDays = activeTag
+      ? DAYS.map(d => ({ ...d, entries: d.entries.filter(e => e.tags.includes(activeTag)) })).filter(d => d.entries.length)
+      : DAYS;
+
+    return {
+      tagList: allTags,
+      visibleDays,
+      activeTag,
+      toggleTag: (tag) => this.setState(s => ({ activeTag: s.activeTag === tag ? null : tag })),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,133 +1,125 @@
 {{- define "main" }}
+{{- $width := .Param "containerWidth" | default "660px" }}
+{{- $terms := .GetTerms "tags" }}
+{{- $isEssay := eq .Section "essays" }}
+{{- $hasToc := and (.Param "ShowToc") .TableOfContents (gt (len .TableOfContents) 60) }}
+<div class="rd-article-layout{{ if $hasToc }} rd-article-layout--toc{{ end }}">
+{{- if $hasToc }}
+<aside class="rd-side" aria-label="In this post">
+    <a href="/writing/" class="rd-side-back">&larr; All writing</a>
+    <p class="rd-side-kicker">{{ if $isEssay }}Essay{{ else }}Blog post{{ end }}</p>
+    <p class="rd-side-title">{{ .Title }}</p>
+    <p class="rd-side-kicker">In this post</p>
+    <div class="rd-side-toc" id="rd-side-toc">{{ .TableOfContents }}</div>
+</aside>
+{{- end }}
+<article class="rd-page rd-article" style="max-width: {{ $width }}">
 
-<div class="lm-article-outer">
-
-    {{- /* ── Article header — full width ── */ -}}
-    <header class="lm-article-header" id="article-header">
-
-        {{- /* Breadcrumb: ~ / section / slug */ -}}
-        <div class="lm-article-bc">
-            <a href="/">~</a>
+    <header class="rd-article-head">
+        <p class="rd-crumb">
+            <a href="/writing/">Writing</a>
             <span>/</span>
-            {{- with .Section }}
-            <a href="{{ printf "/%s/" . | absLangURL }}">{{ . }}</a>
-            <span>/</span>
-            {{- end }}
-            <span class="lm-article-bc-current">{{ .File.BaseFileName }}</span>
-        </div>
-
-        <h1 class="lm-article-title">{{ .Title }}</h1>
-
-        {{- with .Description }}
-        <p class="lm-article-subtitle">{{ . }}</p>
-        {{- end }}
-
-        {{- /* Tags row */ -}}
-        {{- $taxKey := .Language.Params.Taxonomies.tag | default "tags" }}
-        {{- $terms := $.GetTerms $taxKey }}
-        {{- with $terms }}
-        <div class="lm-article-header-tags">
-            {{- range . }}
-            <a href="{{ .Permalink }}" class="lm-article-tag">{{ .LinkTitle }}</a>
-            {{- end }}
-        </div>
-        {{- end }}
-
-        {{- /* Meta line: published · updated · read · author */ -}}
-        <div class="lm-article-meta">
-            <span>published: <span class="lm-meta-val">{{ .Date.Format "Jan 2, 2006" }}</span></span>
-            {{- if and .Lastmod (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }}
-            <span>updated: <span class="lm-meta-val">{{ .Lastmod.Format "Jan 2006" }}</span></span>
-            {{- end }}
-            <span>read: <span class="lm-meta-val">{{ .ReadingTime }} min</span></span>
-            <span>author: <span class="lm-meta-val">{{ .Params.author | default "Aleem Isiaka" }}</span></span>
-            <a href="https://github.com/limistah/limistah.dev/tree/main/content/{{ .File.Path }}"
-               target="_blank" rel="noopener noreferrer"
-               class="lm-article-edit-link">&#9998; Fix &amp; improve this page</a>
-        </div>
-
-        {{- partial "notbyai.html" . }}
+            {{- if $isEssay }}<a href="/writing/?type=essay">essays</a>{{ else }}{{ with index $terms 0 }}<a href="{{ .Permalink }}">{{ .LinkTitle | lower }}</a>{{ else }}<span>technical</span>{{ end }}{{ end }}
+        </p>
+        <h1 class="rd-article-title">{{ .Title }}</h1>
+        <p class="rd-byline">
+            <img class="rd-byline-avatar" src="{{ site.Data.home.avatar }}" alt="" width="22" height="22">
+            <span>{{ .Date.Format "January 2006" }}</span>
+            <span class="rd-byline-sep">&middot;</span>
+            <span>{{ .Params.author | default "Aleem Isiaka" }}</span>
+            <span class="rd-byline-sep">&middot;</span>
+            <span>{{ .ReadingTime }} min read</span>
+        </p>
+        {{- with .Description }}<p class="rd-lede">{{ . }}</p>{{ end }}
     </header>
 
-    {{- /* ── Article body — 2-col grid ── */ -}}
-    <div class="lm-article-grid">
-        <div style="min-width:0">
+    {{- if $hasToc }}
+    <nav class="rd-toc" aria-label="Contents">
+        <p class="rd-toc-label">Contents</p>
+        <div class="rd-toc-links{{ if .Param "tocFlat" }} rd-toc-links--flat{{ end }}">{{ .TableOfContents }}</div>
+    </nav>
+    {{- end }}
 
-            {{- /* Inline TOC */ -}}
-            {{- if and (.Param "ShowToc") .TableOfContents }}
-            <details class="lm-inline-toc" id="toc-inline" open>
-                <summary>
-                    <span>Table of contents &middot; sections</span>
-                    <span class="lm-inline-toc-arrow">&#9660;</span>
-                </summary>
-                <div class="lm-inline-toc-body">{{ .TableOfContents }}</div>
-            </details>
-            {{- end }}
-
-            {{- /* Article prose */ -}}
-            <div id="article-body" class="post-content">
-                {{- if not (.Param "disableAnchoredHeadings") }}
-                {{- partial "anchored_headings.html" .Content -}}
-                {{- else }}{{ .Content }}{{ end }}
-            </div>
-            <div id="article-end" aria-hidden="true"></div>
-
-            {{- /* Post footer: prev/next */ -}}
-            {{- if (.Param "ShowPostNavLinks") }}
-            <div class="lm-post-footer-zone">
-                <nav class="lm-post-nav">
-                    {{- with .PrevInSection }}
-                    <a href="{{ .Permalink }}" class="lm-post-nav-link lm-post-nav-link--prev">
-                        <span class="lm-post-nav-label">&#8592; previous</span>
-                        <span class="lm-post-nav-title">{{ .Title }}</span>
-                    </a>
-                    {{- else }}<div></div>{{- end }}
-                    {{- with .NextInSection }}
-                    <a href="{{ .Permalink }}" class="lm-post-nav-link lm-post-nav-link--next">
-                        <span class="lm-post-nav-label">next &#8594;</span>
-                        <span class="lm-post-nav-title">{{ .Title }}</span>
-                    </a>
-                    {{- end }}
-                </nav>
-            </div>
-            {{- end }}
-
-            {{- if (.Param "comments") }}
-            {{- partial "comments.html" . }}
-            {{- end }}
-
-        </div>
-
-        {{- /* ── Sidebar TOC ── */ -}}
-        {{- if and (.Param "ShowToc") .TableOfContents }}
-        <aside class="lm-sidebar-toc">
-            <div class="lm-toc-nav-heading">On this page</div>
-            <div id="lm-toc">{{ .TableOfContents }}</div>
-        </aside>
-        {{- end }}
+    <div id="article-body" class="post-content rd-prose">
+        {{- if not (.Param "disableAnchoredHeadings") }}{{ partial "anchored_headings.html" .Content }}{{ else }}{{ .Content }}{{ end }}
     </div>
 
+    <footer class="rd-article-foot">
+        <p class="rd-article-foot-meta">
+            {{- with $terms }}<span>Tagged:</span> {{ range . }}<a href="{{ .Permalink }}">{{ .LinkTitle | lower }}</a> {{ end }}<span class="rd-byline-sep">&middot;</span> <a href="/tags/">all topics</a><span class="rd-byline-sep">&middot;</span>{{ end }}
+            {{- if and .Lastmod (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }}<span>updated {{ .Lastmod.Format "Jan 2, 2006" }}</span><span class="rd-byline-sep">&middot;</span>{{ end }}
+            {{- with .File }}<a href="https://github.com/limistah/limistah.dev/tree/main/content/{{ .Path }}" target="_blank" rel="noopener noreferrer">edit on GitHub</a>{{ end }}
+        </p>
+
+        {{- $related := site.RegularPages.Related . | first 8 }}
+        {{- $heading := "Related" }}
+        {{- if lt (len $related) 2 }}
+            {{- $related = where site.RegularPages "Section" .Section | complement (slice .) | first 6 }}
+            {{- $heading = cond $isEssay "More essays" "More technical writing" }}
+        {{- else }}{{ with index $terms 0 }}{{ $heading = printf "Related &middot; %s" (.LinkTitle | lower) }}{{ end }}{{ end }}
+        {{- with $related }}
+        <section class="rd-related">
+            <h2 class="rd-label" style="margin-bottom:12px">{{ $heading | safeHTML }}</h2>
+            <ul class="rd-related-list">
+                {{- range . }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a><span class="rd-related-date">{{ .Date.Format "Jan 2006" }}</span></li>
+                {{- end }}
+            </ul>
+        </section>
+        {{- end }}
+
+        {{- if (.Param "ShowPostNavLinks") }}
+        <nav class="rd-postnav">
+            {{- with .PrevInSection }}<a href="{{ .Permalink }}"><span class="rd-postnav-label">&larr; older</span><span class="rd-postnav-title">{{ .Title }}</span></a>{{ else }}<span></span>{{ end }}
+            {{- with .NextInSection }}<a href="{{ .Permalink }}" class="rd-postnav-next"><span class="rd-postnav-label">newer &rarr;</span><span class="rd-postnav-title">{{ .Title }}</span></a>{{ end }}
+        </nav>
+        {{- end }}
+    </footer>
+
+    {{- if (.Param "comments") }}{{ partial "comments.html" . }}{{ end }}
+    {{- if and (ne (.Param "enableOpenring") false) (templates.Exists "partials/openring.html") }}{{ partial "openring.html" . }}{{ end }}
+
+    <div class="rd-utilities">
+        <a href="/writing/">More writing &rarr;</a>
+        <a href="{{ with site.GetPage "/writing" }}{{ with .OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}{{ end }}">RSS &rarr;</a>
+    </div>
+</article>
 </div>
-
-{{- partial "extend_single_footer.html" . }}
-
-{{- if and (.Param "ShowToc") .TableOfContents }}
+{{- if $hasToc }}
 <script>
 (function () {
-    var headings = document.querySelectorAll('#article-body h2[id], #article-body h3[id]');
-    var tocLinks = document.querySelectorAll('#lm-toc a');
-    if (!headings.length || !tocLinks.length) return;
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            tocLinks.forEach(function (a) {
-                a.classList.toggle('toc-active', a.getAttribute('href') === '#' + entry.target.id);
-            });
-        });
-    }, { rootMargin: '-10% 0px -75% 0px' });
-    headings.forEach(function (h) { observer.observe(h); });
+    // Sticky only when the sidebar fits; a TOC taller than the viewport scrolls with the page instead.
+    var side = document.querySelector('.rd-side');
+    function fit() { if (side) side.classList.toggle('is-tall', side.offsetHeight > window.innerHeight - 48); }
+    fit(); window.addEventListener('resize', fit);
+
+    var links = document.querySelectorAll('#rd-side-toc a');
+    var heads = Array.prototype.slice.call(document.querySelectorAll('#article-body h2[id], #article-body h3[id]'));
+    if (!links.length || !heads.length) return;
+    var byId = {};
+    links.forEach(function (a) { byId[decodeURIComponent(a.getAttribute('href').slice(1))] = a; });
+
+    // Active = the last heading that has crossed a line 1/3 down the viewport
+    // (so a heading counts as "current" as soon as it's comfortably on screen).
+    var current = null, ticking = false;
+    function pick() {
+        ticking = false;
+        var line = window.innerHeight * 0.33, active = heads[0];
+        for (var i = 0; i < heads.length; i++) {
+            if (heads[i].getBoundingClientRect().top <= line) active = heads[i]; else break;
+        }
+        // at the very bottom, light up the last one
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) active = heads[heads.length - 1];
+        if (active === current) return;
+        current = active;
+        links.forEach(function (a) { a.classList.remove('is-active'); });
+        var a = byId[active.id]; if (a) { a.classList.add('is-active'); }
+    }
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(pick); } }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    pick();
 })();
 </script>
 {{- end }}
-
 {{- end }}
