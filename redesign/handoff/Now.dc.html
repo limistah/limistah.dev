@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 660px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(45% 0.006 90);">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 660px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+    <h1 style="font-size: 32px; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.015em;">Now</h1>
+    <p style="font-size: 16px; line-height: 1.65; color: oklch(45% 0.006 90); margin: 0 0 8px; max-width: 56ch; text-wrap: pretty;">
+      Where my effort actually goes right now. Reviewed monthly.
+    </p>
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.006 90); margin: 0 0 36px;">Last updated Sep 2026</p>
+
+    <!-- WORK -->
+    <section style="margin-bottom: 36px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Work</h2>
+      <p style="font-size: 15.5px; line-height: 1.7; color: oklch(28% 0.006 90); margin: 0; text-wrap: pretty;">
+        Senior backend engineer at <a href="#">Kredete</a>, building payment infrastructure that powers millions of users &mdash; onramp integrations across payment gateways and web3 minting providers, plus internal tooling for engineering velocity.
+      </p>
+    </section>
+
+    <!-- FOCUS -->
+    <section style="margin-bottom: 36px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Focus this quarter</h2>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <sc-for list="{{ focus }}" as="f" hint-placeholder-count="3">
+          <div style="display: flex; gap: 10px;">
+            <span style="color: oklch(45% 0.14 260); line-height: 1.6; flex-shrink: 0;">&rsaquo;</span>
+            <p style="font-size: 15px; line-height: 1.6; color: oklch(30% 0.006 90); margin: 0; text-wrap: pretty;">{{ f }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section style="margin-bottom: 36px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 4px;">Projects</h2>
+      <p style="font-size: 13.5px; color: oklch(54% 0.006 90); margin: 0 0 14px;">One project per quarter, shipped or shelved.</p>
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="4">
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 14px; padding: 12px 0; border-bottom: 1px solid oklch(92% 0.004 90); align-items: start;">
+          <div style="min-width: 0;">
+            <a href="#" style="font-size: 15px; font-weight: 500; color: oklch(22% 0.006 90);">{{ p.name }}</a>
+            <p style="font-size: 13.5px; line-height: 1.55; color: oklch(48% 0.006 90); margin: 4px 0 0; text-wrap: pretty;">{{ p.desc }}</p>
+          </div>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: oklch(58% 0.006 90); white-space: nowrap; padding-top: 3px;">{{ p.status }}</span>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- LEARNING & READING -->
+    <section style="margin-bottom: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px;">
+      <div>
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Learning</h2>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <sc-for list="{{ learning }}" as="l" hint-placeholder-count="3">
+            <p style="font-size: 14.5px; line-height: 1.5; color: oklch(30% 0.006 90); margin: 0;">{{ l }}</p>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Reading</h2>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <sc-for list="{{ reading }}" as="r" hint-placeholder-count="3">
+            <p style="font-size: 14.5px; line-height: 1.5; color: oklch(30% 0.006 90); margin: 0;">{{ r }}</p>
+          </sc-for>
+        </div>
+        <a href="Library.dc.html" style="font-size: 13.5px; display: inline-block; margin-top: 10px;">Full library &rarr;</a>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section style="margin-bottom: 36px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Community</h2>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <sc-for list="{{ community }}" as="c" hint-placeholder-count="2">
+          <p style="font-size: 15px; line-height: 1.6; color: oklch(30% 0.006 90); margin: 0; text-wrap: pretty;">{{ c }}</p>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- LIFE -->
+    <section style="padding: 18px 20px; background: oklch(96% 0.004 90); border-radius: 9px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 10px;">Life</h2>
+      <p style="font-size: 14.5px; line-height: 1.65; color: oklch(32% 0.006 90); margin: 0; text-wrap: pretty;">
+        Based in Lagos, Nigeria, married to an amazing woman. Emigration crosses my mind &mdash; Germany and France top the list, and the skilled-worker route looks like the fit. Off-hours: journaling, history, and thinking about how engineering serves underserved communities.
+      </p>
+    </section>
+
+    <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; gap: 16px; flex-wrap: wrap; font-size: 13.5px;">
+      <a href="Uses.dc.html">Desk &amp; gear &rarr;</a>
+      <a href="Log.dc.html">Daily log &rarr;</a>
+      <a href="#">CV &rarr;</a>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 820, &quot;height&quot;: 1100}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      focus: [
+        "Going deeper on AWS and GCP internals \u2014 CKA/CKS pushed from last year, revisiting the timing.",
+        "Writing the Raft series properly, one part at a time, instead of a single unfinished deep-dive.",
+        "Redesigning ObjectSpread and WitOps so both finally look like the products they are.",
+      ],
+      projects: [
+        { name: "ObjectSpread", desc: "Open platform and blog helping engineers adopt smarter operational practices.", status: "redesigning" },
+        { name: "WitOps", desc: "Cloud operations platform for cost and performance optimization.", status: "redesigning" },
+        { name: "Heimdal", desc: "Effortless dev environment switching.", status: "shipped" },
+        { name: "Markview", desc: "Paste or upload markdown, preview it, share a link.", status: "shipped" },
+        { name: "Mustache-zig", desc: "A Mustache spec implementation in Zig.", status: "shipped" },
+      ],
+      learning: ["C and C++", "Rust", "Distributed systems & internet computing", "DeFi mechanics"],
+      reading: ["Site Reliability Engineering", "Database Internals", "The C Programming Language", "To Sell Is Human"],
+      community: [
+        "Co-organizing GopherCon Africa \u2014 the largest Go event on the continent.",
+        "Contributing to the CNCF community with a focus on Kubernetes, Prometheus, and Jaeger.",
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

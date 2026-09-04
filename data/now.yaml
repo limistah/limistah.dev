@@ -1,0 +1,34 @@
+# /now — reviewed monthly. Work paragraph lives in content/now.md.
+focus:
+  - Going deeper on AWS and GCP internals — CKA/CKS pushed from last year, revisiting the timing.
+  - Writing the Raft series properly, one part at a time, instead of a single unfinished deep-dive.
+  - Redesigning ObjectSpread and WitOps so both finally look like the products they are.
+
+projects:
+  - { name: ObjectSpread, url: "https://objectspread.com",                desc: "Open platform and blog helping engineers adopt smarter operational practices.", status: redesigning }
+  - { name: WitOps,       url: "https://witops.cloud",                    desc: "Cloud operations platform for cost and performance optimization.",              status: redesigning }
+  - { name: Heimdal,      url: "https://github.com/limistah/heimdal",      desc: "Effortless dev environment switching.",                                       status: shipped }
+  - { name: Markview,     url: "https://markview.objectspread.com",       desc: "Paste or upload markdown, preview it, share a link.",                          status: shipped }
+  - { name: Mustache-zig, url: "https://github.com/limistah/mustache-zig", desc: "A Mustache spec implementation in Zig.",                                      status: shipped }
+
+learning:
+  - C and C++
+  - Rust
+  - Distributed systems & internet computing
+  - DeFi mechanics
+
+reading:
+  - Site Reliability Engineering
+  - Modern Operating Systems
+  - The C Programming Language
+  - Introduction to Algorithms
+  - To Sell Is Human
+  - How to Win Friends and Influence People
+
+community:
+  - Co-organizing <a href="https://gophers.africa">GopherCon Africa</a> — the largest Go event on the continent.
+  - Contributing to the <a href="https://openprofile.dev/profile/limistah">CNCF community</a> with a focus on Kubernetes, Prometheus, and Jaeger.
+
+life: >-
+  Based in Lagos, Nigeria. Off-hours: journaling, history, and thinking about how engineering
+  serves underserved communities.

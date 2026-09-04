@@ -1,0 +1,19 @@
+{{- define "main" }}
+{{- $pages := where site.RegularPages "Section" "in" (slice "posts" "essays") }}
+<div class="rd-page">
+    <h1 class="rd-title">Archive</h1>
+    <p class="rd-intro">Every piece, by year.</p>
+    {{- range $pages.GroupByDate "2006" }}
+    <section class="rd-block">
+        <h2 class="rd-label">{{ .Key }}</h2>
+        {{- range .Pages }}
+        <div class="rd-row rd-row--compact">
+            <div><a href="{{ .Permalink }}" class="rd-row-title rd-row-title--compact">{{ .Title }}</a></div>
+            <span class="rd-row-date">{{ .Date.Format "Jan 2" }}</span>
+        </div>
+        {{- end }}
+    </section>
+    {{- end }}
+    <div class="rd-utilities"><a href="/writing/">All writing &rarr;</a><a href="/tags/">Browse tags &rarr;</a><a href="/search/">Search &rarr;</a></div>
+</div>
+{{- end }}

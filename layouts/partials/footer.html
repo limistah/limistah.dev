@@ -1,76 +1,20 @@
-{{- if not (.Param "hideFooter") }}
-<footer class="lm-footer">
-    <div class="lm-footer-inner">
-        <div class="lm-footer-top">
-            <div class="lm-footer-col">
-                <a href="{{ "" | absLangURL }}" class="lm-footer-logo">limistah.dev</a>
-                <p class="lm-footer-tagline">Backend &amp; cloud architect. Building resilient systems at scale.</p>
-                {{- partial "notbyai.html" . }}
-            </div>
-
-            <div class="lm-footer-col">
-                <span class="lm-footer-heading">Site</span>
-                <a href="{{ "" | absLangURL }}">Home</a>
-                <a href="/now/">Now</a>
-                <a href="/about/">About</a>
-                <a href="/resources/">Resources</a>
-            </div>
-
-            <div class="lm-footer-col">
-                <span class="lm-footer-heading">Writing</span>
-                <a href="/posts/">Posts</a>
-                <a href="/essays/">Essays</a>
-                <a href="/tags/">Tags</a>
-                <a href="/archive/">Archive</a>
-                <a href="/search/">Search</a>
-            </div>
-
-            <div class="lm-footer-col">
-                <span class="lm-footer-heading">Elsewhere</span>
-                <a href="https://github.com/limistah" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/limistah" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://x.com/limistah" target="_blank" rel="noopener noreferrer">X / Twitter</a>
-                <a href="mailto:aleemisiaka@gmail.com">Email</a>
-                <a href="/index.xml">RSS</a>
-            </div>
-        </div>
-
-        <div class="lm-footer-bottom">
-            <span class="lm-footer-copy">&copy; {{ now.Year }} Aleem Isiaka &middot; All rights reserved</span>
-            <span class="lm-footer-built">
-                Built with
-                <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>
-                &middot;
-                <a href="https://github.com/adityatelange/hugo-PaperMod/" target="_blank" rel="noopener noreferrer">PaperMod</a>
-            </span>
-            <a href="#top" class="lm-footer-top-link" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ back to top</a>
-        </div>
+{{- $width := .Param "containerWidth" | default "660px" -}}
+{{- if and .IsHome (not (.Param "hideFooter")) }}
+<footer class="rd-footer">
+    <div class="rd-footer-inner" style="max-width: {{ $width }}">
+        <span class="rd-footer-copy">&copy; {{ now.Year }} Aleem Isiaka</span>
+        <nav class="rd-footer-links" aria-label="Utilities">
+            <a href="/archive/">Archive</a>
+            <a href="/tags/">Tags</a>
+            <a href="/search/">Search</a>
+            <a href="/uses/">Uses</a>
+            <a href="/index.xml">RSS</a>
+        </nav>
     </div>
 </footer>
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
-
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                var el = document.querySelector(`[id='${decodeURIComponent(id)}']`);
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-            } else {
-                var el = document.querySelector(`[id='${decodeURIComponent(id)}']`);
-                if (el) el.scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-</script>
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
 <script>
@@ -79,40 +23,21 @@
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
         copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
-
         function copyingDone() {
             copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
-            setTimeout(() => {
-                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
-            }, 2000);
+            setTimeout(() => { copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}'; }, 2000);
         }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) {}
+        copybutton.addEventListener('click', () => {
+            if ('clipboard' in navigator) { navigator.clipboard.writeText(codeblock.textContent); copyingDone(); return; }
+            const range = document.createRange(); range.selectNodeContents(codeblock);
+            const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+            try { document.execCommand('copy'); copyingDone(); } catch (e) {}
             selection.removeRange(range);
         });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+        if (container.classList.contains("highlight")) { container.appendChild(copybutton); }
+        else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
             codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            codeblock.parentNode.appendChild(copybutton);
-        }
+        } else { codeblock.parentNode.appendChild(copybutton); }
     });
 </script>
 {{- end }}

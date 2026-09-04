@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 720px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(45% 0.006 90);">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 720px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+    <h1 style="font-size: 32px; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.015em;">Library</h1>
+    <p style="font-size: 16px; line-height: 1.65; color: oklch(45% 0.006 90); margin: 0 0 24px; max-width: 60ch; text-wrap: pretty;">
+      Everything I study and return to: books and papers I'm working through, and the courses, talks, and references I'd hand to anyone learning the same things.
+    </p>
+
+    <div style="display: flex; gap: 6px; background: oklch(95% 0.004 90); padding: 4px; border-radius: 7px; width: fit-content; margin-bottom: 8px;">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+        <button onClick="{{ t.onClick }}" style="font-size: 13.5px; font-weight: 500; padding: 6px 14px; border-radius: 5px; border: none; cursor: pointer; background: {{ t.bg }}; color: {{ t.fg }};">{{ t.label }}</button>
+      </sc-for>
+    </div>
+
+    <!-- READING NOW -->
+    <sc-if value="{{ showReading }}" hint-placeholder-val="{{ true }}">
+      <section style="padding-top: 28px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 14px;">Reading now</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px;">
+          <sc-for list="{{ readingNow }}" as="b" hint-placeholder-count="4">
+            <div style="padding: 12px 14px; background: oklch(96% 0.004 90); border-radius: 8px;">
+              <a href="#" style="font-size: 14.5px; font-weight: 500; color: oklch(22% 0.006 90); line-height: 1.35; display: block;">{{ b.title }}</a>
+              <p style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: oklch(58% 0.006 90); margin: 5px 0 0;">{{ b.topic }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+    </sc-if>
+
+    <!-- BOOKS & PAPERS -->
+    <sc-if value="{{ showBooks }}" hint-placeholder-val="{{ true }}">
+      <section style="padding-top: 34px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 4px;">Books &amp; papers</h2>
+        <p style="font-size: 13.5px; color: oklch(54% 0.006 90); margin: 0 0 16px;">Notes published as I work through them.</p>
+        <sc-for list="{{ bookGroups }}" as="g" hint-placeholder-count="5">
+          <div style="display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 13px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(56% 0.006 90); padding-top: 2px;">{{ g.topic }}</span>
+            <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0;">
+              <sc-for list="{{ g.items }}" as="title" hint-placeholder-count="2">
+                <a href="#" style="font-size: 14.5px; color: oklch(26% 0.006 90);">{{ title }}</a>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+    </sc-if>
+
+    <!-- RESOURCES -->
+    <sc-if value="{{ showResources }}" hint-placeholder-val="{{ true }}">
+      <section style="padding-top: 34px;">
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 4px;">Resources</h2>
+        <p style="font-size: 13.5px; color: oklch(54% 0.006 90); margin: 0 0 16px;">Courses, lectures, and references worth your time &mdash; {{ resourceCount }} links across {{ topicCount }} topics.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+          <sc-for list="{{ resourceTopics }}" as="r" hint-placeholder-count="12">
+            <a href="#" style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 11px 13px; background: oklch(96% 0.004 90); border-radius: 7px; color: oklch(26% 0.006 90); font-size: 14px;" style-hover="background: oklch(93% 0.004 90); text-decoration: none">
+              <span>{{ r.name }}</span>
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: oklch(60% 0.006 90);">{{ r.count }}</span>
+            </a>
+          </sc-for>
+        </div>
+      </section>
+    </sc-if>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 860, &quot;height&quot;: 1100}}">
+class Component extends DCLogic {
+  state = { tab: "all" };
+
+  renderVals() {
+    const tab = this.state.tab;
+    const mk = (key, label) => ({
+      label,
+      onClick: () => this.setState({ tab: key }),
+      bg: tab === key ? "oklch(99% 0.003 90)" : "transparent",
+      fg: tab === key ? "oklch(22% 0.006 90)" : "oklch(48% 0.006 90)",
+    });
+
+    const resourceTopics = [
+      { name: "AI / ML", count: 7 }, { name: "Distributed Systems", count: 5 },
+      { name: "Kubernetes", count: 6 }, { name: "Rust", count: 5 },
+      { name: "Go", count: 6 }, { name: "Databases", count: 3 },
+      { name: "Systems Programming", count: 5 }, { name: "Computer Architecture", count: 3 },
+      { name: "DevOps & SRE", count: 6 }, { name: "Erlang", count: 4 },
+      { name: "Quantum Computing", count: 5 }, { name: "Compiler Design", count: 4 },
+      { name: "Public Speaking", count: 4 }, { name: "Algorithms", count: 2 },
+      { name: "JavaScript & Node", count: 5 }, { name: "Blockchain", count: 2 },
+    ];
+
+    return {
+      tabs: [mk("all", "All"), mk("books", "Books & papers"), mk("resources", "Resources")],
+      showReading: tab === "all" || tab === "books",
+      showBooks: tab === "all" || tab === "books",
+      showResources: tab === "all" || tab === "resources",
+      readingNow: [
+        { title: "Site Reliability Engineering", topic: "operations" },
+        { title: "Database Internals", topic: "databases" },
+        { title: "The C Programming Language", topic: "systems" },
+        { title: "Introduction to Algorithms", topic: "algorithms" },
+      ],
+      bookGroups: [
+        { topic: "System design", items: ["Designing Data-Intensive Applications"] },
+        { topic: "Databases", items: ["Database Internals"] },
+        { topic: "Distributed systems", items: ["In Search of an Understandable Consensus Algorithm (Raft)"] },
+        { topic: "Algorithms", items: ["Introduction to Algorithms", "Concrete Mathematics", "Cracking the Coding Interview"] },
+        { topic: "Systems & low level", items: ["The C Programming Language", "Assembly Language for x86 Processors"] },
+        { topic: "Languages", items: ["The Rust Programming Language", "Learning Go", "How to Think Like a Computer Scientist"] },
+      ],
+      resourceTopics,
+      resourceCount: 120,
+      topicCount: 30,
+    };
+  }
+}
+</script>
+</body>
+</html>

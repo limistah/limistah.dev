@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 660px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(45% 0.006 90);">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(45% 0.006 90);">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 660px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+    <h1 style="font-size: 32px; font-weight: 700; margin: 0 0 22px; letter-spacing: -0.015em;">About</h1>
+
+    <div style="width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; background: repeating-linear-gradient(45deg, oklch(93% 0.004 90), oklch(93% 0.004 90) 6px, oklch(96% 0.004 90) 6px, oklch(96% 0.004 90) 12px); display: flex; align-items: center; justify-content: center; margin-bottom: 28px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(52% 0.006 90);">portrait &mdash; aleem-isiaka.png</span>
+    </div>
+
+    <p style="font-size: 17px; line-height: 1.7; color: oklch(26% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+      I'm Aleem Isiaka, a backend and cloud engineer with nearly a decade spent making systems hold up under load. My work sits at the intersection of site reliability engineering, cloud-native tooling, and distributed infrastructure &mdash; architecting high-throughput systems, cutting latency, and keeping uptime boring.
+    </p>
+
+    <p style="font-size: 16px; line-height: 1.75; color: oklch(32% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+      I've led distributed teams through infrastructure overhauls and delivered measurable results: response times cut by more than half, SDK adoption up 60%, API latency taken from ten seconds to under one. Today I build payment infrastructure at <a href="#">Kredete</a> serving millions of users, across AWS, GCP, and Cloudflare.
+    </p>
+
+    <p style="font-size: 16px; line-height: 1.75; color: oklch(32% 0.006 90); margin: 0 0 18px; text-wrap: pretty;">
+      Outside the day job I co-organize <a href="#">GopherCon Africa</a>, contribute to Kubernetes, Prometheus, and Jaeger through the <a href="#">CNCF</a>, and run <a href="#">ObjectSpread</a> and <a href="#">WitOps</a>. I write to remove the magic from technologies by showing how they work from the inside &mdash; and I keep a <a href="Library.dc.html">public reading log</a>, because engineering is as much curiosity as execution.
+    </p>
+
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.7; color: oklch(40% 0.006 90); margin: 26px 0 32px; padding: 16px 18px; background: oklch(96% 0.004 90); border-radius: 9px; text-wrap: pretty;">
+      If it must be done twice, I'll automate it. If it must serve millions, I design it to scale.
+    </p>
+
+    <!-- FACTS -->
+    <section style="margin-bottom: 36px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 14px;">The short version</h2>
+      <sc-for list="{{ facts }}" as="f" hint-placeholder-count="5">
+        <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 11px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(56% 0.006 90); padding-top: 2px;">{{ f.label }}</span>
+          <p style="font-size: 14.5px; line-height: 1.55; color: oklch(30% 0.006 90); margin: 0; text-wrap: pretty;">{{ f.value }}</p>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section style="margin-bottom: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px;">
+      <div>
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Certifications</h2>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <sc-for list="{{ certs }}" as="c" hint-placeholder-count="4">
+            <a href="#" style="font-size: 14.5px; color: oklch(26% 0.006 90);">{{ c }}</a>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 12px;">Published at</h2>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <sc-for list="{{ pubs }}" as="p" hint-placeholder-count="3">
+            <a href="#" style="font-size: 14.5px; color: oklch(26% 0.006 90);">{{ p }}</a>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section style="padding: 20px 22px; background: oklch(96% 0.004 90); border-radius: 10px;">
+      <h2 style="font-size: 16px; font-weight: 600; margin: 0 0 6px;">Interested in working together?</h2>
+      <p style="font-size: 14.5px; line-height: 1.6; color: oklch(42% 0.006 90); margin: 0 0 14px; text-wrap: pretty;">
+        Open to speaking, technical collaborations, and international opportunities. Fastest way to reach me is email.
+      </p>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a href="mailto:aleemisiaka@gmail.com" style="padding: 9px 16px; font-size: 14px; font-weight: 500; border-radius: 6px; background: oklch(22% 0.006 90); color: oklch(98% 0.003 90);" style-hover="background: oklch(32% 0.006 90); text-decoration: none">Email me</a>
+        <a href="#" style="padding: 9px 16px; font-size: 14px; font-weight: 500; border-radius: 6px; border: 1px solid oklch(87% 0.004 90); background: oklch(99% 0.003 90); color: oklch(26% 0.006 90);" style-hover="border-color: oklch(70% 0.006 90); text-decoration: none">View CV</a>
+      </div>
+    </section>
+
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; gap: 14px; flex-wrap: wrap; font-size: 13.5px;">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">X / Twitter</a>
+      <a href="#">RSS</a>
+      <a href="Uses.dc.html">Uses</a>
+    </footer>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 820, &quot;height&quot;: 1100}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      facts: [
+        { label: "Currently", value: "Senior Backend Engineer at Kredete \u2014 payment infrastructure and web3 onramps." },
+        { label: "Previously", value: "MC\u00b2 Finance (Zug), Onboardbase (California), Oasis Living, uduX, Josplay." },
+        { label: "Works with", value: "Go, Rust, TypeScript, Python \u00b7 Kubernetes, Terraform, Istio \u00b7 AWS, GCP, Cloudflare." },
+        { label: "Community", value: "Co-organizer, GopherCon Africa \u00b7 CNCF contributor (Kubernetes, Prometheus, Jaeger)." },
+        { label: "Education", value: "BSc Computer Science, Kwara State University \u00b7 HND Mechanical Engineering, Lagos State Polytechnic." },
+        { label: "Based in", value: "Lagos, Nigeria." },
+      ],
+      certs: [
+        "Kubernetes Application Developer (CKAD)",
+        "Prometheus Certified Associate (PCA)",
+        "HashiCorp Terraform Associate",
+        "HashiCorp Vault Associate",
+      ],
+      pubs: ["Smashing Magazine", "LogRocket", "limistah.dev"],
+    };
+  }
+}
+</script>
+</body>
+</html>

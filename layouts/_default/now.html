@@ -1,22 +1,63 @@
 {{- define "main" }}
+{{- $d := site.Data.now }}
+<div class="rd-page">
+    <h1 class="rd-title">{{ .Title }}</h1>
+    <p class="rd-intro" style="margin-bottom:8px;max-width:56ch">{{ .Description }}</p>
+    <p class="rd-meta" style="margin:0 0 36px">Last updated {{ .Lastmod.Format "Jan 2006" }}</p>
 
-<div class="lm-now-outer">
-    <div class="lm-now-inner">
+    <section class="rd-block">
+        <h2 class="rd-label">Work</h2>
+        <div class="rd-prose-lead">{{ .Content }}</div>
+    </section>
 
-        <header class="lm-now-header">
-            <h1 class="lm-now-title">{{ .Title }}</h1>
-            {{- with .Description }}
-            <p class="lm-now-subtitle">{{ . }}</p>
+    <section class="rd-block">
+        <h2 class="rd-label">Focus this quarter</h2>
+        <div class="rd-focus">
+            {{- range $d.focus }}
+            <div class="rd-focus-item"><span class="rd-focus-marker">&rsaquo;</span><p>{{ . | safeHTML }}</p></div>
             {{- end }}
-            <p class="lm-now-updated">Last Updated: {{ .Lastmod.Format "Jan 2, 2006" }}</p>
-            {{- partial "notbyai.html" . }}
-        </header>
-
-        <div class="lm-now-content">
-            {{ .Content }}
         </div>
+    </section>
 
+    <section class="rd-block">
+        <h2 class="rd-label" style="margin-bottom:4px">Projects</h2>
+        <p class="rd-section-sub" style="margin-bottom:14px">One project per quarter, shipped or shelved.</p>
+        {{- range $d.projects }}
+        <div class="rd-project">
+            <div>
+                <a href="{{ .url }}" class="rd-project-name">{{ .name }}</a>
+                <p class="rd-project-desc">{{ .desc }}</p>
+            </div>
+            <span class="rd-project-status">{{ .status }}</span>
+        </div>
+        {{- end }}
+    </section>
+
+    <section class="rd-block rd-two-col">
+        <div>
+            <h2 class="rd-label">Learning</h2>
+            <div class="rd-lines">{{ range $d.learning }}<p>{{ . }}</p>{{ end }}</div>
+        </div>
+        <div>
+            <h2 class="rd-label">Reading</h2>
+            <div class="rd-lines">{{ range $d.reading }}<p>{{ . }}</p>{{ end }}</div>
+            <a href="/readings/" class="rd-more" style="display:inline-block;margin-top:10px">Full library &rarr;</a>
+        </div>
+    </section>
+
+    <section class="rd-block">
+        <h2 class="rd-label">Community</h2>
+        <div class="rd-lines rd-lines--lg">{{ range $d.community }}<p>{{ . | safeHTML }}</p>{{ end }}</div>
+    </section>
+
+    <section class="rd-callout">
+        <h2 class="rd-label" style="margin-bottom:10px">Life</h2>
+        <p>{{ $d.life }}</p>
+    </section>
+
+    <div class="rd-utilities" style="margin-top:32px">
+        <a href="/uses/">Desk &amp; gear &rarr;</a>
+        <a href="/aleemisiaka.pdf">CV &rarr;</a>
     </div>
 </div>
-
 {{- end }}

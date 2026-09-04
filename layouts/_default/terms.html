@@ -1,0 +1,12 @@
+{{- define "main" }}
+<div class="rd-page">
+    <h1 class="rd-title">{{ .Title }}</h1>
+    <p class="rd-intro">{{ len .Pages }} {{ .Title | lower }}.</p>
+    <div class="rd-tiles">
+        {{- range .Pages.ByTitle }}
+        <a href="{{ .Permalink }}" class="rd-tile"><span>{{ .Title | lower }}</span><span class="rd-tile-count">{{ len .Pages }}</span></a>
+        {{- end }}
+    </div>
+    <div class="rd-utilities"><a href="/writing/">All writing &rarr;</a><a href="/tags/">Tags &rarr;</a></div>
+</div>
+{{- end }}

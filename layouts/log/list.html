@@ -1,0 +1,72 @@
+{{- define "main" }}
+{{- $days := .RegularPages.ByDate.Reverse }}
+{{- $n := 0 }}{{ range $days }}{{ $n = add $n (len (findRE "<p>" .Content)) }}{{ end }}
+{{- $tags := slice }}{{ range $days }}{{ range .Params.tags }}{{ $tags = $tags | append (lower .) }}{{ end }}{{ end }}
+{{- $tags = sort (uniq $tags) }}
+
+<div class="rd-page">
+    <h1 class="rd-title">{{ .Title }}</h1>
+    <p class="rd-intro" style="max-width:56ch">{{ .Description }}</p>
+
+    <div class="rd-filter-row" style="padding-bottom:20px">
+        <div class="rd-tags" id="rd-log-tags" role="group" aria-label="Filter by tag">
+            {{- range $tags }}<button type="button" class="rd-tag" data-tag="{{ . }}" aria-pressed="false">#{{ . }}</button>{{ end }}
+        </div>
+        <span class="rd-meta" id="rd-log-count">{{ $n }} entries</span>
+    </div>
+
+    <div id="rd-log">
+    {{- range $days.GroupByDate "January 2006" }}
+        <section class="rd-month">
+            <h2 class="rd-month-label">{{ .Key }}</h2>
+            {{- range .Pages }}
+            <div class="rd-day rd-day--log">
+                <span class="rd-day-date">{{ .Date.Format "Jan 2" }}</span>
+                <div class="rd-day-entries" data-tags="{{ range .Params.tags }}{{ lower . }} {{ end }}">
+                    {{ .Content }}
+                    {{- with .Params.tags }}<p class="rd-day-tags">{{ range . }}<span>#{{ lower . }}</span>{{ end }}</p>{{ end }}
+                </div>
+            </div>
+            {{- end }}
+        </section>
+    {{- end }}
+    </div>
+
+    <p class="rd-log-clear" id="rd-log-clear" hidden><button type="button" class="rd-btn rd-btn--outline">Clear filter</button></p>
+
+    <div class="rd-utilities">
+        <span class="rd-meta">Updated when there's something worth noting</span>
+        <a href="{{ with .OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}">Subscribe via RSS &rarr;</a>
+    </div>
+</div>
+
+<script>
+(function () {
+    var tags = document.querySelectorAll('#rd-log-tags .rd-tag');
+    var dayEls = document.querySelectorAll('#rd-log .rd-day');
+    var months = document.querySelectorAll('#rd-log .rd-month');
+    var count = document.getElementById('rd-log-count');
+    var clear = document.getElementById('rd-log-clear');
+    var total = 0; dayEls.forEach(function (d) { total += d.querySelectorAll('.rd-day-entries > p:not(.rd-day-tags)').length; });
+    var active = new URLSearchParams(location.search).get('tag') || '';
+
+    function render() {
+        var shown = 0;
+        dayEls.forEach(function (d) {
+            var ok = !active || (' ' + d.querySelector('.rd-day-entries').dataset.tags + ' ').indexOf(' ' + active + ' ') >= 0;
+            d.hidden = !ok;
+            if (ok) shown += d.querySelectorAll('.rd-day-entries > p:not(.rd-day-tags)').length;
+        });
+        months.forEach(function (m) { m.hidden = !m.querySelector('.rd-day:not([hidden])'); });
+        tags.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.tag === active ? 'true' : 'false'); });
+        count.textContent = shown + ' entr' + (shown === 1 ? 'y' : 'ies') + (active ? ' · #' + active : '');
+        clear.hidden = !active;
+        var url = new URL(location); if (active) url.searchParams.set('tag', active); else url.searchParams.delete('tag');
+        history.replaceState(null, '', url);
+    }
+    tags.forEach(function (b) { b.addEventListener('click', function () { active = active === this.dataset.tag ? '' : this.dataset.tag; render(); }); });
+    clear.querySelector('button').addEventListener('click', function () { active = ''; render(); });
+    render();
+})();
+</script>
+{{- end }}

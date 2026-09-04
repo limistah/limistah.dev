@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid oklch(91% 0.004 90); background: oklch(99% 0.003 90);">
+    <div style="max-width: 660px; margin: 0 auto; padding: 18px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <a href="Home.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 14.5px; color: oklch(22% 0.006 90); font-weight: 500;">limistah.dev</a>
+      <nav style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14.5px;">
+        <a href="Log.dc.html" style="color: oklch(45% 0.006 90);">Log</a>
+        <a href="Writing.dc.html" style="color: oklch(22% 0.006 90); font-weight: 600;">Writing</a>
+        <a href="AI.dc.html" style="color: oklch(45% 0.006 90);">AI</a>
+        <a href="Library.dc.html" style="color: oklch(45% 0.006 90);">Library</a>
+        <a href="Now.dc.html" style="color: oklch(45% 0.006 90);">Now</a>
+        <a href="About.dc.html" style="color: oklch(45% 0.006 90);">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width: 660px; margin: 0 auto; padding: 56px 24px 100px; box-sizing: border-box;">
+    <h1 style="font-size: 32px; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.015em;">Writing</h1>
+    <p style="font-size: 16px; line-height: 1.65; color: oklch(45% 0.006 90); margin: 0 0 24px; max-width: 58ch; text-wrap: pretty;">
+      Technical deep-dives on systems, infrastructure, and the machines underneath &mdash; plus essays on work, choices, and the long game.
+    </p>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid oklch(91% 0.004 90);">
+      <div style="display: flex; gap: 6px; background: oklch(95% 0.004 90); padding: 4px; border-radius: 7px;">
+        <sc-for list="{{ filters }}" as="f" hint-placeholder-count="3">
+          <button onClick="{{ f.onClick }}" style="font-size: 13.5px; font-weight: 500; padding: 6px 14px; border-radius: 5px; border: none; cursor: pointer; background: {{ f.bg }}; color: {{ f.fg }};">{{ f.label }}</button>
+        </sc-for>
+      </div>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: oklch(58% 0.006 90);">{{ countLabel }}</span>
+    </div>
+
+    <sc-for list="{{ visible }}" as="item" hint-placeholder-count="8">
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 15px 0; border-bottom: 1px solid oklch(92% 0.004 90); align-items: start;">
+        <div style="min-width: 0;">
+          <a href="#" style="font-size: 16px; font-weight: 500; color: oklch(22% 0.006 90); line-height: 1.4; display: inline-block;">{{ item.title }}</a>
+          <p style="font-size: 14px; line-height: 1.55; color: oklch(48% 0.006 90); margin: 5px 0 0; text-wrap: pretty;">{{ item.blurb }}</p>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: oklch(60% 0.006 90); margin: 7px 0 0;">{{ item.meta }}</p>
+        </div>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(58% 0.006 90); white-space: nowrap; padding-top: 4px;">{{ item.date }}</span>
+      </div>
+    </sc-for>
+
+    <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid oklch(91% 0.004 90); display: flex; gap: 16px; flex-wrap: wrap; font-size: 13.5px;">
+      <a href="#">Full archive &rarr;</a>
+      <a href="#">Browse tags &rarr;</a>
+      <a href="#">Search &rarr;</a>
+      <a href="#">RSS &rarr;</a>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 820, &quot;height&quot;: 1100}}">
+const ITEMS = [
+  { kind: "technical", title: "Software Engineering Lives On!", blurb: "LLMs have been folded into knowledge work, including software engineering. What survives, and what the pace of change actually demands of us.", meta: "#swe #ai #career \u00b7 11 min", date: "Mar 2026" },
+  { kind: "essay", title: "Here and Now, There and Then", blurb: "Thinking about the future consumes our motivation in the present and keeps us stuck in the past.", meta: "essay \u00b7 6 min", date: "Dec 2025" },
+  { kind: "technical", title: "Rust - Hello World", blurb: "The most basic Rust program that can exist, and what the compiler does with it.", meta: "#rust \u00b7 2 min", date: "Sep 2025" },
+  { kind: "technical", title: "Two Pointers & Prefix Sum", blurb: "Two algorithm techniques that look alike. I dissect their differences from their similarities.", meta: "#algorithms #two-pointers \u00b7 10 min", date: "Sep 2025" },
+  { kind: "essay", title: "Define what you want", blurb: "Looking deeper into ourselves: do we even know what we want? And if we do, are we sure we are going to get it?", meta: "essay \u00b7 9 min", date: "Sep 2025" },
+  { kind: "technical", title: "Raft Protocol: Part 1", blurb: "Working through the consensus algorithm that made distributed agreement understandable.", meta: "#raft #distributed-systems \u00b7 3 min", date: "Aug 2025" },
+  { kind: "technical", title: "Managing Machine Configuration with Stow", blurb: "Keeping dotfiles and machine config reproducible across laptops and the homelab.", meta: "#unix #config \u00b7 5 min", date: "Jul 2025" },
+  { kind: "essay", title: "Follow The Money", blurb: "Why skill alone isn't enough \u2014 value chains, strategic positioning, and the real reason talent gets paid.", meta: "essay \u00b7 7 min", date: "Apr 2025" },
+  { kind: "technical", title: "Merge-Sort like a Binary-Search", blurb: "Divide and conquer, seen from the other direction.", meta: "#algorithms #sorting \u00b7 10 min", date: "Feb 2025" },
+  { kind: "technical", title: "Time in Computer Systems", blurb: "Clocks, drift, and why distributed time is harder than it looks.", meta: "#cs #microcomputers \u00b7 4 min", date: "Jul 2024" },
+];
+
+class Component extends DCLogic {
+  state = { filter: "all" };
+
+  renderVals() {
+    const filter = this.state.filter;
+    const visible = filter === "all" ? ITEMS : ITEMS.filter(i => i.kind === filter);
+    const mk = (key, label) => ({
+      label,
+      onClick: () => this.setState({ filter: key }),
+      bg: filter === key ? "oklch(99% 0.003 90)" : "transparent",
+      fg: filter === key ? "oklch(22% 0.006 90)" : "oklch(48% 0.006 90)",
+    });
+
+    return {
+      filters: [mk("all", "All"), mk("technical", "Technical"), mk("essay", "Essays")],
+      visible,
+      countLabel: visible.length + " of 69 pieces",
+    };
+  }
+}
+</script>
+</body>
+</html>

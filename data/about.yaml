@@ -1,0 +1,32 @@
+# /about — "the short version" facts, credentials, contact. Prose lives in content/about.md.
+facts:
+  - { label: Currently,  value: "Senior Backend Engineer at Kredete — payment infrastructure and web3 onramps." }
+  - { label: Previously, value: "MC² Finance (Zug), Onboardbase (California), Oasis Living, uduX, Josplay." }
+  - { label: Works with, value: "Go, Rust, TypeScript, Python · Kubernetes, Terraform, Istio · AWS, GCP, Cloudflare." }
+  - { label: Community,  value: "Co-organizer, GopherCon Africa · CNCF contributor (Kubernetes, Prometheus, Jaeger)." }
+  - { label: Education,  value: "BSc Computer Science, Kwara State University · BEng Mechanical Engineering, Kwara State University · HND Mechanical Engineering, Lagos State Polytechnic." }
+  - { label: Based in,   value: "Lagos, Nigeria." }
+
+certifications:
+  - { name: "Kubernetes Application Developer (CKAD)", url: "" }
+  - { name: "Prometheus Certified Associate (PCA)",    url: "" }
+  - { name: "HashiCorp Terraform Associate",           url: "" }
+  - { name: "HashiCorp Vault Associate",               url: "" }
+
+published:
+  - { name: Smashing Magazine, url: "https://www.smashingmagazine.com/author/aleem-isiaka/" }
+  - { name: LogRocket,         url: "https://blog.logrocket.com/author/aleemisiaka/" }
+  - { name: limistah.dev,      url: "/writing/" }
+
+contact:
+  heading: Interested in working together?
+  body: Open to speaking, technical collaborations, and international opportunities. Fastest way to reach me is email.
+  email: aleemisiaka@gmail.com
+  cv: /aleemisiaka.pdf
+
+links:
+  - { label: GitHub,        url: "https://github.com/limistah" }
+  - { label: LinkedIn,      url: "https://linkedin.com/in/limistah" }
+  - { label: "X / Twitter", url: "https://x.com/limistah" }
+  - { label: RSS,           url: "/index.xml" }
+  - { label: Uses,          url: "/uses/" }

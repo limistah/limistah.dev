@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: oklch(98% 0.003 90); }
+  a { color: oklch(45% 0.14 260); text-decoration: none; }
+  a:hover { color: oklch(38% 0.14 260); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: 'Inter', sans-serif; background: oklch(98% 0.003 90); color: oklch(22% 0.006 90); min-height: 100vh;">
+  <div style="max-width: 640px; margin: 0 auto; padding: 72px 24px 100px; box-sizing: border-box;">
+
+    <!-- IDENTITY -->
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: repeating-linear-gradient(45deg, oklch(90% 0.004 90), oklch(90% 0.004 90) 4px, oklch(94% 0.004 90) 4px, oklch(94% 0.004 90) 8px); flex-shrink: 0;"></div>
+      <div>
+        <h1 style="font-size: 21px; font-weight: 600; margin: 0;">Aleem Isiaka</h1>
+        <p style="font-size: 14.5px; color: oklch(50% 0.006 90); margin: 2px 0 0;">Senior Engineer, Cloud & Distributed Systems &middot; Lagos, Nigeria</p>
+      </div>
+    </div>
+
+    <p style="font-size: 16px; line-height: 1.7; color: oklch(32% 0.006 90); margin: 0 0 20px;">
+      Systems architecture, cross-team technical direction, and mentorship at the intersection of cloud infrastructure and AI. Currently architecting payment systems at scale and co-organizing <a href="#">GopherCon Africa</a>.
+    </p>
+
+    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; font-size: 14.5px;">
+      <a href="#">X / Twitter</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="mailto:aleemisiaka@gmail.com">Email</a>
+      <a href="#">CV</a>
+    </div>
+
+    <!-- EXPERIENCE STRIP -->
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; padding: 16px 0; border-top: 1px solid oklch(90% 0.004 90); border-bottom: 1px solid oklch(90% 0.004 90); margin-bottom: 40px;">
+      <sc-for list="{{ companies }}" as="c" hint-placeholder-count="4">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(45% 0.006 90); background: oklch(94% 0.004 90); padding: 5px 10px; border-radius: 5px;">{{ c }}</span>
+      </sc-for>
+    </div>
+
+    <!-- IMPACT -->
+    <section style="margin-bottom: 40px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 16px;">Scope of impact</h2>
+      <sc-for list="{{ impact }}" as="item" hint-placeholder-count="3">
+        <div style="padding: 12px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+          <p style="font-size: 15px; font-weight: 500; margin: 0 0 3px;">{{ item.title }}</p>
+          <p style="font-size: 13.5px; color: oklch(52% 0.006 90); margin: 0; line-height: 1.5;">{{ item.desc }}</p>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section style="margin-bottom: 40px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 16px;">Publications & certifications</h2>
+      <sc-for list="{{ pubs }}" as="pub" hint-placeholder-count="3">
+        <div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+          <div style="min-width: 0;">
+            <a href="#" style="font-size: 15px; font-weight: 500; color: oklch(22% 0.006 90);">{{ pub.name }}</a>
+            <p style="font-size: 13.5px; color: oklch(52% 0.006 90); margin: 3px 0 0;">{{ pub.desc }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- LOG -->
+    <section style="margin-bottom: 40px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 6px;">Log</h2>
+      <p style="font-size: 13.5px; color: oklch(52% 0.006 90); margin: 0 0 14px;">What I'm building and learning, newest first.</p>
+      <sc-for list="{{ log }}" as="day" hint-placeholder-count="4">
+        <div style="display: grid; grid-template-columns: 84px 1fr; gap: 16px; padding: 11px 0; border-bottom: 1px solid oklch(92% 0.004 90);">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(58% 0.006 90); white-space: nowrap; padding-top: 2px;">{{ day.date }}</span>
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <sc-for list="{{ day.entries }}" as="entry" hint-placeholder-count="1">
+              <p style="font-size: 14.5px; line-height: 1.6; color: oklch(30% 0.006 90); margin: 0;">{{ entry }}</p>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+      <a href="#" style="font-size: 14px; display: inline-block; margin-top: 10px;">Full log &rarr;</a>
+    </section>
+
+    <!-- WRITING -->
+    <section style="margin-bottom: 40px;">
+      <h2 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: oklch(50% 0.006 90); margin: 0 0 16px;">Writing</h2>
+      <sc-for list="{{ posts }}" as="post" hint-placeholder-count="4">
+        <div style="display: flex; justify-content: space-between; gap: 16px; padding: 10px 0;">
+          <a href="#" style="font-size: 15px; color: oklch(22% 0.006 90);">{{ post.title }}</a>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: oklch(58% 0.006 90); white-space: nowrap;">{{ post.date }}</span>
+        </div>
+      </sc-for>
+      <a href="#" style="font-size: 14px; display: inline-block; margin-top: 8px;">All posts &rarr;</a>
+    </section>
+
+    <!-- COMMUNITY / NEWSLETTER -->
+    <section style="padding: 20px; background: oklch(94% 0.004 90); border-radius: 10px;">
+      <h2 style="font-size: 15px; font-weight: 600; margin: 0 0 6px;">Join the newsletter</h2>
+      <p style="font-size: 14px; line-height: 1.6; color: oklch(42% 0.006 90); margin: 0 0 14px;">
+        Notes on system design, distributed systems, and technical leadership.
+      </p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <input type="email" placeholder="you@company.com" style="flex: 1; min-width: 180px; padding: 9px 12px; font-size: 14px; border: 1px solid oklch(85% 0.004 90); border-radius: 6px; background: oklch(99% 0.003 90); font-family: inherit;" />
+        <button style="padding: 9px 16px; font-size: 14px; font-weight: 500; border-radius: 6px; border: none; background: oklch(22% 0.006 90); color: oklch(98% 0.003 90); cursor: pointer;">Subscribe</button>
+      </div>
+    </section>
+
+    <footer style="margin-top: 56px; padding-top: 20px; border-top: 1px solid oklch(90% 0.004 90); font-size: 13px; color: oklch(58% 0.006 90);">
+      &copy; 2026 Aleem Isiaka
+    </footer>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 800, &quot;height&quot;: 1200}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      companies: ["Kredete", "MC\u00b2 Finance", "Onboardbase", "uduX", "GopherCon Africa"],
+      impact: [
+        { title: "Payments & Web3 onramp, Kredete", desc: "Own onramp integrations across payment gateways and web3 minting providers spanning multiple stable currencies." },
+        { title: "Led a team of 5, Onboardbase", desc: "Shipped SDKs across 4 languages and a CLI, lifting product adoption 60% and cutting infra latency 80% at 10K+ RPS." },
+        { title: "Led a team of 6, uduX", desc: "Re-engineered the streaming product end to end, taking API latency from 10s down to 0.9s on a fault-tolerant EKS runtime." },
+        { title: "AI product leadership, MC\u00b2 Finance", desc: "Led design of an AI insights agent and real-time alerting system, lifting engagement and active users." },
+      ],
+      log: [
+        { date: "Sep 4", entries: ["Shipped a sliding-window rate limiter in Go for the onramp API \u2014 smoothed out p99 spikes during burst traffic."] },
+        { date: "Sep 2", entries: [
+          "Wrote a Terraform module for multi-region Postgres failover, plus the runbook so on-call doesn't need me awake.",
+          "TIL: Prometheus remote-write handles backpressure better than I assumed under sustained load.",
+        ]},
+        { date: "Aug 30", entries: ["Reviewed the last batch of GopherCon Africa talk proposals with the committee."] },
+        { date: "Aug 28", entries: ["Deduped noisy Kubernetes events before they hit Slack \u2014 alert volume down by roughly half."] },
+      ],
+      pubs: [
+        { name: "Smashing Magazine", desc: "Technical writing on JavaScript, React, Node.js, and GitHub Actions." },
+        { name: "LogRocket", desc: "Technical writing on JavaScript, Firebase, and Blazor." },
+        { name: "CKAD, Terraform & Vault Associate", desc: "HashiCorp and CNCF certifications in infrastructure and orchestration." },
+      ],
+      posts: [
+        { title: "Software Engineering Lives On", date: "Mar 2026" },
+        { title: "Rust - Hello World", date: "Sep 2025" },
+        { title: "Two Pointers & Prefix Sum", date: "Sep 2025" },
+        { title: "Rust Installation", date: "Sep 2025" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

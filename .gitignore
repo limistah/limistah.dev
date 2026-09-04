@@ -2,3 +2,5 @@ public
 .DS_Store
 docs
 node_modules/
+.claude/
+Claude outputs/
