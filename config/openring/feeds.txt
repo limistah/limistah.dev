@@ -25,7 +25,6 @@ https://developers.cloudflare.com/changelog/rss/index.xml
 https://blog.cloudflare.com/rss
 https://cloudblog.withgoogle.com/rss/
 https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/rss/
-https://cloudblog.withgoogle.com/rss/
 https://web.dev/static/blog/feed.xml
 https://aws.amazon.com/blogs/machine-learning/feed/
 https://aws.amazon.com/new/feed/

@@ -51,23 +51,6 @@
             {{- with .File }}<a href="https://github.com/limistah/limistah.dev/tree/main/content/{{ .Path }}" target="_blank" rel="noopener noreferrer">edit on GitHub</a>{{ end }}
         </p>
 
-        {{- $related := site.RegularPages.Related . | first 8 }}
-        {{- $heading := "Related" }}
-        {{- if lt (len $related) 2 }}
-            {{- $related = where site.RegularPages "Section" .Section | complement (slice .) | first 6 }}
-            {{- $heading = cond $isEssay "More essays" "More technical writing" }}
-        {{- else }}{{ with index $terms 0 }}{{ $heading = printf "Related &middot; %s" (.LinkTitle | lower) }}{{ end }}{{ end }}
-        {{- with $related }}
-        <section class="rd-related">
-            <h2 class="rd-label" style="margin-bottom:12px">{{ $heading | safeHTML }}</h2>
-            <ul class="rd-related-list">
-                {{- range . }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a><span class="rd-related-date">{{ .Date.Format "Jan 2006" }}</span></li>
-                {{- end }}
-            </ul>
-        </section>
-        {{- end }}
-
         {{- if (.Param "ShowPostNavLinks") }}
         <nav class="rd-postnav">
             {{- with .PrevInSection }}<a href="{{ .Permalink }}"><span class="rd-postnav-label">&larr; older</span><span class="rd-postnav-title">{{ .Title }}</span></a>{{ else }}<span></span>{{ end }}
@@ -77,7 +60,6 @@
     </footer>
 
     {{- if (.Param "comments") }}{{ partial "comments.html" . }}{{ end }}
-    {{- if and (ne (.Param "enableOpenring") false) (templates.Exists "partials/openring.html") }}{{ partial "openring.html" . }}{{ end }}
 
     <div class="rd-utilities">
         <a href="/writing/">More writing &rarr;</a>

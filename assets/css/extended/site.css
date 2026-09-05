@@ -522,14 +522,6 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 .rd-article-foot-meta a { color: var(--rd-ink-faint); }
 .rd-article-foot-meta a:hover { color: var(--rd-ink); }
 
-/* Related posts (flaviocopes-style "related posts about X") */
-.rd-related { margin-top: 32px; }
-.rd-related-list { list-style: none; margin: 0; padding: 0; }
-.rd-related-list li { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--rd-border-soft); }
-.rd-related-list a { font-size: 15px; color: var(--rd-ink-body); }
-.rd-related-list a:hover { color: var(--rd-ink); }
-.rd-related-date { font-family: var(--rd-mono); font-size: 12px; color: var(--rd-ink-faint); white-space: nowrap; }
-
 /* Prev / next */
 .rd-postnav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
 .rd-postnav a { display: flex; flex-direction: column; gap: 4px; color: var(--rd-ink-body); }
@@ -647,16 +639,11 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 }
 
 
-/* ═══ Openring + comments (after articles) ═══ */
-.rd-ring, .rd-comments { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--rd-border); }
-.rd-ring-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+/* ═══ Openring (home) + comments (after articles) ═══ */
+.rd-comments { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--rd-border); }
+.rd-ring-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
 .rd-ring-head .rd-label { margin: 0; }
-.rd-ring-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
-.rd-ring-card { display: block; padding: 12px 14px; background: var(--rd-surface); border-radius: 8px; color: var(--rd-ink-body); }
-.rd-ring-card:hover { background: var(--rd-surface-hover); color: var(--rd-ink); text-decoration: none; }
-.rd-ring-meta { display: flex; justify-content: space-between; gap: 8px; font-family: var(--rd-mono); font-size: 11px; color: var(--rd-ink-faint); margin-bottom: 6px; }
-.rd-ring-card-title { font-size: 14px; font-weight: 500; line-height: 1.4; margin: 0; color: inherit; }
-.rd-ring-footer { font-family: var(--rd-mono); font-size: 11.5px; color: var(--rd-ink-faint); margin: 12px 0 0; }
+.rd-ring-footer { font-family: var(--rd-mono); font-size: 11.5px; color: var(--rd-ink-faint); margin: 10px 0 0; }
 .rd-ring-footer a { color: var(--rd-ink-faint); }
 .rd-comments .giscus { margin-top: 12px; }
 
