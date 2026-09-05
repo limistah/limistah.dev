@@ -87,6 +87,10 @@
         </div>
     </section>
 
+    <section class="rd-section">
+        {{ partial "openring.html" (dict "limit" 10) }}
+    </section>
+
     <section class="rd-subscribe">
         <h2 class="rd-subscribe-title">{{ $d.subscribe.heading }}</h2>
         <p class="rd-subscribe-body">{{ $d.subscribe.body }}</p>
