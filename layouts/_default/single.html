@@ -51,12 +51,10 @@
             {{- with .File }}<a href="https://github.com/limistah/limistah.dev/tree/main/content/{{ .Path }}" target="_blank" rel="noopener noreferrer">edit on GitHub</a>{{ end }}
         </p>
 
+        {{- /* Related posts by shared tags only — no filler when nothing is related. */ -}}
         {{- $related := site.RegularPages.Related . | first 8 }}
         {{- $heading := "Related" }}
-        {{- if lt (len $related) 2 }}
-            {{- $related = where site.RegularPages "Section" .Section | complement (slice .) | first 6 }}
-            {{- $heading = cond $isEssay "More essays" "More technical writing" }}
-        {{- else }}{{ with index $terms 0 }}{{ $heading = printf "Related &middot; %s" (.LinkTitle | lower) }}{{ end }}{{ end }}
+        {{- with index $terms 0 }}{{ $heading = printf "Related &middot; %s" (.LinkTitle | lower) }}{{ end }}
         {{- with $related }}
         <section class="rd-related">
             <h2 class="rd-label" style="margin-bottom:12px">{{ $heading | safeHTML }}</h2>
