@@ -2,7 +2,7 @@
 {{- if and .IsHome (not (.Param "hideFooter")) }}
 <footer class="rd-footer">
     <div class="rd-footer-inner" style="max-width: {{ $width }}">
-        <span class="rd-footer-copy">&copy; {{ now.Year }} Aleem Isiaka</span>
+        <span class="rd-footer-copy">&copy; {{ now.Year }} Aleem Isiaka {{ partial "timing.html" . }}</span>
         <nav class="rd-footer-links" aria-label="Utilities">
             <a href="/archive/">Archive</a>
             <a href="/tags/">Tags</a>
@@ -12,6 +12,8 @@
         </nav>
     </div>
 </footer>
+{{- else }}
+<div class="rd-timing-wrap" style="max-width: {{ $width }}">{{ partial "timing.html" . }}</div>
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
