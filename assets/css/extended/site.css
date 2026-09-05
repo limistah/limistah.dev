@@ -649,6 +649,9 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 
 /* ═══ Openring + comments (after articles) ═══ */
 .rd-ring, .rd-comments { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--rd-border); }
+.rd-ring--rows { margin-top: 0; padding-top: 0; border-top: none; }
+.rd-ring--rows .rd-ring-head { margin-bottom: 8px; }
+.rd-ring--rows .rd-ring-footer { margin-top: 10px; }
 .rd-ring-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
 .rd-ring-head .rd-label { margin: 0; }
 .rd-ring-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
