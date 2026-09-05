@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-09-04
+lastmod: 2026-09-05
 ---
 
 ### AI/ML
@@ -147,6 +147,7 @@ lastmod: 2026-09-04
 3. [Warren Buffett's Final Letter, 2025](https://www.berkshirehathaway.com/news/nov1025.pdf)
 4. [The Science of Well-Being](https://www.youtube.com/playlist?list=PLWHJHzhtiAuS30X_NfVz37vXfZ-T3XyFK) - In this course you will engage in a series of challenges designed to increase your own happiness and build more productive habits. As preparation for these t...
 5. [Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search/) - Notes on the Industry Job Search
+6. [5 Things I Learned From 5 Years At Vercel | Lee Robinson](https://leerob.com/vercel) - Here are some of the lessons I learned and how I grew as a leader and manager, as well as a bunch of behind-the-scenes photos.
 
 ---
 
