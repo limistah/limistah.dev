@@ -28,16 +28,6 @@ cascade:
       render: never
       list: never
 
-related:
-  threshold: 40
-  includeNewer: true
-  toLower: true
-  indices:
-    - name: tags
-      weight: 100
-    - name: series
-      weight: 60
-
 minify:
   disableXML: true
   minifyOutput: true
