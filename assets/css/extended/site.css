@@ -522,14 +522,6 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 .rd-article-foot-meta a { color: var(--rd-ink-faint); }
 .rd-article-foot-meta a:hover { color: var(--rd-ink); }
 
-/* Related posts (flaviocopes-style "related posts about X") */
-.rd-related { margin-top: 32px; }
-.rd-related-list { list-style: none; margin: 0; padding: 0; }
-.rd-related-list li { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--rd-border-soft); }
-.rd-related-list a { font-size: 15px; color: var(--rd-ink-body); }
-.rd-related-list a:hover { color: var(--rd-ink); }
-.rd-related-date { font-family: var(--rd-mono); font-size: 12px; color: var(--rd-ink-faint); white-space: nowrap; }
-
 /* Prev / next */
 .rd-postnav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
 .rd-postnav a { display: flex; flex-direction: column; gap: 4px; color: var(--rd-ink-body); }
