@@ -77,7 +77,6 @@
     </footer>
 
     {{- if (.Param "comments") }}{{ partial "comments.html" . }}{{ end }}
-    {{- if ne (.Param "enableOpenring") false }}{{ partial "openring.html" (dict "limit" 5 "variant" "tiles") }}{{ end }}
 
     <div class="rd-utilities">
         <a href="/writing/">More writing &rarr;</a>

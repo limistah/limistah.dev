@@ -1,7 +1,7 @@
 #!/bin/bash
 # Fetches recent posts from the blogs in config/openring/feeds.txt (via openring) and writes
 # data/openring.json — deduplicated by canonical URL and by title, newest first.
-# Rendered by layouts/partials/openring.html (5 on posts, 10 on the home page).
+# Rendered by layouts/partials/openring.html on the home page (10 items).
 set -euo pipefail
 
 FEEDLIST=config/openring/feeds.txt
