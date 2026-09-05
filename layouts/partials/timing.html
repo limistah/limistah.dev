@@ -1,0 +1,22 @@
+{{- /* "loaded in N ms" — filled from the Navigation Timing API once the page has loaded. */ -}}
+<p class="rd-timing" id="rd-timing" aria-live="polite" hidden></p>
+<script>
+(function () {
+    function show() {
+        var el = document.getElementById('rd-timing');
+        var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+        if (!el || !nav) return;
+        var ttfb = Math.round(nav.responseStart - nav.startTime);
+        var load = Math.round((nav.loadEventEnd || nav.domContentLoadedEventEnd) - nav.startTime);
+        if (!(load > 0)) return;
+        var fmt = function (ms) { return ms < 1000 ? ms + ' ms' : (ms / 1000).toFixed(2) + ' s'; };
+        var kb = nav.transferSize ? ' · ' + Math.round(nav.transferSize / 1024) + ' KB' : '';
+        var how = nav.deliveryType === 'cache' || nav.transferSize === 0 ? ' · from cache' : '';
+        el.innerHTML = 'loaded in <span title="time until the page fully loaded">' + fmt(load) + '</span>'
+            + ' · <span title="time to first byte">ttfb ' + fmt(ttfb) + '</span>' + kb + how;
+        el.hidden = false;
+    }
+    if (document.readyState === 'complete') setTimeout(show, 0);
+    else window.addEventListener('load', function () { setTimeout(show, 0); });
+})();
+</script>
