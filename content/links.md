@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-09-18
+lastmod: 2026-09-19
 ---
 
 ### AI/ML
@@ -160,6 +160,7 @@ lastmod: 2026-09-18
 ### Neovim
 
 1. [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f)
+2. [Vim Cheat Sheet](https://vim.rtorr.com/) - Explore vim.rtorr.com for an extensive Vim cheat sheet, offering clear, concise commands and shortcuts for Vim users. Whether you're a beginner or an experienced developer, find tips and tricks to enhance your coding efficiency in Vim.
 
 ---
 
