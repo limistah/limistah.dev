@@ -10,7 +10,6 @@ https://awesomekling.github.io/feed.xml
 https://pluralistic.net/feed/
 https://computer.rip/rss.xml
 https://ines.io/feed/
-https://joegold.in/blog/index.xml
 https://os.phil-opp.com/rss.xml
 https://aphyr.com/posts.atom
 https://sourcehut.org/blog/index.xml
