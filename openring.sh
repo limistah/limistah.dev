@@ -20,12 +20,22 @@ done < <(awk 'NF && !seen[tolower($0)]++' "$FEEDLIST")
 openring -n 40 "${OPENRING_ARGS[@]}" <"$INPUT_TEMPLATE" >"$RAW"
 
 python3 - "$RAW" "$OUTPUT" "$KEEP" <<'PY'
-import json, re, sys
+import html, json, re, sys
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 raw, out, keep = sys.argv[1], sys.argv[2], int(sys.argv[3])
-text = open(raw, encoding="utf-8").read().replace("\\'", "'")   # Go's js-escape uses \' which JSON rejects
-items = json.loads(text)
+
+# Parse the line-based output: "@@ARTICLE@@" starts a record, then "key<TAB>value" lines.
+items, cur = [], None
+for line in open(raw, encoding="utf-8", errors="replace"):
+    line = line.rstrip("\n")
+    if line.strip() == "@@ARTICLE@@":
+        cur = {}; items.append(cur); continue
+    if cur is None or "\t" not in line:
+        continue
+    k, v = line.split("\t", 1)
+    cur[k.strip()] = html.unescape(v.strip())
+items = [i for i in items if i.get("title") and i.get("link") and i.get("date")]
 
 TRACKING = re.compile(r"^(utm_|fbclid|gclid|mc_cid|mc_eid|ref$|source$)")
 def canon(url):
@@ -43,9 +53,11 @@ for it in sorted(items, key=lambda x: x["date"], reverse=True):
         continue
     seen_urls.add(u); seen_titles.add(t)
     it["link"] = u
-    clean.append(it)
+    clean.append({k: it.get(k, "") for k in ("title", "link", "date", "source", "source_link")})
     if len(clean) >= keep: break
 
+if not clean:
+    sys.exit("openring: parsed 0 articles — refusing to overwrite " + out)
 json.dump(clean, open(out, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
 open(out, "a").write("\n")
 print(f"openring: {len(items)} fetched -> {len(clean)} kept")

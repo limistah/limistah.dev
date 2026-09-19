@@ -1,3 +1,7 @@
-[
-{{range $i, $a := .Articles}}{{if $i}},{{end}}{"title":"{{js .Title}}","link":"{{js .Link}}","date":"{{.Date | datef "2006-01-02T15:04:05Z07:00"}}","source":"{{js .SourceTitle}}","source_link":"{{js .SourceLink}}"}
-{{end}}]
+{{range .Articles}}@@ARTICLE@@
+title	{{.Title}}
+link	{{.Link}}
+date	{{.Date | datef "2006-01-02T15:04:05Z07:00"}}
+source	{{.SourceTitle}}
+source_link	{{.SourceLink}}
+{{end}}
