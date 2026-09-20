@@ -117,4 +117,6 @@ const Environment = "development"
 
 As such, `go build -overlay=overlay.json .` will produce a binary where `config.Environment` value is `development`.
 
+{{< figure src="/assets/go-overlay.jpeg" title="Go compiler overlay" caption="" align="center" >}}
+
 Neat!!!
