@@ -1,0 +1,6 @@
+{{- /* "Written by Human, Not by AI" badge (notbyai.fyi). Opt out per page with `notbyai: false`. */ -}}
+{{- if ne (.Param "notbyai") false }}
+<a class="rd-notbyai" href="https://notbyai.fyi" target="_blank" rel="noopener noreferrer" title="Written by a human, not by AI">
+    <img src="https://notbyai.fyi/img/written-by-human-not-by-ai-white.svg" width="131" height="42" loading="lazy" alt="Written by Human, Not by AI">
+</a>
+{{- end }}

@@ -531,7 +531,10 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 .rd-postnav-title { font-size: 14.5px; line-height: 1.4; }
 
 /* Hide legacy article chrome that older templates/partials may still emit */
-.not-by-ai-logo, .lm-article-bc, .webring-wrap .lm-webring-title { display: none !important; }
+.lm-article-bc, .webring-wrap .lm-webring-title { display: none !important; }
+.rd-notbyai { display: inline-block; margin-top: 18px; opacity: 0.75; transition: opacity .15s; }
+.rd-notbyai:hover { opacity: 1; }
+.rd-notbyai img { display: block; height: 32px; width: auto; }
 
 /* ═══ AI page blocks — restyle the existing shortcodes to the handoff ═══ */
 
