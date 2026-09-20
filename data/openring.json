@@ -9,14 +9,14 @@
   {
     "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
     "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent",
-    "date": "2026-09-18T19:34:00+01:00",
+    "date": "2026-09-18T18:34:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
     "title": "Saving another 100TB of RAM with math (and Rust)",
     "link": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math",
-    "date": "2026-09-18T18:23:58+01:00",
+    "date": "2026-09-18T17:23:58Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
   },
@@ -30,7 +30,7 @@
   {
     "title": "Introducing the Australian Youth Safety Blueprint",
     "link": "https://openai.com/index/australian-youth-safety-blueprint",
-    "date": "2026-09-18T13:00:00+01:00",
+    "date": "2026-09-18T12:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
   },
@@ -44,21 +44,28 @@
   {
     "title": "Browser Run - Inspect logs, network requests, and DOM in Session Recordings",
     "link": "https://developers.cloudflare.com/changelog/post/2026-09-18-browser-run-session-recording-inspect",
-    "date": "2026-09-18T01:00:00+01:00",
+    "date": "2026-09-18T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
+    "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
+    "link": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure",
+    "date": "2026-09-16T16:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
+  },
+  {
     "title": "You can run git on object storage if you re-make packfiles",
     "link": "https://tigrisdata.com/blog/objgit-packfiles",
-    "date": "2026-09-15T01:00:00+01:00",
+    "date": "2026-09-15T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
   },
   {
     "title": "llama.cpp with SYCL (oneAPI) for Intel Panther Lake on Gentoo",
     "link": "https://xn--gckvb8fzb.com/llamacpp-with-sycl-oneapi-for-intel-panther-lake-on-gentoo",
-    "date": "2026-09-14T18:48:29+01:00",
+    "date": "2026-09-14T17:48:29Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
   },
@@ -72,21 +79,14 @@
   {
     "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
     "link": "https://cadence.moe/blog/2026-09-10-we-spoke-with-entrepreneurs-living-the-7-vibe-3-lifestyle",
-    "date": "2026-09-10T08:00:01+01:00",
+    "date": "2026-09-10T07:00:01Z",
     "source": "Cadence's Weblog",
     "source_link": "https://cadence.moe/blog"
   },
   {
-    "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
-    "link": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads",
-    "date": "2026-09-09T18:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "Summary of changes for August 2026",
     "link": "https://100r.ca/site/log.html",
-    "date": "2026-09-01T08:00:00+01:00",
+    "date": "2026-09-01T07:00:00Z",
     "source": "Hundred Rabbits",
     "source_link": "https://100r.ca"
   },
