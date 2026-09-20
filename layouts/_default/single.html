@@ -26,9 +26,7 @@
             <img class="rd-byline-avatar" src="{{ site.Data.home.avatar }}" alt="" width="22" height="22">
             <span>{{ .Date.Format "January 2006" }}</span>
             <span class="rd-byline-sep">&middot;</span>
-            <span>{{ .Params.author | default "Aleem Isiaka" }}</span>
-            <span class="rd-byline-sep">&middot;</span>
-            <span>{{ .ReadingTime }} min read</span>
+            <span class="rd-byline-group"><span>{{ .Params.author | default "Aleem Isiaka" }}</span><span class="rd-byline-sep">&middot;</span><span>{{ .ReadingTime }} min read</span></span>
         </p>
         {{- with .Description }}<p class="rd-lede">{{ . }}</p>{{ end }}
     </header>
