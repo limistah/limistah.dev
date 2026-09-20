@@ -1,6 +1,7 @@
 ---
 title: Managing local configuration with Go -overlay flag
 tags: [go, compiler]
+date: 2026-09-20
 category: go
 summary: Control the behavior of Go programs using custom Go files overriding the original file at compile time without affecting the eventual binaries.
 ---
