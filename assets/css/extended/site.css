@@ -433,6 +433,7 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 .rd-byline { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 14px; color: var(--rd-ink-faint); margin: 0; }
 .rd-byline-avatar { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; }
 .rd-byline-sep { color: var(--rd-border-input); }
+.rd-byline-group { display: inline-flex; gap: 8px; white-space: nowrap; }
 
 .rd-lede { font-size: 17px; line-height: 1.65; color: var(--rd-ink-muted); margin: 24px 0 0; padding-bottom: 28px; border-bottom: 1px solid var(--rd-border); text-wrap: pretty; }
 
@@ -654,6 +655,22 @@ a.rd-fact-name:hover { color: var(--rd-ink); }
 /* ═══ Article layout: sticky "In this post" sidebar (flaviocopes) ═══ */
 
 .rd-article-layout { display: grid; grid-template-columns: minmax(0, 1fr); justify-content: center; }
+/* mobile: article must never be wider than the viewport — a long code line was setting
+   the grid item's min-content width to 700px. */
+.rd-article-layout > .rd-article { min-width: 0; width: 100%; box-sizing: border-box; }
+.rd-prose pre, .rd-prose .highlight, .rd-prose .highlight pre, .rd-prose table, .rd-toc { max-width: 100%; min-width: 0; }
+.rd-prose .highlight pre { overflow-x: auto; }
+.rd-prose img, .rd-prose iframe, .rd-prose video { max-width: 100%; }
+@media (max-width: 640px) {
+    .rd-article-title { font-size: 28px; letter-spacing: -0.015em; }
+    .rd-title { font-size: 28px; }
+    .rd-prose { font-size: 16.5px; line-height: 1.7; }
+    .rd-prose h2 { font-size: 21px; margin-top: 40px; }
+    .rd-prose pre, .rd-prose .highlight pre { font-size: 13px; padding: 14px 16px !important; }
+    .rd-toc { padding: 14px 16px; }
+    .rd-byline { font-size: 13.5px; row-gap: 4px; }
+    .rd-byline-sep:last-child { display: none; }
+}
 .rd-side { display: none; }
 
 @media (min-width: 1100px) {
