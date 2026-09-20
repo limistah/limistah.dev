@@ -1,37 +1,142 @@
 [
   {
-    "title": "Accessing OpenAI models on Amazon Bedrock from Australia with global cross-Region inference",
-    "link": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference/",
-    "date": "2026-09-02T00:00:00Z",
+    "title": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
+    "link": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
+    "date": "2026-09-18T20:52:14Z",
     "source": "Artificial Intelligence",
-    "source_link": ""
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Web Search on Amazon Bedrock is now available in AWS GovCloud (US-West)",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-web-aws-govcloud/",
-    "date": "2026-09-02T00:00:00Z",
+    "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent",
+    "date": "2026-09-18T19:34:00+01:00",
     "source": "Recent Announcements",
-    "source_link": ""
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
-    "link": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
-    "date": "2026-09-02T00:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": ""
+    "title": "Saving another 100TB of RAM with math (and Rust)",
+    "link": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math",
+    "date": "2026-09-18T18:23:58+01:00",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
   },
   {
-    "title": "Getting started with Mantis, our open-source bug finding-and-fixing harness",
-    "link": "https://cloud.google.com/blog/products/identity-security/getting-started-with-the-mantis-harness-to-find-and-fix-bugs/",
-    "date": "2026-09-02T00:00:00Z",
+    "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
+    "link": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql",
+    "date": "2026-09-18T16:30:00Z",
     "source": "Cloud Blog",
-    "source_link": ""
+    "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-    "link": "https://openai.com/index/atv-big-air-tour",
-    "date": "2026-09-02T00:00:00Z",
+    "title": "Introducing the Australian Youth Safety Blueprint",
+    "link": "https://openai.com/index/australian-youth-safety-blueprint",
+    "date": "2026-09-18T13:00:00+01:00",
     "source": "OpenAI News",
-    "source_link": ""
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Pluralistic: Textured (18 Sep 2026)",
+    "link": "https://pluralistic.net/2026/09/18/surprise",
+    "date": "2026-09-18T07:45:10Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Browser Run - Inspect logs, network requests, and DOM in Session Recordings",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-09-18-browser-run-session-recording-inspect",
+    "date": "2026-09-18T01:00:00+01:00",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "You can run git on object storage if you re-make packfiles",
+    "link": "https://tigrisdata.com/blog/objgit-packfiles",
+    "date": "2026-09-15T01:00:00+01:00",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "llama.cpp with SYCL (oneAPI) for Intel Panther Lake on Gentoo",
+    "link": "https://xn--gckvb8fzb.com/llamacpp-with-sycl-oneapi-for-intel-panther-lake-on-gentoo",
+    "date": "2026-09-14T18:48:29+01:00",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "DevFest is back",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+    "date": "2026-09-14T16:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
+    "link": "https://cadence.moe/blog/2026-09-10-we-spoke-with-entrepreneurs-living-the-7-vibe-3-lifestyle",
+    "date": "2026-09-10T08:00:01+01:00",
+    "source": "Cadence's Weblog",
+    "source_link": "https://cadence.moe/blog"
+  },
+  {
+    "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
+    "link": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads",
+    "date": "2026-09-09T18:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
+  },
+  {
+    "title": "Summary of changes for August 2026",
+    "link": "https://100r.ca/site/log.html",
+    "date": "2026-09-01T08:00:00+01:00",
+    "source": "Hundred Rabbits",
+    "source_link": "https://100r.ca"
+  },
+  {
+    "title": "Changes to SourceHut's terms of service regarding LLMs",
+    "link": "https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms",
+    "date": "2026-08-27T00:00:00Z",
+    "source": "Blogs on Sourcehut",
+    "source_link": "https://sourcehut.org/blog/"
+  },
+  {
+    "title": "Status update July 2026",
+    "link": "https://willowbarraco.fr/status-update-2026-07",
+    "date": "2026-07-25T00:00:00Z",
+    "source": "Willow's feed",
+    "source_link": "https://www.willowbarraco.fr/"
+  },
+  {
+    "title": "AI in Linux",
+    "link": "https://drewdevault.com/blog/AI-in-Linux",
+    "date": "2026-07-23T00:00:00Z",
+    "source": "Drew DeVault's blog",
+    "source_link": "https://drewdevault.com"
+  },
+  {
+    "title": "Some more things about Django I've been enjoying",
+    "link": "https://jvns.ca/blog/2026/07/21/more-nice-django-things",
+    "date": "2026-07-21T00:00:00Z",
+    "source": "Julia Evans",
+    "source_link": "https://jvns.ca"
+  },
+  {
+    "title": "Worse on Purpose - Cookware",
+    "link": "https://worseonpurpose.com/p/your-cookware-got-worse-on-purpose",
+    "date": "2026-07-21T00:00:00-04:00",
+    "source": "Bill Hunt – Posts",
+    "source_link": "https://billhunt.dev/"
+  },
+  {
+    "title": "How far would hostile distributions go to hurt application developers?",
+    "link": "https://tesk.page/2026/07/18/how-far-would-hostile-distributions-go-to-hurt-upstream",
+    "date": "2026-07-18T00:00:00Z",
+    "source": "TheEvilSkeleton",
+    "source_link": "https://tesk.page/"
+  },
+  {
+    "title": "CSS is simple, stop making it hard",
+    "link": "https://blog.brixit.nl/css-is-simple-stop-making-it-hard",
+    "date": "2026-07-04T09:56:07Z",
+    "source": "BrixIT Blog",
+    "source_link": "https://blog.brixit.nl/"
   }
 ]
