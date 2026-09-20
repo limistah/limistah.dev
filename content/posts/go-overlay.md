@@ -8,29 +8,29 @@ summary: Control the behavior of Go programs using custom Go files overriding th
 
 ### Motivation
 
-I was working on a local stack setup for some of my projects, and I need a local depencies setup that does't tamper with the actual config that the team relies on or modifying the worktree, and importantly, _avoiding merge conflicts_.
+I was working on a local stack setup for some of my projects, and I need a local dependencies setup that doesn't tamper with the actual config that the team relies on or modify the worktree, and importantly, _avoiding merge conflicts_.
 
 A little research helped me discover the Go compiler's [`-overlay=overlay.json`](https://pkg.go.dev/cmd/go#hdr-Compile_packages_and_dependencies) flag that completely answers my question.
 
 ## The `-overlay` flag
 
-The Go compiler has a lot of useful configuration, which I believe can come useful in certain circumstances. One that I believe should be popular due to the inherent behavior it enables is the `-overlay` flag.
+The Go compiler has a lot of useful configuration, which I believe can come in useful in certain circumstances. One that I believe should be popular due to the inherent behavior it enables is the `-overlay` flag.
 
-The flag expects a relative path to a json file that specifies Go source files, and paths to their replacement files but both files(original and replacement) do not need to contain exactly the same code. This is useful and can be powerful in areas of bespoke functionality that never affects the base source code.
+The flag expects a relative path to a JSON file that specifies Go source files and paths to their replacement files, but both files(original and replacement) do not need to contain the same code. This is useful and can be powerful in areas of bespoke functionality that never affects the base source code.
 
 ## When this is useful
 
-In this age of agentic software engineering, features like this in everyday tools enable coding agent to do the unbelievable. Take for instance my special usecase:
+In this age of agentic software engineering, features like this in everyday tools enable coding agents to do the unbelievable. Take, for instance, my special use case:
 
-> I need to be able to run both the frontend and backend of my project locally, provide runtime configuration to the backend code without altering any part of the original source code, inherently preserving the upstream behavior of the project, while customizing the local copy to behave how I want.
+> I need to be able to run both the frontend and backend of my project locally, provide runtime configuration to the backend code without altering any part of the source code, inherently preserving the upstream behavior of the project, while customizing the local copy to behave how I want.
 
 Or even more bespoke:
 
-> Having a generic file that works on production on how the software is meant to behave, but, the runtime differs a little bit from the production environment. There can be different implementation across the environment, then apply them at compile time in those different environments.
+> Having a generic file that works in production on how the software is meant to behave, but the runtime differs a little bit from the production environment. There can be different implementations across the environment; then apply them at compile time in those different environments.
 
-For my usecase, it makes easier for AI agent to work completely offline, all dependencies provided for. An env file can not work here because the secret that I rely on are more than the infrastructure secrets which I don't want to replicate locally or regenerate across my dependent services. The goal is to always rely on my upstream secret management, then, customize only a subset of the keys before runtime, and no better way to do that than overlaying the original file that loads the secrets to override the upstream values.
+For my use case, it makes it easier for an AI agent to work completely offline, with all the dependencies provided. An `env` file can not work here because the secrets that I rely on, which I don't want to replicate locally or regenerate across my dependent services, are more than just infrastructure secrets. The goal is to always rely on my upstream secret management, then customize only a subset of the keys before runtime, and no better way to do that than overlaying the original file that loads the secrets to override the upstream values.
 
-The other usecases for this should be obvious, but as many of the features of technologies, you appreciate they exist when you need them, this is one of those features for me.
+The other use cases for this should be obvious, but as with many of the features of technologies, you appreciate they exist when you need them; this is one of those features for me.
 
 ## How to set this up
 
@@ -52,7 +52,7 @@ package config
 const Environment = "production"
 ```
 
-And in the `main.go`
+And in `main.go`
 
 ```go
 package main
@@ -67,7 +67,7 @@ func main() {
 }
 ```
 
-When you run this program you should get the obvious result:
+When you run this program, you should get the obvious result:
 
 ```txt
 production
@@ -103,7 +103,7 @@ Also, in the project root, create an `overlay.json` file that contains:
 Then compile with:
 
 ```bash
-go build -overlay=overlay.json .
+go build -overlay=overlay.json.
 
 ```
 
@@ -115,6 +115,6 @@ package config
 const Environment = "development"
 ```
 
-As such, `go build -overlay=overlay.json .` will produce a binary where `config.Environment` value is `development`.
+As such, `go build -overlay=overlay.json .` will produce a binary where the value of `config. Environment` is `development`.
 
 Neat!!!
