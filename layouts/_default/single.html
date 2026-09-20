@@ -51,6 +51,8 @@
             {{- with .File }}<a href="https://github.com/limistah/limistah.dev/tree/main/content/{{ .Path }}" target="_blank" rel="noopener noreferrer">edit on GitHub</a>{{ end }}
         </p>
 
+        {{- partial "notbyai.html" . }}
+
         {{- if (.Param "ShowPostNavLinks") }}
         <nav class="rd-postnav">
             {{- with .PrevInSection }}<a href="{{ .Permalink }}"><span class="rd-postnav-label">&larr; older</span><span class="rd-postnav-title">{{ .Title }}</span></a>{{ else }}<span></span>{{ end }}
