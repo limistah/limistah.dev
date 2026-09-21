@@ -1,5 +1,12 @@
 [
   {
+    "title": "This is why we play",
+    "link": "https://xeiaso.net/blog/2026/this-is-why-we-play",
+    "date": "2026-09-21T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
     "title": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
     "link": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
     "date": "2026-09-18T20:52:14Z",
@@ -54,13 +61,6 @@
     "date": "2026-09-16T16:00:00Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "You can run git on object storage if you re-make packfiles",
-    "link": "https://tigrisdata.com/blog/objgit-packfiles",
-    "date": "2026-09-15T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "llama.cpp with SYCL (oneAPI) for Intel Panther Lake on Gentoo",
