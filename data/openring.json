@@ -1,59 +1,59 @@
 [
   {
+    "title": "Amazon ECS now provides real-time deployment observability in the AWS Management Console",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability",
+    "date": "2026-09-21T20:05:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "xAI’s Grok 4.6 is now available in Amazon Bedrock",
+    "link": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock",
+    "date": "2026-09-21T18:30:34Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.8.1755.1)",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-09-21-warp-macos-beta",
+    "date": "2026-09-21T18:14:56Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Scale your AI workloads faster and more efficiently with GKE Pod snapshots",
+    "link": "https://cloud.google.com/blog/products/containers-kubernetes/gke-pod-snapshots",
+    "date": "2026-09-21T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Python Workers are now generally available",
+    "link": "https://blog.cloudflare.com/python-workers-ga",
+    "date": "2026-09-21T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Advisory Group on Mathematics and Artificial Intelligence",
+    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "date": "2026-09-21T12:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Pluralistic: The Claude Delusion (21 Sep 2026)",
+    "link": "https://pluralistic.net/2026/09/21/sunsetting",
+    "date": "2026-09-21T11:24:31Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
     "title": "This is why we play",
     "link": "https://xeiaso.net/blog/2026/this-is-why-we-play",
     "date": "2026-09-21T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
-  },
-  {
-    "title": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
-    "link": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
-    "date": "2026-09-18T20:52:14Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent",
-    "date": "2026-09-18T18:34:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Saving another 100TB of RAM with math (and Rust)",
-    "link": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math",
-    "date": "2026-09-18T17:23:58Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
-    "link": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql",
-    "date": "2026-09-18T16:30:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Introducing the Australian Youth Safety Blueprint",
-    "link": "https://openai.com/index/australian-youth-safety-blueprint",
-    "date": "2026-09-18T12:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Pluralistic: Textured (18 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/18/surprise",
-    "date": "2026-09-18T07:45:10Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Browser Run - Inspect logs, network requests, and DOM in Session Recordings",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-09-18-browser-run-session-recording-inspect",
-    "date": "2026-09-18T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
