@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-09-21
+lastmod: 2026-09-22
 ---
 
 ### AI/ML
@@ -99,6 +99,7 @@ lastmod: 2026-09-21
 
 1. [Challenging Projects Programmers Should Try](https://austinhenley.com/blog/challengingprojects.html)
 2. [A Paradigm Shift in Computer Science? - Tu Wien Informatics](https://www.youtube.com/playlist?list=PLgT6-EN5L0ZX2OeF2m_6AaZvcujQG92_E)
+3. ["Code was never the hard part" is an insult to all programmers](https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers) - The software development profession is in the midst of upheaval. Nobody knows how the AI revolution will play out in the end, but it is c...
 
 ---
 
@@ -161,6 +162,7 @@ lastmod: 2026-09-21
 
 1. [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f)
 2. [Vim Cheat Sheet](https://vim.rtorr.com/) - Explore vim.rtorr.com for an extensive Vim cheat sheet, offering clear, concise commands and shortcuts for Vim users. Whether you're a beginner or an experienced developer, find tips and tricks to enhance your coding efficiency in Vim.
+3. [Using Netrw, vim's builtin file explorer | Devlog](https://vonheikemen.github.io/devlog/tools/using-netrw-vim-builtin-file-explorer/) - Where we learn how to use Netrw
 
 ---
 
