@@ -1,52 +1,59 @@
 [
   {
-    "title": "Amazon ECS now provides real-time deployment observability in the AWS Management Console",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability",
-    "date": "2026-09-21T20:05:00Z",
+    "title": "Amazon CloudWatch Omni: AI-first observability for agents and applications",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-cloudwatch-omni-ai",
+    "date": "2026-09-23T00:06:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "xAI’s Grok 4.6 is now available in Amazon Bedrock",
-    "link": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock",
-    "date": "2026-09-21T18:30:34Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.8.1755.1)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-09-21-warp-macos-beta",
-    "date": "2026-09-21T18:14:56Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Scale your AI workloads faster and more efficiently with GKE Pod snapshots",
-    "link": "https://cloud.google.com/blog/products/containers-kubernetes/gke-pod-snapshots",
-    "date": "2026-09-21T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Python Workers are now generally available",
-    "link": "https://blog.cloudflare.com/python-workers-ga",
-    "date": "2026-09-21T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Advisory Group on Mathematics and Artificial Intelligence",
-    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "date": "2026-09-21T12:00:00Z",
+    "title": "Better prompt caching for GPT-6",
+    "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+    "date": "2026-09-22T21:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
   },
   {
-    "title": "Pluralistic: The Claude Delusion (21 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/21/sunsetting",
-    "date": "2026-09-21T11:24:31Z",
+    "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
+    "link": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock",
+    "date": "2026-09-22T18:10:22Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "We just shipped support for the ugliest part of HTTP: Vary",
+    "link": "https://blog.cloudflare.com/vary-support",
+    "date": "2026-09-22T14:04:31Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Pluralistic: Bonta sold us out to Trump's oligarchs (22 Sep 2026)",
+    "link": "https://pluralistic.net/2026/09/22/happy-chudmas",
+    "date": "2026-09-22T08:19:01Z",
     "source": "Pluralistic: Daily links from Cory Doctorow",
     "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "NuPhy Kick75",
+    "link": "https://xn--gckvb8fzb.com/nuphy-kick75",
+    "date": "2026-09-22T07:32:33Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "Access - Automatically manage inactive Access service tokens",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-09-22-service-token-inactivity-cleanup",
+    "date": "2026-09-22T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Global AI routing with <1% overhead on multi-cluster GKE Inference Gateway",
+    "link": "https://cloud.google.com/blog/products/containers-kubernetes/gpu-and-tpu-utilization-with-multi-cluster-gke-inference-gateway",
+    "date": "2026-09-21T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
   },
   {
     "title": "This is why we play",
@@ -61,13 +68,6 @@
     "date": "2026-09-16T16:00:00Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "llama.cpp with SYCL (oneAPI) for Intel Panther Lake on Gentoo",
-    "link": "https://xn--gckvb8fzb.com/llamacpp-with-sycl-oneapi-for-intel-panther-lake-on-gentoo",
-    "date": "2026-09-14T17:48:29Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "DevFest is back",
