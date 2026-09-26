@@ -1,52 +1,80 @@
 [
   {
-    "title": "Amazon ECS now provides real-time deployment observability in the AWS Management Console",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability",
-    "date": "2026-09-21T20:05:00Z",
+    "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe",
+    "date": "2026-09-25T19:19:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "xAI’s Grok 4.6 is now available in Amazon Bedrock",
-    "link": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock",
-    "date": "2026-09-21T18:30:34Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.8.1755.1)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-09-21-warp-macos-beta",
-    "date": "2026-09-21T18:14:56Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Scale your AI workloads faster and more efficiently with GKE Pod snapshots",
-    "link": "https://cloud.google.com/blog/products/containers-kubernetes/gke-pod-snapshots",
-    "date": "2026-09-21T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Python Workers are now generally available",
-    "link": "https://blog.cloudflare.com/python-workers-ga",
-    "date": "2026-09-21T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Advisory Group on Mathematics and Artificial Intelligence",
-    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "date": "2026-09-21T12:00:00Z",
+    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+    "link": "https://openai.com/index/proaction",
+    "date": "2026-09-25T19:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
   },
   {
-    "title": "Pluralistic: The Claude Delusion (21 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/21/sunsetting",
-    "date": "2026-09-21T11:24:31Z",
+    "title": "Pluralistic: Itch scratching (25 Sep 2026)",
+    "link": "https://pluralistic.net/2026/09/25/other-people",
+    "date": "2026-09-25T18:56:20Z",
     "source": "Pluralistic: Daily links from Cory Doctorow",
     "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
+    "link": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput",
+    "date": "2026-09-25T16:29:50Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "What’s new with Google Cloud",
+    "link": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud",
+    "date": "2026-09-25T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Agents can now set up your website’s security with Turnstile Spin",
+    "link": "https://blog.cloudflare.com/turnstile-spin",
+    "date": "2026-09-25T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Browser Run, Queues - Subscribe to Browser Run crawl events",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-09-25-crawl-event-subscriptions",
+    "date": "2026-09-25T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
+    "link": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization",
+    "date": "2026-09-24T18:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
+  },
+  {
+    "title": "Anyone can make stunning HD videos with Gemini Omni in Google Vids",
+    "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids",
+    "date": "2026-09-23T19:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Why is Hacker News like that?",
+    "link": "https://drewdevault.com/blog/Why-is-HN-like-that",
+    "date": "2026-09-23T00:00:00Z",
+    "source": "Drew DeVault's blog",
+    "source_link": "https://drewdevault.com"
+  },
+  {
+    "title": "NuPhy Kick75",
+    "link": "https://xn--gckvb8fzb.com/nuphy-kick75",
+    "date": "2026-09-22T07:32:33Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "This is why we play",
@@ -54,27 +82,6 @@
     "date": "2026-09-21T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
-  },
-  {
-    "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
-    "link": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure",
-    "date": "2026-09-16T16:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "llama.cpp with SYCL (oneAPI) for Intel Panther Lake on Gentoo",
-    "link": "https://xn--gckvb8fzb.com/llamacpp-with-sycl-oneapi-for-intel-panther-lake-on-gentoo",
-    "date": "2026-09-14T17:48:29Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "DevFest is back",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-    "date": "2026-09-14T16:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
   },
   {
     "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
@@ -103,13 +110,6 @@
     "date": "2026-07-25T00:00:00Z",
     "source": "Willow's feed",
     "source_link": "https://www.willowbarraco.fr/"
-  },
-  {
-    "title": "AI in Linux",
-    "link": "https://drewdevault.com/blog/AI-in-Linux",
-    "date": "2026-07-23T00:00:00Z",
-    "source": "Drew DeVault's blog",
-    "source_link": "https://drewdevault.com"
   },
   {
     "title": "Some more things about Django I've been enjoying",
