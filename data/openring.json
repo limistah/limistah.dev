@@ -1,5 +1,19 @@
 [
   {
+    "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+    "link": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter",
+    "date": "2026-09-27T17:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Replacing the old battery on rechargeable bike lights",
+    "link": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights",
+    "date": "2026-09-27T00:00:00Z",
+    "source": "Julia Evans",
+    "source_link": "https://jvns.ca"
+  },
+  {
     "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
     "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe",
     "date": "2026-09-25T19:19:00Z",
@@ -33,13 +47,6 @@
     "date": "2026-09-25T16:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Agents can now set up your website’s security with Turnstile Spin",
-    "link": "https://blog.cloudflare.com/turnstile-spin",
-    "date": "2026-09-25T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
   },
   {
     "title": "Browser Run, Queues - Subscribe to Browser Run crawl events",
@@ -110,13 +117,6 @@
     "date": "2026-07-25T00:00:00Z",
     "source": "Willow's feed",
     "source_link": "https://www.willowbarraco.fr/"
-  },
-  {
-    "title": "Some more things about Django I've been enjoying",
-    "link": "https://jvns.ca/blog/2026/07/21/more-nice-django-things",
-    "date": "2026-07-21T00:00:00Z",
-    "source": "Julia Evans",
-    "source_link": "https://jvns.ca"
   },
   {
     "title": "Worse on Purpose - Cookware",
