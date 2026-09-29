@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-09-28
+lastmod: 2026-09-29
 ---
 
 ### AI/ML
@@ -17,6 +17,7 @@ lastmod: 2026-09-28
 5. [Stanford CS221 - Autumn 2025 Lectures](https://github.com/stanford-cs221/autumn2025-lectures)
 6. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180#page=1.22)
 7. [Gaudi Architecture — Gaudi Documentation 1.23.0 documentation](https://docs.habana.ai/en/latest/Gaudi_Overview/Gaudi_Architecture.html)
+8. [amitshekhariitbhu/ai-engineering-course: AI Engineering Course](https://github.com/amitshekhariitbhu/ai-engineering-course) - A free and complete AI Engineering Course to learn AI Engineering step by step.
 
 ---
 
