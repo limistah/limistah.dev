@@ -1,8 +1,50 @@
 [
   {
-    "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-    "link": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter",
-    "date": "2026-09-27T17:00:00Z",
+    "title": "Browser Run - Connect multiple clients to one Browser Run session",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-09-29-concurrent-session-connections",
+    "date": "2026-09-29T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Grok 4.7 is now available on Amazon Bedrock",
+    "link": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock",
+    "date": "2026-09-28T22:13:16Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date",
+    "date": "2026-09-28T21:17:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "How we will do better for Australia",
+    "link": "https://openai.com/index/how-we-will-do-better-for-australia",
+    "date": "2026-09-28T19:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Pluralistic: Priceful (28 Sep 2026)",
+    "link": "https://pluralistic.net/2026/09/28/cost-of-everything",
+    "date": "2026-09-28T17:48:26Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Why your startup needs open models alongside frontier APIs",
+    "link": "https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis",
+    "date": "2026-09-28T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Next.js applications, powered by Vite: introducing Vinext 1.0",
+    "link": "https://blog.cloudflare.com/vinext-nextjs-on-vite",
+    "date": "2026-09-28T14:51:57Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
   },
@@ -12,48 +54,6 @@
     "date": "2026-09-27T00:00:00Z",
     "source": "Julia Evans",
     "source_link": "https://jvns.ca"
-  },
-  {
-    "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe",
-    "date": "2026-09-25T19:19:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-    "link": "https://openai.com/index/proaction",
-    "date": "2026-09-25T19:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Pluralistic: Itch scratching (25 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/25/other-people",
-    "date": "2026-09-25T18:56:20Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
-    "link": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput",
-    "date": "2026-09-25T16:29:50Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "What’s new with Google Cloud",
-    "link": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud",
-    "date": "2026-09-25T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Browser Run, Queues - Subscribe to Browser Run crawl events",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-09-25-crawl-event-subscriptions",
-    "date": "2026-09-25T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
