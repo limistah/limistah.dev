@@ -1,52 +1,66 @@
 [
   {
-    "title": "Browser Run - Connect multiple clients to one Browser Run session",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-09-29-concurrent-session-connections",
-    "date": "2026-09-29T00:00:00Z",
+    "title": "Containers - New scheduling policy for Containers to configure image and instance from Durable Objects",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-09-30-durable-object-scheduling-policy",
+    "date": "2026-09-30T12:45:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
-    "title": "Grok 4.7 is now available on Amazon Bedrock",
-    "link": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock",
-    "date": "2026-09-28T22:13:16Z",
+    "title": "Amazon Bedrock expands Claude model availability to in-country inferencing in India",
+    "link": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference",
+    "date": "2026-09-30T01:13:14Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date",
-    "date": "2026-09-28T21:17:00Z",
+    "title": "Updates 2026/Q3",
+    "link": "https://xn--gckvb8fzb.com/updates-2026-q3",
+    "date": "2026-09-29T23:38:50Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "Amazon Bedrock Managed Agents, powered by OpenAI, is now available in preview",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview",
+    "date": "2026-09-29T21:10:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "How we will do better for Australia",
-    "link": "https://openai.com/index/how-we-will-do-better-for-australia",
-    "date": "2026-09-28T19:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Pluralistic: Priceful (28 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/28/cost-of-everything",
-    "date": "2026-09-28T17:48:26Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Why your startup needs open models alongside frontier APIs",
-    "link": "https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis",
-    "date": "2026-09-28T16:00:00Z",
+    "title": "Accelerating agentic RL and evaluation research velocity with 45x faster GKE Agent Sandbox",
+    "link": "https://cloud.google.com/blog/products/containers-kubernetes/accelerate-agentic-rl-with-gke-agent-sandbox",
+    "date": "2026-09-29T17:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "Next.js applications, powered by Vite: introducing Vinext 1.0",
-    "link": "https://blog.cloudflare.com/vinext-nextjs-on-vite",
-    "date": "2026-09-28T14:51:57Z",
+    "title": "Pluralistic: Lindsay Owens's \"Gouged\" (29 Sep 2026)",
+    "link": "https://pluralistic.net/2026/09/29/algorithmic-wage-theft",
+    "date": "2026-09-29T13:40:37Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Using AI to chart a course for our post-quantum migration",
+    "link": "https://blog.cloudflare.com/ai-driven-cryptography-discovery",
+    "date": "2026-09-29T13:00:00Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Introducing GPT-6.1 Sol",
+    "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "date": "2026-09-29T10:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
+    "link": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle",
+    "date": "2026-09-28T15:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Replacing the old battery on rechargeable bike lights",
@@ -54,13 +68,6 @@
     "date": "2026-09-27T00:00:00Z",
     "source": "Julia Evans",
     "source_link": "https://jvns.ca"
-  },
-  {
-    "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
-    "link": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization",
-    "date": "2026-09-24T18:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Anyone can make stunning HD videos with Gemini Omni in Google Vids",
@@ -75,13 +82,6 @@
     "date": "2026-09-23T00:00:00Z",
     "source": "Drew DeVault's blog",
     "source_link": "https://drewdevault.com"
-  },
-  {
-    "title": "NuPhy Kick75",
-    "link": "https://xn--gckvb8fzb.com/nuphy-kick75",
-    "date": "2026-09-22T07:32:33Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "This is why we play",
