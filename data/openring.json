@@ -1,17 +1,59 @@
 [
   {
-    "title": "Containers - New scheduling policy for Containers to configure image and instance from Durable Objects",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-09-30-durable-object-scheduling-policy",
-    "date": "2026-09-30T12:45:00Z",
+    "title": "Durable Objects - Pending I/O operations allow Durable Objects to continue long-running work without a connected client",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-01-pending-io-keep-alive",
+    "date": "2026-10-01T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
-    "title": "Amazon Bedrock expands Claude model availability to in-country inferencing in India",
-    "link": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference",
-    "date": "2026-09-30T01:13:14Z",
+    "title": "Amazon WorkSpaces Core Managed Instances adds support for NVIDIA Blackwell GPU",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-cmi-g7",
+    "date": "2026-09-30T23:59:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Google is supporting water resilience in Chile.",
+    "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/water-resilience-chile",
+    "date": "2026-09-30T18:34:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "What’s new in AI infrastructure and orchestration in September",
+    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month",
+    "date": "2026-09-30T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Query claims in natural language with Amazon Bedrock Knowledge Bases",
+    "link": "https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases",
+    "date": "2026-09-30T15:37:15Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Cloudflare Impact reaches $100 million in donations",
+    "link": "https://blog.cloudflare.com/100-million-donations",
+    "date": "2026-09-30T13:01:55Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Disrupting a coordinated model-distillation campaign",
+    "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+    "date": "2026-09-30T10:30:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Summary of changes for September 2026",
+    "link": "https://100r.ca/site/log.html",
+    "date": "2026-09-30T07:00:00Z",
+    "source": "Hundred Rabbits",
+    "source_link": "https://100r.ca"
   },
   {
     "title": "Updates 2026/Q3",
@@ -21,18 +63,11 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "Amazon Bedrock Managed Agents, powered by OpenAI, is now available in preview",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview",
-    "date": "2026-09-29T21:10:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Accelerating agentic RL and evaluation research velocity with 45x faster GKE Agent Sandbox",
-    "link": "https://cloud.google.com/blog/products/containers-kubernetes/accelerate-agentic-rl-with-gke-agent-sandbox",
-    "date": "2026-09-29T17:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
+    "title": "SQL Server on Azure Local is now generally available",
+    "link": "https://microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available",
+    "date": "2026-09-29T16:40:06Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Pluralistic: Lindsay Owens's \"Gouged\" (29 Sep 2026)",
@@ -42,39 +77,11 @@
     "source_link": "https://pluralistic.net"
   },
   {
-    "title": "Using AI to chart a course for our post-quantum migration",
-    "link": "https://blog.cloudflare.com/ai-driven-cryptography-discovery",
-    "date": "2026-09-29T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Introducing GPT-6.1 Sol",
-    "link": "https://openai.com/index/introducing-gpt-6-1-sol",
-    "date": "2026-09-29T10:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
-    "link": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle",
-    "date": "2026-09-28T15:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "Replacing the old battery on rechargeable bike lights",
     "link": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights",
     "date": "2026-09-27T00:00:00Z",
     "source": "Julia Evans",
     "source_link": "https://jvns.ca"
-  },
-  {
-    "title": "Anyone can make stunning HD videos with Gemini Omni in Google Vids",
-    "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids",
-    "date": "2026-09-23T19:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
   },
   {
     "title": "Why is Hacker News like that?",
@@ -96,13 +103,6 @@
     "date": "2026-09-10T07:00:01Z",
     "source": "Cadence's Weblog",
     "source_link": "https://cadence.moe/blog"
-  },
-  {
-    "title": "Summary of changes for August 2026",
-    "link": "https://100r.ca/site/log.html",
-    "date": "2026-09-01T07:00:00Z",
-    "source": "Hundred Rabbits",
-    "source_link": "https://100r.ca"
   },
   {
     "title": "Changes to SourceHut's terms of service regarding LLMs",
