@@ -1,17 +1,52 @@
 [
   {
-    "title": "Durable Objects - Pending I/O operations allow Durable Objects to continue long-running work without a connected client",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-01-pending-io-keep-alive",
-    "date": "2026-10-01T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Amazon WorkSpaces Core Managed Instances adds support for NVIDIA Blackwell GPU",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-cmi-g7",
-    "date": "2026-09-30T23:59:00Z",
+    "title": "GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-runtime-monitoring",
+    "date": "2026-10-02T03:35:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+    "link": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore",
+    "date": "2026-10-01T22:06:14Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Pluralistic: Voting is to politics as shopping is to boycotts (01 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/01/data-centers",
+    "date": "2026-10-01T17:22:48Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "The eternal complement",
+    "link": "https://openai.com/index/the-eternal-complement",
+    "date": "2026-10-01T17:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Enabling Cloud Storage end-to-end checksums for improved data integrity and durability",
+    "link": "https://cloud.google.com/blog/products/storage-data-transfer/enabling-end-to-end-checksums-in-cloud-storage",
+    "date": "2026-10-01T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+    "link": "https://blog.cloudflare.com/clef-decision-models",
+    "date": "2026-10-01T15:34:02Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Workers AI - Introducing Clef: Cloudflare's first open-source decision models, now on Workers AI",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai",
+    "date": "2026-10-01T13:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Google is supporting water resilience in Chile.",
@@ -19,34 +54,6 @@
     "date": "2026-09-30T18:34:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "What’s new in AI infrastructure and orchestration in September",
-    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month",
-    "date": "2026-09-30T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Query claims in natural language with Amazon Bedrock Knowledge Bases",
-    "link": "https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases",
-    "date": "2026-09-30T15:37:15Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Cloudflare Impact reaches $100 million in donations",
-    "link": "https://blog.cloudflare.com/100-million-donations",
-    "date": "2026-09-30T13:01:55Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Disrupting a coordinated model-distillation campaign",
-    "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-    "date": "2026-09-30T10:30:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
   },
   {
     "title": "Summary of changes for September 2026",
@@ -68,13 +75,6 @@
     "date": "2026-09-29T16:40:06Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "Pluralistic: Lindsay Owens's \"Gouged\" (29 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/29/algorithmic-wage-theft",
-    "date": "2026-09-29T13:40:37Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
   },
   {
     "title": "Replacing the old battery on rechargeable bike lights",
