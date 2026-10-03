@@ -1,17 +1,45 @@
 [
   {
-    "title": "GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-runtime-monitoring",
-    "date": "2026-10-02T03:35:00Z",
+    "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments",
+    "date": "2026-10-02T20:18:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore",
-    "date": "2026-10-01T22:06:14Z",
+    "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
+    "link": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer",
+    "date": "2026-10-02T19:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "A model guide for the GPT-6 family",
+    "link": "https://openai.com/index/practical-guide-building-gpt-6",
+    "date": "2026-10-02T16:15:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+    "link": "https://blog.cloudflare.com/streamline",
+    "date": "2026-10-02T16:13:45Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
+    "link": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern",
+    "date": "2026-10-02T15:48:26Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "AI Gateway, Web Search API - Introducing Web Search API",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api",
+    "date": "2026-10-02T13:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Pluralistic: Voting is to politics as shopping is to boycotts (01 Oct 2026)",
@@ -21,39 +49,18 @@
     "source_link": "https://pluralistic.net"
   },
   {
-    "title": "The eternal complement",
-    "link": "https://openai.com/index/the-eternal-complement",
-    "date": "2026-10-01T17:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Enabling Cloud Storage end-to-end checksums for improved data integrity and durability",
-    "link": "https://cloud.google.com/blog/products/storage-data-transfer/enabling-end-to-end-checksums-in-cloud-storage",
-    "date": "2026-10-01T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-    "link": "https://blog.cloudflare.com/clef-decision-models",
-    "date": "2026-10-01T15:34:02Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Workers AI - Introducing Clef: Cloudflare's first open-source decision models, now on Workers AI",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai",
-    "date": "2026-10-01T13:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
     "title": "Google is supporting water resilience in Chile.",
     "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/water-resilience-chile",
     "date": "2026-09-30T18:34:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
+    "link": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware",
+    "date": "2026-09-30T15:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Summary of changes for September 2026",
@@ -68,13 +75,6 @@
     "date": "2026-09-29T23:38:50Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "SQL Server on Azure Local is now generally available",
-    "link": "https://microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available",
-    "date": "2026-09-29T16:40:06Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Replacing the old battery on rechargeable bike lights",
