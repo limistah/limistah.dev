@@ -1,17 +1,66 @@
 [
   {
-    "title": "Durable Objects - Pending I/O operations allow Durable Objects to continue long-running work without a connected client",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-01-pending-io-keep-alive",
-    "date": "2026-10-01T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
+    "title": "Reverse engineering the Variax guitar",
+    "link": "https://blog.brixit.nl/variax",
+    "date": "2026-10-04T16:27:30Z",
+    "source": "BrixIT Blog",
+    "source_link": "https://blog.brixit.nl/"
   },
   {
-    "title": "Amazon WorkSpaces Core Managed Instances adds support for NVIDIA Blackwell GPU",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-cmi-g7",
-    "date": "2026-09-30T23:59:00Z",
+    "title": "How to Solve: AAC Heavyweight M1 (Savage)",
+    "link": "https://xeiaso.net/blog/2026/m9s",
+    "date": "2026-10-04T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "Pluralistic: Economic probabilities for our grandchildren (03 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/03/full-employment",
+    "date": "2026-10-03T12:07:59Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments",
+    "date": "2026-10-02T20:18:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
+    "link": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer",
+    "date": "2026-10-02T19:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "8 major updates to Cloudflare Observability",
+    "link": "https://blog.cloudflare.com/one-observability-platform",
+    "date": "2026-10-02T18:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "A model guide for the GPT-6 family",
+    "link": "https://openai.com/index/practical-guide-building-gpt-6",
+    "date": "2026-10-02T16:15:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
+    "link": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern",
+    "date": "2026-10-02T15:48:26Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "AI Gateway, Web Search API - Introducing Web Search API",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api",
+    "date": "2026-10-02T13:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Google is supporting water resilience in Chile.",
@@ -21,32 +70,11 @@
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
   },
   {
-    "title": "What’s new in AI infrastructure and orchestration in September",
-    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month",
-    "date": "2026-09-30T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Query claims in natural language with Amazon Bedrock Knowledge Bases",
-    "link": "https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases",
-    "date": "2026-09-30T15:37:15Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Cloudflare Impact reaches $100 million in donations",
-    "link": "https://blog.cloudflare.com/100-million-donations",
-    "date": "2026-09-30T13:01:55Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Disrupting a coordinated model-distillation campaign",
-    "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-    "date": "2026-09-30T10:30:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
+    "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
+    "link": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware",
+    "date": "2026-09-30T15:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Summary of changes for September 2026",
@@ -63,20 +91,6 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "SQL Server on Azure Local is now generally available",
-    "link": "https://microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available",
-    "date": "2026-09-29T16:40:06Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "Pluralistic: Lindsay Owens's \"Gouged\" (29 Sep 2026)",
-    "link": "https://pluralistic.net/2026/09/29/algorithmic-wage-theft",
-    "date": "2026-09-29T13:40:37Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
     "title": "Replacing the old battery on rechargeable bike lights",
     "link": "https://jvns.ca/blog/2026/09/27/replacing-the-old-battery-on-rechargeable-bike-lights",
     "date": "2026-09-27T00:00:00Z",
@@ -89,13 +103,6 @@
     "date": "2026-09-23T00:00:00Z",
     "source": "Drew DeVault's blog",
     "source_link": "https://drewdevault.com"
-  },
-  {
-    "title": "This is why we play",
-    "link": "https://xeiaso.net/blog/2026/this-is-why-we-play",
-    "date": "2026-09-21T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
@@ -131,12 +138,5 @@
     "date": "2026-07-18T00:00:00Z",
     "source": "TheEvilSkeleton",
     "source_link": "https://tesk.page/"
-  },
-  {
-    "title": "CSS is simple, stop making it hard",
-    "link": "https://blog.brixit.nl/css-is-simple-stop-making-it-hard",
-    "date": "2026-07-04T09:56:07Z",
-    "source": "BrixIT Blog",
-    "source_link": "https://blog.brixit.nl/"
   }
 ]

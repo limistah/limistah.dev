@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-10-01
+lastmod: 2026-10-05
 ---
 
 ### AI/ML
@@ -180,6 +180,7 @@ lastmod: 2026-10-01
 2. [The Ultimate Guide to Memorable Talks](https://nnja.medium.com/the-ultimate-guide-to-memorable-tech-talks-e7c350778d4b)
 3. [Speaking IO](https://speaking.io)
 4. [On Conference Speaking - Hynek ](https://hynek.me/articles/speaking/?ref=devrelresourc.es)
+5. [How to Speak](https://www.youtube.com/watch?v=Unzc731iCUY)
 
 ---
 
