@@ -1,5 +1,54 @@
 [
   {
+    "title": "Introducing GLM 5.3 on Amazon Bedrock",
+    "link": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock",
+    "date": "2026-10-05T23:25:17Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Amazon Redshift adds support for creating and refreshing Apache Iceberg materialized views",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-iceberg-materialized-views",
+    "date": "2026-10-05T21:57:18Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Pluralistic: Scrutinized (05 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/05/pervert-glasses",
+    "date": "2026-10-05T18:58:11Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Introducing Google Cloud Modernize, transforming for (and with) AI",
+    "link": "https://cloud.google.com/blog/products/infrastructure-modernization/google-cloud-modernize-accelerate-transformation-with-ai",
+    "date": "2026-10-05T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Our approach to EU text provenance rules",
+    "link": "https://openai.com/index/eu-text-provenance",
+    "date": "2026-10-05T15:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Everything we launched during Birthday Week 2026",
+    "link": "https://blog.cloudflare.com/birthday-week-2026-wrap-up",
+    "date": "2026-10-05T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Cloudflare WAN, Magic Transit, Cloudflare One - BGP over IPsec and GRE tunnels generally available",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-05-bgp-over-tunnels-ga",
+    "date": "2026-10-05T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
     "title": "Reverse engineering the Variax guitar",
     "link": "https://blog.brixit.nl/variax",
     "date": "2026-10-04T16:27:30Z",
@@ -14,67 +63,11 @@
     "source_link": "https://xeiaso.net/"
   },
   {
-    "title": "Pluralistic: Economic probabilities for our grandchildren (03 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/03/full-employment",
-    "date": "2026-10-03T12:07:59Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments",
-    "date": "2026-10-02T20:18:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
-    "link": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer",
-    "date": "2026-10-02T19:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "8 major updates to Cloudflare Observability",
-    "link": "https://blog.cloudflare.com/one-observability-platform",
-    "date": "2026-10-02T18:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "A model guide for the GPT-6 family",
-    "link": "https://openai.com/index/practical-guide-building-gpt-6",
-    "date": "2026-10-02T16:15:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
-    "link": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern",
-    "date": "2026-10-02T15:48:26Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "AI Gateway, Web Search API - Introducing Web Search API",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api",
-    "date": "2026-10-02T13:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
     "title": "Google is supporting water resilience in Chile.",
     "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/water-resilience-chile",
     "date": "2026-09-30T18:34:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
-    "link": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware",
-    "date": "2026-09-30T15:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Summary of changes for September 2026",
@@ -89,6 +82,13 @@
     "date": "2026-09-29T23:38:50Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
+    "link": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle",
+    "date": "2026-09-28T15:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Replacing the old battery on rechargeable bike lights",
