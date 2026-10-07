@@ -1,5 +1,54 @@
 [
   {
+    "title": "Building a context-aware AI assistant on AgentCore and OpenClaw",
+    "link": "https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw",
+    "date": "2026-10-06T19:19:15Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Announcing MCP Toolbox Java SDK v1.0: Agentic data access for the enterprise",
+    "link": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise",
+    "date": "2026-10-06T19:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "The keys to the Internet change on October 11. Are you ready?",
+    "link": "https://blog.cloudflare.com/root-ksk-2024-rollover",
+    "date": "2026-10-06T17:50:11Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "AWS Batch now publishes job metrics to Amazon CloudWatch",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics",
+    "date": "2026-10-06T17:30:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+    "link": "https://openai.com/index/atlassian-partnership",
+    "date": "2026-10-06T16:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Pluralistic: Swapping money for expertise (06 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/06/nonfungible",
+    "date": "2026-10-06T12:58:26Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "AI Gateway - Standardize provider credential error responses in AI Gateway",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-05-provider-credential-errors",
+    "date": "2026-10-06T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
     "title": "Reverse engineering the Variax guitar",
     "link": "https://blog.brixit.nl/variax",
     "date": "2026-10-04T16:27:30Z",
@@ -12,55 +61,6 @@
     "date": "2026-10-04T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
-  },
-  {
-    "title": "Pluralistic: Economic probabilities for our grandchildren (03 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/03/full-employment",
-    "date": "2026-10-03T12:07:59Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments",
-    "date": "2026-10-02T20:18:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
-    "link": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer",
-    "date": "2026-10-02T19:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "8 major updates to Cloudflare Observability",
-    "link": "https://blog.cloudflare.com/one-observability-platform",
-    "date": "2026-10-02T18:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "A model guide for the GPT-6 family",
-    "link": "https://openai.com/index/practical-guide-building-gpt-6",
-    "date": "2026-10-02T16:15:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
-    "link": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern",
-    "date": "2026-10-02T15:48:26Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "AI Gateway, Web Search API - Introducing Web Search API",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api",
-    "date": "2026-10-02T13:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Google is supporting water resilience in Chile.",
@@ -105,13 +105,6 @@
     "source_link": "https://drewdevault.com"
   },
   {
-    "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
-    "link": "https://cadence.moe/blog/2026-09-10-we-spoke-with-entrepreneurs-living-the-7-vibe-3-lifestyle",
-    "date": "2026-09-10T07:00:01Z",
-    "source": "Cadence's Weblog",
-    "source_link": "https://cadence.moe/blog"
-  },
-  {
     "title": "Changes to SourceHut's terms of service regarding LLMs",
     "link": "https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms",
     "date": "2026-08-27T00:00:00Z",
@@ -138,5 +131,12 @@
     "date": "2026-07-18T00:00:00Z",
     "source": "TheEvilSkeleton",
     "source_link": "https://tesk.page/"
+  },
+  {
+    "title": "My perfect Berlin weekend",
+    "link": "https://ines.io/blog/my-perfect-berlin-weekend",
+    "date": "2026-06-25T00:00:00Z",
+    "source": "ines.io",
+    "source_link": "https://ines.io"
   }
 ]
