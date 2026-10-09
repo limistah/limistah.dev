@@ -1,52 +1,73 @@
 [
   {
-    "title": "Building a context-aware AI assistant on AgentCore and OpenClaw",
-    "link": "https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw",
-    "date": "2026-10-06T19:19:15Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Announcing MCP Toolbox Java SDK v1.0: Agentic data access for the enterprise",
-    "link": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise",
-    "date": "2026-10-06T19:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "The keys to the Internet change on October 11. Are you ready?",
-    "link": "https://blog.cloudflare.com/root-ksk-2024-rollover",
-    "date": "2026-10-06T17:50:11Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "AWS Batch now publishes job metrics to Amazon CloudWatch",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics",
-    "date": "2026-10-06T17:30:00Z",
+    "title": "OpenAI GPT-6.1 Sol now supports Ultrafast mode on Amazon Bedrock",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-sol-ultrafast-amazon",
+    "date": "2026-10-08T19:41:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-    "link": "https://openai.com/index/atlassian-partnership",
-    "date": "2026-10-06T16:00:00Z",
+    "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+    "link": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments",
+    "date": "2026-10-08T18:33:29Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+    "link": "https://openai.com/index/oracle",
+    "date": "2026-10-08T16:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
   },
   {
-    "title": "Pluralistic: Swapping money for expertise (06 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/06/nonfungible",
-    "date": "2026-10-06T12:58:26Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
+    "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+    "link": "https://blog.cloudflare.com/radar-redesign",
+    "date": "2026-10-08T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
   },
   {
-    "title": "AI Gateway - Standardize provider credential error responses in AI Gateway",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-05-provider-credential-errors",
-    "date": "2026-10-06T00:00:00Z",
+    "title": "Google Cloud introduces the Gemini agent.",
+    "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work",
+    "date": "2026-10-08T12:05:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Workflows, Workers - Create Workflow instance batches by count or list",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form",
+    "date": "2026-10-08T12:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Innovation in Ireland: How Irish brands scale with Gemini Enterprise",
+    "link": "https://cloud.google.com/blog/topics/customers/ireland-innovation-companies-startups-governments-scale-with-gemini",
+    "date": "2026-10-08T12:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Inbox Zero for Privacy, not Productivity",
+    "link": "https://xn--gckvb8fzb.com/inbox-zero-for-privacy-not-productivity",
+    "date": "2026-10-08T11:32:21Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+    "link": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations",
+    "date": "2026-10-07T15:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
+  },
+  {
+    "title": "Pluralistic: Disloyalty (07 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/07/gouged",
+    "date": "2026-10-07T13:58:46Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
   },
   {
     "title": "Reverse engineering the Variax guitar",
@@ -63,32 +84,11 @@
     "source_link": "https://xeiaso.net/"
   },
   {
-    "title": "Google is supporting water resilience in Chile.",
-    "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/water-resilience-chile",
-    "date": "2026-09-30T18:34:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
-    "link": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware",
-    "date": "2026-09-30T15:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "Summary of changes for September 2026",
     "link": "https://100r.ca/site/log.html",
     "date": "2026-09-30T07:00:00Z",
     "source": "Hundred Rabbits",
     "source_link": "https://100r.ca"
-  },
-  {
-    "title": "Updates 2026/Q3",
-    "link": "https://xn--gckvb8fzb.com/updates-2026-q3",
-    "date": "2026-09-29T23:38:50Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "Replacing the old battery on rechargeable bike lights",
@@ -103,6 +103,13 @@
     "date": "2026-09-23T00:00:00Z",
     "source": "Drew DeVault's blog",
     "source_link": "https://drewdevault.com"
+  },
+  {
+    "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
+    "link": "https://cadence.moe/blog/2026-09-10-we-spoke-with-entrepreneurs-living-the-7-vibe-3-lifestyle",
+    "date": "2026-09-10T07:00:01Z",
+    "source": "Cadence's Weblog",
+    "source_link": "https://cadence.moe/blog"
   },
   {
     "title": "Changes to SourceHut's terms of service regarding LLMs",
@@ -131,12 +138,5 @@
     "date": "2026-07-18T00:00:00Z",
     "source": "TheEvilSkeleton",
     "source_link": "https://tesk.page/"
-  },
-  {
-    "title": "My perfect Berlin weekend",
-    "link": "https://ines.io/blog/my-perfect-berlin-weekend",
-    "date": "2026-06-25T00:00:00Z",
-    "source": "ines.io",
-    "source_link": "https://ines.io"
   }
 ]
