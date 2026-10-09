@@ -1,0 +1,49 @@
+../
+limistah.dev/
+| .claude/
+| .git/
+| .github/
+| Claude outputs/
+| assets/
+| config/
+| content/
+| | books/
+| | essays/
+| | introduction to algorithms/
+| | | 001-chapter-one/
+| | | 002-chapter-two/
+| | | 003-chapter-three/
+| | | | _index.md
+| | journals/
+| | log/
+| | posts/
+| | writing/
+| | about.md
+| | ai.md
+| | archive.md
+| | library.md
+| | links.md*
+| | now.md
+| | readings.md
+| | search.md
+| | uses.md
+| data/
+| docs/
+| layouts/
+| public/
+| redesign/
+| resources/
+| static/
+| themes/
+| .DS_Store
+| .gitignore
+| .gitmodules
+| .hugo_build.lock
+| DESIGN.md
+| LICENSE
+| Makefile
+| PRODUCT.md
+| README.md
+| VOUCHED.td
+| config.yml
+| openring.sh*
