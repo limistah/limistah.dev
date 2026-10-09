@@ -3,7 +3,7 @@ title: Agentic Software Engineering And The Future of Open Source
 date: 2026-09-28
 tags: [swe, agents, open source]
 category: ai
-summary: Open source has thrived on the idea of cheap, readily available, and duly tested code. With AI SWE development agents making code a lot cheaper, can open source survive the next stage of SWE, and if it can, what kind of projects would survive?
+summary: Open source has thrived on cheap, readily available, and well-tested code. With AI SWE development agents making code much cheaper, can open source survive the next stage of SWE, and if so, what kind of projects would survive?
 ---
 
 ### Motivation
@@ -54,11 +54,11 @@ In recent years, we have witnessed software written by agents more than humans, 
 
 What I have seen this create is way beyond imaginable. Features are now released in hours, not even days; projects are shipped in a couple of days, and ideas to execution are just a prompt away. This era is also reducing the cost of fixing mistakes due to software bugs to become negligible - a bottleneck for most of the software that I have experienced.
 
-What I also witnessed, which is what motivated this post, is how software can contain a handful of features of a similar but bigger project in the core of a single project. This reduces the bloat from the original software. In my case, it was introducing telemetry into my project; rather than install and provision a full-fledged OTel software, I built and maintain one, handling the metrics how I want, subconsciously reducing bloat.
+What I also witnessed, which is what motivated this post, is how software can contain a handful of features of a similar but bigger project in the core of a single project. This reduces the bloat from the original software. In my case, it was introducing telemetry into my project; rather than installing and provisioning a full-fledged OTel software, I built and maintain one, handling the metrics how I want, subconsciously reducing bloat.
 
 ## Bespoke softwares
 
-With the cost of fixing mistakes down to a minimum, we are already witnessing the age of custom software, games, and tools. I am working on Sonde, for example, a TUI database client to work exactly how I interact with databases every day. There are many options that I can choose from, all of which have features that I need scattered among them, and it is uneconomical that I keep two subscriptions for the same kind of software.
+With the cost of fixing mistakes down to a minimum, we are already witnessing the age of custom software, games, and tools[^1]. I am working on Sonde, for example, a TUI database client to work exactly how I interact with databases every day. There are many options that I can choose from, all of which have features that I need scattered among them, and it is uneconomical that I keep two subscriptions for the same kind of software.
 
 The cost of the software also contributes to this increase we now experience in bespoke software. Table Plus would charge $100 for a minor update and a re-subscription for a major upgrade. I can keep that cost, rebuild my version of the software by subscribing to one of the agentic coding software options and prompting it till I get my desired result at a fraction of the cost that Table Plus wants to charge me.
 
@@ -70,12 +70,16 @@ I will not ignore the fact that I can think like this because I am a professiona
 
 Aside from the AI-generated PRs that open source projects currently battle with, I believe open source will continue to thrive for a number of reasons.
 
-Even though the cost of correcting mistakes is negligible in this modern era, I believe the success of open source has not been about just writing software, but rather the accumulation of human intelligence targeted towards solving a particular problem. AI can help discover the patterns and provide better insights, but deriving that insight from AI still requires natural intelligence, and there has never been a single way to do that - stupid or smart.
+Even though the cost of correcting mistakes is negligible in this modern era, I believe the success of open source has not been about just writing software, but rather the accumulation of human intelligence targeted towards solving a particular problem. AI can help discover patterns and provide better insights, but deriving that insight from AI still requires natural intelligence, and there has never been a single way to do that - stupid or smart.
 
-Collaboration as humans is accepting our weaknesses as much as we project our strengths, and merging those strengths inadvertently blurring out the weaknesses. I can make progress with my bespoke TUI, but the ideas and how I use it would remain how I use it: features that I find interesting and having the time in the first place to drive my agent to get me the right result, still ignoring my experience as a software engineer.
+Collaboration, as humans, is accepting our weaknesses as much as we project our strengths, and merging those strengths inadvertently blurring out the weaknesses. I can make progress with my bespoke TUI, but the ideas and how I use it would remain how I use it: features that I find interesting and having the time in the first place to drive my agent to get me the right result, still ignoring my experience as a software engineer.
 
 Part of collaboration is also knowing what not to do; bespoke software is as dangerous as a monarchy form of government: it can die too fat, consisting of more interesting but useless features than it needs, or too thin, starved of innovation that it should. Collaboration merges ideas, correcting the direction of our thoughts; great ideas have never been monopolized, and I believe agentic software engineering will not create that monopoly.
 
 To open source, agentic software engineering is that threat that targets substitution and not entirely replacement. The quality of a project would always be centered around the quality of its original ideas, execution, and maintainers.
 
 _Salut!!_
+
+
+
+[^1]: A very good example is the [Plex Native](https://plxnative.com) software.
