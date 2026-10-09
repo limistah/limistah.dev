@@ -22,7 +22,7 @@ Enjoy...
 
 When I started professional coding in the late 2010s, [Laravel](https://laravel.com), [React](https://react.dev), [Angular](https://angular.dev), [Symfony](https://symfony.com), [Yii](https://yiiframework.com), and many other great projects were opportunities for entry-level engineers to showcase their skills. Later, I discovered the [CloudNative Foundation](https://www.cncf.io/) with good projects like Linux itself, Kubernetes, and many other awesome works. They helped me shape my ideas on what good software should be and the design decisions behind it, even though I was not part of a very big tech company.
 
-While working on one of the projects on [ObjectSpread](https://objectspread.com), I faced an issue that required solving unexpected undefined functions at runtime, and the solution came from a poke that I made earlier into the Vue.js codebase to discover the use of noop(_I pronounce it as _nuupe_ instead of No-OP).
+While working on one of the projects on [ObjectSpread](https://objectspread.com), I faced an issue that required solving unexpected [undefined functions at runtime](https://stackoverflow.com/questions/30960322/function-is-undefined-error-when-dealing-with-defined-functions-in-javascript), and the solution came from a poke that I made earlier into the Vue.js codebase to discover the use of noop(_I pronounce it as _nuupe_ instead of [No-OP](https://en.wikipedia.org/wiki/NOP_(code))).
 
 Another design pattern I learnt is from the decomposition and statefulness of the entire Kubernetes Ecosystem; bringing the ideas of states to machine processes was very unintuitive to me, not until I started solving similar problems and even adjacent ones for that concept to eventually stick.
 
@@ -42,7 +42,7 @@ Regardless, for a software to be adopted, it has to solve a popular problem in a
 
 ## Successful Open Source Projects
 
-The problem with successful open source projects is that they eventually grow too big to solve that sole problem they were to solve. Some projects try to keep the feature set smaller and relevant by enforcing standards on feature request approvals; regardless, the decision to make a pull request change part of the main project sits on the shoulders of the maintainers.
+The problem with successful open source projects is that they eventually [grow too big](https://en.wikipedia.org/wiki/Software_bloat) to solve that sole problem they were to solve. Some projects try to keep the feature set smaller and relevant by enforcing standards on feature request approvals; regardless, the decision to make a pull request change part of the main project sits on the shoulders of the maintainers.
 
 Paid software tends to suffer this the most, since the customer is _always_ right; they eventually grow so much to include features that cater to a fraction of the customers, even though the core of the software remains or suffers due to the bloat created by customer requests.
 
@@ -50,7 +50,7 @@ In both cases, successful projects contain what the end consumer needs and more 
 
 ## Agentic Softwares
 
-In recent years, we have witnessed software written by agents more than humans, facilitated by improvements in agentic software development tools, and I believe we are not going back to the age of crunching the keyboard for some kind of software.
+In recent years, we have witnessed software written by agents more than humans, facilitated by improvements in [agentic software development tools](https://www.forrester.com/blogs/agentic-software-development-defining-the-next-phase-of-ai-driven-engineering-tools/), and I believe we are not going back to the age of crunching the keyboard for some kind of software.
 
 What I have seen this create is way beyond imaginable. Features are now released in hours, not even days; projects are shipped in a couple of days, and ideas to execution are just a prompt away. This era is also reducing the cost of fixing mistakes due to software bugs to become negligible - a bottleneck for most of the software that I have experienced.
 
