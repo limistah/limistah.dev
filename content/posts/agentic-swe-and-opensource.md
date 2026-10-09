@@ -78,4 +78,4 @@ Part of collaboration is also knowing what not to do, a bespoke software is as d
 
 To open source, agentic software engineering is that threat that targets substitution and not entirely replacement. The quality of a project would always be centered around the quality of its original ideas, exectution and maintainers.
 
-Salut!!
+_Salut!!_
