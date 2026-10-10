@@ -1,31 +1,52 @@
 [
   {
-    "title": "OpenAI GPT-6.1 Sol now supports Ultrafast mode on Amazon Bedrock",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-sol-ultrafast-amazon",
-    "date": "2026-10-08T19:41:00Z",
+    "title": "Agents - Cloudflare API MCP server serves Cloudflare skills",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills",
+    "date": "2026-10-10T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "AWS Security Hub now exports findings to S3 in CSV or JSON format",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json",
+    "date": "2026-10-09T22:00:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
-    "link": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments",
-    "date": "2026-10-08T18:33:29Z",
+    "title": "Pluralistic: Thwarted (09 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/09/impunitism",
+    "date": "2026-10-09T19:48:39Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+    "link": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal",
+    "date": "2026-10-09T18:27:34Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Modernizing Unstructured Data Workflows: Alteryx Live Query meets Google Cloud BigQuery",
+    "link": "https://cloud.google.com/blog/products/data-analytics/modernize-unstructured-data-workloads-with-alteryx-and-bigquery",
+    "date": "2026-10-09T16:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "ICYMI: What landed for AI builders in September 2026",
+    "link": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026",
+    "date": "2026-10-09T15:38:39Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-    "link": "https://openai.com/index/oracle",
-    "date": "2026-10-08T16:00:00Z",
+    "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "link": "https://openai.com/index/sophos",
+    "date": "2026-10-09T07:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
-    "link": "https://blog.cloudflare.com/radar-redesign",
-    "date": "2026-10-08T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
   },
   {
     "title": "Google Cloud introduces the Gemini agent.",
@@ -33,20 +54,6 @@
     "date": "2026-10-08T12:05:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "Innovation in Ireland: How Irish brands scale with Gemini Enterprise",
-    "link": "https://cloud.google.com/blog/topics/customers/ireland-innovation-companies-startups-governments-scale-with-gemini",
-    "date": "2026-10-08T12:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Workflows, Workers - Create Workflow instance batches by count or list",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form",
-    "date": "2026-10-08T12:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Inbox Zero for Privacy, not Productivity",
@@ -61,13 +68,6 @@
     "date": "2026-10-07T15:00:00Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "Pluralistic: Disloyalty (07 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/07/gouged",
-    "date": "2026-10-07T13:58:46Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
   },
   {
     "title": "Reverse engineering the Variax guitar",
@@ -105,6 +105,13 @@
     "source_link": "https://drewdevault.com"
   },
   {
+    "title": "We Spoke With Entrepreneurs Living the \"7 Vibe 3\" Lifestyle",
+    "link": "https://cadence.moe/blog/2026-09-10-we-spoke-with-entrepreneurs-living-the-7-vibe-3-lifestyle",
+    "date": "2026-09-10T07:00:01Z",
+    "source": "Cadence's Weblog",
+    "source_link": "https://cadence.moe/blog"
+  },
+  {
     "title": "Changes to SourceHut's terms of service regarding LLMs",
     "link": "https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms",
     "date": "2026-08-27T00:00:00Z",
@@ -131,12 +138,5 @@
     "date": "2026-07-18T00:00:00Z",
     "source": "TheEvilSkeleton",
     "source_link": "https://tesk.page/"
-  },
-  {
-    "title": "My perfect Berlin weekend",
-    "link": "https://ines.io/blog/my-perfect-berlin-weekend",
-    "date": "2026-06-25T00:00:00Z",
-    "source": "ines.io",
-    "source_link": "https://ines.io"
   }
 ]
