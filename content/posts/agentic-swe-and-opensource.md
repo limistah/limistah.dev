@@ -25,7 +25,7 @@ When I started coding professionally in the late 2010s, [Laravel](https://larave
 
 Reading code taught me specific things. The solution to a runtime bug on one of the [ObjectSpread](https://objectspread.com) projects came from an earlier poke that I'd made into the Vue.js codebase, where I found `noop` (I pronounce it *nuupe*, not [No-OP](https://en.wikipedia.org/wiki/NOP_%28code%29)). Kubernetes taught me to treat state as a first-class idea for machine processes, which felt unintuitive until I started solving similar problems myself.
 
-Process was the deeper lesson: approvals, reviews, formatting standards, deciding what feature gets in and what doesn't, even spotting duplicate bug reports. Open source taught me how today's decisions are deductible taxes from tomorrow's work, and other people's too.
+The deeper lesson was process: approvals, reviews, formatting standards, deciding what feature gets in and what doesn't, and even spotting duplicate bug reports. Open source taught me how today's decisions are deductible taxes from tomorrow's work, and other people's too.
 
 ## Open Source was an answer
 
@@ -33,13 +33,27 @@ Open source answered scarcity. Good software is expensive to write, so it is rat
 
 How many people a project needs varies. Some succeed with a single maintainer, like my own [ObjectSpread](https://objecspread.com/) libraries. Others need a handful of people. The [Linux Kernel](https://github.com/torvalds/linux) requires the whole of humanity. 
 
-The decision on what investment a project can get is driven by the public on different criteria: immediate industry need (Linux), the backing of a group (React, Angular), or the reach of one individual (Laravel). Many projects never get past a few stars. In every case, adoption requires solving a popular problem in a generally acceptable way.
+The public decides what investment a project gets based on different criteria: immediate industry need (Linux), backing from a group (React, Angular), or the reach of one individual (Laravel). Many projects never get past a few stars. In every case, adoption requires solving a popular problem in a generally acceptable way.
 
 ## The bloat problem
 
 Successful projects [grow too big](https://en.wikipedia.org/wiki/Software_bloat) for the problem they set out to solve. Open source projects try to resist this by gatekeeping feature requests. Regardless, the decision always rests on the maintainers' shoulders. Paid software suffers more, because the customer is *always* right. Features that serve a fraction of customers pile up while the core suffers.
 
 Either way, a successful project ends up containing what you need, plus a lot you don't, plus some things you might need someday.
+
+## The three failing costs
+
+Writing code is now cheap; Features now ship in hours. Projects ship in days, and going from idea to execution is just one prompt away. Personally, don't expect us to go back to when we hand-crunch every line.
+
+The cost of making mistakes is dead cheap, pulling the cost of correcting them along with it. This used to be the bottleneck for most software I've worked on. But the cost is not zero. 
+
+Finding a bug, trusting the fix, securing the system, and maintaining it for years all still cost something. They are just cheaper than before.
+
+This is the one I think gets underestimated. Agents aren't only writing code; they're reading other people's code. Look at [game decompilation](https://stephenjayakar.com/posts/magic-decomp/). Now agents have compressed the years of work for volunteer projects reverse-engineering a single title.
+
+A matching decompilation is the forte of agents because it has an in-built judge: the recompiled output either matches the original binary or it doesn't. Older, smaller games with well-documented hardware are much easier to decompile than modern titles; however, recovered code still doesn't have the exact intention of the authors. But it removed a significant barrier: _The code you can't see is no longer code you can't understand._
+
+
 ## Successful Open Source Projects
 
 The problem with successful open source projects is that they eventually [grow too big](https://en.wikipedia.org/wiki/Software_bloat) to solve that sole problem they were to solve. Some projects try to keep the feature set smaller and relevant by enforcing standards on feature request approvals; regardless, the decision to make a pull request change part of the main project sits on the shoulders of the maintainers.
