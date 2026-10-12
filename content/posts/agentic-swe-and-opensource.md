@@ -5,41 +5,41 @@ tags: [swe, agents, open source]
 category: ai
 summary: Open source has thrived on cheap, readily available, and well-tested code. With AI SWE development agents making code much cheaper, can open source survive the next stage of SWE, and if so, what kind of projects would survive?
 ---
+**The short version:** Agents are making software cheaper to write, cheaper to fix, and now cheaper to read. This kills projects that are solely feature-based, but projects whose value is accumulated knowledge, standards, and people survive. In the end, open source will be substituted, not replaced.
 
 ### Motivation
 
-Recently, I have been writing bespoke software to fit my daily usage of similar software, which has given birth to three unique projects so far: [Heimdal](https://github.com/limistah/heimdal/wiki), [Markview](https://markview.objectspread.com), and now, Sonde.
+Lately I've been writing bespoke software to fit how I actually use my tools. And has birthed three projects so far: [Heimdal](https://github.com/limistah/heimdal/wiki), [Markview](https://markview.objectspread.com), and now Sonde.
 
-Also, I have recently been adding bespoke observability into entities of one of the systems that I contribute to. Jaeger and OTel can work here, but with the specific requirements and some constraints on the deployment environment, I am constrained to make the solution custom to the system.
+I've also been adding custom observability to entities in a system I contribute to. Jaeger and OTel could work, but given our requirements and the constraints of the deployment environment, a purpose-built solution made more sense. I employed my knowledge of general patterns that were implemented by agents.
 
-My idea is to use the best-known patterns, then apply them to those entities - thanks to AI agents' pattern recognition abilities. Now I ask:
+That left me with a question:
 
-> **_What kind of open source projects will survive the next phase of SWE, and which kind will not_**.
+> **What kinds of open source projects will survive the next phase of SWE, and which won't?**
 
-Enjoy...
+Enjoy…
 
-## In the beginning
+## What open source taught me
 
-When I started professional coding in the late 2010s, [Laravel](https://laravel.com), [React](https://react.dev), [Angular](https://angular.dev), [Symfony](https://symfony.com), [Yii](https://yiiframework.com), and many other great projects were opportunities for entry-level engineers to showcase their skills. Later, I discovered the [CloudNative Foundation](https://www.cncf.io/) with good projects like Linux itself, Kubernetes, and many other awesome works. They helped me shape my ideas on what good software should be and the design decisions behind it, even though I was not part of a very big tech company.
+When I started coding professionally in the late 2010s, [Laravel](https://laravel.com), [React](https://react.dev), [Angular](https://angular.dev), [Symfony](https://symfony.com), and [Yii](https://yiiframework.com) gave entry-level engineers a place to show their skills. Later I found the [CNCF](https://www.cncf.io/), with Kubernetes and other great projects, and they shaped my idea of what good software is, even though I wasn't at a big tech company.
 
-While working on one of the projects on [ObjectSpread](https://objectspread.com), I faced an issue that required solving unexpected [undefined functions at runtime](https://stackoverflow.com/questions/30960322/function-is-undefined-error-when-dealing-with-defined-functions-in-javascript), and the solution came from a poke that I made earlier into the Vue.js codebase to discover the use of noop(_I pronounce it as _nuupe_ instead of [No-OP](https://en.wikipedia.org/wiki/NOP_(code))).
+Reading code taught me specific things. The solution to a runtime bug on one of the [ObjectSpread](https://objectspread.com) projects came from an earlier poke that I'd made into the Vue.js codebase, where I found `noop` (I pronounce it *nuupe*, not [No-OP](https://en.wikipedia.org/wiki/NOP_%28code%29)). Kubernetes taught me to treat state as a first-class idea for machine processes, which felt unintuitive until I started solving similar problems myself.
 
-Another design pattern I learnt is from the decomposition and statefulness of the entire Kubernetes Ecosystem; bringing the ideas of states to machine processes was very unintuitive to me, not until I started solving similar problems and even adjacent ones for that concept to eventually stick.
+Process was the deeper lesson: approvals, reviews, formatting standards, deciding what feature gets in and what doesn't, even spotting duplicate bug reports. Open source taught me how today's decisions are deductible taxes from tomorrow's work, and other people's too.
 
-Also, the idea that software quality should be gated behind defined and established processes was new to me. Approvals and reviews, coding standards and formatting guidelines, what feature is accepted and what is not, even to the point of determining duplicate bug requests.
+## Open Source was an answer
 
-All these ideas were formed by my involvement in the open-source community; I learned about how my current decisions affect my future work, as well as other team members, even if they are subordinates.
+Open source answered scarcity. Good software is expensive to write, so it is rational to share. Projects like [Linux](https://linux.org), [FFmpeg](https://ffmpeg.org), [VLC](https://code.videolan.org/videolan/vlc), and the language compilers have helped humanity adopt computers.
 
-## Open source was an answer
+How many people a project needs varies. Some succeed with a single maintainer, like my own [ObjectSpread](https://objecspread.com/) libraries. Others need a handful of people. The [Linux Kernel](https://github.com/torvalds/linux) requires the whole of humanity. 
 
-The idea of open source is to provide free software for the general public, and it has served just that. Projects like [Linux](https://linux.org), [Ffmpeg](https://ffmpeg.org), [Language Compilers](https://github.com/BaseMax/AwesomeCompiler), [VLC](https://code.videolan.org/videolan/vlc) have helped humanity adopt and use computers. But it was at the cost of what software the general public needed to invest in, and how much investment it required.
+The decision on what investment a project can get is driven by the public on different criteria: immediate industry need (Linux), the backing of a group (React, Angular), or the reach of one individual (Laravel). Many projects never get past a few stars. In every case, adoption requires solving a popular problem in a generally acceptable way.
 
-Some software can be successful with a single maintainer, like the case of my [objectspread](https://objectspread.com) libraries; for some, like the [Linux Kernel](https://github.com/torvalds/linux), they require the entire humanity to survive; others only need a handful of people.
+## The bloat problem
 
-That decision was never made by the internet or the owner of the libraries; it is decided by the general public on many different criteria. Some are based on the immediate need of the public/industry, like the case of the Linux Kernel; some are because of a certain group of people, like the case of React/Angular, or by an individual, as in the case of Laravel - some individual projects never got past a few stars.
+Successful projects [grow too big](https://en.wikipedia.org/wiki/Software_bloat) for the problem they set out to solve. Open source projects try to resist this by gatekeeping feature requests. Regardless, the decision always rests on the maintainers' shoulders. Paid software suffers more, because the customer is *always* right. Features that serve a fraction of customers pile up while the core suffers.
 
-Regardless, for a software to be adopted, it has to solve a popular problem in a generally acceptable way; it is a learning or useful personal project open-sourced by the owner.
-
+Either way, a successful project ends up containing what you need, plus a lot you don't, plus some things you might need someday.
 ## Successful Open Source Projects
 
 The problem with successful open source projects is that they eventually [grow too big](https://en.wikipedia.org/wiki/Software_bloat) to solve that sole problem they were to solve. Some projects try to keep the feature set smaller and relevant by enforcing standards on feature request approvals; regardless, the decision to make a pull request change part of the main project sits on the shoulders of the maintainers.
