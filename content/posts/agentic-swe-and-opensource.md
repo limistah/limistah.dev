@@ -53,32 +53,15 @@ This is the one I think gets underestimated. Agents aren't only writing code; th
 
 A matching decompilation is the forte of agents because it has an in-built judge: the recompiled output either matches the original binary or it doesn't. Older, smaller games with well-documented hardware are much easier to decompile than modern titles; however, recovered code still doesn't have the exact intention of the authors. But it removed a significant barrier: _The code you can't see is no longer code you can't understand._
 
+## Bespoke software
 
-## Successful Open Source Projects
+Right now, everyone can tailor software to what they need. Sonde is a TUI database client that works exactly how I interact with databases every day. I could pick from many database client options, but the features I need are scattered across them, and it is uneconomical that I keep two subscriptions for the same tooling software.
 
-The problem with successful open source projects is that they eventually [grow too big](https://en.wikipedia.org/wiki/Software_bloat) to solve that sole problem they were to solve. Some projects try to keep the feature set smaller and relevant by enforcing standards on feature request approvals; regardless, the decision to make a pull request change part of the main project sits on the shoulders of the maintainers.
+Price can also be a concern. TablePlus costs around $100 for a minor update and a new subscription for a major one. I can instead subscribe to an agentic coding tool and prompt until I get the result I want, at a fraction of the cost. We're already seeing custom software, games, and tools appear this way[^1].
 
-Paid software tends to suffer this the most, since the customer is _always_ right; they eventually grow so much to include features that cater to a fraction of the customers, even though the core of the software remains or suffers due to the bloat created by customer requests.
+Yes, the price of software covers bug fixes, security patches, and upgrades. Agentic engineering has made those cheaper too, even for solo engineers.
 
-In both cases, successful projects contain what the end consumer needs and more of what they don't, but might need.
-
-## Agentic Softwares
-
-In recent years, we have witnessed software written by agents more than humans, facilitated by improvements in [agentic software development tools](https://www.forrester.com/blogs/agentic-software-development-defining-the-next-phase-of-ai-driven-engineering-tools/), and I believe we are not going back to the age of crunching the keyboard for some kind of software.
-
-What I have seen this create is way beyond imaginable. Features are now released in hours, not even days; projects are shipped in a couple of days, and ideas to execution are just a prompt away. This era is also reducing the cost of fixing mistakes due to software bugs to become negligible - a bottleneck for most of the software that I have experienced.
-
-What I also witnessed, which is what motivated this post, is how software can contain a handful of features of a similar but bigger project in the core of a single project. This reduces the bloat from the original software. In my case, it was introducing telemetry into my project; rather than installing and provisioning a full-fledged OTel software, I built and maintain one, handling the metrics how I want, subconsciously reducing bloat.
-
-## Bespoke softwares
-
-With the cost of fixing mistakes down to a minimum, we are already witnessing the age of custom software, games, and tools[^1]. I am working on Sonde, for example, a TUI database client to work exactly how I interact with databases every day. There are many options that I can choose from, all of which have features that I need scattered among them, and it is uneconomical that I keep two subscriptions for the same kind of software.
-
-The cost of the software also contributes to this increase we now experience in bespoke software. Table Plus would charge $100 for a minor update and a re-subscription for a major upgrade. I can keep that cost, rebuild my version of the software by subscribing to one of the agentic coding software options and prompting it till I get my desired result at a fraction of the cost that Table Plus wants to charge me.
-
-We can argue that the cost of software is meant to cover bug fixes, security patches, updates, and upgrades. Again, agentic software engineering has reduced the cost of getting these done even for solo engineers.
-
-I will not ignore the fact that I can think like this because I am a professional software engineer with vast experience, and this is a disadvantage to non-software engineering professionals.
+I can think this way because I'm an experienced engineer, which is an advantage non-engineers don't have. Still, to be honest, bespoke software has hidden costs. My custom telemetry handles my metrics, but it doesn't carry the edge cases that thousands of other people's deployments exposed in OTel. It has no outside auditors and an exhaustible list of maintainers: myself.
 
 ## The Fate of Open Source
 
