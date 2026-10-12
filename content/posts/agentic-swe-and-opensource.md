@@ -43,15 +43,15 @@ Either way, a successful project ends up containing what you need, plus a lot yo
 
 ## The three failing costs
 
-Writing code is now cheap; Features now ship in hours. Projects ship in days, and going from idea to execution is just one prompt away. Personally, don't expect us to go back to when we hand-crunch every line.
+Writing code is now cheap; Features now ship in hours. Projects ship in days, and going from idea to execution is just one prompt away. Personally, I don't expect us to go back to when we hand-crunch every line of code.
 
 The cost of making mistakes is dead cheap, pulling the cost of correcting them along with it. This used to be the bottleneck for most software I've worked on. But the cost is not zero. 
 
 Finding a bug, trusting the fix, securing the system, and maintaining it for years all still cost something. They are just cheaper than before.
 
-This is the one I think gets underestimated. Agents aren't only writing code; they're reading other people's code. Look at [game decompilation](https://stephenjayakar.com/posts/magic-decomp/). Now agents have compressed the years of work for volunteer projects reverse-engineering a single title.
+The part I think gets underestimated is that Agents aren't only writing code; they also brilliantly read other people's code. Look at [game decompilation](https://stephenjayakar.com/posts/magic-decomp/). Now agents have compressed the years of work required for volunteer projects to reverse-engineer a single title.
 
-A matching decompilation is the forte of agents because it has an in-built judge: the recompiled output either matches the original binary or it doesn't. Older, smaller games with well-documented hardware are much easier to decompile than modern titles; however, recovered code still doesn't have the exact intention of the authors. But it removed a significant barrier: _The code you can't see is no longer code you can't understand._
+Ensuring the decompilation match is a natural forte for agents because the problem has an in-built judge: the recompiled output either matches the original binary or it doesn't. Older, smaller games with well-documented hardware are much easier to decompile than modern titles; however, recovered code still doesn't have the exact intention of the authors. But it removed a significant barrier: _The code you can't see is no longer code you can't understand._
 
 ## Bespoke software
 
@@ -62,6 +62,28 @@ Price can also be a concern. TablePlus costs around $100 for a minor update and 
 Yes, the price of software covers bug fixes, security patches, and upgrades. Agentic engineering has made those cheaper too, even for solo engineers.
 
 I can think this way because I'm an experienced engineer, which is an advantage non-engineers don't have. Still, to be honest, bespoke software has hidden costs. My custom telemetry handles my metrics, but it doesn't carry the edge cases that thousands of other people's deployments exposed in OTel. It has no outside auditors and an exhaustible list of maintainers: myself.
+
+## Who is most exposed
+
+This pressure falls hardest on paid software, and Adobe is a clear case. Even though Adobe revenue has kept rising, its shares fell below $275 in June [for the first time since 2019](https://stocksdownunder.com/adobe-adbe-2019-low-record-quarter/), as investors considers whether AI makes Creative Cloud easier to replace.
+
+The question is what the product's value actually is. If it's features, those can be copied. If it's file formats, workflows, collaboration, and trust, those are much harder to copy. The moat for paid software's was often the cost of reproduction, and that cost is shrinking. Open source never relied on that moat.
+
+## Which open source survives
+
+My hypothesis is that a project's survival depends on where its value lives. 
+
+Answering these three questions might help:
+
+1. **Is the value in the code, or in what the code encodes?** Edge cases, hardware quirks, standards, and years of bug reports are knowledge, and you can't prompt your way to them.
+2. **Does the project get stronger when many people agree on it?** Networks, formats, and shared protocols do.
+3. **Can one person cheaply verify that it's correct?** If so, an agent can rebuild it.
+
+Applying them:
+
+- **Likely to survive:** Linux, FFmpeg, compilers, and other standards-bound infrastructure. Their value is accumulated knowledge about reality, and a single verification will be insufficient. Agents can be used to amplify collaborations for survival. The decompilation projects themselves are community efforts that agents speed up rather than replace.
+- **Likely to be substituted:** these contains thin utilities, and bloated tools where only a subset of the features are used. My telemetry layer is an example. Why install a full OTel stack when I need ten percent of it?
+- **Genuinely uncertain:** the big frameworks like React and Laravel. Their value was partly code and partly a shared ecosystem. The code may become reproducible while the ecosystem keeps them alive.
 
 ## The Fate of Open Source
 
