@@ -65,13 +65,13 @@ I can think this way because I'm an experienced engineer, which is an advantage 
 
 ## Who is most exposed
 
-This pressure falls hardest on paid software, and Adobe is a clear case. Even though Adobe revenue has kept rising, its shares fell below $275 in June [for the first time since 2019](https://stocksdownunder.com/adobe-adbe-2019-low-record-quarter/), as investors considers whether AI makes Creative Cloud easier to replace.
+This pressure falls hardest on paid software, and Adobe is a clear case. Even though Adobe revenue has kept rising, its shares fell below $275 in June [for the first time since 2019](https://stocksdownunder.com/adobe-adbe-2019-low-record-quarter/), as investors consider whether AI makes Creative Cloud easier to replace.
 
-The question is what the product's value actually is. If it's features, those can be copied. If it's file formats, workflows, collaboration, and trust, those are much harder to copy. The moat for paid software's was often the cost of reproduction, and that cost is shrinking. Open source never relied on that moat.
+The question is what the product's value actually is. If it's features, those can be copied. If it's file formats, workflows, collaboration, and trust, those are much harder to copy. The moat for paid software was often the cost of reproduction, and that cost is shrinking. Open source never relied on that moat.
 
 ## Which open source survives
 
-My hypothesis is that a project's survival depends on where its value lives. 
+A project's survival will depend on where its value lives. 
 
 Answering these three questions might help:
 
@@ -82,23 +82,23 @@ Answering these three questions might help:
 Applying them:
 
 - **Likely to survive:** Linux, FFmpeg, compilers, and other standards-bound infrastructure. Their value is accumulated knowledge about reality, and a single verification will be insufficient. Agents can be used to amplify collaborations for survival. The decompilation projects themselves are community efforts that agents speed up rather than replace.
-- **Likely to be substituted:** these contains thin utilities, and bloated tools where only a subset of the features are used. My telemetry layer is an example. Why install a full OTel stack when I need ten percent of it?
+- **Likely to be substituted:** these contain thin utilities and bloated tools where only a subset of the features are used. My telemetry layer is an example. Why install a full OTel stack when I need ten percent of it?
 - **Genuinely uncertain:** the big frameworks like React and Laravel. Their value was partly code and partly a shared ecosystem. The code may become reproducible while the ecosystem keeps them alive.
 
-## The Fate of Open Source
+## Collaboration will always win
 
-Aside from the AI-generated PRs that open source projects currently battle with, I believe open source will continue to thrive for a number of reasons.
+In as much as I can make progress on my own TUI, it will only ever reflect how I use it: the features I find interesting, and the time I have to drive my agent. Even my experience as an engineer can not remove that limit.
 
-Even though the cost of correcting mistakes is negligible in this modern era, I believe the success of open source has not been about just writing software, but rather the accumulation of human intelligence targeted towards solving a particular problem. AI can help discover patterns and provide better insights, but deriving that insight from AI still requires natural intelligence, and there has never been a single way to do that - stupid or smart.
+Bespoke software is as dangerous as a monarchy. It can die too fat, full of interesting but useless features, or too thin, starved of the innovation it needs. An agent won't dissent. It builds what you ask for. In open source, review, approval, and refusal are what keep a project honest. 
 
-Collaboration, as humans, is accepting our weaknesses as much as we project our strengths, and merging those strengths inadvertently blurring out the weaknesses. I can make progress with my bespoke TUI, but the ideas and how I use it would remain how I use it: features that I find interesting and having the time in the first place to drive my agent to get me the right result, still ignoring my experience as a software engineer.
+Part of collaboration is knowing what not to do. Great ideas have never been monopolized, and I don't think agents will change that.
 
-Part of collaboration is also knowing what not to do; bespoke software is as dangerous as a monarchy form of government: it can die too fat, consisting of more interesting but useless features than it needs, or too thin, starved of innovation that it should. Collaboration merges ideas, correcting the direction of our thoughts; great ideas have never been monopolized, and I believe agentic software engineering will not create that monopoly.
+## The fate of open source
 
-To open source, agentic software engineering is that threat that targets substitution and not entirely replacement. The quality of a project would always be centered around the quality of its original ideas, execution, and maintainers.
+Aside from the AI-generated PRs open source projects currently fight, I believe open source will keep thriving. Its success was never just about writing software. It was the accumulation of human intelligence aimed at one problem. AI can find patterns, but turning them into insight still requires people – a lot of them, and there has never been a way to do that.
 
-_Salut!!_
+For open source, agentic engineering is a threat of **substitution, not replacement**. Projects whose value lives in features will shrink, and projects whose value lives in knowledge, standards, and the collaboration among the general public who maintain them will last. The quality of a project would always be centered around the quality of its original ideas, execution, and maintainers.
 
+*Salut!!*
 
-
-[^1]: A very good example is the [Plex Native](https://plxnative.com) software.
+[^1]: A good example is the [Plex Native](https://plxnative.com) software.
