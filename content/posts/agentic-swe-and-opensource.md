@@ -5,7 +5,6 @@ tags: [swe, agents, open source]
 category: ai
 summary: Open source has thrived on cheap, readily available, and well-tested code. With AI SWE development agents making code much cheaper, can open source survive the next stage of SWE, and if so, what kind of projects would survive?
 ---
-**The short version:** Agents are making software cheaper to write, cheaper to fix, and now cheaper to read. This kills projects that are solely feature-based, but projects whose value is accumulated knowledge, standards, and people survive. In the end, open source will be substituted, not replaced.
 
 ### Motivation
 
