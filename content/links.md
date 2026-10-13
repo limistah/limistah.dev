@@ -5,7 +5,7 @@ layout: "links"
 comments: false
 tocopen: false
 showPostNavLinks: false
-lastmod: 2026-10-12
+lastmod: 2026-10-13
 ---
 
 ### AI/ML
@@ -18,6 +18,9 @@ lastmod: 2026-10-12
 6. [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180#page=1.22)
 7. [Gaudi Architecture — Gaudi Documentation 1.23.0 documentation](https://docs.habana.ai/en/latest/Gaudi_Overview/Gaudi_Architecture.html)
 8. [amitshekhariitbhu/ai-engineering-course: AI Engineering Course](https://github.com/amitshekhariitbhu/ai-engineering-course) - A free and complete AI Engineering Course to learn AI Engineering step by step.
+9. [Machine Learning Specialization by Andrew Ng - YouTube](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI)
+10. [Stanford CS229: Machine Learning led by Andrew Ng | Autumn 2018 - YouTube](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+11. [Mathematical Foundations of Machine Learning (Intro)](https://www.youtube.com/playlist?list=PLgMDNELGJ1Cay-Q9Cn8KcpUcC58NDWuiu)
 
 ---
 
