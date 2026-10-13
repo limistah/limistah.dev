@@ -45,9 +45,9 @@ Either way, a successful project ends up containing what you need, plus a lot yo
 
 ## The three falling costs
 
-**Writing.** Code is now cheap. Features ship in hours, projects ship in days, and going from idea to execution is just one prompt away. Personally, I don't expect us to go back to hand-crunching every line of code.
+**Writing.** Code is now cheap. Features ship in hours, projects ship in days, and going from idea to execution is just one prompt away. The evidence is real but narrow. In a controlled experiment, developers with Copilot finished a bounded HTTP server task about 56% faster ([Peng et al.](https://arxiv.org/abs/2302.06590)). Yet when METR tested experienced developers on mature repositories they already knew, they took 19% longer with the early-2025 tools of the time ([METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)). The gap is the point: agents are strongest where a task is small and well-defined, and weakest where the value is accumulated context. That is the line this post is trying to draw. Personally, I don't expect us to go back to hand-crunching every line of code.
 
-**Fixing.** The cost of making mistakes is dead cheap, pulling the cost of correcting them along with it. This used to be the bottleneck for most software I've worked on. But the cost is not zero. Finding a bug, trusting the fix, securing the system, and maintaining it for years all still cost something. They are just cheaper than before.
+**Fixing.** The cost of making mistakes is dead cheap, pulling the cost of correcting them along with it. This used to be the bottleneck for most software I've worked on. But the cost is not zero. Finding a bug, trusting the fix, securing the system, and maintaining it for years all still cost something. In an analysis of more than 300,000 AI-authored commits across about 6,300 GitHub repositories, over one in five of the issues the AI introduced was still in the latest revision ([Liu et al.](https://arxiv.org/abs/2603.28592)). Most were code smells rather than outright bugs, and the study is observational, so it doesn't show AI code is worse than human code. It does show the debt is real, and it's the kind a solo maintainer quietly inherits.
 
 **Reading.** This is the one I think gets underestimated. Agents aren't only writing code; they also read other people's code very well. Look at [game decompilation](https://stephenjayakar.com/posts/magic-decomp/). Matching decompilation used to be a passion project that took volunteers years per title. Now a few specialists can direct agents through it and merge functions in bulk.
 
@@ -86,6 +86,8 @@ Applying them:
 - **Likely to survive:** Linux, FFmpeg, compilers, and other standards-bound infrastructure. Their value is accumulated knowledge about reality, and no one person can verify it alone. Agents can amplify the collaborations that sustain them. The decompilation projects themselves are community efforts that agents speed up rather than replace.
 - **Likely to be substituted:** thin utilities and bloated tools where only a subset of the features is used. My telemetry layer is an example. Why install a full OTel stack when I need ten percent of it?
 - **Genuinely uncertain:** the big frameworks like React and Laravel. Their value was partly code and partly a shared ecosystem. The code may become reproducible while the ecosystem keeps them alive.
+
+OpenTelemetry shows the tension in that telemetry example. Its worth isn't the code. It's a shared set of semantic conventions, a standard protocol, and instrumentation libraries that many vendors agree on, and it exists because two earlier projects, OpenTracing and OpenCensus, merged after neither could solve the problem alone ([OpenTelemetry](https://opentelemetry.io/docs/what-is-opentelemetry/)). My ten percent is easy to rebuild. The agreement isn't, and a custom layer can't talk to anyone else's tools. That is also why extending a standard, which OTel is designed to allow, is often a better trade than replacing it.
 
 ## Why collaboration still matters
 
