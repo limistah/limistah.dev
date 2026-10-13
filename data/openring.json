@@ -1,45 +1,45 @@
 [
   {
-    "title": "Agents - Cloudflare API MCP server serves Cloudflare skills",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills",
-    "date": "2026-10-10T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "AWS Security Hub now exports findings to S3 in CSV or JSON format",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json",
-    "date": "2026-10-09T22:00:00Z",
+    "title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin",
+    "date": "2026-10-12T23:10:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Pluralistic: Thwarted (09 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/09/impunitism",
-    "date": "2026-10-09T19:48:39Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
+    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.8.2110.0)",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-12-warp-windows-ga",
+    "date": "2026-10-12T19:28:14Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
-    "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-    "link": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal",
-    "date": "2026-10-09T18:27:34Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
+    "title": "Accessing OpenAI GPT models on Amazon Bedrock with global cross-Region inference in Thailand, Malaysia, Singapore, Indonesia, and Taiwan",
+    "link": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan",
+    "date": "2026-10-12T17:52:22Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Modernizing Unstructured Data Workflows: Alteryx Live Query meets Google Cloud BigQuery",
-    "link": "https://cloud.google.com/blog/products/data-analytics/modernize-unstructured-data-workloads-with-alteryx-and-bigquery",
-    "date": "2026-10-09T16:00:00Z",
+    "title": "Agentic data science with the Data Agent Kit",
+    "link": "https://cloud.google.com/blog/products/data-analytics/bringing-you-the-data-agent-kit",
+    "date": "2026-10-12T16:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "ICYMI: What landed for AI builders in September 2026",
-    "link": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026",
-    "date": "2026-10-09T15:38:39Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+    "title": "Filter, reshape, and redact logs before export with Transformers",
+    "link": "https://blog.cloudflare.com/transformers-on-logpush",
+    "date": "2026-10-12T14:44:59Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Pluralistic: How labor rights rescued Ultima from a monopolist (12 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/12/termination-of-transfer",
+    "date": "2026-10-12T11:40:39Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
   },
   {
     "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
@@ -82,6 +82,13 @@
     "date": "2026-10-04T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "New to the web platform in September",
+    "link": "https://web.dev/blog/web-platform-09-2026?hl=en",
+    "date": "2026-10-02T07:00:00Z",
+    "source": "web.dev: Blog",
+    "source_link": "https://web.dev/blog/"
   },
   {
     "title": "Summary of changes for September 2026",
@@ -131,12 +138,5 @@
     "date": "2026-07-21T00:00:00-04:00",
     "source": "Bill Hunt – Posts",
     "source_link": "https://billhunt.dev/"
-  },
-  {
-    "title": "How far would hostile distributions go to hurt application developers?",
-    "link": "https://tesk.page/2026/07/18/how-far-would-hostile-distributions-go-to-hurt-upstream",
-    "date": "2026-07-18T00:00:00Z",
-    "source": "TheEvilSkeleton",
-    "source_link": "https://tesk.page/"
   }
 ]
