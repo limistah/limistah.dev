@@ -1,59 +1,73 @@
 [
   {
-    "title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin",
-    "date": "2026-10-12T23:10:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.8.2110.0)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-12-warp-windows-ga",
-    "date": "2026-10-12T19:28:14Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Accessing OpenAI GPT models on Amazon Bedrock with global cross-Region inference in Thailand, Malaysia, Singapore, Indonesia, and Taiwan",
-    "link": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan",
-    "date": "2026-10-12T17:52:22Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Agentic data science with the Data Agent Kit",
-    "link": "https://cloud.google.com/blog/products/data-analytics/bringing-you-the-data-agent-kit",
-    "date": "2026-10-12T16:00:00Z",
+    "title": "GKE CPU 起動ブースト: オーバープロビジョニングなしでアプリの起動を高速化",
+    "link": "https://cloud.google.com/blog/ja/products/containers-kubernetes/gke-cpu-startup-boost-faster-pod-starts-lower-costs",
+    "date": "2026-10-16T02:10:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "Filter, reshape, and redact logs before export with Transformers",
-    "link": "https://blog.cloudflare.com/transformers-on-logpush",
-    "date": "2026-10-12T14:44:59Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
+    "title": "Web Search on Amazon Bedrock AgentCore expands to AWS GovCloud and 3 Regions",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore",
+    "date": "2026-10-15T20:40:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Pluralistic: How labor rights rescued Ultima from a monopolist (12 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/12/termination-of-transfer",
-    "date": "2026-10-12T11:40:39Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-    "link": "https://openai.com/index/sophos",
-    "date": "2026-10-09T07:00:00Z",
+    "title": "Bringing GPT-Rosalind to academic research labs",
+    "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "date": "2026-10-15T19:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
   },
   {
-    "title": "Google Cloud introduces the Gemini agent.",
-    "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work",
-    "date": "2026-10-08T12:05:00Z",
+    "title": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
+    "link": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart",
+    "date": "2026-10-15T17:43:35Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "A fully programmable secure web gateway",
+    "link": "https://blog.cloudflare.com/programmable-gateway-dlp",
+    "date": "2026-10-15T17:11:12Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Pluralistic: Expedia amazoned hotel rooms (15 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/15/enshittipedia",
+    "date": "2026-10-15T11:03:29Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Cloudflare One, Gateway - Application Library now supports custom applications",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-15-app-library-custom-applications",
+    "date": "2026-10-15T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
+    "date": "2026-10-14T08:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-92392",
+    "date": "2026-10-14T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "Advancing hardware security with open-source Integrated HSM technology",
+    "link": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology",
+    "date": "2026-10-13T16:15:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Inbox Zero for Privacy, not Productivity",
@@ -63,25 +77,11 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
-    "link": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations",
-    "date": "2026-10-07T15:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "Reverse engineering the Variax guitar",
     "link": "https://blog.brixit.nl/variax",
     "date": "2026-10-04T16:27:30Z",
     "source": "BrixIT Blog",
     "source_link": "https://blog.brixit.nl/"
-  },
-  {
-    "title": "How to Solve: AAC Heavyweight M1 (Savage)",
-    "link": "https://xeiaso.net/blog/2026/m9s",
-    "date": "2026-10-04T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "New to the web platform in September",
