@@ -1,73 +1,80 @@
 [
   {
-    "title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin",
-    "date": "2026-10-12T23:10:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.8.2110.0)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-12-warp-windows-ga",
-    "date": "2026-10-12T19:28:14Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Accessing OpenAI GPT models on Amazon Bedrock with global cross-Region inference in Thailand, Malaysia, Singapore, Indonesia, and Taiwan",
-    "link": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan",
-    "date": "2026-10-12T17:52:22Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Agentic data science with the Data Agent Kit",
-    "link": "https://cloud.google.com/blog/products/data-analytics/bringing-you-the-data-agent-kit",
-    "date": "2026-10-12T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "Filter, reshape, and redact logs before export with Transformers",
-    "link": "https://blog.cloudflare.com/transformers-on-logpush",
-    "date": "2026-10-12T14:44:59Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Pluralistic: How labor rights rescued Ultima from a monopolist (12 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/12/termination-of-transfer",
-    "date": "2026-10-12T11:40:39Z",
+    "title": "Pluralistic: Israeli ad-tech company was a delivery system for \"mercenary spyware\" (17 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/17/mercenary-spyware",
+    "date": "2026-10-17T10:47:35Z",
     "source": "Pluralistic: Daily links from Cory Doctorow",
     "source_link": "https://pluralistic.net"
   },
   {
-    "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-    "link": "https://openai.com/index/sophos",
-    "date": "2026-10-09T07:00:00Z",
+    "title": "Workers, Cloudflare CLI - Test Cron Triggers with Local Explorer",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-17-local-explorer-cron-triggers",
+    "date": "2026-10-17T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Building trust in AI agents: A production-ready evaluation framework with Amazon Bedrock AgentCore",
+    "link": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore",
+    "date": "2026-10-16T20:48:16Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion",
+    "date": "2026-10-16T20:04:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "How Itaú is building generative AI for its entire customer base",
+    "link": "https://openai.com/index/itau-generative-ai",
+    "date": "2026-10-16T19:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
   },
   {
-    "title": "Google Cloud introduces the Gemini agent.",
-    "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work",
-    "date": "2026-10-08T12:05:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+    "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
+    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud",
+    "date": "2026-10-16T17:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "Inbox Zero for Privacy, not Productivity",
-    "link": "https://xn--gckvb8fzb.com/inbox-zero-for-privacy-not-productivity",
-    "date": "2026-10-08T11:32:21Z",
+    "title": "Continuous accountability for Verified bots",
+    "link": "https://blog.cloudflare.com/verified-bots-accountability",
+    "date": "2026-10-16T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Razer Basilisk V3 Pro 35K Phantom White Edition",
+    "link": "https://xn--gckvb8fzb.com/razer-basilisk-v3-pro-35k-phantom-white-edition",
+    "date": "2026-10-16T12:26:06Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
-    "link": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations",
-    "date": "2026-10-07T15:00:00Z",
+    "title": "Evolving the cloud-native foundation for the next generation of AI",
+    "link": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai",
+    "date": "2026-10-15T16:00:00Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
+  },
+  {
+    "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
+    "date": "2026-10-14T08:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-92392",
+    "date": "2026-10-14T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "Reverse engineering the Variax guitar",
@@ -75,13 +82,6 @@
     "date": "2026-10-04T16:27:30Z",
     "source": "BrixIT Blog",
     "source_link": "https://blog.brixit.nl/"
-  },
-  {
-    "title": "How to Solve: AAC Heavyweight M1 (Savage)",
-    "link": "https://xeiaso.net/blog/2026/m9s",
-    "date": "2026-10-04T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "New to the web platform in September",
