@@ -55,9 +55,9 @@ It's a natural fit for agents because the task is hard but verifiable, and paral
 
 ## Bespoke software
 
-Right now, engineers can tailor software to what they need. Sonde is a TUI database client that works exactly how I interact with databases every day. I could pick from many database clients, but the features I need are scattered across them, and it is uneconomical to keep two subscriptions for the same kind of tool.
+Right now, engineers can tailor software to what they need[^1]. Sonde is a TUI database client that works exactly how I interact with databases every day. I could pick from many database clients, but the features I need are scattered across them, and it is uneconomical to keep two subscriptions for the same kind of tool.
 
-Price can also be a concern. TablePlus costs around $100 for a minor update and a new subscription for a major one. I can instead subscribe to an agentic coding tool and prompt until I get the result I want, at a fraction of the cost. We're already seeing custom software, games, and tools appear this way[^1].
+Price can also be a concern. TablePlus costs around $100 for a minor update and a new subscription for a major one. I can instead subscribe to an agentic coding tool and prompt until I get the result I want, at a fraction of the cost. We're already seeing custom software, games, and tools appear this way[^2].
 
 Yes, the price of software covers bug fixes, security patches, and upgrades. Agentic engineering has made those cheaper too, even for solo engineers.
 
@@ -105,4 +105,5 @@ For open source, agentic engineering is a threat of **substitution, not replacem
 
 *Salut!!*
 
-[^1]: A good example is the [Plex Native](https://plxnative.com) software.
+[^1]: Anthropic built its own [bespoke source control](https://www.anthropic.com/engineering/redesigning-source-control) called Scion.
+[^2]: A good example is the [Plex Native](https://plxnative.com) software.
