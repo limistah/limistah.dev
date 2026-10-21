@@ -1,52 +1,59 @@
 [
   {
-    "title": "Pluralistic: Israeli ad-tech company was a delivery system for \"mercenary spyware\" (17 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/17/mercenary-spyware",
-    "date": "2026-10-17T10:47:35Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Workers, Cloudflare CLI - Test Cron Triggers with Local Explorer",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-17-local-explorer-cron-triggers",
-    "date": "2026-10-17T00:00:00Z",
+    "title": "WAF - WAF Release - 2026-10-21 - Emergency - Cloudflare Managed Ruleset",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-21-emergency-waf-release-cfmr",
+    "date": "2026-10-21T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
-    "title": "Building trust in AI agents: A production-ready evaluation framework with Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore",
-    "date": "2026-10-16T20:48:16Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion",
-    "date": "2026-10-16T20:04:00Z",
+    "title": "Announcing Amazon ECS Gateway, a managed ingress solution for your ECS services",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/announcing-amazon-ecs-gateway",
+    "date": "2026-10-20T23:26:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "How Itaú is building generative AI for its entire customer base",
-    "link": "https://openai.com/index/itau-generative-ai",
-    "date": "2026-10-16T19:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
+    "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+    "link": "https://blog.cloudflare.com/emudhra-certificate-compromise",
+    "date": "2026-10-20T22:20:16Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
   },
   {
-    "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
-    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud",
-    "date": "2026-10-16T17:00:00Z",
+    "title": "Beyond the KV cache: Training and serving i14’s Laplace 3B linear attention model on AWS Trainium2 with native PyTorch",
+    "link": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch",
+    "date": "2026-10-20T21:14:10Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Managed RAG search inside the sovereign perimeter: Gemini on GDC enterprise search",
+    "link": "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
+    "date": "2026-10-20T19:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "Continuous accountability for Verified bots",
-    "link": "https://blog.cloudflare.com/verified-bots-accountability",
-    "date": "2026-10-16T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
+    "title": "Pluralistic: The death of history's most successful publisher (20 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/20/main-character-syndrome",
+    "date": "2026-10-20T17:24:41Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+    "link": "https://openai.com/index/ted-taylor-restaurant",
+    "date": "2026-10-20T10:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Managing open-weight model risk in enterprise deployments",
+    "link": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments",
+    "date": "2026-10-16T16:05:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Razer Basilisk V3 Pro 35K Phantom White Edition",
@@ -54,13 +61,6 @@
     "date": "2026-10-16T12:26:06Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "Evolving the cloud-native foundation for the next generation of AI",
-    "link": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai",
-    "date": "2026-10-15T16:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
