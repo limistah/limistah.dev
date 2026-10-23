@@ -1,52 +1,73 @@
 [
   {
-    "title": "Pluralistic: Israeli ad-tech company was a delivery system for \"mercenary spyware\" (17 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/17/mercenary-spyware",
-    "date": "2026-10-17T10:47:35Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Workers, Cloudflare CLI - Test Cron Triggers with Local Explorer",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-17-local-explorer-cron-triggers",
-    "date": "2026-10-17T00:00:00Z",
+    "title": "Flagship - Target Flagship feature flags with structured evaluation context",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-23-structured-evaluation-context",
+    "date": "2026-10-23T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
-    "title": "Building trust in AI agents: A production-ready evaluation framework with Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore",
-    "date": "2026-10-16T20:48:16Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion",
-    "date": "2026-10-16T20:04:00Z",
+    "title": "Amazon Connect Customer now supports customizing the Customer Profiles app on the agent workspace",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-customize-cp",
+    "date": "2026-10-22T21:10:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "How Itaú is building generative AI for its entire customer base",
-    "link": "https://openai.com/index/itau-generative-ai",
-    "date": "2026-10-16T19:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
-    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud",
-    "date": "2026-10-16T17:00:00Z",
+    "title": "Expanding Claude availability and deployment choice on Google Cloud",
+    "link": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud",
+    "date": "2026-10-22T21:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "Continuous accountability for Verified bots",
-    "link": "https://blog.cloudflare.com/verified-bots-accountability",
-    "date": "2026-10-16T13:00:00Z",
+    "title": "Build more responsive apps with the Decisions API",
+    "link": "https://openai.com/index/decisions-api",
+    "date": "2026-10-22T19:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+    "link": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine",
+    "date": "2026-10-22T18:06:35Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+    "link": "https://blog.cloudflare.com/k-isms",
+    "date": "2026-10-22T13:00:00Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-93479",
+    "date": "2026-10-22T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "Pluralistic: Adversarial interoperability is a team sport (21 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/21/brittle-individualism",
+    "date": "2026-10-21T20:05:21Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Agent UX: Building developer tools for humans and their coding agents",
+    "link": "https://ines.io/blog/agent-ux-developer-tools",
+    "date": "2026-10-21T00:00:00Z",
+    "source": "ines.io",
+    "source_link": "https://ines.io"
+  },
+  {
+    "title": "Advancing digital sovereignty with greater control and choice",
+    "link": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice",
+    "date": "2026-10-20T17:34:47Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Razer Basilisk V3 Pro 35K Phantom White Edition",
@@ -56,25 +77,11 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "Evolving the cloud-native foundation for the next generation of AI",
-    "link": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai",
-    "date": "2026-10-15T16:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
     "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
     "date": "2026-10-14T08:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-92392",
-    "date": "2026-10-14T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "Reverse engineering the Variax guitar",
@@ -131,12 +138,5 @@
     "date": "2026-07-25T00:00:00Z",
     "source": "Willow's feed",
     "source_link": "https://www.willowbarraco.fr/"
-  },
-  {
-    "title": "Worse on Purpose - Cookware",
-    "link": "https://worseonpurpose.com/p/your-cookware-got-worse-on-purpose",
-    "date": "2026-07-21T00:00:00-04:00",
-    "source": "Bill Hunt – Posts",
-    "source_link": "https://billhunt.dev/"
   }
 ]
