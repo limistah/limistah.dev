@@ -1,8 +1,50 @@
 [
   {
-    "title": "WAF - WAF Release - 2026-10-25 - Emergency - Cloudflare Managed Ruleset",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-25-emergency-waf-release",
-    "date": "2026-10-25T00:00:00Z",
+    "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+    "link": "https://blog.cloudflare.com/kv-cache-exposure-remediation",
+    "date": "2026-10-26T22:01:23Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+    "link": "https://openai.com/index/greptile-code-review-codex-astra",
+    "date": "2026-10-26T22:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Easy to integrate, compliant by design: Bringing the Swiss Franc to Google Cloud Universal Ledger",
+    "link": "https://cloud.google.com/blog/topics/financial-services/easy-to-integrate-compliant-by-design-bringing-the-swiss-franc-to-google-cloud-universal-ledger",
+    "date": "2026-10-26T20:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock",
+    "date": "2026-10-26T18:27:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
+    "link": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3",
+    "date": "2026-10-26T17:56:58Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Pluralistic: Sovereign citizens, but for news (26 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/26/abandon-hope",
+    "date": "2026-10-26T15:47:10Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Agents, Workers - Cloudflare Computer now helps agents recover from interruptions and wait for approval",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-26-computer-durable-javascript",
+    "date": "2026-10-26T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
@@ -14,53 +56,11 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "Web Search on Amazon Bedrock now supports domain filtering and user location controls",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location",
-    "date": "2026-10-23T21:04:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Pluralistic: Critique and writing (23 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/23/better-to-give",
-    "date": "2026-10-23T20:44:02Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Origin Range Requests: Serving large files without range-request tuning",
-    "link": "https://blog.cloudflare.com/origin-range-requests",
-    "date": "2026-10-23T18:22:59Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
-    "link": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide",
-    "date": "2026-10-23T17:48:54Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-    "date": "2026-10-23T17:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
     "title": "\"No way to prevent this\" say users of only language where this regularly happens",
     "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078",
     "date": "2026-10-23T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
-  },
-  {
-    "title": "Expanding Claude availability and deployment choice on Google Cloud",
-    "link": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud",
-    "date": "2026-10-22T21:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
   },
   {
     "title": "Agent UX: Building developer tools for humans and their coding agents",
