@@ -1,8 +1,50 @@
 [
   {
-    "title": "WAF - WAF Release - 2026-10-25 - Emergency - Cloudflare Managed Ruleset",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-25-emergency-waf-release",
-    "date": "2026-10-25T00:00:00Z",
+    "title": "Amazon ECS now supports GPU sharing with NVIDIA Multi-Process Service (MPS)",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps",
+    "date": "2026-10-27T23:31:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Introducing VMware solution on Google Cloud",
+    "link": "https://cloud.google.com/blog/products/infrastructure-modernization/vmware-solution-on-google-cloud",
+    "date": "2026-10-27T20:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "AWS named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service",
+    "link": "https://aws.amazon.com/blogs/machine-learning/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contact-center-as-a-service",
+    "date": "2026-10-27T18:03:12Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Retell uses OpenAI models to help power 100M monthly calls",
+    "link": "https://openai.com/index/retell-ai",
+    "date": "2026-10-27T15:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+    "link": "https://blog.cloudflare.com/php-ctf",
+    "date": "2026-10-27T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Pluralistic: History is something you do (27 Oct 2026)",
+    "link": "https://pluralistic.net/2026/10/27/tied-to-the-tracks",
+    "date": "2026-10-27T09:08:25Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Cloudflare One, Access - Fully customize user-facing Access pages",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-27-access-custom-pages",
+    "date": "2026-10-27T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
@@ -14,53 +56,11 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "Web Search on Amazon Bedrock now supports domain filtering and user location controls",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location",
-    "date": "2026-10-23T21:04:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Pluralistic: Critique and writing (23 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/23/better-to-give",
-    "date": "2026-10-23T20:44:02Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Origin Range Requests: Serving large files without range-request tuning",
-    "link": "https://blog.cloudflare.com/origin-range-requests",
-    "date": "2026-10-23T18:22:59Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
-    "link": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide",
-    "date": "2026-10-23T17:48:54Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-    "date": "2026-10-23T17:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
     "title": "\"No way to prevent this\" say users of only language where this regularly happens",
     "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078",
     "date": "2026-10-23T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
-  },
-  {
-    "title": "Expanding Claude availability and deployment choice on Google Cloud",
-    "link": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud",
-    "date": "2026-10-22T21:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
   },
   {
     "title": "Agent UX: Building developer tools for humans and their coding agents",
