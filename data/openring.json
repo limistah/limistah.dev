@@ -1,31 +1,59 @@
 [
   {
-    "title": "Amazon RDS for Oracle now supports September 2026 Monthly Recommended Patch",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-september-mrp",
-    "date": "2026-10-28T21:00:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore",
-    "date": "2026-10-28T18:28:26Z",
+    "title": "How the UK Amazon Quick User Group grew in 2026",
+    "link": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026",
+    "date": "2026-10-29T20:16:40Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Introducing the AlloyDB Omni web UI for easier cluster observability",
-    "link": "https://cloud.google.com/blog/products/databases/alloydb-omni-delivers-a-web-ui-for-cluster-observability",
-    "date": "2026-10-28T16:00:00Z",
+    "title": "AWS Marketplace now enables partners to list once and sell through multiple subsidiary accounts",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-marketplace-subsidiary-account-authorization",
+    "date": "2026-10-29T20:12:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "An updated Model Spec for more capable and beneficial AI",
+    "link": "https://openai.com/index/updated-model-spec",
+    "date": "2026-10-29T17:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "What’s new with Google Data Cloud",
+    "link": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud",
+    "date": "2026-10-29T16:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-    "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
-    "date": "2026-10-28T13:15:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
+    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+    "link": "https://blog.cloudflare.com/ddos-threat-report-2026-q3",
+    "date": "2026-10-29T12:55:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-98432",
+    "date": "2026-10-29T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "Agents - Agents SDK: Agent Skills are files in your agent's Workspace",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-29-agent-skills-from-files",
+    "date": "2026-10-29T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+    "link": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry",
+    "date": "2026-10-28T17:40:56Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "Pluralistic: Agents vs ecommerce (28 Oct 2026)",
@@ -35,39 +63,11 @@
     "source_link": "https://pluralistic.net"
   },
   {
-    "title": "Access, Cloudflare One - Filter MCP tool-call analytics by response status",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-28-mcp-analytics-response-status",
-    "date": "2026-10-28T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-    "link": "https://blog.cloudflare.com/php-ctf",
-    "date": "2026-10-27T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
-    "link": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling",
-    "date": "2026-10-26T16:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "On Honor-Based Value Transfer",
     "link": "https://xn--gckvb8fzb.com/on-honor-based-value-transfer",
     "date": "2026-10-24T10:02:12Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078",
-    "date": "2026-10-23T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "Agent UX: Building developer tools for humans and their coding agents",
