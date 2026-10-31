@@ -1,31 +1,66 @@
 [
   {
-    "title": "Amazon RDS for Oracle now supports September 2026 Monthly Recommended Patch",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-september-mrp",
-    "date": "2026-10-28T21:00:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore",
-    "date": "2026-10-28T18:28:26Z",
+    "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+    "link": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams",
+    "date": "2026-10-30T22:42:24Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Introducing the AlloyDB Omni web UI for easier cluster observability",
-    "link": "https://cloud.google.com/blog/products/databases/alloydb-omni-delivers-a-web-ui-for-cluster-observability",
-    "date": "2026-10-28T16:00:00Z",
+    "title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud",
+    "date": "2026-10-30T20:43:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+    "link": "https://blog.cloudflare.com/emudhra-patching",
+    "date": "2026-10-30T17:38:50Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "See who has access to your Gmail inbox in 2 minutes.",
+    "link": "https://blog.google/innovation-and-ai/technology/safety-security/google-security-checkup",
+    "date": "2026-10-30T16:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "What’s new in AI infrastructure and orchestration in October",
+    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month",
+    "date": "2026-10-30T16:00:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-    "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
-    "date": "2026-10-28T13:15:00Z",
+    "title": "Making it easier for websites to express AI training preferences",
+    "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "date": "2026-10-30T09:30:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Cloudflare One, Access - Inspect provisioned users and groups with the SCIM population viewer",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-10-30-scim-population-viewer",
+    "date": "2026-10-30T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
+    "link": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance",
+    "date": "2026-10-29T16:00:00Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
+  },
+  {
+    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-98432",
+    "date": "2026-10-29T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "Pluralistic: Agents vs ecommerce (28 Oct 2026)",
@@ -35,27 +70,6 @@
     "source_link": "https://pluralistic.net"
   },
   {
-    "title": "Access, Cloudflare One - Filter MCP tool-call analytics by response status",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-28-mcp-analytics-response-status",
-    "date": "2026-10-28T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-    "link": "https://blog.cloudflare.com/php-ctf",
-    "date": "2026-10-27T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
-    "link": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling",
-    "date": "2026-10-26T16:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
     "title": "On Honor-Based Value Transfer",
     "link": "https://xn--gckvb8fzb.com/on-honor-based-value-transfer",
     "date": "2026-10-24T10:02:12Z",
@@ -63,25 +77,11 @@
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
-    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078",
-    "date": "2026-10-23T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
-  },
-  {
     "title": "Agent UX: Building developer tools for humans and their coding agents",
     "link": "https://ines.io/blog/agent-ux-developer-tools",
     "date": "2026-10-21T00:00:00Z",
     "source": "ines.io",
     "source_link": "https://ines.io"
-  },
-  {
-    "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
-    "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
-    "date": "2026-10-14T08:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
   },
   {
     "title": "Reverse engineering the Variax guitar",
