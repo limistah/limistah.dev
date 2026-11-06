@@ -1,71 +1,85 @@
 [
   {
-    "title": "Amazon RDS for Oracle now supports September 2026 Monthly Recommended Patch",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-september-mrp",
-    "date": "2026-10-28T21:00:00Z",
+    "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory",
+    "date": "2026-11-06T00:30:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore",
-    "date": "2026-10-28T18:28:26Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "Introducing the AlloyDB Omni web UI for easier cluster observability",
-    "link": "https://cloud.google.com/blog/products/databases/alloydb-omni-delivers-a-web-ui-for-cluster-observability",
-    "date": "2026-10-28T16:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-    "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
-    "date": "2026-10-28T13:15:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Pluralistic: Agents vs ecommerce (28 Oct 2026)",
-    "link": "https://pluralistic.net/2026/10/28/principle-agent-problem",
-    "date": "2026-10-28T10:54:05Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Access, Cloudflare One - Filter MCP tool-call analytics by response status",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-10-28-mcp-analytics-response-status",
-    "date": "2026-10-28T00:00:00Z",
+    "title": "Cloudflare Fundamentals - User API tokens have a redesigned creation experience",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-06-user-api-token-redesign",
+    "date": "2026-11-06T00:00:00Z",
     "source": "Cloudflare changelogs",
     "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
-    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-    "link": "https://blog.cloudflare.com/php-ctf",
-    "date": "2026-10-27T13:00:00Z",
+    "title": "Getting started with Web Answer on Amazon Bedrock AgentCore",
+    "link": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore",
+    "date": "2026-11-05T21:04:24Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Cult.fit builds operational muscle with Codex",
+    "link": "https://openai.com/index/cultfit-builds-with-codex",
+    "date": "2026-11-05T20:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Generate longer AI videos with Omni 1.2 Flash in Google Vids at no cost.",
+    "link": "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids",
+    "date": "2026-11-05T20:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Agents aren’t humans (but they kinda are)",
+    "link": "https://blog.cloudflare.com/trusted-agent-delegation",
+    "date": "2026-11-05T17:03:04Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
   },
   {
-    "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
-    "link": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling",
-    "date": "2026-10-26T16:00:00Z",
+    "title": "What’s new with Google Data Cloud",
+    "link": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud",
+    "date": "2026-11-05T17:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Pluralistic: Without CDA 230, Facebook will own the internet forever (05 Nov 2026)",
+    "link": "https://pluralistic.net/2026/11/05/see-you-in-court",
+    "date": "2026-11-05T08:53:45Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads",
+    "link": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads",
+    "date": "2026-11-04T16:00:00Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
-    "title": "On Honor-Based Value Transfer",
-    "link": "https://xn--gckvb8fzb.com/on-honor-based-value-transfer",
-    "date": "2026-10-24T10:02:12Z",
+    "title": "PBS Black on Black",
+    "link": "https://xn--gckvb8fzb.com/pbs-black-on-black",
+    "date": "2026-11-02T16:26:48Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
+    "title": "Summary of changes for October 2026",
+    "link": "https://100r.ca/site/log.html",
+    "date": "2026-11-01T07:00:00Z",
+    "source": "Hundred Rabbits",
+    "source_link": "https://100r.ca"
+  },
+  {
     "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078",
-    "date": "2026-10-23T00:00:00Z",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-98432",
+    "date": "2026-10-29T00:00:00Z",
     "source": "Xe Iaso's blog",
     "source_link": "https://xeiaso.net/"
   },
@@ -75,13 +89,6 @@
     "date": "2026-10-21T00:00:00Z",
     "source": "ines.io",
     "source_link": "https://ines.io"
-  },
-  {
-    "title": "We’re powering European scientific discovery with advanced AI compute and frontier models.",
-    "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models",
-    "date": "2026-10-14T08:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
   },
   {
     "title": "Reverse engineering the Variax guitar",
@@ -96,13 +103,6 @@
     "date": "2026-10-02T07:00:00Z",
     "source": "web.dev: Blog",
     "source_link": "https://web.dev/blog/"
-  },
-  {
-    "title": "Summary of changes for September 2026",
-    "link": "https://100r.ca/site/log.html",
-    "date": "2026-09-30T07:00:00Z",
-    "source": "Hundred Rabbits",
-    "source_link": "https://100r.ca"
   },
   {
     "title": "Replacing the old battery on rechargeable bike lights",
