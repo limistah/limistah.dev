@@ -1,31 +1,45 @@
 [
   {
-    "title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory",
-    "date": "2026-11-06T00:30:00Z",
+    "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
+    "date": "2026-11-06T22:47:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Cloudflare Fundamentals - User API tokens have a redesigned creation experience",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-06-user-api-token-redesign",
-    "date": "2026-11-06T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Getting started with Web Answer on Amazon Bedrock AgentCore",
-    "link": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore",
-    "date": "2026-11-05T21:04:24Z",
+    "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
+    "link": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints",
+    "date": "2026-11-06T18:01:00Z",
     "source": "Artificial Intelligence",
     "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Cult.fit builds operational muscle with Codex",
-    "link": "https://openai.com/index/cultfit-builds-with-codex",
-    "date": "2026-11-05T20:00:00Z",
+    "title": "What’s new with Google Cloud",
+    "link": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud",
+    "date": "2026-11-06T17:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "The post-quantum future of web privacy",
+    "link": "https://blog.cloudflare.com/vole-mole",
+    "date": "2026-11-06T14:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "link": "https://openai.com/index/partnering-with-hacktron",
+    "date": "2026-11-06T08:00:00Z",
     "source": "OpenAI News",
     "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "AI Gateway - Review provider key activity in AI Gateway",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-06-provider-key-security",
+    "date": "2026-11-06T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Generate longer AI videos with Omni 1.2 Flash in Google Vids at no cost.",
@@ -33,20 +47,6 @@
     "date": "2026-11-05T20:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "Agents aren’t humans (but they kinda are)",
-    "link": "https://blog.cloudflare.com/trusted-agent-delegation",
-    "date": "2026-11-05T17:03:04Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "What’s new with Google Data Cloud",
-    "link": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud",
-    "date": "2026-11-05T17:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
   },
   {
     "title": "Pluralistic: Without CDA 230, Facebook will own the internet forever (05 Nov 2026)",
@@ -133,10 +133,10 @@
     "source_link": "https://sourcehut.org/blog/"
   },
   {
-    "title": "Status update July 2026",
-    "link": "https://willowbarraco.fr/status-update-2026-07",
-    "date": "2026-07-25T00:00:00Z",
-    "source": "Willow's feed",
-    "source_link": "https://www.willowbarraco.fr/"
+    "title": "Worse on Purpose - Cookware",
+    "link": "https://worseonpurpose.com/p/your-cookware-got-worse-on-purpose",
+    "date": "2026-07-21T00:00:00-04:00",
+    "source": "Bill Hunt – Posts",
+    "source_link": "https://billhunt.dev/"
   }
 ]
