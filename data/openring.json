@@ -1,5 +1,12 @@
 [
   {
+    "title": "RIP, Harvest",
+    "link": "https://aphyr.com/posts/427-rip-harvest",
+    "date": "2026-11-08T14:35:42-05:00",
+    "source": "Aphyr: Posts",
+    "source_link": "https://aphyr.com/"
+  },
+  {
     "title": "Pluralistic: JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\" (07 Nov 2026)",
     "link": "https://pluralistic.net/2026/11/07/aeiou-but-sometimes-why",
     "date": "2026-11-07T13:03:46Z",
@@ -12,6 +19,13 @@
     "date": "2026-11-06T22:47:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
+    "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
+    "date": "2026-11-06T19:08:44Z",
+    "source": "Microsoft Azure Blog",
+    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
@@ -54,13 +68,6 @@
     "date": "2026-11-05T20:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
-    "link": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline",
-    "date": "2026-11-05T17:00:00Z",
-    "source": "Microsoft Azure Blog",
-    "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
     "title": "PBS Black on Black",
@@ -131,12 +138,5 @@
     "date": "2026-08-27T00:00:00Z",
     "source": "Blogs on Sourcehut",
     "source_link": "https://sourcehut.org/blog/"
-  },
-  {
-    "title": "Status update July 2026",
-    "link": "https://willowbarraco.fr/status-update-2026-07",
-    "date": "2026-07-25T00:00:00Z",
-    "source": "Willow's feed",
-    "source_link": "https://www.willowbarraco.fr/"
   }
 ]
