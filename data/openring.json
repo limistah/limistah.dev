@@ -1,24 +1,66 @@
 [
   {
+    "title": "Stickerbombed: Lenovo X1 Carbon Gen 14 Aura",
+    "link": "https://xn--gckvb8fzb.com/stickerbombed-lenovo-x1-carbon-gen-14-aura",
+    "date": "2026-11-10T05:32:01Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "The open AI-native stack on Kubernetes: From open models to distributed inference and agents",
+    "link": "https://cloud.google.com/blog/topics/developers-practitioners/the-open-ai-native-stack-on-kubernetes-from-open-models-to-distributed-inference-and-agents",
+    "date": "2026-11-10T01:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "How skills and agents work in AWS Quick",
+    "link": "https://aws.amazon.com/blogs/machine-learning/how-skills-and-agents-work-in-aws-quick",
+    "date": "2026-11-10T00:21:34Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Flagship - Evaluate Flagship feature flags from Rust",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-10-rust-sdk",
+    "date": "2026-11-10T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Amazon Bedrock AgentCore now offers a Web Search API",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api",
+    "date": "2026-11-10T00:00:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "ChatGPT Enterprise now available in AWS Marketplace",
+    "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+    "date": "2026-11-09T19:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Launching the Vite Ecosystem Fund",
+    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund",
+    "date": "2026-11-09T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Pluralistic: America cannot undo Trumpism (09 Nov 2026)",
+    "link": "https://pluralistic.net/2026/11/09/brunch-is-canceled-forever",
+    "date": "2026-11-09T08:12:24Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
     "title": "RIP, Harvest",
     "link": "https://aphyr.com/posts/427-rip-harvest",
     "date": "2026-11-08T14:35:42-05:00",
     "source": "Aphyr: Posts",
     "source_link": "https://aphyr.com/"
-  },
-  {
-    "title": "Pluralistic: JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\" (07 Nov 2026)",
-    "link": "https://pluralistic.net/2026/11/07/aeiou-but-sometimes-why",
-    "date": "2026-11-07T13:03:46Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
-    "date": "2026-11-06T22:47:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
     "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
@@ -28,53 +70,11 @@
     "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
   {
-    "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
-    "link": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints",
-    "date": "2026-11-06T18:01:00Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "What’s new with Google Cloud",
-    "link": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud",
-    "date": "2026-11-06T17:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "The post-quantum future of web privacy",
-    "link": "https://blog.cloudflare.com/vole-mole",
-    "date": "2026-11-06T14:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-    "link": "https://openai.com/index/partnering-with-hacktron",
-    "date": "2026-11-06T08:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "AI Gateway - Review provider key activity in AI Gateway",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-06-provider-key-security",
-    "date": "2026-11-06T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
     "title": "Generate longer AI videos with Omni 1.2 Flash in Google Vids at no cost.",
     "link": "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids",
     "date": "2026-11-05T20:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "PBS Black on Black",
-    "link": "https://xn--gckvb8fzb.com/pbs-black-on-black",
-    "date": "2026-11-02T16:26:48Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "Summary of changes for October 2026",
