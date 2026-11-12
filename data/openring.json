@@ -1,5 +1,68 @@
 [
   {
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "date": "2026-11-12T00:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
+    "link": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock",
+    "date": "2026-11-11T01:07:19Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
+    "date": "2026-11-10T23:22:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.9.2663.1)",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-10-warp-windows-beta",
+    "date": "2026-11-10T18:56:38Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Pluralistic: The EU should go big and hard over border IT failure (10 Nov 2026)",
+    "link": "https://pluralistic.net/2026/11/10/worst-of-all-worlds",
+    "date": "2026-11-10T17:34:21Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Inside the Gemini factory: Accelerating partner solutions",
+    "link": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions",
+    "date": "2026-11-10T17:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+    "link": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
+    "date": "2026-11-10T14:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Stickerbombed: Lenovo X1 Carbon Gen 14 Aura",
+    "link": "https://xn--gckvb8fzb.com/stickerbombed-lenovo-x1-carbon-gen-14-aura",
+    "date": "2026-11-10T05:32:01Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "Launching the Vite Ecosystem Fund",
+    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund",
+    "date": "2026-11-09T13:00:00Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
     "title": "RIP, Harvest",
     "link": "https://aphyr.com/posts/427-rip-harvest",
     "date": "2026-11-08T14:35:42-05:00",
@@ -7,74 +70,11 @@
     "source_link": "https://aphyr.com/"
   },
   {
-    "title": "Pluralistic: JS Tan and Clarissa Redwine's \"Against Tech Oligarchy\" (07 Nov 2026)",
-    "link": "https://pluralistic.net/2026/11/07/aeiou-but-sometimes-why",
-    "date": "2026-11-07T13:03:46Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
-    "date": "2026-11-06T22:47:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
     "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
     "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
     "date": "2026-11-06T19:08:44Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
-  },
-  {
-    "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
-    "link": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints",
-    "date": "2026-11-06T18:01:00Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "What’s new with Google Cloud",
-    "link": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud",
-    "date": "2026-11-06T17:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "The post-quantum future of web privacy",
-    "link": "https://blog.cloudflare.com/vole-mole",
-    "date": "2026-11-06T14:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-    "link": "https://openai.com/index/partnering-with-hacktron",
-    "date": "2026-11-06T08:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "AI Gateway - Review provider key activity in AI Gateway",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-06-provider-key-security",
-    "date": "2026-11-06T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Generate longer AI videos with Omni 1.2 Flash in Google Vids at no cost.",
-    "link": "https://blog.google/products-and-platforms/products/workspace/omni-1-2-flash-google-vids",
-    "date": "2026-11-05T20:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "PBS Black on Black",
-    "link": "https://xn--gckvb8fzb.com/pbs-black-on-black",
-    "date": "2026-11-02T16:26:48Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "Summary of changes for October 2026",
