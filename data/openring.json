@@ -1,5 +1,19 @@
 [
   {
+    "title": "Build autonomous AI agents with Amazon Bedrock and Spring AI",
+    "link": "https://aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai",
+    "date": "2026-11-12T01:18:23Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Realtime - Set custom validity windows for RealtimeKit auth tokens",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-12-realtimekit-auth-token-validity",
+    "date": "2026-11-12T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
     "title": "Gilbert + Tobin rethinks the business of law with AI",
     "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
     "date": "2026-11-12T00:00:00Z",
@@ -7,25 +21,32 @@
     "source_link": "https://openai.com/news"
   },
   {
-    "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
-    "link": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock",
-    "date": "2026-11-11T01:07:19Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
-    "date": "2026-11-10T23:22:00Z",
+    "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart",
+    "date": "2026-11-11T23:36:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
   },
   {
-    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.9.2663.1)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-10-warp-windows-beta",
-    "date": "2026-11-10T18:56:38Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
+    "title": "Google Cloud leaders share what to expect in cybersecurity for 2027.",
+    "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cybersecurity-2027",
+    "date": "2026-11-11T17:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "How lemonflow built real-time agents for EV charging using Gemma and TPUs",
+    "link": "https://cloud.google.com/blog/topics/startups/building-real-time-agents-for-ev-charging-using-gemma-and-tpus",
+    "date": "2026-11-11T17:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "Choosing QuePaxa, an unusual consensus algorithm",
+    "link": "https://blog.cloudflare.com/choosing-quepaxa",
+    "date": "2026-11-11T14:24:46Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
   },
   {
     "title": "Pluralistic: The EU should go big and hard over border IT failure (10 Nov 2026)",
@@ -35,32 +56,11 @@
     "source_link": "https://pluralistic.net"
   },
   {
-    "title": "Inside the Gemini factory: Accelerating partner solutions",
-    "link": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions",
-    "date": "2026-11-10T17:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-    "link": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
-    "date": "2026-11-10T14:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
     "title": "Stickerbombed: Lenovo X1 Carbon Gen 14 Aura",
     "link": "https://xn--gckvb8fzb.com/stickerbombed-lenovo-x1-carbon-gen-14-aura",
     "date": "2026-11-10T05:32:01Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "Launching the Vite Ecosystem Fund",
-    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund",
-    "date": "2026-11-09T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
   },
   {
     "title": "RIP, Harvest",
