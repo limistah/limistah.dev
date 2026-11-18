@@ -1,52 +1,66 @@
 [
   {
-    "title": "Gilbert + Tobin rethinks the business of law with AI",
-    "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
-    "date": "2026-11-12T00:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
-    "link": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock",
-    "date": "2026-11-11T01:07:19Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
-    "date": "2026-11-10T23:22:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.9.2663.1)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-10-warp-windows-beta",
-    "date": "2026-11-10T18:56:38Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Pluralistic: The EU should go big and hard over border IT failure (10 Nov 2026)",
-    "link": "https://pluralistic.net/2026/11/10/worst-of-all-worlds",
-    "date": "2026-11-10T17:34:21Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Inside the Gemini factory: Accelerating partner solutions",
-    "link": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions",
-    "date": "2026-11-10T17:00:00Z",
+    "title": "How to Build Durable Agentic Systems with Google Antigravity: From Instructions to Loops",
+    "link": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-build-durable-agentic-systems-with-google-antigravity-from-instructions-to-loops",
+    "date": "2026-11-18T00:11:00Z",
     "source": "Cloud Blog",
     "source_link": "https://cloud.google.com/blog/"
   },
   {
-    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-    "link": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
-    "date": "2026-11-10T14:00:00Z",
+    "title": "Hyperdrive, Workers VPC - Custom CA and client certificates (mTLS) for Workers VPC",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-18-custom-ca-mtls",
+    "date": "2026-11-18T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "Amazon WorkSpaces Applications adds support for smart card redirection",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-applications-smart-card-redirection",
+    "date": "2026-11-17T23:46:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Managed NVIDIA Dynamo on Amazon SageMaker HyperPod Inference",
+    "link": "https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference",
+    "date": "2026-11-17T23:33:26Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
+  },
+  {
+    "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+    "link": "https://blog.cloudflare.com/quad9-withdrawal-from-france",
+    "date": "2026-11-17T20:24:27Z",
+    "source": "Cloudflare Blog",
+    "source_link": "https://blog.cloudflare.com/"
+  },
+  {
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "date": "2026-11-17T17:45:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "Anyone can create a personal avatar of themselves in Google Vids, at no cost.",
+    "link": "https://blog.google/products-and-platforms/products/workspace/vids-personal-avatars-no-cost",
+    "date": "2026-11-17T17:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Pluralistic: Remembrance of proteins past (17 Nov 2026)",
+    "link": "https://pluralistic.net/2026/11/17/mississippi-gosh-darn",
+    "date": "2026-11-17T13:01:56Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Announcing Hegel-clj",
+    "link": "https://aphyr.com/posts/428-announcing-hegel-clj",
+    "date": "2026-11-11T20:01:43-05:00",
+    "source": "Aphyr: Posts",
+    "source_link": "https://aphyr.com/"
   },
   {
     "title": "Stickerbombed: Lenovo X1 Carbon Gen 14 Aura",
@@ -54,20 +68,6 @@
     "date": "2026-11-10T05:32:01Z",
     "source": "マリウス",
     "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "Launching the Vite Ecosystem Fund",
-    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund",
-    "date": "2026-11-09T13:00:00Z",
-    "source": "Cloudflare Blog",
-    "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "RIP, Harvest",
-    "link": "https://aphyr.com/posts/427-rip-harvest",
-    "date": "2026-11-08T14:35:42-05:00",
-    "source": "Aphyr: Posts",
-    "source_link": "https://aphyr.com/"
   },
   {
     "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
