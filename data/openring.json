@@ -1,78 +1,78 @@
 [
   {
-    "title": "Gilbert + Tobin rethinks the business of law with AI",
-    "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
-    "date": "2026-11-12T00:00:00Z",
-    "source": "OpenAI News",
-    "source_link": "https://openai.com/news"
-  },
-  {
-    "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
-    "link": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock",
-    "date": "2026-11-11T01:07:19Z",
-    "source": "Artificial Intelligence",
-    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
-  },
-  {
-    "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
-    "date": "2026-11-10T23:22:00Z",
-    "source": "Recent Announcements",
-    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
-  },
-  {
-    "title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.9.2663.1)",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-10-warp-windows-beta",
-    "date": "2026-11-10T18:56:38Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
-  },
-  {
-    "title": "Pluralistic: The EU should go big and hard over border IT failure (10 Nov 2026)",
-    "link": "https://pluralistic.net/2026/11/10/worst-of-all-worlds",
-    "date": "2026-11-10T17:34:21Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "Inside the Gemini factory: Accelerating partner solutions",
-    "link": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions",
-    "date": "2026-11-10T17:00:00Z",
-    "source": "Cloud Blog",
-    "source_link": "https://cloud.google.com/blog/"
-  },
-  {
-    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
-    "link": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
-    "date": "2026-11-10T14:00:00Z",
-    "source": "Google Cloud",
-    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "Stickerbombed: Lenovo X1 Carbon Gen 14 Aura",
-    "link": "https://xn--gckvb8fzb.com/stickerbombed-lenovo-x1-carbon-gen-14-aura",
-    "date": "2026-11-10T05:32:01Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
-  },
-  {
-    "title": "Launching the Vite Ecosystem Fund",
-    "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund",
-    "date": "2026-11-09T13:00:00Z",
+    "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+    "link": "https://blog.cloudflare.com/nginx2root",
+    "date": "2026-11-20T01:58:29Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
   },
   {
-    "title": "RIP, Harvest",
-    "link": "https://aphyr.com/posts/427-rip-harvest",
-    "date": "2026-11-08T14:35:42-05:00",
-    "source": "Aphyr: Posts",
-    "source_link": "https://aphyr.com/"
+    "title": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+    "link": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2",
+    "date": "2026-11-20T00:34:07Z",
+    "source": "Artificial Intelligence",
+    "source_link": "https://aws.amazon.com/blogs/machine-learning/"
   },
   {
-    "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
-    "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
-    "date": "2026-11-06T19:08:44Z",
+    "title": "Cloudflare Images - View delivery analytics for hosted images",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-20-hosted-image-delivery-analytics",
+    "date": "2026-11-20T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "The Blueprint: How Kult built a gaming companion that actually knows your game",
+    "link": "https://cloud.google.com/blog/products/gaming/kult-built-a-gaming-companion-with-gemini-that-actually-knows-your-game",
+    "date": "2026-11-19T23:00:00Z",
+    "source": "Cloud Blog",
+    "source_link": "https://cloud.google.com/blog/"
+  },
+  {
+    "title": "AWS Marketplace now supports agentic payments with AgentCore",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/marketplace-agentic-payments-agentcore",
+    "date": "2026-11-19T21:30:00Z",
+    "source": "Recent Announcements",
+    "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Small businesses, big results: How teams scale with AI",
+    "link": "https://blog.google/products-and-platforms/products/workspace/google-workspace-gemini-small-business-stories",
+    "date": "2026-11-19T17:00:00Z",
+    "source": "Google Cloud",
+    "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
+  },
+  {
+    "title": "Pluralistic: How to forfeit one of copyright's best labor policies (19 Nov 2026)",
+    "link": "https://pluralistic.net/2026/11/19/loan-out-companies",
+    "date": "2026-11-19T14:10:14Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "date": "2026-11-19T08:00:00Z",
+    "source": "OpenAI News",
+    "source_link": "https://openai.com/news"
+  },
+  {
+    "title": "sysdeck: Raycast for Linux & BSD",
+    "link": "https://xn--gckvb8fzb.com/sysdeck-raycast-for-linux-bsd",
+    "date": "2026-11-18T12:35:40Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
+  },
+  {
+    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
+    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-123633",
+    "date": "2026-11-18T00:00:00Z",
+    "source": "Xe Iaso's blog",
+    "source_link": "https://xeiaso.net/"
+  },
+  {
+    "title": "Microsoft and Oracle bring agentic AI into flow of enterprise work",
+    "link": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work",
+    "date": "2026-11-17T18:35:00Z",
     "source": "Microsoft Azure Blog",
     "source_link": "https://azure.microsoft.com/en-us/blog/"
   },
@@ -82,13 +82,6 @@
     "date": "2026-11-01T07:00:00Z",
     "source": "Hundred Rabbits",
     "source_link": "https://100r.ca"
-  },
-  {
-    "title": "\"No way to prevent this\" say users of only language where this regularly happens",
-    "link": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-98432",
-    "date": "2026-10-29T00:00:00Z",
-    "source": "Xe Iaso's blog",
-    "source_link": "https://xeiaso.net/"
   },
   {
     "title": "Agent UX: Building developer tools for humans and their coding agents",
@@ -138,5 +131,12 @@
     "date": "2026-08-27T00:00:00Z",
     "source": "Blogs on Sourcehut",
     "source_link": "https://sourcehut.org/blog/"
+  },
+  {
+    "title": "Status update July 2026",
+    "link": "https://willowbarraco.fr/status-update-2026-07",
+    "date": "2026-07-25T00:00:00Z",
+    "source": "Willow's feed",
+    "source_link": "https://www.willowbarraco.fr/"
   }
 ]
