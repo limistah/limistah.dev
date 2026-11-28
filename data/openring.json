@@ -1,10 +1,31 @@
 [
   {
-    "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
-    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm",
-    "date": "2026-11-25T20:00:00Z",
+    "title": "Amazon Timestream for InfluxDB 3 now supports heterogeneous clusters",
+    "link": "https://aws.amazon.com/about-aws/whats-new/2026/11/influxdb-heterogeneous-cluster",
+    "date": "2026-11-27T22:30:00Z",
     "source": "Recent Announcements",
     "source_link": "https://aws.amazon.com/about-aws/whats-new/recent/"
+  },
+  {
+    "title": "Pluralistic: Taylorism and AI's shared sales-pitch (27 Nov 2026)",
+    "link": "https://pluralistic.net/2026/11/27/taylor-made",
+    "date": "2026-11-27T13:38:29Z",
+    "source": "Pluralistic: Daily links from Cory Doctorow",
+    "source_link": "https://pluralistic.net"
+  },
+  {
+    "title": "Rules - Use IP and ASN lists in response-side and other CDN rule filters",
+    "link": "https://developers.cloudflare.com/changelog/post/2026-11-27-ip-asn-lists-cdn-phases",
+    "date": "2026-11-27T00:00:00Z",
+    "source": "Cloudflare changelogs",
+    "source_link": "https://developers.cloudflare.com/changelog/"
+  },
+  {
+    "title": "How to Import Paintings Tax Free on Your Private Jet",
+    "link": "https://xn--gckvb8fzb.com/how-to-import-paintings-tax-free-on-your-private-jet",
+    "date": "2026-11-26T10:30:50Z",
+    "source": "マリウス",
+    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "Introducing Search for Agents",
@@ -12,20 +33,6 @@
     "date": "2026-11-25T14:00:00Z",
     "source": "Cloudflare Blog",
     "source_link": "https://blog.cloudflare.com/"
-  },
-  {
-    "title": "Pluralistic: New York vs auto-enshittification (25 Nov 2026)",
-    "link": "https://pluralistic.net/2026/11/25/empire-state-strikes-back",
-    "date": "2026-11-25T13:42:12Z",
-    "source": "Pluralistic: Daily links from Cory Doctorow",
-    "source_link": "https://pluralistic.net"
-  },
-  {
-    "title": "AI Search - Introducing Search for Agents",
-    "link": "https://developers.cloudflare.com/changelog/post/2026-11-25-search-for-agents",
-    "date": "2026-11-25T00:00:00Z",
-    "source": "Cloudflare changelogs",
-    "source_link": "https://developers.cloudflare.com/changelog/"
   },
   {
     "title": "Built for trust and control: Powering the next wave of AI agents across Google Workspace and Google Cloud",
@@ -68,13 +75,6 @@
     "date": "2026-11-19T17:00:00Z",
     "source": "Google Cloud",
     "source_link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/"
-  },
-  {
-    "title": "sysdeck: Raycast for Linux & BSD",
-    "link": "https://xn--gckvb8fzb.com/sysdeck-raycast-for-linux-bsd",
-    "date": "2026-11-18T12:35:40Z",
-    "source": "マリウス",
-    "source_link": "https://xn--gckvb8fzb.com/"
   },
   {
     "title": "\"No way to prevent this\" say users of only language where this regularly happens",
